@@ -200,8 +200,6 @@
   },
   "active": "585dff5848f617c9",
   "lastOpenFiles": [
-    "Fix_log/2026-06-10.md",
-    "Fix_log",
     "agent-config/README.md",
     "README.md",
     "wiki/examples/code-bank.md",
@@ -217,6 +215,7 @@
     "User_import/어휘평가_NewAuth/초등/Context/Primary_Context_T2.json",
     "User_import/어휘평가_NewAuth/초등/Context/Primary_Context_T1.json",
     "User_import/어휘평가_NewAuth/초등/Form_Meaning/Primary_Form_Meaning_T3.json",
+    "User_import/어휘평가_NewAuth/초등/Form_Meaning/Primary_Form_Meaning_T1.json",
     "User_import/어휘평가_NewAuth/README.md",
     "User_import/어휘평가/README.md",
     "quiz-agent-python-aoa/README.md",
@@ -235,6 +234,7 @@
     "1/00_System_Instruction.md",
     "agent-config/User_import/어휘평가/고등/High_Form_Meaning.md",
     "agent-config/User_import/어휘평가/고등/High_Derivatives.md",
-    "agent-config/User_import/어휘평가/고등/High_Collocation.md"
+    "agent-config/User_import/어휘평가/고등/High_Collocation.md",
+    "agent-config/User_import/어휘평가/고등/High_Context.md"
   ]
 }
