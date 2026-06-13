@@ -1,0 +1,504 @@
+{
+  "options": {
+    "title": "<h1>중학교 파생어_중급</h1>",
+    "brief": "",
+    "name": "[Updated] 중학교 파생어_중급",
+    "description": "중학교 수준 어휘 75개를 바탕으로 파생어에 대한 중급 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다. \n",
+    "greeting": "주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오\n. \n\n<br>\n(예시) This offer is <u>conditional</u>. ---> 뜻: 조건부의 (<u>conditional</u>)<br>\n파생어: conditional / conditionally / conditioned",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "Identification": {
+        "org": "S-113",
+        "cond": "SELF",
+        "desc": "배부된 일련번호"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Drinking too much soda is <u>unhealthy</u>.\",\n      \"problem_reference\": \"healthy / unhealthy / healthily\",\n      \"q_sentence\": \"Drinking too much soda is <u>unhealthy</u>.\",\n      \"answer\": \"건강에 해로운, 건강에 안좋은, 건강하지 않은\",\n      \"derivative_q\": \"unhealthy\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"건강하지 않은\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> We will <u>replant</u> the tree.\",\n      \"problem_reference\": \"planting / planter / replant\",\n      \"q_sentence\": \"We will <u>replant</u> the tree.\",\n      \"answer\": \"다시 심다\",\n      \"derivative_q\": \"replant\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"다시 심다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> He gave a <u>forceful</u> push.\",\n      \"problem_reference\": \"forceful / forcibly / reinforce\",\n      \"q_sentence\": \"He gave a <u>forceful</u> push.\",\n      \"answer\": \"강한, 강력한, 강제적인\",\n      \"derivative_q\": \"forceful\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"강압적으로\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This video is not <u>viewable</u> on my phone.\",\n      \"problem_reference\": \"review / viewer / viewable\",\n      \"q_sentence\": \"This video is not <u>viewable</u> on my phone.\",\n      \"answer\": \"볼 수 있는, 시청가능한\",\n      \"derivative_q\": \"viewable\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"보이는\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This video is not <u>viewable</u> on my phone.\",\n      \"problem_reference\": \"review / viewer / viewable\",\n      \"q_sentence\": \"This video is not <u>viewable</u> on my phone.\",\n      \"answer\": \"볼 수 있는, 시청가능한\",\n      \"derivative_q\": \"viewable\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"볼 수 있는\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> His story is <u>convincing</u>.\",\n      \"problem_reference\": \"convincing / convincingly / conviction\",\n      \"q_sentence\": \"His story is <u>convincing</u>.\",\n      \"answer\": \"설득력있는, 그럴듯한\",\n      \"derivative_q\": \"convincing\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"설득력있는\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> She is <u>adaptable</u> in a new place.\",\n      \"problem_reference\": \"adaptation / adaptive / adaptable\",\n      \"q_sentence\": \"She is <u>adaptable</u> in a new place.\",\n      \"answer\": \"적응을 잘하는, 적응력 있는, 잘 적응하는\",\n      \"derivative_q\": \"adaptable\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"적응할수 있는\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> She has <u>striking</u> eyes.\",\n      \"problem_reference\": \"striking / strikingly / striker\",\n      \"q_sentence\": \"She has <u>striking</u> eyes.\",\n      \"answer\": \"눈에 띄는, 놀라운, 인상적인\",\n      \"derivative_q\": \"striking\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"치명적인\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br>\",\n      \"problem_reference\": \"supposed / supposedly / supposition\",\n      \"q_sentence\": \"\",\n      \"answer\": \"아마도, 소문에 따르면\",\n      \"derivative_q\": \"supposedly\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"뭐지\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> They have a good <u>relationship</u> and help each other.\",\n      \"problem_reference\": \"relation / relationship / related\",\n      \"q_sentence\": \"They have a good <u>relationship</u> and help each other.\",\n      \"answer\": \"관계, 관련성, 연관성\",\n      \"derivative_q\": \"relationship\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"관계\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Only a <u>minority</u> chose the red one.\",\n      \"problem_reference\": \"minority / minorly\",\n      \"q_sentence\": \"Only a <u>minority</u> chose the red one.\",\n      \"answer\": \"소수, 적은 수\",\n      \"derivative_q\": \"minority\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"소수자\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> There is a <u>possibility</u> of rain.\",\n      \"problem_reference\": \"possibly / possibility / impossible\",\n      \"q_sentence\": \"There is a <u>possibility</u> of rain.\",\n      \"answer\": \"가능성\",\n      \"derivative_q\": \"possibility\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"가능성\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> In our class, the <u>majority</u> chose pizza.\",\n      \"problem_reference\": \"majority / majorly\",\n      \"q_sentence\": \"In our class, the <u>majority</u> chose pizza.\",\n      \"answer\": \"대다수\",\n      \"derivative_q\": \"majority\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"대다수\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> He apologized <u>publicly</u>.\",\n      \"problem_reference\": \"publicly / publicity / publicize\",\n      \"q_sentence\": \"He apologized <u>publicly</u>.\",\n      \"answer\": \"공개적으로, 공식적으로\",\n      \"derivative_q\": \"publicly\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"공적으로\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Please respect my <u>privacy</u>.\",\n      \"problem_reference\": \"privacy / privately / privatize\",\n      \"q_sentence\": \"Please respect my <u>privacy</u>.\",\n      \"answer\": \"사생활, 개인정보\",\n      \"derivative_q\": \"privacy\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"프라이버시\",\n      \"correctness\": 0\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "어휘테스트 문항 Configuration"
+      },
+      "Rand_iteration": {
+        "org": "5",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"S-113\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "N_IDX": {
+        "org": "0",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_IDX": {
+        "org": "15",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_IDX": {
+        "org": "22",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Drinking too much soda is <u>unhealthy</u>.\",\n  \"response\": \"건강하지 않은\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> His story is <u>convincing</u>.\",\n  \"response\": \"설득력있는\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Only a <u>minority</u> chose the red one.\",\n  \"response\": \"소수자\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> We will <u>replant</u> the tree.\",\n  \"response\": \"다시 심다\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> She is <u>adaptable</u> in a new place.\",\n  \"response\": \"적응할수 있는\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> There is a <u>possibility</u> of rain.\",\n  \"response\": \"가능성\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> He gave a <u>forceful</u> push.\",\n  \"response\": \"강압적으로\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> She has <u>striking</u> eyes.\",\n  \"response\": \"치명적인\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> In our class, the <u>majority</u> chose pizza.\",\n  \"response\": \"대다수\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This video is not <u>viewable</u> on my phone.\",\n  \"response\": \"보이는\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br>\",\n  \"response\": \"뭐지\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> He apologized <u>publicly</u>.\",\n  \"response\": \"공적으로\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N5": {
+        "org": "{\n  \"id\": \"P_N5\",\n  \"label\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This video is not <u>viewable</u> on my phone.\",\n  \"response\": \"볼 수 있는\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V5": {
+        "org": "{\n  \"id\": \"P_V5\",\n  \"label\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> They have a good <u>relationship</u> and help each other.\",\n  \"response\": \"관계\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ5": {
+        "org": "{\n  \"id\": \"P_ADJ5\",\n  \"label\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Please respect my <u>privacy</u>.\",\n  \"response\": \"프라이버시\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "LLM_FBK": {
+        "org": "{\n  \"Noun\": [\n    \"1. 문장 해석 (번역):  \\n\\\"Drinking too much soda is <u>unhealthy</u>.\\\"는  \\n\\\"탄산음료를 너무 많이 마시는 것은 건강하지 않은 것이다.\\\" 또는  \\n\\\"탄산음료를 너무 많이 마시는 것은 건강에 안좋다.\\\"라고 번역할 수 있습니다.\\n\\n2. 파생어의 기본형(원형):  \\nunhealthy의 기본형은 \\\"healthy\\\"입니다.  \\n\\\"healthy\\\"는 \\\"건강한\\\"이라는 뜻이고, \\\"unhealthy\\\"는 여기에 반대 뜻을 나타내는 접두사 \\\"un-\\\"이 붙어서 \\\"건강하지 않은\\\"이라는 뜻이 됩니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n이 문장에서 \\\"unhealthy\\\"는 형용사로 쓰였습니다.  \\n\\\"Drinking too much soda\\\"는 \\\"탄산음료를 너무 많이 마시는 것\\\"이라는 뜻의 주어 역할을 하고,  \\n\\\"is\\\"는 \\\"~이다\\\"라는 뜻의 동사입니다.  \\n\\\"is\\\" 뒤에는 주어가 어떤 상태인지, 특징이 무엇인지를 설명하는 말(보어)이 와야 합니다.  \\n여기서는 \\\"unhealthy\\\"가 그 역할을 합니다.  \\n즉, \\\"unhealthy\\\"는 \\\"탄산음료를 너무 많이 마시는 것\\\"이 어떤 상태인지(건강하지 않다는 것)를 설명해 주는 형용사입니다.\\n\\n정리하면,  \\n- \\\"unhealthy\\\"는 \\\"healthy\\\"에서 파생된 형용사이고,  \\n- \\\"is\\\" 뒤에 와서 주어의 상태를 설명하는 형용사 자리이기 때문에 \\\"unhealthy\\\"가 쓰였습니다.  \\n- 만약 \\\"healthily\\\"처럼 부사가 오면 문법적으로 맞지 않고, \\\"healthy\\\"는 긍정의 뜻이므로 여기서는 \\\"unhealthy\\\"가 맞는 선택입니다.\",\n    \"1. 문장 해석:  \\n\\\"We will <u>replant</u> the tree.\\\"는 \\\"우리는 그 나무를 다시 심을 것이다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- replant의 기본형은 \\\"plant\\\"입니다. \\\"plant\\\"는 동사로 \\\"심다\\\"라는 뜻입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- \\\"replant\\\"는 \\\"plant\\\" 앞에 \\\"re-\\\"라는 접두사가 붙어서 만들어진 단어입니다.  \\n- \\\"re-\\\"는 \\\"다시\\\"라는 뜻을 더해줍니다. 그래서 \\\"replant\\\"는 \\\"다시 심다\\\"라는 뜻이 됩니다.  \\n- 문장에서 \\\"We will replant the tree.\\\"에서 \\\"replant\\\"는 동사 자리(동사 위치)에 있습니다.  \\n- \\\"will\\\"은 미래를 나타내는 조동사이고, 그 뒤에는 동사의 기본형이 와야 합니다.  \\n- 그래서 \\\"replant\\\"가 동사로 쓰여서 \\\"나무를 다시 심을 것이다\\\"라는 의미가 완성됩니다.\\n\\n요약:  \\n- \\\"replant\\\"는 \\\"plant(심다)\\\"에 \\\"re-(다시)\\\"가 붙어서 \\\"다시 심다\\\"라는 뜻이 됩니다.  \\n- 문장에서 \\\"replant\\\"는 동사로 쓰여서, \\\"will\\\" 뒤에 와서 미래에 다시 심는다는 뜻을 나타냅니다.\",\n    \"1. 문장 해석:  \\nHe gave a <u>forceful</u> push.  \\n→ 그는 <u>강한</u> 밀침을 했다.\\n\\n2. 파생어의 기본형:  \\n- forceful의 기본형은 \\\"force\\\"입니다.  \\n- \\\"force\\\"는 명사로는 \\\"힘, 강제력\\\", 동사로는 \\\"강제로 ~하게 하다\\\"라는 뜻입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- \\\"forceful\\\"은 형용사입니다.  \\n- 형용사는 명사(여기서는 \\\"push\\\")를 꾸며 주는 역할을 합니다.  \\n- \\\"forceful push\\\"에서 \\\"forceful\\\"은 \\\"push(밀침)\\\"가 어떤 밀침인지를 설명해 주는 말이에요.  \\n- 즉, 그냥 밀침이 아니라, \\\"강한\\\" 또는 \\\"힘이 실린\\\" 밀침임을 나타내기 위해 \\\"forceful\\\"이 명사 앞에 쓰인 것입니다.  \\n- 그래서 \\\"forceful\\\"은 \\\"강한, 강력한\\\"이라는 뜻으로, \\\"push\\\"라는 명사를 꾸며 주고 있습니다.\\n\\n요약:  \\n- \\\"forceful\\\"은 \\\"force\\\"에서 파생된 형용사로, 명사(\\\"push\\\")를 꾸며 주기 위해 사용됩니다.  \\n- 이 문장에서 \\\"forceful\\\"은 \\\"강한, 힘이 실린\\\"이라는 뜻으로, 밀침이 얼마나 세게 이루어졌는지 설명해 줍니다.  \\n- 학생 답변인 \\\"강압적으로\\\"는 \\\"forcibly\\\"에 더 가까운 뜻이므로, \\\"forceful\\\"의 정확한 의미는 \\\"강한, 강력한\\\"입니다\",\n    \"1. 문장 해석:  \\n\\\"This video is not <u>viewable</u> on my phone.\\\"  \\n→ \\\"이 동영상은 내 휴대폰에서는 볼 수 없습니다.\\\"  \\n또는  \\n→ \\\"이 동영상은 내 휴대폰에서 시청할 수 없습니다.\\\"\\n\\n2. 파생어의 기본형:  \\n- viewable의 기본형은 \\\"view\\\"입니다.  \\n- \\\"view\\\"는 \\\"보다, 시청하다\\\"라는 뜻의 동사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- \\\"viewable\\\"은 \\\"view\\\"에 \\\"-able\\\"이 붙어서 만들어진 형용사입니다.  \\n- 영어에서 \\\"-able\\\"이 붙으면 \\\"~할 수 있는\\\"이라는 뜻이 돼요.  \\n- 그래서 \\\"viewable\\\"은 \\\"볼 수 있는\\\" 또는 \\\"시청 가능한\\\"이라는 의미가 됩니다.  \\n- 주어진 문장에서는 \\\"This video is not viewable on my phone.\\\"에서 \\\"viewable\\\"이 \\\"video\\\"를 꾸며주는 형용사로 쓰였어요.  \\n- 즉, \\\"이 동영상이 내 휴대폰에서는 볼 수 없다\\\"라는 뜻이 됩니다.  \\n- 만약 \\\"보이는\\\"이라고 해석하면, 그냥 눈에 보인다는 뜻이 돼서, \\\"시청 가능하다\\\"는 의미와는 조금 달라요.  \\n- 여기서 중요한 건, \\\"viewable\\\"이 \\\"볼 수 있다\\\", 즉 \\\"시청 가능하다\\\"라는 뜻으로 쓰였다는 점입니다.\\n\\n요약:  \\n- \\\"viewable\\\"의 기본형은 \\\"view\\\"입니다.  \\n- \\\"viewable\\\"은 \\\"~할 수 있는\\\"이라는 뜻의 형용사로, 여기서는 \\\"볼 수 있는\\\" 또는 \\\"시청 가능한\\\"이라는 뜻이에요.  \\n- 문장에서 \\\"viewable\\\"은 \\\"video\\\"를 꾸며주며, \\\"이 동영상은 내 휴대폰에서는 볼 수 없다\\\"라는 의미가 됩니다.  \\n- \\\"보이는\\\"은 단순히 눈에 보인다는 뜻이고, \\\"viewable\\\"은 \\\"시청 가능하다\\\"라는 뜻이므로, \\\"볼 수 있는\\\"이 더 정확한 해석입니다.\",\n    \"1. 문장 해석:\\n\\\"This video is not <u>viewable</u> on my phone.\\\"는 \\\"이 동영상은 내 휴대폰에서 볼 수 없습니다.\\\" 또는 \\\"이 동영상은 내 휴대폰에서 볼 수 없어요.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:\\n- viewable의 기본형은 \\\"view\\\"입니다.  \\n- \\\"view\\\"는 \\\"보다\\\", \\\"바라보다\\\"라는 뜻의 동사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\\n- \\\"viewable\\\"은 \\\"볼 수 있는\\\"이라는 뜻의 형용사입니다.  \\n- 영어에서 \\\"-able\\\"이 붙으면 \\\"~할 수 있는\\\"이라는 뜻이 돼요. 그래서 \\\"view(보다)\\\" + \\\"able(할 수 있는)\\\" = \\\"viewable(볼 수 있는)\\\"이 됩니다.\\n- 문장 \\\"This video is not viewable on my phone.\\\"에서 \\\"viewable\\\"은 \\\"video(동영상)\\\"를 꾸며주고 있어요. 즉, \\\"어떤 동영상이냐?\\\"라고 물으면 \\\"볼 수 있는 동영상\\\"이라고 설명하는 거죠.\\n- 이 문장에서는 \\\"not\\\"이 있어서 \\\"볼 수 없는\\\"이 됩니다.\\n- 즉, \\\"viewable\\\"은 명사(여기서는 \\\"video\\\")를 꾸며주는 형용사 자리(형용사 위치)에 들어가야 해요.\\n\\n요약:\\n- \\\"viewable\\\"의 기본형은 \\\"view\\\"입니다.\\n- \\\"viewable\\\"은 \\\"~할 수 있는\\\"이라는 뜻의 형용사로, 명사를 꾸며주거나 명사가 어떤 상태인지 설명할 때 써요.\\n- 그래서 \\\"This video is not viewable on my phone.\\\"에서 \\\"viewable\\\"이 들어간 거예요.\"\n  ],\n  \"Verb\": [\n    \"1. 번역: His story is convincing. → 그의 이야기는 설득력있다.\\n\\n2. convincing의 기본형: convince\\n\\n3. 문법적 설명:\\n- \\\"convincing\\\"은 \\\"convince\\\"라는 동사의 현재 분사형입니다.\\n- 이 문장에서 \\\"His story is convincing.\\\"는 \\\"이야기\\\"가 \\\"설득력있다\\\"라는 의미를 전달하기 위해 형용사 역할을 하는 현재 분사형이 사용된 것입니다.\\n- 즉, \\\"convincing\\\"은 \\\"설득력있는\\\"이라는 의미의 형용사로 쓰이기 위해 \\\"convince\\\"라는 동사에서 파생된 형용사 형태입니다.\",\n    \"1. 문장 번역:\\n\\\"She is adaptable in a new place.\\\"는 \\\"그녀는 새로운 곳에 적응력이 있다.\\\" 또는 \\\"그녀는 새로운 곳에 잘 적응한다.\\\"라는 의미입니다.\\n\\n2. adaptable의 기본형:\\n- adaptable의 기본형은 \\\"adapt\\\"입니다. 이 단어는 동사로, \\\"적응하다\\\"라는 의미입니다.\\n\\n3. 왜 이 파생어가 문장에서 사용되었는지 문법적 설명:\\n- 여기서 \\\"adaptable\\\"은 형용사로 쓰였어요.\\n- 문장에서 \\\"She is adaptable in a new place.\\\"는 \\\"그녀는 새로운 곳에 적응력이 있다\\\" 또는 \\\"적응할 수 있다\\\"라는 의미를 전달하기 위해서입니다.\\n- \\\"adaptable\\\"은 \\\"적응할 수 있는\\\" 또는 \\\"적응력이 있는\\\"이라는 의미를 갖는 형용사로, 그녀가 적응하는 능력이 있다는 것을 나타내기 위해 사용됩니다.\\n- 즉, \\\"적응할 수 있는\\\"이라는 의미를 갖는 형용사가 문장에서 그녀의 능력이나 성격을 설명하는 데 쓰인 것이죠.\",\n    \"1. 문장 해석:  \\n\\\"She has striking eyes.\\\"는 \\\"그녀는 눈이 눈에 띄는/인상적인 눈을 가지고 있다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- striking의 기본형은 \\\"strike\\\"입니다.  \\n- \\\"strike\\\"는 동사로, \\\"치다\\\" 또는 \\\"때리다\\\"라는 의미입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"striking\\\"은 형용사로 쓰였어요.  \\n- 형용사 \\\"striking\\\"은 \\\"strike\\\"라는 동사에서 파생된 것으로, \\\"눈에 띄거나 인상적이다\\\"라는 의미를 나타내기 위해 형용사 형태로 바뀌었습니다.  \\n- 문장에서 \\\"striking\\\"은 \\\"eyes\\\"를 수식하는 형용사이기 때문에, 눈이 얼마나 인상적이거나 눈에 띄는지를 설명하는 역할을 합니다.  \\n- 즉, \\\"striking\\\"은 \\\"눈에 띄는\\\" 또는 \\\"인상적인\\\"이라는 의미를 전달하기 위해 형용사로 사용된 것입니다.  \\n\\n요약:  \\n- \\\"strike\\\"라는 동사에서 \\\"striking\\\"이라는 형용사로 변형되어, \\\"눈에 띄는\\\" 또는 \\\"놀라운\\\"이라는 의미를 전달합니다.\",\n    \"1. 문장 해석:\\n\\\"아마도, 소문에 따르면\\\"은 \\\"supposedly\\\"라는 의미입니다.\\n\\n2. 파생어의 기본형:\\n- supposed의 기본형은 \\\"suppose\\\"입니다. 이 단어는 동사로, \\\"생각하다\\\" 또는 \\\"가정하다\\\"라는 의미입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\\n- 여기서 \\\"supposedly\\\"는 부사로 사용되어, \\\"아마도\\\" 또는 \\\"소문에 따르면\\\"이라는 의미를 전달합니다.\\n- \\\"Supposedly\\\"는 \\\"suppose\\\"라는 동사의 부사형으로, 어떤 사실이 확실하지 않거나 추측일 때 쓰입니다.\\n- 문장에서 \\\"supposedly\\\"는 전체 문장의 의미를 부드럽게 하거나, 확실하지 않은 정보를 전달하는 역할을 합니다.\\n- 즉, \\\"supposedly\\\"는 \\\"아마도\\\"라는 의미를 더 자연스럽고 부드럽게 표현하기 위해 문장 앞이나 가운데에 위치하며, 이 부사가 뒤따르는 내용을 추측이나 소문임을 나타냅니다.\",\n    \"1. 문장 해석:  \\n\\\"They have a good *relationship* and help each other.\\\"는 \\\"그들은 좋은 관계를 맺고 서로 도와준다.\\\"라는 의미입니다.\\n\\n2. 기본형:  \\n- \\\"relationship\\\"의 기본형은 \\\"relationship\\\"입니다. 이 단어는 명사로, 사람들 사이의 관계나 연관성을 의미합니다.\\n\\n3. 문법적 설명:  \\n- 이 문장에서 밑줄 친 단어 \\\"relationship\\\"은 명사입니다.  \\n- \\\"relationship\\\"은 \\\"relation\\\"의 파생어로, 둘 다 '관계'라는 의미를 갖고 있습니다.  \\n- \\\"relationship\\\"은 특히 사람이나 사물 간의 친밀한 관계나 연관성을 나타낼 때 자주 쓰입니다.  \\n- 문장에서 \\\"relationship\\\"이 쓰인 이유는, 두 사람 또는 대상 사이의 관계를 나타내기 위해서입니다.  \\n- \\\"relationship\\\"이 명사로서 문장에서 주어 또는 목적어 역할을 하며, 두 대상 간의 관계를 설명하는 핵심 단어입니다.\"\n  ],\n  \"Adjective\": [\n    \"1. 문장 해석:\\n\\\"Only a <u>minority</u> chose the red one.\\\"는 \\\"오직 소수만이 빨간 것을 선택했다.\\\" 또는 \\\"오직 적은 수의 사람들이 빨간 것을 선택했다.\\\"라고 번역할 수 있습니다.\\n\\n2. 파생어의 기본형:\\n- minority의 기본형은 \\\"minor\\\"입니다. \\\"minor\\\"는 \\\"작은\\\" 또는 \\\"적은\\\"이라는 뜻의 형용사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\\n- 여기서 \\\"minority\\\"는 명사로 쓰였습니다.\\n- \\\"minority\\\"는 \\\"전체 중에서 적은 수\\\" 또는 \\\"소수\\\"라는 뜻입니다.\\n- 문장에서 \\\"Only a minority\\\"는 \\\"오직 소수만이\\\"라는 의미로, \\\"minority\\\"가 \\\"적은 수의 사람들\\\"을 가리키고 있습니다.\\n- \\\"minority\\\"는 명사이기 때문에, \\\"a minority\\\"처럼 앞에 관사(a)가 붙어서 \\\"한 집단\\\"을 나타냅니다.\\n- 만약 \\\"minority\\\" 대신 \\\"minor\\\"를 쓴다면, \\\"minor\\\"는 형용사이기 때문에 명사처럼 쓸 수 없습니다.\\n- \\\"minority\\\"는 \\\"minor(적은)\\\"에 명사형 어미 \\\"-ity\\\"가 붙어서 \\\"적은 것, 소수\\\"라는 뜻이 된 것입니다.\\n- 그래서 \\\"Only a minority\\\"는 \\\"오직 소수(적은 수의 사람들)만이\\\"라는 뜻이 되어, 문장에서 \\\"누가?\\\"라는 주어 역할을 합니다.\\n\\n요약:\\n- \\\"minority\\\"는 \\\"minor(적은)\\\"에 \\\"-ity\\\"가 붙어 \\\"소수, 적은 수\\\"라는 뜻의 명사가 되었습니다.\\n- 문장에서 \\\"a minority\\\"는 \\\"적은 수의 사람들\\\"을 가리키며, 주어로 쓰입니다.\\n- \\\"소수자\\\"는 \\\"minority\\\"의 또 다른 뜻이긴 하지만, 이 문장에서는 단순히 \\\"적은 수\\\" 또는 \\\"소수\\\"라는 의미로 쓰였습니다.\",\n    \"1. 문장 해석:  \\n\\\"There is a <u>possibility</u> of rain.\\\"는 \\\"비가 올 <u>가능성</u>이 있다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\npossibility의 기본형은 \\\"possible\\\"입니다. \\\"possible\\\"은 \\\"가능한\\\"이라는 뜻의 형용사이고, 여기에 명사형 어미 \\\"-ity\\\"가 붙어서 \\\"possibility(가능성)\\\"가 됩니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"possibility\\\"는 명사입니다.  \\n- \\\"There is a possibility of rain.\\\"에서 \\\"possibility\\\"는 \\\"비가 올 가능성\\\"이라는 뜻으로, 문장에서 주어 역할을 합니다.  \\n- 영어에서 \\\"There is ~\\\" 구조는 \\\"~이 있다\\\"라는 뜻을 만들 때 자주 쓰입니다. 이때 \\\"~\\\" 자리에 명사가 들어가야 자연스러운 문장이 됩니다.  \\n- 만약 \\\"possible\\\"을 쓰면 \\\"There is a possible of rain.\\\"처럼 되는데, \\\"possible\\\"은 형용사라서 명사 자리에 올 수 없습니다.  \\n- 그래서 \\\"possibility\\\"라는 명사형이 필요하고, 이 단어가 들어가야 문장이 올바른 구조가 됩니다.\\n\\n요약:  \\n- \\\"possibility\\\"는 \\\"possible\\\"의 명사형으로, \\\"가능성\\\"이라는 뜻입니다.  \\n- \\\"There is a possibility of rain.\\\"에서 \\\"possibility\\\"는 명사 자리(주어 역할)에 들어가서, \\\"비가 올 가능성\\\"이라는 뜻을 완성합니다.  \\n- 따라서 이 문장에서는 \\\"possibility\\\"라는 명사형이 꼭 필요합니다.\",\n    \"1. 문장 해석:  \\n\\\"In our class, the <u>majority</u> chose pizza.\\\"는  \\n\\\"우리 반에서는 <u>대다수</u>가 피자를 선택했다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- majority의 기본형은 \\\"major\\\"입니다.  \\n  \\\"major\\\"는 \\\"더 큰\\\", \\\"주요한\\\"이라는 뜻의 형용사이고, 여기서 \\\"majority\\\"는 \\\"대다수\\\"라는 뜻의 명사로 파생되었습니다.\\n\\n3. 왜 해당 파생어(majority)가 들어갔는지 문법적 설명:  \\n- 주어진 문장에서 \\\"the majority\\\"는 명사로 쓰였습니다.  \\n- \\\"majority\\\"는 \\\"대부분\\\" 또는 \\\"대다수\\\"라는 뜻으로, 어떤 집단에서 가장 많은 수를 차지하는 사람들을 가리킬 때 사용합니다.  \\n- \\\"the majority\\\"는 영어에서 \\\"most people\\\" 또는 \\\"most of us\\\"와 비슷한 의미로, 집단 안에서 수가 가장 많은 쪽을 말합니다.  \\n- 이 문장에서 \\\"the majority\\\"는 \\\"우리 반에서 피자를 고른 사람들 중 가장 많은 수\\\"를 의미합니다.  \\n- 그래서 \\\"majority\\\"라는 명사형 파생어가 들어가야, \\\"가장 많은 사람들\\\"이라는 뜻이 자연스럽게 전달됩니다.\\n\\n요약:  \\n- \\\"majority\\\"는 \\\"major\\\"에서 파생된 명사로, \\\"대다수\\\"라는 뜻입니다.  \\n- 문장에서 \\\"the majority\\\"는 명사 자리(주어)에 쓰여, \\\"우리 반에서 가장 많은 사람들\\\"이라는 의미를 나타냅니다.  \\n- 그래서 \\\"majority\\\"라는 단어가 이 문장에 들어가야 자연스럽게 \\\"대다수\\\"라는 뜻이 됩니다.\",\n    \"1. 문장 해석  \\nHe apologized <u>publicly</u>.  \\n→ 그는 공개적으로 사과했다.\\n\\n2. publicly의 기본형  \\n- publicly의 기본형은 \\\"public\\\"입니다.  \\n- \\\"public\\\"은 형용사로 \\\"공공의, 대중의\\\"라는 뜻입니다.\\n\\n3. 왜 이 파생어가 들어갔는지 문법적 설명  \\n- 주어진 문장에서 \\\"publicly\\\"는 \\\"apologized\\\"라는 동사를 꾸며주는 부사입니다.  \\n- \\\"publicly\\\"는 \\\"공개적으로, 공식적으로\\\"라는 뜻의 부사로, \\\"어떻게 사과했는가?\\\"를 설명해줍니다.  \\n- 영어에서 동사의 행동이 어떻게 일어났는지 더 자세히 알려주고 싶을 때, 동사 뒤에 부사를 사용합니다.  \\n- 이 문장에서는 \\\"apologized\\\"가 \\\"사과했다\\\"는 뜻이고, \\\"publicly\\\"가 \\\"공개적으로\\\"라는 의미를 더해줍니다.  \\n- 그래서 \\\"publicly\\\"는 동사의 행동(사과하다)이 이루어진 방식을 설명하는 부사 자리(부사 위치)에 들어간 것입니다.\\n\\n요약  \\n- \\\"publicly\\\"는 \\\"공개적으로, 공식적으로\\\"라는 뜻의 부사입니다.  \\n- 이 단어는 동사 \\\"apologized\\\"를 꾸며주기 위해 사용되었고, \\\"어떻게 사과했는가?\\\"를 알려줍니다.  \\n- 그래서 문장에서 \\\"publicly\\\"는 부사로서 동사의 행동 방식을 설명하는 역할을 합니다.  \\n- 학생 답안의 \\\"공적으로\\\"도 비슷한 뜻이지만, \\\"공개적으로\\\"가 더 정확한 우리말 번역입니다.\",\n    \"1. 문장 해석 (Please respect my <u>privacy</u>.의 한국어 번역):\\n\\\"Please respect my <u>privacy</u>.\\\"는 \\\"제발 내 <u>사생활</u>을 존중해 주세요.\\\" 또는 \\\"제발 내 <u>개인정보</u>를 존중해 주세요.\\\"라고 번역할 수 있습니다.\\n\\n2. 파생어의 기본형:\\n- privacy의 기본형은 \\\"private\\\"입니다.\\n- \\\"privacy\\\"는 \\\"private\\\"에서 파생된 명사로, \\\"사적인 상태\\\" 또는 \\\"남에게 공개되지 않은 상태\\\"를 뜻합니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\\n- \\\"privacy\\\"는 명사입니다. 즉, 어떤 상태나 개념(여기서는 '사생활' 또는 '개인정보')을 나타냅니다.\\n- 문장 \\\"Please respect my privacy.\\\"에서 \\\"privacy\\\"는 \\\"my\\\"의 소유를 받는 명사로 쓰이고 있습니다. \\\"my privacy\\\"는 \\\"나의 사생활\\\"이라는 뜻이 됩니다.\\n- \\\"respect\\\"는 동사로, \\\"~을 존중하다\\\"라는 뜻입니다. 그래서 \\\"respect my privacy\\\"는 \\\"나의 사생활을 존중하다\\\"가 됩니다.\\n- 여기서 \\\"privacy\\\"가 들어간 이유는, \\\"나의 사적인 영역\\\"이나 \\\"남에게 공개하고 싶지 않은 부분\\\"을 지칭하는 명사로서, 동사 \\\"respect\\\"의 목적어(무엇을 존중지 역할을 하기 때문입니다.\\n\\n요약:\\n- \\\"privacy\\\"는 \\\"private\\\"에서 파생된 명사로, '사생활'이나 '개인정보'를 뜻합니다.\\n- 문장에서는 동사 \\\"respect\\\"의 목적어로 쓰여, \\\"나의 사생활/개인정보를 존중해 주세요\\\"라는 뜻이 됩니다.\\n- \\\"privacy\\\"가 명사이기 때문에, \\\"my\\\"와 함께 \\\"my privacy\\\"로 쓰여서, \\\"나의 사생활\\\"이라는 의미를 정확히 전달합니다.\"\n  ]\n}",
+        "cond": "",
+        "desc": "LLM Feedback Accumulator"
+      },
+      "DRV_N": {
+        "org": "disadvantage / advantageous / disadvantageous|recharge / charged / charger|contractual / contractor / subcontract|criminal / criminology / criminally|recycle / recycling / cyclist|elementary / elemental / elementally|forceful / forcibly / reinforce|healthy / unhealthy / healthily|identify / identification / identical|interested / interesting / interestingly|objective / objectively / objection|official / officially / officer|orderly / ordered / disorder|peaceful / peacefully / pacify|planting / planter / replant|practical / practically / practitioner|qualify / qualification / qualified|reasonable / reasonably / unreasonable|recorded / recording / prerecorded|scaled / scalable / scaling|sensible / sensitive / senseless|stressful / stressed / distress|subjective / subjectively / subjectivity|terminal/ terminate / termination/ terminology|review / viewer / viewable",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_NQ": {
+        "org": "advantageous|charger|contractor|criminal|recycling|elementary|forceful|unhealthy|identification|interesting|objection|official|disorder|peaceful|replant|practical|qualified|unreasonable|recording|scaled|senseless|stressed|subjective|terminal|viewable",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ANS_N": {
+        "org": "유리한, 이익이 되는|충전기|시공업자, 도급업자|범죄자, 범인, 죄지은 사람|재활용|기초적인|강한, 강력한, 강제적인|건강에 해로운, 건강에 안좋은, 건강하지 않은|신분증, 신원 확인|흥미로운|반대, 이의|공식적인|무질서, 혼란, 어지러움|평화로운, 평온한|다시 심다|실용적인, 유용한|자격이 있는|불합리한, 무리한, 비이성적인, 합리적이지 않은|녹음, 녹음한 것, 녹음파일|크기가 조정된, 줄인|어리석은, 의미없는, 부질없는, 무의미한|스트레스 받은, 스트레스 받는, 힘든|주관적인|정류장, 터미널|볼 수 있는, 시청가능한",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "PRM_N": {
+        "org": "This is <u>advantageous</u> for us.|I need a <u>charger</u> to turn on my phone.|The <u>contractor</u> fixed my roof.|He is a <u>criminal</u>.|<u>Recycling</u> is good.|This is an <u>elementary</u> question for beginners.|He gave a <u>forceful</u> push.|Drinking too much soda is <u>unhealthy</u>.|Show your <u>identification</u>, please.|I read a very <u>interesting</u> book.|I have an <u>objection</u>.|This is an <u>official letter</u>.|The room is in <u>disorder</u>.|The park is <u>peaceful</u>.|We will <u>replant</u> the tree.|This is a <u>practical</u> idea.|She is <u>qualified</u> for the job.|That price is <u>unreasonable</u>.|I listened to the <u>recording</u>.|The picture was <u>scaled</u> down.|That fight was <u>senseless</u>.|I feel <u>stressed</u> today.|Beauty is <u>subjective</u>. |The new bus <u>terminal</u> is being built in our city.|This video is not <u>viewable</u> on my phone.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_V": {
+        "org": "adaptation / adaptive / adaptable|affective / affection / affectionate|appealing / unappealing/ appealingly|argument / argumentative / arguably|confirmation / reconfirm / confirmatory|convincing / convincingly / conviction|definition / definite / definitely|division / divisible / indivisible|escapee / escaping / inescapable|establishment / established / reestablish|government / governor / governmental|meaning / meaningful / meaningless|pronunciation / pronounced / mispronounce|reference / referral / referee|relation / relationship / related|reporter/ reporting|representation / representative / misrepresent|requirement / required / prerequisite|response / respondent / responsive|signature / significant / signify|striking / strikingly / striker|success / successful / successfully|suitable / suitability / suited|supposed / supposedly / supposition",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_VQ": {
+        "org": "adaptable|affection|unappealing|argument|confirmation|convincing|definition|divisible|inescapable|reestablish|government|meaningless|mispronounce|referee|relationship|reporter|representative|requirement|response|signature|striking|successful|suitable|supposedly",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ANS_V": {
+        "org": "적응을 잘하는, 적응력 있는, 잘 적응하는 |애정|매력이 없는, 먹고 싶지 않은, 식욕이 나지 않는|논쟁, 말다툼, 토론|확인서, 확정|설득력있는, 그럴듯한|정의, 개념, 뜻 풀이|나눌 수 있는, 나누어 떨어지는|피할 수 없는|다시 세우다, 재정립하다|정부|의미 없는, 무의미한|발음을 잘못하다, 발음을 틀리다, 잘못 발음하다|심판|관계, 관련성, 연관성|기자, 방송기자, 신문기자, 언론 기자|대표자, 대표|요구사항, 필수 조건|응답, 답변, 대답, 반응|서명|눈에 띄는, 놀라운, 인상적인|성공한, 성공적인|적합한, 알맞은, 적절한|아마도, 소문에 따르면",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "PRM_V": {
+        "org": "She is <u>adaptable</u> in a new place.|He showed <u>affection</u> by giving his mom a hug.|The food looks <u>unappealing</u> because of its strange color.|They had an <u>argument</u> about money.|I got a <u>confirmation</u> email.|His story is <u>convincing</u>.|What is the <u>definition</u> of this word?|Ten is <u>divisible</u> by two|Death is certain. It is <u>inescapable</u> for all.|After the fight, <u>they reestablish</u> their friendship.|They run the country. They are the <u>government</u>.|This fight is <u>meaningless</u>.|This word is hard to say. I <u>mispronounce</u> it. |The <u>referee</u> stopped the game.|They have a good <u>relationship</u> and help each other.|The <u>reporter</u> asked me a question.|We chose a new <u>representative</u>.|This is a <u>requirement</u>.|I got a <u>response</u>.|Write your <u>signature</u> here.|She has <u>striking</u> eyes.|I got an A. The test was <u>successful</u>.|This is <u>suitable</u> for kids.|He is <u>supposedly</u> sick according to his friends.|",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_ADJ": {
+        "org": "ability / unable / enable / disable|absolutely / absoluteness|awareness / unaware|clearly / clarify / clarification|completely / completion / incomplete|complexity / complexly|constantly / constancy / inconstant|correctly / correction / incorrect|directly / direction / indirect|equality / unequal / inequality |extremely / extremity / extremist|finally / finalize |generally / generalize / generalization|illegal / legally / legalization|majority / majorly|minority / minorly|modernize / modernization / modernity|necessarily / necessity / unnecessary|perfectly / perfection / imperfect|possibly / possibility / impossible|popularity / unpopular / popularization|privacy / privately / privatize|publicly / publicity / publicize|responsibility / responsibly / irresponsible|specifically / specify / specification",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_ADJQ": {
+        "org": "ability|absolutely|awareness|clarify|incomplete|complexity|constantly|incorrect|indirect|inequality|extremely|finally|generalize|illegal|majority|minority|modernize|unnecessary|imperfect|possibility|popularity|privacy|publicly|irresponsible|specify",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ANS_ADJ": {
+        "org": "능력|전적으로, 완전히|인식, 의식|분명히 하다, 명확히 하다|불완전한, 미완성의|복잡함|끊임없이, 계속|틀린|간접적인, 직접적이지 않은|불평등|매우, 극도로, 심히|마침내, 결국, 끝내|일반화하다|불법의|대다수|소수, 적은 수|현대화|불필요한|완벽하지 않은, 불완전한|가능성|인기|사생활, 개인정보|공개적으로, 공식적으로|무책임한|구체적으로 말하다, 명시하다, 구체화하다, 자세히 말하다. 분명히 말하다",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "PRM_ADJ": {
+        "org": "He has the <u>ability</u> to swim.|I <u>absolutely</u> agree.|The class raised <u>awareness</u> of safety.|Please <u>clarify</u> your answer.|This form is <u>incomplete</u>.|I don’t like the <u>complexity</u> of this plan.|The baby cries <u>constantly</u>.|3 plus 4 is 7, not 8. Your answer is <u>incorrect</u>. |His reply was <u>indirect</u>.|People talk about <u>inequality</u> between rich and poor.|The north pole is <u>extremely</u> cold.|He tried many times, and he <u>finally</u> won.|Don’t <u>generalize</u> about people.|Stealing is <u>illegal</u>.|In our class, the <u>majority</u> chose pizza.|Only a <u>minority</u> chose the red one.|Our office is too old. We need to <u>modernize</u> it. |We have finished this. More work is <u>unnecessary</u>.|I forgot some parts. My memory is <u>imperfect</u>.|There is a <u>possibility</u> of rain.|His <u>popularity</u> is high.|Please respect my <u>privacy</u>.|He apologized <u>publicly</u>.|It was <u>irresponsible</u> to drive so fast.|Don't just say later. Please <u>specify</u> the time.",
+        "cond": "SELF",
+        "desc": ""
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@TEXT(ID, \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/틀리면 turn 2, 맞으면 turn 4\n@JUMP(@MAP(\"@TEXT(ID)@\", \"@Identification@\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"3*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@SET(N_IDX, \"@INDEX(\"@PRM_N@\", \"@PRM_N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@PRM_V@\", \"@PRM_V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@PRM_ADJ@\", \"@PRM_ADJ[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문항 JSON 셋업\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].problem_reference, \"@DRV_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@ANS_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].derivative_q, \"@DRV_NQ[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].q_sentence, \"@PRM_N[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].problem_reference, \"@DRV_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@ANS_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].derivative_q, \"@DRV_VQ[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].q_sentence, \"@PRM_V[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].problem_reference, \"@DRV_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ANS_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].derivative_q, \"@DRV_ADJQ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].q_sentence, \"@PRM_ADJ[@ADJ_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Noun\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ noun question input\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n1. Noun\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Noun[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Noun[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Noun[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Noun[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Noun[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n- student answer: @JSON_test_config.Noun[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ llm feedback update: noun\n@UPJ(LLM_FBK.Noun[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Verb\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ verb question input\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "// automatic scoring\n2. Verb\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Verb[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Verb[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Verb[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Verb[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Verb[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n- student answer: @JSON_test_config.Verb[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ update llm feedback:verb\n@UPJ(LLM_FBK.Verb[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Verb\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@TEXT(P_ADJ@R_i@,\n\"@JSON_test_config.Adjective[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "//\n3. Adjective\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Adjective[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Adjective[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Adjective[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Adjective[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Adjective[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n- student answer: @JSON_test_config.Adjective[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/llm feedback update: adjective\n@UPJ(LLM_FBK.Adjective[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//Adjust Final Score; Cumulative score and due to CAFA indexing issue\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// Final Report\n명사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Noun@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n\n동사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Verb@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n\n형용사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Adjective@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/다음 인풋을 위한 점수 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

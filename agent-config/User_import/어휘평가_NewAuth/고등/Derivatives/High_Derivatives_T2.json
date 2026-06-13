@@ -1,0 +1,509 @@
+{
+  "options": {
+    "title": "<h1>고등학교 파생어_중급</h1>",
+    "brief": "",
+    "name": "[Updated] 고등학교 파생어_중급",
+    "description": "고등학교 수준 어휘 75개를 바탕으로 파생어에 대한 중급 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다. \n",
+    "greeting": "주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오\n. \n\n<br>\n(예시) This offer is <u>conditional</u>. ---> 뜻: 조건부의 (<u>conditional</u>)<br>\n파생어: conditional / conditionally / conditioned",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": "문항 구글 시트 ID (메모리 참조 주소)"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> License <u>issuance</u> takes time.\",\n      \"problem_reference\": \"issuance / issuer / issueless\",\n      \"q_sentence\": \"License <u>issuance</u> takes time.\",\n      \"answer\": \"발행\",\n      \"derivative_q\": \"issuance\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"발급\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The river forms the <u>boundary</u> between the two cities.\",\n      \"problem_reference\": \"boundary\",\n      \"q_sentence\": \"The river forms the <u>boundary</u> between the two cities.\",\n      \"answer\": \"경계, 한계\",\n      \"derivative_q\": \"boundary\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"경계\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> <u>Prospective</u> students visited campus.\",\n      \"problem_reference\": \"prospective / prospecting\",\n      \"q_sentence\": \"<u>Prospective</u> students visited campus.\",\n      \"answer\": \"장래의, 예상되는\",\n      \"derivative_q\": \"prospective\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"가능성있는\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This movie is <u>currently</u> the most popular one.\",\n      \"problem_reference\": \"currency / currently\",\n      \"q_sentence\": \"This movie is <u>currently</u> the most popular one.\",\n      \"answer\": \"현재, 지금\",\n      \"derivative_q\": \"currently\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"현재\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The process was fair and <u>democratic</u>.\",\n      \"problem_reference\": \"democratic / democrat / democratize\",\n      \"q_sentence\": \"The process was fair and <u>democratic</u>.\",\n      \"answer\": \"민주적인\",\n      \"derivative_q\": \"democratic\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"민주적인\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>publisher</u> released the new book.\",\n      \"problem_reference\": \"publication / publisher\",\n      \"q_sentence\": \"The <u>publisher</u> released the new book.\",\n      \"answer\": \"출판사\",\n      \"derivative_q\": \"publisher\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"발행자\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>removal</u> of trash keeps the park clean.\",\n      \"problem_reference\": \"removal / removable\",\n      \"q_sentence\": \"The <u>removal</u> of trash keeps the park clean.\",\n      \"answer\": \"제거\",\n      \"derivative_q\": \"removal\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"제거\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>declaration</u> was official.\",\n      \"problem_reference\": \"declaration / declarative / declarable\",\n      \"q_sentence\": \"The <u>declaration</u> was official.\",\n      \"answer\": \"선언\",\n      \"derivative_q\": \"declaration\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"선언\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Technology drives <u>evolution</u>.\",\n      \"problem_reference\": \"evolution / evolutionary / evolvement\",\n      \"q_sentence\": \"Technology drives <u>evolution</u>.\",\n      \"answer\": \"진화, 발전\",\n      \"derivative_q\": \"evolution\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"진화\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>publisher</u> released the new book.\",\n      \"problem_reference\": \"publication / publisher\",\n      \"q_sentence\": \"The <u>publisher</u> released the new book.\",\n      \"answer\": \"출판사\",\n      \"derivative_q\": \"publisher\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"출판사\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The article contained <u>falsehoods</u>.\",\n      \"problem_reference\": \"falsify / falsehood / falsity\",\n      \"q_sentence\": \"The article contained <u>falsehoods</u>.\",\n      \"answer\": \"거짓말, 허위진술\",\n      \"derivative_q\": \"falsehood\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"가짜\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> <u>Ideally</u>, the weather will be sunny.\",\n      \"problem_reference\": \"idealistic / ideally\",\n      \"q_sentence\": \"<u>Ideally</u>, the weather will be sunny.\",\n      \"answer\": \"이상적으로\",\n      \"derivative_q\": \"ideally\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"이상적으로\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The article contained <u>falsehoods</u>.\",\n      \"problem_reference\": \"falsify / falsehood / falsity\",\n      \"q_sentence\": \"The article contained <u>falsehoods</u>.\",\n      \"answer\": \"거짓말, 허위진술\",\n      \"derivative_q\": \"falsehood\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"가짜의\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> He measured it <u>accurately</u>.\",\n      \"problem_reference\": \"accuracy / accurately\",\n      \"q_sentence\": \"He measured it <u>accurately</u>.\",\n      \"answer\": \"정확하게\",\n      \"derivative_q\": \"accurately\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"정확하게\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> <u>Ideally</u>, the weather will be sunny.\",\n      \"problem_reference\": \"idealistic / ideally\",\n      \"q_sentence\": \"<u>Ideally</u>, the weather will be sunny.\",\n      \"answer\": \"이상적으로\",\n      \"derivative_q\": \"ideally\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"이상적으로\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "어휘테스트 문항 Configuration"
+      },
+      "Rand_iteration": {
+        "org": "5",
+        "cond": "SELF",
+        "desc": "1회분 문항 반복 수 (turn 0에서 @N(2,5)@로 랜덤 생성)"
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"26001\"\n}",
+        "cond": "",
+        "desc": "학생이 입력하는 일련번호 (인증 입력값)"
+      },
+      "N_IDX": {
+        "org": "6",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "V_IDX": {
+        "org": "22",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "ADJ_IDX": {
+        "org": "21",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> License <u>issuance</u> takes time.\",\n  \"response\": \"발급\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>publisher</u> released the new book.\",\n  \"response\": \"발행자\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The article contained <u>falsehoods</u>.\",\n  \"response\": \"가짜\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The river forms the <u>boundary</u> between the two cities.\",\n  \"response\": \"경계\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>removal</u> of trash keeps the park clean.\",\n  \"response\": \"제거\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> <u>Ideally</u>, the weather will be sunny.\",\n  \"response\": \"이상적으로\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> <u>Prospective</u> students visited campus.\",\n  \"response\": \"가능성있는\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>declaration</u> was official.\",\n  \"response\": \"선언\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The article contained <u>falsehoods</u>.\",\n  \"response\": \"가짜의\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This movie is <u>currently</u> the most popular one.\",\n  \"response\": \"현재\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Technology drives <u>evolution</u>.\",\n  \"response\": \"진화\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> He measured it <u>accurately</u>.\",\n  \"response\": \"정확하게\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_N5": {
+        "org": "{\n  \"id\": \"P_N5\",\n  \"label\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The process was fair and <u>democratic</u>.\",\n  \"response\": \"민주적인\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 5번 문항 객체 (질문·선택지)"
+      },
+      "P_V5": {
+        "org": "{\n  \"id\": \"P_V5\",\n  \"label\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The <u>publisher</u> released the new book.\",\n  \"response\": \"출판사\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 5번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ5": {
+        "org": "{\n  \"id\": \"P_ADJ5\",\n  \"label\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> <u>Ideally</u>, the weather will be sunny.\",\n  \"response\": \"이상적으로\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 5번 문항 객체 (질문·선택지)"
+      },
+      "DRV_N": {
+        "org": "academic / academical / academia|administration / administrative / administrator|borderline / borderless|boundary|currency / currently|democratic / democrat / democratize|effective / effectively / effectiveness|identify / identical / identification|impactful|issuance / issuer / issueless|mediate / mediation / median|messenger|mining / miner / mineral|problematic|prospective / prospecting|ruling / ruler|symbolic / symbolize / symbolism|valuable / valuate / valuation",
+        "cond": "SELF",
+        "desc": "명사(Noun) 파생어 보기 풀"
+      },
+      "DRV_NQ": {
+        "org": "acedemic|administration|borderless|boundary|currently|democratic|effective|identical|impactful|issuance|mediate|messenger|miner|problematic|prospective|ruler|symbolic|valuable",
+        "cond": "SELF",
+        "desc": "명사(Noun) 파생어 질문(보기 문장) 풀"
+      },
+      "ANS_N": {
+        "org": "학문의, 학구적인|관리, 행정, 정부|국경 없는, 경계가 없는|경계, 한계|현재, 지금|민주적인|효과적인|동일한|영향력 있는|발행|중재하다|전달자, 메신저|광부|문제가 있는|장래의, 예상되는|통치자|상징적인|가치 있는",
+        "cond": "SELF",
+        "desc": "명사(Noun) 정답 풀"
+      },
+      "PRM_N": {
+        "org": "She has an <u>academic</u> background in psychology.|The school <u>administration</u> changed the new school policy.|We are living in a <u>borderless</u> world thanks to the internet.|The river forms the <u>boundary</u> between the two cities.|This movie is <u>currently</u> the most popular one.|The process was fair and <u>democratic</u>.|This method is highly <u>effective</u>.|The twins look <u>identical</u>.|She gave an <u>impactful</u> presentation.|License <u>issuance</u> takes time.|She tried to <u>mediate</u> the conflict.|She works as a <u>messenger</u>.|The <u>miner</u> worked underground.|The data is <u>problematic</u>.|<u>Prospective</u> students visited campus.|The king was a strict <u>ruler</u>.|Flowers have <u>symbolic</u> meaning.|Experience is <u>valuable</u>.",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "DRV_V": {
+        "org": "absorption / absorbent / absorptive|adjustment / adjustable|approval / approver|commitment / commission|conductor / conduction / conductive|conclusion / conclusive / conclusively|confession|declaration / declarative / declarable|declination|deletion / deletable|distinction / distinctive|distribution / distributor / distributive|elimination / eliminative / eliminatory|evolution / evolutionary / evolvement|exhibition / exhibitor / exhibitory|exploration / exploratory / explorer|implemental / implementer|implication / implicit / implicitly|integration / integrative|interpretation / interpreter / interpretative|permission / permissive|publication / publisher|rejection / rejective|removal / removable",
+        "cond": "SELF",
+        "desc": "동사(Verb) 파생어 보기 풀"
+      },
+      "DRV_VQ": {
+        "org": "absorption|adjustable|approval|commitment|conductor|conclusion|confession|declaration|declination|deletion|distinction|distribution|elimination|evolution|exhibition|explorer|implemental|implicitly|integration|interpreter|permission|publisher|rejection|removal",
+        "cond": "SELF",
+        "desc": "동사(Verb) 파생어 질문(보기 문장) 풀"
+      },
+      "ANS_V": {
+        "org": "흡수력, 몰입|조절 가능한|승인|헌신, 약속|지휘자|결론|고백|선언|감소|삭제|구별, 차이|분배, 유통|제거|진화, 발전|전시회|탐험가|도구의|암묵적으로|통합|통역사, 해석자|허가, 허락|출판사|거절|제거",
+        "cond": "SELF",
+        "desc": "동사(Verb) 정답 풀"
+      },
+      "PRM_V": {
+        "org": "This sponge has amazing water <u>absorption</u>.|The chair is <u>adjustable</u>.|The plan got final <u>approval</u> yesterday.|This role requires <u>commitment</u>.|The <u>conductor</u> led the orchestra.|The <u>conclusion</u> was clear.|He made a <u>confession</u>.|The <u>declaration</u> was official.|The report shows a <u>declination</u> in sales.|Please confirm the <u>deletion</u> of this message.|There’s a clear <u>distinction</u> between fact and opinion. |Food <u>distribution</u> began.|Waste <u>elimination</u> is key.|Technology drives <u>evolution</u>.|The art <u>exhibition</u> opened.|Early <u>explorers</u> traveled far.|This tool has an <u>implemental</u> function.|He <u>implicitly</u> agreed.|Teamwork leads to better <u>integration</u>.|The <u>interpreter</u> translated.|You cannot enter this room without <u>permission</u>.|The <u>publisher</u> released the new book.|He felt sad after the <u>rejection</u>.|The <u>removal</u> of trash keeps the park clean.",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "DRV_ADJ": {
+        "org": "accuracy / accurately|apparently / inapparent|availability / unavailable|chronically / chronicity|compatibility / compatibly|concretely / concreteness / concretion|convenience / conveniently|corruption / corruptly|diversity / diversely|efficiency / efficiently|elaborately / elaboration / elaborative|explicitly / explicitness|externalize / externally|falsify / falsehood / falsity|flexibility / flexibly|frequently / frequency|fundamental / fundamentally|genuinely / genuineness|gratitude / gratefully / gratefulness|hostility / hostilely|idealistic / ideally|immunity / immunize|initiate / initially|moderation / moderately|relevance / relevantly",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 파생어 보기 풀"
+      },
+      "DRV_ADJQ": {
+        "org": "accurately|apparently|unavailable|chronically|compatibility|concretely|conveniently|corruption|diversity|efficiently|elaborately|explicitly|externally|falsehood|flexibly|frequently|fundamental|genuinely|gratefully|hostility|ideally|immunity|initially|moderately|relevance",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 파생어 질문(보기 문장) 풀"
+      },
+      "ANS_ADJ": {
+        "org": "정확하게|외형, 등장|이용 불가능한|만성적으로|호환성, 양립 가능성|구체적으로|편리하게|부패|다양성|효과적으로|정교하게, 자세하게|명확하게, 분명하게|외부적으로, 외부에서|거짓말, 허위진술|유연하게|자주|근본적인|진정으로|감사하게|적대감|이상적으로|면역|처음에|적당히|관련성",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 정답 풀"
+      },
+      "PRM_ADJ": {
+        "org": "He measured it <u>accurately</u>.|<u>Apparently</u>, it's free.|The service is <u>unavailable</u>.|He is <u>chronically</u> ill.|The phone has good <u>compatibility</u> with this app.|Define goals <u>concretely</u>.|You can <u>conveniently</u> buy items online.|The law was made to prevent <u>corruption</u>.|Team <u>diversity</u> improves ideas.|The machine runs <u>efficiently</u>.|The room was <u>elaborately</u> decorated.|The teacher <u>explicitly</u> explained the rules.|The building looks fine <u>externally</u>.|The article contained <u>falsehoods</u>.|She solves problems <u>flexibly</u>.|He is <u>frequently</u> late for class.|Freedom of speech is a <u>fundamental</u> right.|He <u>genuinely</u> cares about his friends.|I <u>gratefully</u> thank my teacher.|There was <u>hostility</u> between the two teams.|<u>Ideally</u>, the weather will be sunny.|Vaccines help build <u>immunity</u>.|It failed <u>initially</u>, but improved later.|She performed <u>moderately</u> well on the test.|This topic has high <u>relevance</u> to the class.",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "ID_LOWER": {
+        "org": "26001",
+        "cond": "SELF",
+        "desc": "학생 인증: 최소 ID 번호 (26001부터 26160 범위)"
+      },
+      "ID_UPPER": {
+        "org": "26160",
+        "cond": "SELF",
+        "desc": "학생 인증: 최대 ID 번호 (26001부터 26160 범위)"
+      },
+      "Student_auth_list": {
+        "org": "@COMPARE(\"@EVAL(\"@TEXT(ID)@-26000\")@\", \"0\", \">\")@|@COMPARE(\"@EVAL(\"26161-@TEXT(ID)@\")@\", \"0\", \">\")@",
+        "cond": "SELF",
+        "desc": "학생 인증 검증: 1차 비교: (입력값 - 26000) > 0 = 입력값 >= 26001; 2차 비교: (26161 - 입력값) > 0 = 입력값 <= 26160"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ [셋업] 1회분 문항 반복 수를 랜덤(@N(2,5)@)으로 생성\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 학생 일련번호 입력창 (26OOO 형식)\n@TEXT(ID, \"선생님이 배부해준 26OOO 형식의 일련번호를 입력하세요. (입력예시: 26113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 입력값이 허용 범위(ID_LOWER~ID_UPPER)인지 검증 — 실패 시 입력 turn 복귀, 통과 시 turn 4 진행\n@JUMP(@MAP(\"@EQUAL(\"@Student_auth_list@\", \"true|true\")@\", \"true\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [안내] 환영 메시지 및 총 문항 수 안내\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"3*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] POS별 문항 풀에서 랜덤 인덱스(*_IDX) 추출\n@SET(N_IDX, \"@INDEX(\"@PRM_N@\", \"@PRM_N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@PRM_V@\", \"@PRM_V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@PRM_ADJ@\", \"@PRM_ADJ[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] 추출한 문항·정답(·보기)을 JSON_test_config에 기록\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].problem_reference, \"@DRV_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@ANS_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].derivative_q, \"@DRV_NQ[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].q_sentence, \"@PRM_N[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].problem_reference, \"@DRV_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@ANS_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].derivative_q, \"@DRV_VQ[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].q_sentence, \"@PRM_V[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].problem_reference, \"@DRV_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ANS_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].derivative_q, \"@DRV_ADJQ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].q_sentence, \"@PRM_ADJ[@ADJ_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 명사 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 명사 단답(@TEXT) 문항 입력창\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "// [채점] 명사 학생 응답 정오 판정 후 점수·correctness 기록 (LLM 판정 결과(1/0) 사용)\n\n1. Noun\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Noun[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Noun[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Noun[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Noun[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Noun[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n- student answer: @JSON_test_config.Noun[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [저장] 명사 LLM 피드백을 JSON_test_config에 저장\n@UPJ(LLM_FBK.Noun[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 동사 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 동사 단답(@TEXT) 문항 입력창\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "// [채점] 동사 학생 응답 정오 판정 후 점수·correctness 기록 (LLM 판정 결과(1/0) 사용)\n2. Verb\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Verb[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Verb[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Verb[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Verb[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Verb[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n- student answer: @JSON_test_config.Verb[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [저장] 동사 LLM 피드백을 JSON_test_config에 저장\n@UPJ(LLM_FBK.Verb[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 동사 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 형용사 단답(@TEXT) 문항 입력창\n@TEXT(P_ADJ@R_i@,\n\"@JSON_test_config.Adjective[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "// [채점] 형용사 학생 응답 정오 판정 후 점수·correctness 기록 (LLM 판정 결과(1/0) 사용)\n3. Adjective\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Adjective[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Adjective[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Adjective[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Adjective[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Adjective[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n- student answer: @JSON_test_config.Adjective[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [저장] 형용사 LLM 피드백을 JSON_test_config에 저장\n@UPJ(LLM_FBK.Adjective[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [집계] 인덱싱 보정(-1) 후 POS 점수 누적 합산(Cumulative)\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [리포트] 최종 결과 리포트 출력\n명사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Noun@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n\n동사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Verb@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n\n형용사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Adjective@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [초기화] 다음 응시를 위한 점수·결과 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

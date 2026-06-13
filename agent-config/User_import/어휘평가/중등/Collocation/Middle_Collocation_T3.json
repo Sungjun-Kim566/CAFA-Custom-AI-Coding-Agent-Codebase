@@ -1,0 +1,679 @@
+{
+
+  "options": {
+
+    "title": "<h1>중학교 Collocation_심화</h1>",
+
+    "brief": "",
+
+    "name": "[Updated] 중학교 Collocation_심화",
+
+    "description": "중학교 수준 어휘 75개를 바탕으로 연어의 대한 심화 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+
+    "greeting": "다음 문장에서 밑줄 친 곳에 들어갈 단어를 쓰시오<br>\n<br>\n예시)<br>\nThe storm d____ serious damage to the roof.   <b>did/does</b> <br>\nThe worker p_____ the rope to lift the heavy box.   <b>pulled/pulls</b>",
+
+    "keep-in-app-cafakey": false,
+
+    "is-template": false,
+
+    "is-public": false,
+
+    "params": {
+
+      "GSID": {
+
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "Identification": {
+
+        "org": "S-113",
+
+        "cond": "SELF",
+
+        "desc": "배부된 일련번호"
+
+      },
+
+      "POS": {
+
+        "org": "nouns|verbs|adjectives|words",
+
+        "cond": "SELF",
+
+        "desc": "POS tag"
+
+      },
+
+      "Rand_iteration": {
+
+        "org": "2",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N_IDX": {
+
+        "org": "22",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_IDX": {
+
+        "org": "15",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_IDX": {
+
+        "org": "11",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_IDX": {
+
+        "org": "7",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "JSON_test_config": {
+
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. This bag is h____ quality, so it will last a long time.\",\n      \"answer\": \"high\",\n      \"collocation\": \"high quality\",\n      \"distractor\": \"review a campaign|do a campaign\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"high\",\n      \"correctness\": 1,\n      \"original\": \"quality\"\n    },\n    {\n      \"problem\": \"2. Math is my favorite s_____ subject.\",\n      \"answer\": \"school\",\n      \"collocation\": \"school subject\",\n      \"distractor\": \"onto earth|above earth\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"school\",\n      \"correctness\": 1,\n      \"original\": \"subject\"\n    },\n    {\n      \"problem\": \"3. Teachers are r____ models.\",\n      \"answer\": \"role\",\n      \"collocation\": \"make sense\",\n      \"distractor\": \"of fact|to fact\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"roll\",\n      \"correctness\": 0,\n      \"original\": \"sense\"\n    },\n    {\n      \"problem\": \"4. Her field of s____ is biology.\",\n      \"answer\": \"study\",\n      \"collocation\": \"field of study\",\n      \"distractor\": \"review a campaign|do a campaign\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"study\",\n      \"correctness\": 1,\n      \"original\": \"field\"\n    },\n    {\n      \"problem\": \"5. Solar is r______ energy.\",\n      \"answer\": \"renewable\",\n      \"collocation\": \"renewable energy\",\n      \"distractor\": \"enter market|enter to the market\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"renewable\",\n      \"correctness\": 1,\n      \"original\": \"energy\"\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. Please respond t___ my message.\",\n      \"answer\": \"to\",\n      \"collocation\": \"respond to\",\n      \"distractor\": \"end as|end between\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"to\",\n      \"correctness\": 1,\n      \"original\": \"respond\"\n    },\n    {\n      \"problem\": \"2. If there is an accident at school, report t___ the police right away.\",\n      \"answer\": \"to\",\n      \"collocation\": \"report to\",\n      \"distractor\": \"focus up|focus at\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"to\",\n      \"correctness\": 1,\n      \"original\": \"report\"\n    },\n    {\n      \"problem\": \"3. I agree w___ you.\",\n      \"answer\": \"with\",\n      \"collocation\": \"agree with\",\n      \"distractor\": \"answer the mobile|answer the message\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"with\",\n      \"correctness\": 1,\n      \"original\": \"establish\"\n    },\n    {\n      \"problem\": \"4. He didn’t answer the p____.\",\n      \"answer\": \"phone\",\n      \"collocation\": \"answer the phone\",\n      \"distractor\": \"decide of|decide with\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"phone\",\n      \"correctness\": 1,\n      \"original\": \"answer\"\n    },\n    {\n      \"problem\": \"5. Please stand s____.\",\n      \"answer\": \"still\",\n      \"collocation\": \"stand still\",\n      \"distractor\": \"agree of|agree up to\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"still\",\n      \"correctness\": 1,\n      \"original\": \"stand\"\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. Please come as soon a___ possible.\",\n      \"answer\": \"as\",\n      \"collocation\": \"as ~ as possible\",\n      \"distractor\": \"do fun|play fun\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"as\",\n      \"correctness\": 1,\n      \"original\": \"possible\"\n    },\n    {\n      \"problem\": \"2. We stayed inside because of extreme w_____\",\n      \"answer\": \"weather\",\n      \"collocation\": \"exreme weather\",\n      \"distractor\": \"take free|keep free\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"weather\",\n      \"correctness\": 1,\n      \"original\": \"extreme\"\n    },\n    {\n      \"problem\": \"3. I felt a cool b____ coming through the window.\",\n      \"answer\": \"breeze\",\n      \"collocation\": \"cool breeze\",\n      \"distractor\": \"stay fallen|stay broken\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"breeze\",\n      \"correctness\": 1,\n      \"original\": \"public\"\n    },\n    {\n      \"problem\": \"4. I learned a great d___ from my teacher.\",\n      \"answer\": \"deal\",\n      \"collocation\": \"great deal\",\n      \"distractor\": \"clean answer|clean noise\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"deal\",\n      \"correctness\": 1,\n      \"original\": \"great\"\n    },\n    {\n      \"problem\": \"5. You should s____ hard.\",\n      \"answer\": \"study\",\n      \"collocation\": \"study hard\",\n      \"distractor\": \"cool news|cool sun\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"study\",\n      \"correctness\": 1,\n      \"original\": \"hard\"\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. Call me as soon a__ you arrive home.\",\n      \"answer\": \"as\",\n      \"collocation\": \"as soon as\",\n      \"distractor\": \"early of|early to\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"as\",\n      \"correctness\": 1,\n      \"original\": \"soon\"\n    },\n    {\n      \"problem\": \"2. Neither my brother n___ I like spicy food.\",\n      \"answer\": \"nor\",\n      \"collocation\": \"neither ~ nor...\",\n      \"distractor\": \"far above|far upto\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"nor\",\n      \"correctness\": 1,\n      \"original\": \"neither\"\n    },\n    {\n      \"problem\": \"3. I live across f___ the school.\",\n      \"answer\": \"from\",\n      \"collocation\": \"across from\",\n      \"distractor\": \"over and again|over in\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"from\",\n      \"correctness\": 1,\n      \"original\": \"apart\"\n    },\n    {\n      \"problem\": \"4. Before l___, it got dark.\",\n      \"answer\": \"long\",\n      \"collocation\": \"before long\",\n      \"distractor\": \"between in|between from\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"long\",\n      \"correctness\": 1,\n      \"original\": \"before\"\n    },\n    {\n      \"problem\": \"5. It rained o__ and off.\",\n      \"answer\": \"on\",\n      \"collocation\": \"on and off\",\n      \"distractor\": \"between in|between from\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"on\",\n      \"correctness\": 1,\n      \"original\": \"off\"\n    },\n    {\n      \"problem\": \"\",\n      \"answer\": \"\",\n      \"collocation\": \"\",\n      \"distractor\": [],\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "ID": {
+
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"S-113\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "N": {
+
+        "org": "advantage|charge|contract|crime|cycle|element|force|health|identity|interest|office|order|peace|plant|practice|quality|reason|record|scale|sense|stress|subject|term|view",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N_COL": {
+
+        "org": "take advantage of|free of charge|sign a contract|commit a crime|life cycle|key element|by force|good health|identity card|an interest in|post office|in order to|at peace|power plant|practice test|high quality|reason for|keep a record of|on a large scale|make sense|under stress|school subject|short term|point of view",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N_SEN": {
+
+        "org": "You should t____ advantage of this free class.|The museum is f_____ of charge on Sundays.|My dad will s____ a contract for his new job.|It is wrong to c______ a crime, even for money.|We learned the l____ cycle of a butterfly in science class.|Trust is a k_____ element in a good friendship.|He tried to take my phone b____ force, but I said no.|Eating vegetables helps you stay in g_____ health.|Please s_____ your identity card at the entrance.|I have an interest i___  soccer, so I watch games every weekend.|I went to the p____ office to send a package.|I study every day i__ order to improve my grades.|I feel a__  peace when I listen to quiet music.|The city gets electricity from a nearby p_____ plant.|I took a practice t____ before the real exam.|This bag is h____ quality, so it will last a long time.|What is the reason f___ your late homework?|K____ a record of your reading time each day.|The festival was held o___ a large scale this year.|Your story doesn’t m____ sense, so please explain it again.|When I’m u____ stress, I can’t sleep well.|Math is my favorite s_____ subject.|In the s_____ term, you can use my phone charger until you buy a new one.|From my p____ of view, the math test was difficult, but my friend said it was easy.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N_ANS": {
+
+        "org": "take|free|sign|commit|life|key| by|good|show|in|post|in|at|power|test|high|for|keep|on|make|under|school|short|point",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V": {
+
+        "org": "adapt|affect|appeal|argue|confirm|convince|define|divide|escape|establish|govern|mean|refer|relate|report|require|respond|sign|succeed",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_COL": {
+
+        "org": "adapt to|affect your health|appeal to|argue about|confirm your identity|convince ~ to|define ~ as|divide ~ into|escape from|establish a rule|govern a country|mean by|refer to|relate to|report to|required to|respond to|sign up for|succeed in",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_SEN": {
+
+        "org": "I had to adapt t__ my new school quickly.|Too much stress can affect your h_____.|This movie appeals t___ many teenagers.|They argued a____ which game to play.|Please confirm your i_____ before you enter the website.|She convinced her mom t__ let her join the club.|The teacher defined “energy” a___ the ability to do work.|Let’s divide the class i___ four groups.|The rabbit tried to escape f___ the cage.|Our class established a r___: no phones during lessons.|A president governs a c____ and makes important decisions.|What do you mean b___ “free of charge”?|Please refer t___ page 10 in your book.|I can relate t___ that feeling—you miss your friends when you move to a new place, right?|If there is an accident at school, report t___ the police right away.|Students are required t___ wear school uniforms.|Please respond t___ my message.|Many students sign up f___ the school club to make new friends.|She wants to succeed i___ passing the test this time.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_ANS": {
+
+        "org": "to|health|to|about|identity|to|as|into|from|rule|country|by|to|to|to|to|to|for|in",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ": {
+
+        "org": "able|absolute|aware|clear|complete|complex|constant|correct|direct|equal|extreme|final|general|legal|major|minor|modern|necessary|perfect|possible|popular|private|public|responsible|specific",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_COL": {
+
+        "org": "able to|absolute silence|aware of|a clear answer|complete set|complex problem|constant noise|correct answer|direct answer|equal rights|exreme weather|final decision|in general|legal advice|major change|minor mistake|modern art|necessary to|perfect score|as ~ as possible|popular among|private matter|public places|responsible for|specific example",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_SEN": {
+
+        "org": "I am able t___ finish my homework on time.|There was absolute s____ in the classroom during the test.|Be aware o___ your surroundings when you walk at night.|Please give a clear a____ to the question.|I turned in the complete s___ of worksheets.|This is a complex p____, so let’s solve it step by step.|There is constant n____ from the construction site.|Please choose the correct a____on the test.|Please give me a direct a____, yes or no. |All students should have equal r____ at school.|We stayed inside because of extreme w_____|This is my final d_____, so I won’t change it.|I__ general, I study after dinner.|You should ask for legal a_____ before signing the paper.|There was a major c_____ in the economy, so many priceses went up.|I made a minor m_____, but I fixed it right away.|This museum has modern a____ on the second floor.|It is necessary t___ wear a helmet when you ride a bike.|She got a perfect s____ on the quiz.|Please come as soon a___ possible.|This song is popular a____ teenagers.|This is a private matter, so please don’t share it.|Smoking is not allowed in public places.|He is responsible for cleaning the classroom.|Please give a specific example from the story.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_ANS": {
+
+        "org": "to|silence|of|answer|set|problem|noise|answer|answer|rights|weather|decision|in|advice|change|mistake|art|to|score|as|among|matter|places|for|example",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH": {
+
+        "org": "apart|aside|either|else|except|instead|neither|once|quite|rather|soon|though|through|until",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_COL": {
+
+        "org": "apart from|aside from|either ~ or...|anything else|except for|instead of|neither ~ nor...|once in a while|quite sure|would rather|as soon as|even though|go through|not ~ until...",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_SEN": {
+
+        "org": "Apart f____ English, I study math too.|Aside f____ one small mistake, your essay is great.|You can choose either tea o__ coffee with your breakfast.|Do you need anything e___ from the store?|Everyone came except f___ Mina.|Instead o__ playing games, I finished my homework.|Neither my brother n___ I like spicy food.|I eat pizza once in a w____, usually on weekends.|I’m quite s____ this is the correct answer.|I would r____ stay home than go out today.|Call me as soon a__ you arrive home.|E____ though she was tired, she kept walking.|I had to g__ through my notes before the quiz.|I did n___ understand it until the teacher explained it again.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_ANS": {
+
+        "org": "from|from|or|else|for|of|nor|while|sure|rather|as|even|go|not",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "P_N1": {
+
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. This bag is h____ quality, so it will last a long time.\",\n  \"response\": \"high\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_V1": {
+
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. Please respond t___ my message.\",\n  \"response\": \"to\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_ADJ1": {
+
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. Please come as soon a___ possible.\",\n  \"response\": \"as\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_OTH1": {
+
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"label\": \"1. Call me as soon a__ you arrive home.\",\n  \"response\": \"as\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_N2": {
+
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. Math is my favorite s_____ subject.\",\n  \"response\": \"school\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_V2": {
+
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. If there is an accident at school, report t___ the police right away.\",\n  \"response\": \"to\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_ADJ2": {
+
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. We stayed inside because of extreme w_____\",\n  \"response\": \"weather\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_OTH2": {
+
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"label\": \"2. Neither my brother n___ I like spicy food.\",\n  \"response\": \"nor\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      }
+
+    }
+
+  },
+
+  "prompts": [
+
+    {
+
+      "system": "",
+
+      "user": "/\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/\n@TEXT(ID, \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/틀리면 turn 2, 맞으면 turn 4\n@JUMP(@MAP(\"@TEXT(ID)@\", \"@Identification@\", \"4|@TN(-1)@\", EXACT)@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/\n@SET(N_IDX, \"@INDEX(\"@N@\", \"@N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@V@\", \"@V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@ADJ@\", \"@ADJ[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@OTH@\", \"@OTH[.]@\")@\", SELF)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "// 문항 JSON 셋업\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. @N_SEN[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@N_ANS[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].original, \"@N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].collocation, \"@N_COL[@N_IDX@]@\")@\n\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. @V_SEN[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@V_ANS[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].original, \"@V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].collocation, \"@V_COL[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. @ADJ_SEN[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ADJ_ANS[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].original, \"@ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].collocation, \"@ADJ_COL[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. @OTH_SEN[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@OTH_ANS[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].original, \"@OTH[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].collocation, \"@OTH_COL[@OTH_IDX@]@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(3)@, @Rand_iteration@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@|\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@|\n@TEXT(P_ADJ@R_i@,\n\"@JSON_test_config.Adjective[@R_i@].problem@\")@|\n@TEXT(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n1. Noun\nT/F boolean: @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n2. Verb\nT/F boolean: @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n3. Adjective\nT/F boolean: @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n4. Others\nT/F boolean: @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@TEXT(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        Given the information for the question, create a feedback report for each of four major POS questions (Noun, Verb, Adjective, others) that includes the POS of the given question, the meaning of the answer, and explanations on the answer's correctness--student's answers' wrongnesses, if the student is wrong. \n    </task>\n    <rules>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. use parser to distinguish each response of Noun, Verb, and Adjective, respectively\n        5. Feedback Language: Korean.\n    </rules>\n</instructions>",
+
+      "user": "1. Noun\n- Question: @P_N@R_i@@\n- Corresponding answer: @JSON_test_config.Noun[@R_i@].answer@\n- Student answer: @JSON_test_config.Noun[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.Noun[@R_i@].collocation@\n- original form: @JSON_test_config.Noun[@R_i@].original@\n2. Verb\n- Question: @P_V@R_i@@\n- Corresponding answer: @JSON_test_config.Verb[@R_i@].answer@\n- Student answer: @JSON_test_config.Verb[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.Verb[@R_i@].collocation@\n- original form: @JSON_test_config.Verb[@R_i@].original@\n3. Adjective\n- Question: @P_ADJ@R_i@@\n- Corresponding answer: @JSON_test_config.Adjective[@R_i@].answer@\n- Student answer: @JSON_test_config.Adjective[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.Adjective[@R_i@].collocation@\n- original form: @JSON_test_config.Adjective[@R_i@].original@\n4. Others\n- Question: @P_OTH@R_i@@\n- Corresponding answer: @JSON_test_config.others[@R_i@].answer@\n- Student answer: @JSON_test_config.others[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.others[@R_i@].collocation@\n- original form: @JSON_test_config.others[@R_i@].original@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "5000",
+
+      "send-mail": false,
+
+      "markdown": true,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ Final LLM Feedback Report\n@TR@TN(-1)@@\n",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": true,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "//Adjust Final Score; Cumulative score and due to CAFA indexing issue\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/다음 인풋을 위한 점수 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    }
+
+  ]
+
+}

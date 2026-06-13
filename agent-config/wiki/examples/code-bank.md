@@ -55,6 +55,7 @@
 - Generative Stem - Division using IOTA Framework: LLM-in-Loop Word Problems + Linked Integer Division Ontology
 - Division Quiz with a Symbolic Cognitive Distractor Generation Model using IOTA Framework
 - Generative Cognitive Distractor Model using LLM-in-the-Loop Parsing using IOTA Framework
+- AoA Rubric Quiz Agent: Looped Symbolic-Input → LLM-Evaluation → Hidden-Control Sandwich with Loop-Indexed Verdict Scoring
 
 =====
 # My First CAFA Agent: Single-Turn Spanish Translation
@@ -14057,6 +14058,188 @@ graph TD
 ## References
 
 - Choi, J. (2025). Generative Cognitive Distractor Model using LLM-in-the-Loop Parsing using IOTA Framework. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+    
+
+# AoA Rubric Quiz Agent: Looped Symbolic-Input → LLM-Evaluation → Hidden-Control Sandwich with Loop-Indexed Verdict Scoring
+
+## Metadata
+
+- Framework: AoA (Architecture of Alignment / Assessment)
+    
+- Complexity: Intermediate–Advanced
+    
+- Primary Function: Assessment (constructed-response quiz + rubric scoring + dynamic running score)
+    
+- Key Symbolic Commands: REPEAT, TEXTAREA, SET, MAP, EVAL, TR, TN
+    
+- Key Concepts: Strict "Sandwich" architecture (Symbolic Input → LLM Evaluation → Hidden Control/Routing), per-iteration loop indexing of turn results via `@TR@TN(-1)@[@R_i@]@`, `output-values`-constrained verdict labels, dynamic running-score accumulator, order-linked question/rubric ontology lists
+    
+
+## Background & Objective
+
+- Problem Solved: A free-text quiz needs (1) reliable, rubric-grounded grading of each answer and (2) a running score that updates as the learner progresses — without the score logic being corrupted by loop-result accumulation. This agent administers a fixed bank of constructed-response items, grades each answer against a rigid 4-level rubric, and maintains a dynamic `SCORE`.
+    
+- Core Mechanism: A single `REPEAT` loop wraps a three-turn Sandwich per question: a Symbolic Input turn presents the item and captures a `TEXTAREA` answer; an LLM Evaluation turn returns exactly one of four verdict labels (constrained by `output-values`); a hidden Control turn maps the verdict to points and updates the running `SCORE`. A final symbolic turn reports total, percentage, and a per-question breakdown.
+    
+- Critical Pitfall Addressed: Inside a `REPEAT` loop the previous turn's result System Parameter (`@TR@TN(-1)@@`) accumulates **all iterations'** outputs into one pipe-delimited string (e.g. after Q2: `Incorrect|Mostly Correct`). Feeding that growing string into `MAP` matches no single `value_list` entry, so it falls through to the default and the score is wrong. The fix is to index the loop result by the iteration number — `@TR@TN(-1)@[@R_i@]@` — extracting only the current iteration's verdict before `MAP`.
+    
+
+## Full CAFA Agent Code
+
+{
+  "options": {
+    "title": "<b>AoA Quiz Agent</b>: Rubric-Scored Constructed Response",
+    "brief": "An AoA-framework quiz that presents questions, captures free-text answers, grades each against a rigid rubric, updates a running score, and reports a final result.",
+    "name": "AoA Rubric Quiz Agent",
+    "description": "This agent implements the AoA (Architecture of Alignment / Assessment) framework as a strict Symbolic-Input -> LLM-Evaluation -> Hidden-Control sandwich, looped once per question via REPEAT. Each cycle presents a question (TEXTAREA capture), grades the answer against a rigid 4-level rubric, maps the verdict to points, and updates a dynamic SCORE variable. A final symbolic turn reports the total, percentage, and a per-question breakdown.",
+    "greeting": "Welcome to the AoA Quiz. You will answer 3 short constructed-response questions. Each answer is graded against a rigid rubric, and your running score is tracked. Let's begin.",
+    "params": {
+      "TOTAL_QUESTIONS": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "Number of questions in the quiz; drives the REPEAT loop count."
+      },
+      "MAX_SCORE": {
+        "org": "9",
+        "cond": "SELF",
+        "desc": "Maximum achievable score (TOTAL_QUESTIONS x 3 points per question). Used for the final percentage."
+      },
+      "SCORE": {
+        "org": "0",
+        "cond": "SELF",
+        "desc": "Dynamic running score, initialized to 0 and incremented each loop iteration by the points earned on that question."
+      },
+      "QUESTIONS": {
+        "org": "Explain the difference between supervised and unsupervised machine learning, and give one example of each.|What is overfitting in a machine learning model, and name one technique used to reduce it?|Describe what a large language model (LLM) is, and state one genuine limitation it has.",
+        "cond": "SELF",
+        "desc": "The ordered bank of constructed-response questions presented one per loop iteration."
+      },
+      "RUBRICS": {
+        "org": "Full credit requires: (a) supervised learning uses labeled data to map inputs to known outputs; (b) unsupervised learning finds structure in unlabeled data; (c) one valid example of each, such as classification or regression versus clustering or dimensionality reduction.|Full credit requires: (a) overfitting is when a model learns noise and training-specific detail so it generalizes poorly to new data; (b) one valid mitigation such as regularization, more training data, cross-validation, dropout, or early stopping.|Full credit requires: (a) an LLM is a neural network trained on large text corpora to predict and generate language; (b) one genuine limitation such as hallucination, outdated knowledge, bias, or lack of true reasoning.",
+        "cond": "LINK(QUESTIONS)",
+        "desc": "Rigid scoring criteria, order-linked to QUESTIONS so each rubric stays paired with its question."
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ Hidden control: loop the question sandwich (present -> evaluate -> score) once per question.\n@REPEAT(@TN(1)@, @TN(3)@, \"@TOTAL_QUESTIONS@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Symbolic Input layer: present question @R_i@ and capture the constructed response.\n## Question @R_i@ of @TOTAL_QUESTIONS@\n\n@QUESTIONS[@R_i@]@\n\n@TEXTAREA(\"answer_@R_i@\", \"Type your full answer here, then press Submit.\")@",
+      "show": true,
+      "model": null,
+      "markdown": true
+    },
+    {
+      "system": "You are a strict, consistent assessment grader. Score the student's answer ONLY against the provided rubric for this specific question. Use this rigid 4-level scale:\n- Fully Correct: the answer satisfies every criterion in the rubric.\n- Mostly Correct: the answer satisfies most criteria with only a minor omission or error.\n- Partially Correct: the answer satisfies some criteria but has significant gaps.\n- Incorrect: the answer is irrelevant, wrong, or misses the rubric criteria.\nDo not reward fluency, length, or unrelated facts. Output exactly one of the four labels and nothing else.",
+      "user": "Question:\n@QUESTIONS[@R_i@]@\n\nScoring rubric (rigid):\n@RUBRICS[@R_i@]@\n\nStudent answer:\n@TEXTAREA(\"answer_@R_i@\")@\n\nReturn the single most accurate grade label.",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.1",
+      "max-tokens": "100",
+      "output-values": "Incorrect|Partially Correct|Mostly Correct|Fully Correct"
+    },
+    {
+      "system": "",
+      "user": "/ Hidden Control layer: convert this iteration's verdict to points and update the dynamic running SCORE.\n@SET(\"VERDICT_@R_i@\", \"@TR@TN(-1)@[@R_i@]@\")@\n@SET(\"POINTS_@R_i@\", \"@MAP(\"@TR@TN(-1)@[@R_i@]@\", \"Incorrect|Partially Correct|Mostly Correct|Fully Correct\", \"0|1|2|3|0\")@\")@\n@SET(\"SCORE\", \"@EVAL(\"@SCORE@ + @MAP(\"@TR@TN(-1)@[@R_i@]@\", \"Incorrect|Partially Correct|Mostly Correct|Fully Correct\", \"0|1|2|3|0\")@\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Final score report (runs after the loop completes).\n# Quiz Complete\n\nYou answered **@TOTAL_QUESTIONS@** questions.\n\n**Total score: @SCORE@ / @MAX_SCORE@**\n\n**Percentage: @EVAL(\"Math.round(@SCORE@ / @MAX_SCORE@ * 100)\")@%**\n\n---\n\n### Question 1\n@QUESTIONS[1]@\n\n- **Your answer:** @TEXTAREA(\"answer_1\")@\n- **Verdict:** @VERDICT_1@ (@POINTS_1@/3)\n\n### Question 2\n@QUESTIONS[2]@\n\n- **Your answer:** @TEXTAREA(\"answer_2\")@\n- **Verdict:** @VERDICT_2@ (@POINTS_2@/3)\n\n### Question 3\n@QUESTIONS[3]@\n\n- **Your answer:** @TEXTAREA(\"answer_3\")@\n- **Verdict:** @VERDICT_3@ (@POINTS_3@/3)",
+      "show": true,
+      "model": null,
+      "markdown": true
+    }
+  ]
+}
+
+## Detailed Logic Breakdown
+
+### Ontology Model (options.params)
+
+- QUESTIONS (SELF) and RUBRICS (LINK(QUESTIONS)): order-linked parallel lists. The link guarantees each rubric stays paired with its question even if ordering changes.
+    
+- TOTAL_QUESTIONS, MAX_SCORE: scalars controlling loop count and the percentage denominator.
+    
+- SCORE: the dynamic running score, pre-initialized to "0" in options.params (Rule 9.4) so the very first accumulation has a defined value.
+    
+
+### Execution Flow (prompts array)
+
+- Turn 1 (Symbolic, hidden) — Loop controller: `@REPEAT(@TN(1)@, @TN(3)@, "@TOTAL_QUESTIONS@")@` loops the three-turn Sandwich (T2–T4). REPEAT is alone in its dedicated hidden turn.
+    
+- Turn 2 (Symbolic, visible) — **Symbolic Input layer**: displays `@QUESTIONS[@R_i@]@` and captures the answer with `@TEXTAREA("answer_@R_i@", ...)@`. Iteration-scoped variable names keep each answer separate.
+    
+- Turn 3 (LLM, visible) — **LLM Evaluation layer**: grades the captured answer against `@RUBRICS[@R_i@]@`. `output-values` constrains the response to exactly one of four labels, making it safe for downstream MAP.
+    
+- Turn 4 (Symbolic, hidden) — **Hidden Control layer**: indexes this iteration's verdict with `@TR@TN(-1)@[@R_i@]@`, stores `VERDICT_@R_i@`, maps the verdict to `POINTS_@R_i@`, and updates the running `SCORE` via `EVAL`. The SCORE accumulator reads the prior-iteration value (a previous turn execution) and re-runs MAP inline rather than referencing the same-turn `POINTS_@R_i@`, so no same-turn dependency is violated.
+    
+- Turn 5 (Symbolic, visible) — Final report: shows total, percentage (`@EVAL("Math.round(@SCORE@ / @MAX_SCORE@ * 100)")@`), and a per-question breakdown.
+    
+
+### The Loop-Indexing Trick (`@TR@TN(-1)@[@R_i@]@`)
+
+Within a REPEAT loop the engine appends each iteration's turn result to a single pipe-delimited System Parameter. Reading `@TR@TN(-1)@@` on iteration 2 therefore returns `verdict1|verdict2`, which MAP cannot match. Indexing with the current iteration number `[@R_i@]` returns only `verdict2`. Always index loop-internal `TR`/`TU` results when feeding them to MAP, INDEX, EVAL, or SET.
+
+## Visualization Mermaid Code
+
+graph TD
+
+    A[Start] --> B[T1 Symbolic/Hidden: REPEAT T2-T4 x TOTAL_QUESTIONS]
+
+    B --> C[T2 Symbolic/Visible: Present Q_Ri + TEXTAREA capture]
+
+    C --> D[T3 LLM/Visible: Grade vs rubric, output-values verdict label]
+
+    D --> E[T4 Symbolic/Hidden: index TR by R_i, MAP to points, update SCORE]
+
+    E --> C
+
+    B --> F[T5 Symbolic/Visible: Final score report + percentage]
+
+    F --> G[End]
+
+## Modification Recipes
+
+- To Change Question Count: edit TOTAL_QUESTIONS and MAX_SCORE (= count x 3), extend QUESTIONS/RUBRICS, and add matching rows to the T5 report. The loop logic is unchanged.
+    
+- To Change the Rubric Scale: edit the four labels in T3's system prompt and `output-values`, and keep the MAP value_list/return_list in T4 in sync (return_list must be N+1 with the default last).
+    
+- To Add Per-Question Feedback: insert a visible LLM turn after T3 (no `output-values`) that explains the verdict; keep the scoring turn separate so grading stays machine-parseable.
+    
+- To Randomize Item Order: set QUESTIONS `cond` to "SHUFFLE"; RUBRICS stays "LINK(QUESTIONS)" so pairing is preserved.
+    
+
+## Related Questions and Instructions
+
+### Design and Architecture Requests
+
+- Framework Related: “Build an AoA quiz with a strict Symbolic-Input → LLM-Evaluation → Hidden-Control sandwich looped via REPEAT.”
+    
+- Structure Related: “Show how to read a single loop iteration's LLM result with `@TR@TN(-1)@[@R_i@]@` before MAP.”
+    
+- Complexity Related: “Create a rubric-scored constructed-response quiz with a dynamic running score.”
+    
+
+### Usage and Modification Requests
+
+- Task Related: “Swap the ML questions for a history quiz without changing the loop architecture.”
+    
+- Reuse: “Reuse the verdict→points MAP + SCORE accumulator for any rubric quiz.”
+    
+- Bounded Changes: “Add a fourth question without altering the scoring logic.”
+    
+
+## References
+
+- Choi, J. (2025). AoA Rubric Quiz Agent: Looped Symbolic-Input → LLM-Evaluation → Hidden-Control Sandwich with Loop-Indexed Verdict Scoring. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 # ****** *** Archives ***

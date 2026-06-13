@@ -1,0 +1,1119 @@
+{
+
+  "options": {
+
+    "title": "<h1>중학교 Collocation_중급</h1>",
+
+    "brief": "",
+
+    "name": "[Updated] 중학교 Collocation_중급",
+
+    "description": "중학교 수준 어휘 75개를 바탕으로 연어의 대한 중급 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+
+    "greeting": "다음 문장에서 밑줄 친 부분을 우리말로 해석하시오.<br>\n<br>\n예시)<br>\nThe storm <u>did damage</u> to the roof. ---> <u><b>피해를 주었다</b></u> <br>\n<br>\nThe storm did <u>serious damage</u> to the roof. ---> <u><b>심각한 피해</b></u>",
+
+    "keep-in-app-cafakey": false,
+
+    "is-template": false,
+
+    "is-public": false,
+
+    "params": {
+
+      "GSID": {
+
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "Identification": {
+
+        "org": "S-113",
+
+        "cond": "SELF",
+
+        "desc": "배부된 일련번호"
+
+      },
+
+      "JSON_test_config": {
+
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please show your <u>identity card</u> at the entrance.\",\n      \"answer\": \"신분증\",\n      \"collocation\": \"identity card\",\n      \"LLM_FBK\": \"1. 번역  \\nPlease show your <u>identity card</u> at the entrance.  \\n→ 입구에서 신분증을 보여 주세요.\\n\\n2. 주어진 문장과 한국어 번역에서의 콜로케이션  \\n- 영어 콜로케이션: identity card  \\n- 한국어 콜로케이션: 신분증\\n\\n3. 왜 이 콜로케이션이 문장에 들어가는지(문장 구조상 이유)  \\n'identity card'는 '신분을 증명하는 카드'라는 뜻이에요. 영어에서는 'identity(신분)'와 'card(카드)'가 자주 같이 쓰여서 '신분증'이라는 뜻이 돼요.  \\n이 문장에서는 '입구에서 무엇을 보여 달라'고 할 때, '무엇'에 해당하는 것이 바로 '신분증'이에요 그래서 'identity card'라는 콜로케이션이 꼭 필요해요.  \\n한국어에서도 '신분'과 '증(증명서)'이 합쳐져서 '신분증'이라는 단어가 만들어져요. 이처럼 두 단어가 항상 같이 쓰여서 하나의 뜻을 나타내기 때문에, 문장에서 자연스럽게 이 콜로케이션이 들어가요.\\n\\n피드백:  \\n'신원카드'는 자연스러운 표현이 아니에요. 영어의 'identity card'는 한국어로 '신분증'이라고 해요. '신분증'은 '신분'을 '증명'하는 '증명서'라는 뜻이에요. 앞으로는 '신분증'이라고 써 주세요!\",\n      \"Student_answer\": \"신원카드\",\n      \"correctness\": 0,\n      \"original\": \"identity\",\n      \"q_sentence\": \"Please show your <u>identity card</u> at the entrance.\"\n    },\n    {\n      \"problem\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Your story doesn’t <u>make sense</u>, so please explain it again.\",\n      \"answer\": \"말이 되다, 이해가 되다, 이치에 맞다\",\n      \"collocation\": \"make sense\",\n      \"LLM_FBK\": \"1. 번역  \\nYour story doesn’t <u>make sense</u>, so please explain it again.  \\n→ 네 이야기는 <u>이해가 되지 않아</u>. 그러니까 다시 설명해 줘.\\n\\n2. 콜로케이션과 한국어 번역  \\n- 콜로케이션: make sense  \\n- 한국어 번역: 이해가 되다, 말이 되다, 이치에 맞다\\n\\n3. 왜 이 콜로케이션이 쓰였는지(문장 구조상 이유)  \\n영어에서 ‘make sense’는 ‘이해가 된다’ 또는 ‘말이 된다’라는 뜻으로 자주 함께 쓰이는 단어 조합(콜로케이션)이에요. 여기서 ‘make’는 ‘만들다’라는 뜻이고, ‘sense’는 ‘이해’ 또는 ‘의미’라는 뜻이에요. 두 단어가 합쳐져서 ‘이해가 되다’라는 새로운 뜻이 돼요. 영어에서는 ‘무엇이 이해가 된다/안 된다’라고 할 때 ‘make sense’를 써요. 그래서 ‘Your story doesn’t make sense’라고 하면 ‘네 이야기는 이해가 되지 않아’ 또는 ‘네 이야기는 말이 안 돼’라는 뜻이 돼요.\\n\\n즉, 영어에서는 ‘이야기가 이해를 만든다(이해가 된다)’라는 식으로 표현하고, 한국어에서는 ‘이해가 되다’ 또는 ‘말이 되다’라고 자연스럽게 번역해요.\",\n      \"Student_answer\": \"이해가 되다\",\n      \"correctness\": 1,\n      \"original\": \"sense\",\n      \"q_sentence\": \"Your story doesn’t <u>make sense</u>, so please explain it again.\"\n    },\n    {\n      \"problem\": \"3. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>You should have a <u>backup plan</u>.\",\n      \"answer\": \"대안 계획\",\n      \"collocation\": \"backup plan\",\n      \"LLM_FBK\": \"1. 번역  \\nYou should have a <u>backup plan</u>.  \\n→ 너는 <u>대안 계획</u>을 가지고 있어야 해.\\n\\n2. 콜로케이션 확인  \\n- 영어 문장 속 콜로케이션: backup plan  \\n- 한국어 번역 속 콜로케이션: 대안 계획\\n\\n3. 문장 내에서 이 콜로케이션이 쓰인 이유 설명  \\n영어에서 'plan'은 '계획'이라는 뜻이에요. 그런데 'backup'이 앞에 붙으면서 '예비'나 '대안'의 의미가 더해져요. 그래서 'backup plan'은 '원래 계획이 안 될 때를 대비한 또 다른 계획'이라는 뜻이 돼요.  \\n문장에서는 'You should have a backup plan.'에서 'backup plan'이 '계획(plan)' 앞에 'backup'이 붙어서, '대안 계획'이라는 하나의 덩어리(콜로케이션)로 쓰인 거예요. 영어에서는 이런 식으로 'plan' 앞에 'backup' 같은 단어를 붙여서 새로운 의미를 만들 수 있어요.  \\n한국어에서도 '대안 계획'처럼 두 단어가 붙어서 하나의 뜻을 나타내는 경우가 많아요. 그래서 영어 문장에서도 'backup plan'이 붙어서 쓰인 거예요.\\n\\n정리  \\n- 'backup plan'은 'plan'에 'backup'이 붙어서 '대안 계획'이라는 새로운 뜻을 만들었어요.  \\n- 문장에서는 'backup plan'이 하나의 덩어리로 쓰여서, '대안 계획'이라는 의미를 전달해요.  \\n- 영어와 한국어 모두 이런 식으로 단어가 합쳐져서 새로운 의미를 만들 수 있어요.\",\n      \"Student_answer\": \"예비 계획\",\n      \"correctness\": 1,\n      \"original\": \"stress\",\n      \"q_sentence\": \"You should have a <u>backup plan</u>.\"\n    },\n    {\n      \"problem\": \"4. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>I opened a <u>bank account</u>.\",\n      \"answer\": \"은행 계좌\",\n      \"collocation\": \"bank account\",\n      \"LLM_FBK\": \"1. 번역  \\n\\\"I opened a bank account.\\\"의 한국어 번역은  \\n**\\\"나는 은행 계좌를 개설했다.\\\"** 또는 **\\\"나는 은행 계좌를 만들었다.\\\"**입니다.\\n\\n2. 콜로케이션 확인  \\n- 주어진 문장에서의 콜로케이션: **bank account**  \\n- 한국어 번역에서의 콜로케이션: **은행 계좌**  \\n  - \\\"은행\\\"과 \\\"계좌\\\"가 함께 자주 쓰여서 하나의 의미를 이루는 말입니다.\\n\\n3. 콜로케이션이 문장에 들어가는 이유(문법적으로 설명)  \\n\\\"bank account\\\"는 영어에서 \\\"은행에 있는 돈을 넣고 빼는 특별한 번호가 있는 곳\\\"을 말합니다. 영어에서는 \\\"bank\\\"와 \\\"account\\\"가 같이 붙어서 이 뜻을 만듭니다. 한국어도 마찬가지로 \\\"은행\\\"과 \\\"계좌\\\"를 붙여서 \\\"은행 계좌\\\"라고 해요.  \\n이렇게 두 단어가 항상 같이 쓰이는 이유는, \\\"계좌\\\"만 있으면 어디에 있는 계좌인지 알 수 없기 때문에, \\\"은행\\\"을 붙여서 \\\"은행 계좌\\\"라고 정확하게 말하는 거예요.  \\n즉, \\\"은행\\\"은 장소(어디에), \\\"계좌\\\"는 대상(무엇)을 나타내서, 둘이 합쳐져서 정확한 뜻이 됩니다.\\n\\n**피드백:**  \\n학생이 쓴 \\\"은행 계좌\\\"는 콜로케이션을 잘 썼어요! \\\"은행\\\"과 \\\"계좌\\\"가 항상 같이 쓰여서, 영어의 \\\"bank account\\\"와 똑같은 뜻이 됩니다.\",\n      \"Student_answer\": \"은행 계좌\",\n      \"correctness\": 1,\n      \"original\": \"sense\",\n      \"q_sentence\": \"I opened a <u>bank account</u>.\"\n    },\n    {\n      \"problem\": \"1. Which of the following nouns combines most naturally with bank?\",\n      \"answer\": \"bank account\",\n      \"collocation\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1,\n      \"original\": \"term\",\n      \"q_sentence\": \"\"\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please <u>confirm your identity</u> before you enter the website.\",\n      \"answer\": \"당신의 신원을 확인하다\",\n      \"collocation\": \"confirm your identity\",\n      \"LLM_FBK\": \"1. 번역  \\nPlease <u>confirm your identity</u> before you enter the website.  \\n→ 웹사이트에 들어가기 전에 <u>당신의 신원을 확인해 주세요</u>.\\n\\n2. 콜로케이션 확인  \\n- 영어 문장 속 콜로케이션: confirm your identity  \\n- 한국어 번역 속 콜로케이션: 신원을 확인하다\\n\\n3. 콜로케이션이 문장에 쓰인 이유 설명  \\n'confirm your identity'는 '신원을 확인하다'라는 뜻으로, 영어에서는 'confirm(확인하다)'와 'identity(신원)'가 자주 같이 쓰입니다.  \\n이렇게 두 단어가 자주 짝을 이루는 것을 '콜로케이션'이라고 해요.  \\n이 문장에서는 웹사이트에 들어가기 전에 누군지 확인해야 하니까, 'confirm your identity'라는 표현이 자연스럽게 쓰인 거예요.  \\n한국어로도 '신원을 확인하다'처럼 두 단어가 자주 같이 쓰여서, 자연스럽게 번역할 수 있습니다.\\n\\n정리  \\n- 콜로케이션은 'confirm your identity(신원을 확인하다)'입니다.  \\n- 이 표현은 신원을 확인하는 상황에서 자주 쓰이기 때문에, 문장에 자연스럽게 들어간 거예요.\",\n      \"Student_answer\": \"신원을 확인하다\",\n      \"correctness\": 1,\n      \"original\": \"confirm\",\n      \"q_sentence\": \"Please <u>confirm your identity</u> before you enter the website.\"\n    },\n    {\n      \"problem\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please <u>respond to</u> my message.\",\n      \"answer\": \"-에 응답하다\",\n      \"collocation\": \"respond to\",\n      \"LLM_FBK\": \"1. 번역  \\nPlease <u>respond to</u> my message.  \\n→ 제 메시지에 응답해 주세요.\\n\\n2. 콜로케이션 확인  \\n- 영어 문장: respond to  \\n- 한국어 번역: -에 응답하다\\n\\n3. 콜로케이션이 문장에 쓰인 이유 설명  \\n영어에서 \\\"respond\\\"는 혼자 쓰이지 않고, \\\"to\\\"와 함께 \\\"respond to ~\\\"로 써야 \\\"무엇에 대해 반응하다\\\"라는 뜻이 됩니다.  \\n이처럼 \\\"respond\\\"와 \\\"to\\\"는 항상 같이 쓰여서 \\\"respond to\\\"가 하나의 덩어리(콜로케이션)처럼 느껴집니다.  \\n한국어로 번역할 때도 \\\"응답하다\\\" 앞에 \\\"~에\\\"를 붙여서 \\\"무엇에 응답하다\\\"라고 해야 자연스럽습니다.  \\n즉, \\\"respond to my message\\\"는 \\\"내 메시지에 응답하다\\\"로 번역되는 것이 맞습니다.\\n\\n학생 답변 \\\"답장하다\\\"는 \\\"reply\\\"에 더 가까운 표현이고, \\\"respond to\\\"의 정확한 뜻과 쓰임을 모두 담지 못합니다.  \\n따라서 \\\"respond to\\\"는 \\\"응답하다\\\"와 같이 \\\"~에\\\"와 함께 써야 올바른 표현입니다.\",\n      \"Student_answer\": \"답장하다\",\n      \"correctness\": 1,\n      \"original\": \"respond\",\n      \"q_sentence\": \"Please <u>respond to</u> my message.\"\n    },\n    {\n      \"problem\": \"3. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>The study <u>explores into</u> causes.\",\n      \"answer\": \"~을 깊이 탐구하다\",\n      \"collocation\": \"explore into\",\n      \"LLM_FBK\": \"1. 번역  \\nThe study explores into causes.  \\n→ 그 연구는 원인들을 깊이 탐구한다.\\n\\n2. 콜로케이션 확인  \\n- 영어 문장 내 콜로케이션: explore into  \\n- 한국어 번역 내 콜로케이션: 깊이 탐구하다\\n\\n3. 콜로케이션이 문장에 쓰인 이유 설명  \\n영어에서 \\\"explore\\\"는 \\\"into\\\"와 함께 쓰지 않고, 그냥 \\\"explore causes\\\"라고 해야 자연스럽습니다. 하지만 학생이 \\\"explore into\\\"라고 쓴 것은 \\\"explore\\\"와 \\\"into\\\"를 같이 써야 한다고 생각해서 생긴 실수입니다.  \\n한국어로 \\\"깊이 탐구하다\\\"는 \\\"무엇을 자세히, 깊게 알아본다\\\"는 뜻입니다. 영어의 \\\"explore\\\"는 \\\"깊이\\\"라는 뜻이 이미 들어 있으므로, \\\"깊이\\\"라는 말을 붙여서 \\\"깊이 탐구하다\\\"라고 번역합니다.  \\n즉, 영어에서 \\\"explore\\\"는 \\\"into\\\" 없이 바로 목적어(원인들)를 받으므로, \\\"explore into\\\"는 문법적으로 맞지 않습니다. 한국어에서도 \\\"깊이 탐구하다\\\"가 자연스러운 표현입니다.\\n\\n**정리**  \\n- 영어에서 \\\"explore into\\\"는 잘못된 표현이고, \\\"explore\\\"만 써야 합니다.  \\n- \\\"깊이 탐구하다\\\"는 영어 \\\"explore\\\"의 의미를 잘 살린 한국어 표현입니다.  \\n- \\\"explore\\\"와 \\\"깊이 탐구하다\\\"가 서로 짝이 되는 콜로케이션입니다.\",\n      \"Student_answer\": \"깊히 탐구하다\",\n      \"correctness\": 1,\n      \"original\": \"relate\",\n      \"q_sentence\": \"The study <u>explores into</u> causes.\"\n    },\n    {\n      \"problem\": \"4. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please <u>stand still</u>.\",\n      \"answer\": \"가만히 서 있다, 정체되다\",\n      \"collocation\": \"stand still\",\n      \"LLM_FBK\": \"1. 번역  \\nPlease <u>stand still</u>.  \\n→ 제발 가만히 서 있어 주세요.\\n\\n2. 콜로케이션 확인  \\n- 영어 문장: stand still  \\n- 한국어 번역: 가만히 서 있다  \\n여기서 \\\"stand\\\"와 \\\"still\\\"이 함께 자주 쓰이는 말(콜로케이션)입니다. 한국어로는 \\\"가만히\\\"와 \\\"서 있다\\\"가 같이 쓰여 \\\"가만히 서 있다\\\"가 됩니다.\\n\\n3. 왜 이 콜로케이션이 문장에 쓰였는지(문법적으로)  \\n\\\"stand\\\"는 \\\"서다\\\"라는 뜻이고, \\\"still\\\"은 \\\"움직이지 않고\\\"라는 뜻이에요. 영어에서는 \\\"stand\\\"만 쓰면 그냥 \\\"서다\\\"라는 뜻이지만, \\\"still\\\"을 붙이면 \\\"가만히 서 있다\\\"라는 뜻이 돼요.  \\n즉, \\\"stand\\\"와 \\\"still\\\"이 같이 쓰여서 \\\"움직이지 않고 서 있어라\\\"라는 의미가 완성돼요.  \\n한국어에서도 \\\"가만히(움직이지 않고)\\\"와 \\\"서 있다\\\"를 같이 써서 같은 뜻을 나타냅니다.\\n\\n**정리:**  \\n- 영어에서 \\\"stand\\\"와 \\\"still\\\"이 자주 같이 쓰여 \\\"가만히 서 있다\\\"라는 뜻이 되고,  \\n- 한국어에서도 \\\"가만히\\\"와 \\\"서 있다\\\"를 같이 써서 같은 의미를 전달합니다.  \\n이렇게 두 단어가 함께 쓰여야 \\\"움직이지 말고 서 있으라\\\"는 뜻이 완성돼요.\",\n      \"Student_answer\": \"가만히 서있다\",\n      \"correctness\": 1,\n      \"original\": \"mean\",\n      \"q_sentence\": \"Please <u>stand still</u>.\"\n    },\n    {\n      \"problem\": \"1. Which of the following nouns combines most naturally with bank?\",\n      \"answer\": \"bank account\",\n      \"collocation\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1,\n      \"original\": \"relate\",\n      \"q_sentence\": \"\"\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please choose <u>the correct answer</u> on the test.\",\n      \"answer\": \"정답, 정확한 답\",\n      \"collocation\": \"correct answer\",\n      \"LLM_FBK\": \"1. 번역  \\nPlease choose <u>the correct answer</u> on the test.  \\n시험에서 <u>정답</u>을 골라 주세요.\\n\\n2. 콜로케이션 확인  \\n영어 문장에서는 \\\"correct answer\\\"가 콜로케이션입니다.  \\n한국어 번역에서는 \\\"정답\\\"이 이에 해당합니다.  \\n\\\"correct answer\\\"는 \\\"정확한 답\\\" 또는 \\\"정답\\\"으로 자연스럽게 함께 쓰이는 말입니다.\\n\\n3. 왜 이런 콜로케이션이 쓰였는지 설명  \\n영어에서 \\\"correct\\\"와 \\\"answer\\\"는 자주 함께 쓰여서 \\\"정답\\\"이라는 뜻을 만듭니다.  \\n\\\"correct\\\"는 \\\"맞는\\\", \\\"answer\\\"는 \\\"답\\\"이라는 뜻이지만, 두 단어를 합쳐 \\\"correct answer\\\"라고 하면 \\\"정답\\\"이라는 하나의 의미가 됩니다.  \\n한국어에서도 \\\"정답\\\"이라는 단어가 이미 \\\"맞는 답\\\"이라는 뜻을 담고 있어서, 따로 \\\"올바른 정답\\\"이라고 하지 않고 그냥 \\\"정답\\\"이라고만 써도 충분합니다.  \\n그래서 영어 문장에서도 \\\"correct answer\\\"라는 콜로케이션을 써서, \\\"정답\\\"이라는 뜻을 자연스럽게 전달한 것입니다.\\n\\n추가 설명  \\n학생 답변인 \\\"올바른 정답\\\"은 의미는 통하지만, 한국어에서는 \\\"정답\\\"만 써도 충분히 뜻이 통합니다.  \\n영어의 \\\"correct answer\\\"처럼, 한국어에서도 \\\"정답\\\"이라는 말이 이미 \\\"맞는 답\\\"이라는 뜻을 포함하고 있기 때문입니다.\",\n      \"Student_answer\": \"올바른 정답\",\n      \"correctness\": 1,\n      \"original\": \"correct\",\n      \"q_sentence\": \"Please choose <u>the correct answer</u> on the test.\"\n    },\n    {\n      \"problem\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>There was <u>a major change</u> in the economy, so many priceses went up.\",\n      \"answer\": \"큰 변화, 중다한 변화\",\n      \"collocation\": \"major change\",\n      \"LLM_FBK\": \"1. 번역  \\nThere was a major change in the economy, so many prices went up.  \\n→ 경제에 큰 변화가 있어서 많은 물가가 올랐어요.\\n\\n2. 콜로케이션과 한국어 번역  \\n- 콜로케이션: major change  \\n- 한국어 번역: 큰 변화\\n\\n3. 왜 이 콜로케이션이 사용되었는지(문장 구조상 설명)  \\n영어에서 'major change'는 '큰 변화'라는 뜻이에요. 여기서 'major'는 '중요한', '큰'이라는 뜻이고, 'change'는 '변화'라는 뜻이에요. 이 둘이 합쳐져서 '큰 변화'라는 뜻이 돼요. 영어에서는 'major' 같은 형용사가 'change' 같은 명사를 꾸며주기 때문에, 'major change'처럼 함께 자주 쓰여요. 한국어에서도 '큰 변화'처럼 형용사가 명사를 꾸며주는 구조가 같아요. 그래서 'major change'는 자연스럽게 '큰 변화'로 번역돼요.\\n\\n학생 답안 피드백  \\n'주요한 변경'은 자연스러운 표현이 아니에요. '주요한'은 '중요한'이라는 뜻이지만, '변경'은 주로 '바꾸는 것'을 말할 때 쓰고, '변화'는 상황이 달라지는 걸 말해요. 그래서 '큰 변화' 또는 '중대한 변화'가 더 자연스러워요.\",\n      \"Student_answer\": \"주요한 변경\",\n      \"correctness\": 1,\n      \"original\": \"major\",\n      \"q_sentence\": \"There was <u>a major change</u> in the economy, so many priceses went up.\"\n    },\n    {\n      \"problem\": \"3. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>She showed <u>genuine interest</u>.\",\n      \"answer\": \"genuine interest\",\n      \"collocation\": \"진심 어린 관심\",\n      \"LLM_FBK\": \"1. 번역  \\nThe river was filled with <u>clean water</u>.  \\n→ 강은 깨끗한 물로 가득 차 있었다.\\n\\n2. 콜로케이션 확인  \\n- 영어 문장 속 콜로케이션: clean water  \\n- 한국어 번역 속 콜로케이션: 깨끗한 물\\n\\n3. 콜로케이션이 문장에 쓰인 이유 설명  \\n‘clean water’에서 ‘clean’은 ‘물(water)’을 꾸며주는 말이에요. 영어에서는 ‘clean’(깨끗한) 같은 단어가 ‘water’(물)와 자주 같이 쓰여요. 이런 자주 같이 쓰이는 단어 조합을 ‘콜로케이션’이라고 해요.  \\n한국어에서도 ‘깨끗한 물’이라고 자연스럽게 말해요. ‘깨끗한’이 ‘물’을 꾸며주어서, 어떤 물인지 더 자세히 알려줘요. 그래서 영어 문장에서도, 한국어 문장에서도 ‘clean water’(깨끗한 물)처럼 단어가 짝을 이루어 쓰이는 거예요.\\n\\n**정리:**  \\n‘clean water’(깨끗한 물)은 ‘깨끗한’이 ‘물’을 꾸며주는 자연스러운 단어 짝이에요. 문장에서 어떤 물인지 알려주기 위해 이렇게 써요.\",\n      \"Student_answer\": \"깨끗한 물\",\n      \"correctness\": 1,\n      \"original\": \"genuine\",\n      \"q_sentence\": \"She showed <u>genuine interest</u>.\"\n    },\n    {\n      \"problem\": \"4. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>She was the only student who knew the <u>right answer</u>.\",\n      \"answer\": \"정답\",\n      \"collocation\": \"right answer\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1,\n      \"original\": \"right\",\n      \"q_sentence\": \"She was the only student who knew the <u>right answer</u>.\"\n    },\n    {\n      \"problem\": \"1. Which of the following nouns combines most naturally with bank?\",\n      \"answer\": \"bank account\",\n      \"collocation\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1,\n      \"original\": \"bank\",\n      \"q_sentence\": \"\"\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br><u>Apart from English</u>, I study math too.\",\n      \"answer\": \"영어 말고도, 영어 뿐만 아니라\",\n      \"collocation\": \"apart from\",\n      \"LLM_FBK\": \"1. 번역  \\n<u>Apart from English</u>, I study math too.  \\n→ 영어 말고도, 나는 수학도 공부해.\\n\\n2. 주어진 문장과 번역에서의 콜로케이션(자주 함께 쓰이는 말)  \\n- 영어 원문: apart from  \\n- 한국어 번역: ~말고도, ~뿐만 아니라\\n\\n3. 왜 이 콜로케이션이 문장에 쓰였는지(문법적으로 설명)  \\n영어 문장에서 \\\"apart from\\\"은 \\\"영어를 제외하고\\\" 또는 \\\"영어 이외에도\\\"라는 뜻이에요. 이 표현은 '영어' 말고도 다른 것이 있다는 것을 강조할 때 써요.  \\n한국어에서는 \\\"~말고도\\\" 또는 \\\"~뿐만 아니라\\\"라는 표현을 써서, \\\"영어\\\" 외에 \\\"수학도 공부한다\\\"는 뜻을 자연스럽게 전달해요.  \\n즉, \\\"apart from\\\"이 문장 맨 앞에 오면, \\\"영어\\\"를 먼저 말하고, 그 다음에 \\\"수학도 공부한다\\\"는 식으로 문장이 이어져요.  \\n예시:  \\n- 영어 말고도, 나는 수학도 공부해.  \\n- 영어뿐만 아니라, 나는 수학도 공부해.\\n\\n학생 답변인 \\\"영어와 별개로\\\"는 조금 딱딱하고 자연스럽지 않아요. \\\"별개로\\\"는 완전히 따로 떨어진 느낌이어서, \\\"말고도\\\"나 \\\"뿐만 아니라\\\"가 더 자연스럽고 자주 쓰여요.\\n\\n**피드백:**  \\n\\\"apart from\\\"은 \\\"~말고도\\\" 또는 \\\"~뿐만 아니라\\\"처럼, 어떤 것 외에 다른 것도 있다는 뜻을 자연스럽게 연결해 주는 표현이에요. \\\"영어와 별개로\\\"는 조금 어색하니까, \\\"영어 말고도\\\" 또는 \\\"영어뿐만 아니라\\\"를 쓰는 것이 더 좋아요!\",\n      \"Student_answer\": \"영어와 별개로\",\n      \"correctness\": 1,\n      \"original\": \"although\",\n      \"q_sentence\": \"<u>Apart from English</u>, I study math too.\"\n    },\n    {\n      \"problem\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br><u>Aside from one small mistake</u>, your essay is great.\",\n      \"answer\": \"사소한 실수 하나를 제외하고, 작은 실수 하나를 빼고\",\n      \"collocation\": \"aside from\",\n      \"LLM_FBK\": \"1. 번역  \\n<u>Aside from one small mistake</u>, your essay is great.  \\n→ 사소한 실수 하나를 제외하고, 네 에세이는 아주 훌륭해.\\n\\n2. 콜로케이션과 한국어 번역  \\n- 콜로케이션: aside from  \\n- 한국어 번역: ~을 제외하고, ~을 빼고\\n\\n3. 왜 이 콜로케이션이 이 문장에 쓰였는지(문법적으로)  \\n영어에서 \\\"aside from\\\"은 \\\"무엇을 빼고 생각하면\\\"이라는 뜻이에요. 이 표현은 어떤 한 가지(여기서는 \\\"one small mistake\\\")를 전체에서 빼고 나머지를 평가할 때 써요.  \\n즉, \\\"네 에세이는 아주 좋은데, 작은 실수 하나만 빼면 완벽해\\\"라는 뜻을 만들기 위해 \\\"aside from\\\"을 앞에 써서, 그 실수를 제외한 나머지를 칭찬하는 거예요.  \\n\\\"Aside from\\\"이 문장 맨 앞에 오면, \\\"무엇을 빼고\\\"라는 조건을 먼저 알려주고, 그다음에 전체(에세이)가 좋다고 말할 수 있어요.\\n\\n**정리:**  \\n\\\"aside from\\\"은 \\\"무엇을 빼고\\\"라는 뜻으로, 문장 맨 앞에 와서 \\\"이것만 빼면\\\"이라는 조건을 먼저 말해주는 역할을 해요.  \\n한국어로도 \\\"사소한 실수 하나를 제외하고\\\"처럼 앞에 쓰여서, 뒤에 나오는 \\\"에세이가 훌륭하다\\\"라는 평가에 조건을 붙여주는 거예요.\",\n      \"Student_answer\": \"한 개의 작은 실수를 빼고\",\n      \"correctness\": 1,\n      \"original\": \"altoghether\",\n      \"q_sentence\": \"<u>Aside from one small mistake</u>, your essay is great.\"\n    },\n    {\n      \"problem\": \"3. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Let’s <u>go through</u> the report.\",\n      \"answer\": \"go through\",\n      \"collocation\": \"겪다, 검토하다\",\n      \"LLM_FBK\": \"1. 번역  \\nHe is <u>nowhere near</u> ready for our appointment.  \\n→ 그는 우리 약속을 위해 준비가 <u>전혀 되어 있지 않다</u>.\\n\\n2. 콜로케이션과 한국어 번역  \\n- 콜로케이션: nowhere near  \\n- 한국어 번역: 전혀 ~이 아닌, 전혀 ~하지 않은\\n\\n3. 문장 속에서 이 콜로케이션이 쓰인 이유 (문법적 설명)  \\n‘nowhere near’는 ‘전혀 ~이 아니다’ 또는 ‘아직 멀었다’라는 뜻으로, 어떤 상태나 수준에 전혀 도달하지 못했음을 강조할 때 써요.  \\n이 문장에서는 ‘ready(준비됨)’라는 상태에 대해 말하고 있는데, ‘nowhere near’를 붙여서 ‘준비가 전혀 되어 있지 않다’는 뜻을 강조하고 있어요.  \\n즉, ‘nowhere near’는 ‘ready’를 꾸며주면서, 준비가 아주 부족하다는 것을 강하게 표현해 주는 역할을 해요.  \\n이렇게 ‘nowhere near + 형용사/부사’ 형태로 자주 쓰여요.  \\n예시:  \\n- He is nowhere near finished. (그는 끝내려면 아직 멀었다.)  \\n- She is nowhere near happy. (그녀는 전혀 행복하지 않다.)  \\n\\n즉, ‘nowhere near’는 뒤에 나오는 상태(형용사)를 꾸며 주는 말로, ‘전혀 ~이 아니다’라는 뜻을 만들어 줍니다.\",\n      \"Student_answer\": \"전혀 ~이 아닌\",\n      \"correctness\": 1,\n      \"original\": \"through\",\n      \"q_sentence\": \"Let’s <u>go through</u> the report.\"\n    },\n    {\n      \"problem\": \"4. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>I read it <u>over and over</u>.\",\n      \"answer\": \"반복해서, 계속해서\",\n      \"collocation\": \"over and over\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1,\n      \"original\": \"over\",\n      \"q_sentence\": \"I read it <u>over and over</u>.\"\n    },\n    {\n      \"problem\": \"1. Which of the following nouns combines most naturally with bank?\",\n      \"answer\": \"bank account\",\n      \"collocation\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1,\n      \"original\": \"bank\",\n      \"q_sentence\": \"\"\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+
+        "cond": "",
+
+        "desc": "어휘테스트 문항 Configuration"
+
+      },
+
+      "POS": {
+
+        "org": "nouns|verbs|adjectives|words",
+
+        "cond": "SELF",
+
+        "desc": "POS tag"
+
+      },
+
+      "Rand_iteration": {
+
+        "org": "2",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ID": {
+
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"S-113\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "N_IDX": {
+
+        "org": "20",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_IDX": {
+
+        "org": "17",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_IDX": {
+
+        "org": "15",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_IDX": {
+
+        "org": "2",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N": {
+
+        "org": "advantage|charge|contract|crime|cycle|element|force|health|identity|interest|office|order|peace|plant|practice|quality|reason|record|scale|sense|stress|subject|term|view",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N_COL": {
+
+        "org": "take advantage of|free of charge|sign a contract|commit a crime|life cycle|key element|by force|good health|identity card|an interest in|post office|in order to|at peace|power plant|practice test|high quality|reason for|keep a record of|on a large scale|make sense|under stress|school subject|short term|point of view",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N_ANS": {
+
+        "org": "-를 이용하다, -를 활용하다|무료로, 공짜로, 무료의, 공짜의, 무료, 공짜|계약에 서명하다, 계약하다|범죄를 저지르다|생애 주기|핵심 요소|힘으로, 무력으로, 강제로|건강이 좋음. 건강한 상태, 건강함|신분증|-에 대한 관심, -에 대한 흥미|우체국|-하기 위해서|평온한, 마음이 편안한, 평화로운|발전소|모의고사, 연습용 시험|고품질, 품질이 좋은, 고품질의|-의 이유|-를 기록하다, -의 기록을 남기다, -를 기록해 두다|대규모로|말이 되다, 이해가 되다, 이치에 맞다|스트레스를 받은 상태에서, 압박을 받는 상태에서, 스트레스를 받는, 압박을 받는|학교 과목|단기, 단기의|관점, 견해, 시각",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "N_SEN": {
+
+        "org": "You should <u>take advantage of</u> this free class.|The museum is <u>free of charge</u> on Sundays.|My dad will <u>sign a contract</u> for his new job.|It is wrong to <u>commit a crime</u> even for money.|We learned <u>the life cycle</u> of a butterfly in science class.|Trust is <u>a key element</u> in a good friendship.|He tried to take my phone <u>by force,</u> but I said no.|Eating vegetables helps you stay in <u>good health</u>.|Please show your <u>identity card</u> at the entrance.|I have <u>an interest in</u> soccer, so I watch games every weekend.|I went to <u>the post office</u> to send a package.|I study every day <u>in order to</u> improve my grades.|I feel <u>at peace</u> when I listen to quiet music.|The city gets electricity from a nearby <u>power plant</u>.|I took <u>a practice test</u> before the real exam.|This bag is <u>high quality</u>, so it will last a long time.|What is <u>the reason for</u> your late homework?|<u>Keep a record of</u> your reading time each day.|The festival was held <u>on a large scale</u> this year.|Your story doesn’t <u>make sense</u>, so please explain it again.|When I’m <u>under stress</u>, I can’t sleep well.|Math is my favorite <u>school subject</u>.|In the <u>short term</u>, you can use my phone charger until you buy a new one.|From my <u>point of view</u>, the math test was difficult, but my friend said it was easy.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V": {
+
+        "org": "adapt|affect|appeal|argue|confirm|convince|define|divide|escape|establish|govern|mean|refer|relate|report|require|respond|sign|succeed",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_COL": {
+
+        "org": "adapt to|affect your health|appeal to|argue about|confirm your identity|convince ~ to...|define ~ as...|divide ~ into...|escape from|establish a rule|govern a country|mean by|refer to|relate to|report to|required to|respond to|sign up for|succeed in",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_ANS": {
+
+        "org": "-에 적응하다|당신의 건강에 영향을 주다, 너의 건강에 영향을 주다, 너의 건강에 영향을 끼치다|-의 마음을 끌다, -에게 호소하다|-에 대해 다투다, -에 대해 논쟁하다|당신의 신원을 확인하다|그녀의 어머니가 ...하도록 설득하다|에너지를 …로 정의했다|반을 …로 나누다, 학급을 ...로 나누다|-에서 탈출하다|규칙을 세우다/정하다|나라를 통치하다/운영하다|\n- 로 의미하다| -을 참고하다|-에 공감하다|-에게 보고하다|해야 한다, 요구되다|-에 응답하다|등록하다, 신청하다|-하는데 성공하다",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "V_SEN": {
+
+        "org": "I had to <u>adapt to</u> my new school quickly.|Too much stress can <U>affect your health</u>.|This movie <u>appeals to</u> many teenagers.|They <u>argued about</u> which game to play.|Please <u>confirm your identity</u> before you enter the website.|She <u>convinced her mom to</u> let her join the club.|The teacher <u>defined “energy” as</u> the ability to do work.|Let’s <u>divide the class into</u> four groups.|The rabbit tried to <u>escape from</u> the cage.|Our class decided to <u>establish a rule</u>: no phones during lessons.|A president <u>governs a country</u> and makes important decisions.|What do you <u>mean by</u> “free of charge”?|Please <u>refer to</u> page 10 in your book.|I can <u>relate to</u> that feeling—you miss your friends when you move to a new place, right?|If there is an accident at school, <u>report to</u> the police right away.|Students are <u>required to</u> wear school uniforms.|Please <u>respond to</u> my message.|Many students <u>sign up for</u> the school club to make new friends.|She wants to <u>succeed in</u> passing the test this time.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ": {
+
+        "org": "able|absolute|aware|clear|complete|complex|constant|correct|direct|equal|extreme|final|general|legal|major|minor|modern|necessary|perfect|possible|popular|private|public|responsible|specific",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_COL": {
+
+        "org": "able to|absolute silence|aware of|a clear answer|complete set|complex problem|constant noise|correct answer|direct answer|equal rights|exreme weather|final decision|in general|legal advice|major change|minor mistake|modern art|necessary to|perfect score|as ~ as possible|popular among|private matter|public places|responsible for|specific example",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_ANS": {
+
+        "org": "-할 수 있는|완전한 정적, 완전한 침묵|-를 알고 있는, -를 의식하는|명확한 답변, 명확한 대답|완전한 세트, 완벽한 세트, 전부 갖춘 세트|복잡한 문제|끊임없는 소음, 지속적인 소음|정답, 정확한 답|직접적인 대답, 단도직입적인 답|평등권, 평등한 권리|극심한 날씨|최종 결정, 마지막 결정|일반적으로, 대체로|법률적 조언, 법률 조언|큰 변화, 중다한 변화|사소한 실수|현대 미술|-할 필요가 있는, -하는 것이 필요한|만점|가능한 한 빨리|-에게 인기 있는, -에게 인기가 있는|개인적인 일, 개인적인 문제|공공 장소|-를 책임지는, -에 책임이 있는|구체적인 예시, 특정한 예시",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "ADJ_SEN": {
+
+        "org": "I am <u>able to</u> finish my homework on time.|There was <u>absolute silence</u> in the classroom during the test.|Be <u>aware of</u> your surroundings when you walk at night.|Please give <u>a clear answer</u> to the question.|I turned in the <u>complete set</u> of worksheets.|This is <u>a complex problem</u>, so let’s solve it step by step.|There is <u>constant noise</u> from the construction site.|Please choose <u>the correct answer</u> on the test.|Please give me <u>a direct answer</u>, yes or no. |All students should have <u>equal rights</u> at school.|We stayed inside because of <u>extreme weather</u>.|This is my <u>final decision</u>, so I won’t change it.|<u>In general</u>, I study after dinner.|You should ask for <u>legal advice</u> before signing the paper.|There was <u>a major change</u> in the economy, so many priceses went up.|I made <u>a minor mistake</u>, but I fixed it right away.|This museum has <u>modern art</u> on the second floor.|It is <u>necessary to</u> wear a helmet when you ride a bike.|She got <u>a perfect score</u> on the quiz.|Please come <u>as soon as possible</u>.|This song is <u>popular among</u> teenagers.|This is <u>a private matter</u>, so please don’t share it.|Smoking is not allowed in <u>public places</u>.|He is <u>responsible for</u> cleaning the classroom.|Please give <u>a specific example</u> from the story.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH": {
+
+        "org": "although|altoghether|apart|aside|beyond|despite|either|else|except|indeed|instead|moreover|neither|once|overall|otherwise|quite|rather|since|soon|therefore|though|through|until|without",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_COL": {
+
+        "org": "apart from|aside from|either ~ or ~|anything else|except for|instead of|neither ~ nor ~|once in a while|quite sure|would reather|as soon as|even though|go through|not ~ until...",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_ANS": {
+
+        "org": "영어 말고도, 영어 뿐만 아니라|사소한 실수 하나를 제외하고, 작은 실수 하나를 빼고|차 혹은 커피|또 다른 것|미나를 제외하고|대신에|내 형제도 나도 아니다, 내 형제도 나도 아닌|가끔|꽤 확신하는, 매우 확신하는|차라리 머물고 싶다|너가 집에 오자마자|비록 -일지라도|-를 살펴보다, 훑어보다|선생님이 설명하고 나서야 비로소 그것을 이해했다, 선생님이 설명하기 전까지 그것을 이해하지 못했다",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "OTH_SEN": {
+
+        "org": "<u>Apart from English</u>, I study math too.|<u>Aside from one small mistake</u>, your essay is great.|You can choose <u>either tea or coffee</u> with your breakfast.|Do you need <u>anything else</u> from the store?|Everyone came <u>except for Mina</u>.|<u>Instead of </u>playing games, I finished my homework.|<u>Neither my brother nor I</u> like spicy food.|I eat pizza once in a while, usually on weekends.|I’m <u>quite sure</u> this is the correct answer.|I <u>would rather stay</u> home than go out today.|Call me <u>as soon as</u> you arrive home.|<u>Even though</u> she was tired, she kept walking.|I had to <u>go through</u> my notes before the quiz.|I did <u>not understand it until the teacher explained</u> it again.",
+
+        "cond": "SELF",
+
+        "desc": ""
+
+      },
+
+      "P_N1": {
+
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please show your <u>identity card</u> at the entrance.\",\n  \"response\": \"신원카드\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_N2": {
+
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Your story doesn’t <u>make sense</u>, so please explain it again.\",\n  \"response\": \"이해가 되다\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_V1": {
+
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please <u>confirm your identity</u> before you enter the website.\",\n  \"response\": \"신원을 확인하다\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_V2": {
+
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please <u>respond to</u> my message.\",\n  \"response\": \"답장하다\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_ADJ1": {
+
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>Please choose <u>the correct answer</u> on the test.\",\n  \"response\": \"올바른 정답\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_ADJ2": {
+
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>There was <u>a major change</u> in the economy, so many priceses went up.\",\n  \"response\": \"주요한 변경\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_OTH1": {
+
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"label\": \"1. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br><u>Apart from English</u>, I study math too.\",\n  \"response\": \"영어와 별개로\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      },
+
+      "P_OTH2": {
+
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"label\": \"2. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br><u>Aside from one small mistake</u>, your essay is great.\",\n  \"response\": \"한 개의 작은 실수를 빼고\"\n}",
+
+        "cond": "",
+
+        "desc": ""
+
+      }
+
+    }
+
+  },
+
+  "prompts": [
+
+    {
+
+      "system": "",
+
+      "user": "/\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/\n@TEXT(ID, \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/틀리면 turn 2, 맞으면 turn 4\n@JUMP(@MAP(\"@TEXT(ID)@\", \"@Identification@\", \"4|@TN(-1)@\", EXACT)@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/\n@SET(N_IDX, \"@INDEX(\"@N@\", \"@N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@V@\", \"@V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@ADJ@\", \"@ADJ[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@OTH@\", \"@OTH[.]@\")@\", SELF)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "// 문항 JSON 셋업\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>@N_SEN[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@N_ANS[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].original, \"@N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].collocation, \"@N_COL[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].q_sentence, \"@N_SEN[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>@V_SEN[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@V_ANS[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].original, \"@V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].collocation, \"@V_COL[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].q_sentence, \"@V_SEN[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>@ADJ_SEN[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ADJ_ANS[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].original, \"@ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].collocation, \"@ADJ_COL[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].q_sentence, \"@ADJ_SEN[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 문장에서 밑줄친 부분을 우리말로 해석하시오.<br>@OTH_SEN[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@OTH_ANS[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].original, \"@OTH[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].collocation, \"@OTH_COL[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].q_sentence, \"@OTH_SEN[@OTH_IDX@]@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ 문제 풀이 iteration: Noun\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ noun question input\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+
+      "user": "- problem and student response: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": "1|0"
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n1. Noun\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Noun[@R_i@].q_sentence@ in Korean.\n        2. identify collocation in the given sentence in the question and its Korean translation.\n        3. Explain why this particular collocation comes in the question sentence syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n4. Feedback Language: Korean.\n    </rule>\n    \n</instructions>",
+
+      "user": "- question sentence: @JSON_test_config.Noun[@R_i@].q_sentence@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n- student answer: @JSON_test_config.Noun[@R_i@].Student_answer@\n- collocation: @JSON_test_config.Noun[@R_i@].collocation@\n- original form of the collocation: @JSON_test_config.Noun[@R_i@].original@",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": true,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ llm feedback update: noun \n@UPJ(JSON_test_config.Noun[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ 문제 풀이 iteration: Verb\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ verb question input\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+
+      "user": "- problem and student response: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": "1|0"
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n2. Verb\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Verb[@R_i@].q_sentence@ in Korean.\n        2. identify collocation in the given sentence in the question and its Korean translation.\n        3. Explain why this particular collocation comes in the question sentence syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n4. Feedback Language: Korean.\n    </rule>\n    \n</instructions>",
+
+      "user": "- question sentence: @JSON_test_config.Verb[@R_i@].q_sentence@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n- student answer: @JSON_test_config.Verb[@R_i@].Student_answer@\n- collocation: @JSON_test_config.Verb[@R_i@].collocation@\n- original form of the collocation: @JSON_test_config.Verb[@R_i@].original@",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": true,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ llm feedback update: verb \n@UPJ(JSON_test_config.Verb[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ 문제 풀이 iteration: Adjective\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ adjective question input\n@TEXT(P_ADJ@R_i@, \"@JSON_test_config.Adjective[@R_i@].problem@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+
+      "user": "- problem and student response: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": "1|0"
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n3. Adjective\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Adjective[@R_i@].q_sentence@ in Korean.\n        2. identify collocation in the given sentence in the question and its Korean translation.\n        3. Explain why this particular collocation comes in the question sentence syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprehensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n4. Feedback Language: Korean.\n    </rule>\n    \n</instructions>",
+
+      "user": "- question sentence: @JSON_test_config.Adjective[@R_i@].q_sentence@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n- student answer: @JSON_test_config.Adjective[@R_i@].Student_answer@\n- collocation: @JSON_test_config.Adjective[@R_i@].collocation@\n- original form of the collocation: @JSON_test_config.Adjective[@R_i@].original@",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": true,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ llm feedback update: Adjective \n@UPJ(JSON_test_config.Adjective[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ 문제 풀이 iteration: others\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ others question input\n@TEXT(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+
+      "user": "- problem and student response: @P_OTH@R_i@@\n- true answer: @JSON_test_config.others[@R_i@].answer@\n",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": "1|0"
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n4. Others\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@TEXT(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.others[@R_i@].q_sentence@ in Korean.\n        2. identify collocation in the given sentence in the question and its Korean translation.\n        3. Explain why this particular collocation comes in the question sentence syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprehensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n4. Feedback Language: Korean.\n    </rule>\n    \n</instructions>",
+
+      "user": "- question sentence: @JSON_test_config.others[@R_i@].q_sentence@\n- true answer: @JSON_test_config.others[@R_i@].answer@\n- student answer: @JSON_test_config.others[@R_i@].Student_answer@\n- collocation: @JSON_test_config.others[@R_i@].collocation@\n- original form of the collocation: @JSON_test_config.others[@R_i@].original@",
+
+      "temperature": "0.3",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": true,
+
+      "show": true,
+
+      "model": "gpt-4.1",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/ llm feedback update: others \n@UPJ(JSON_test_config.others[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "//Adjust Final Score; Cumulative score and due to CAFA indexing issue\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "// Final Report\n명사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Noun@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n동사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Verb@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n형용사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Adjective@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n기타 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].others@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n\n",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    },
+
+    {
+
+      "system": "",
+
+      "user": "/다음 인풋을 위한 점수 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+
+      "temperature": "0.5",
+
+      "max-tokens": "2000",
+
+      "send-mail": false,
+
+      "markdown": false,
+
+      "show": true,
+
+      "model": "gpt-4.1-nano",
+
+      "output-values": ""
+
+    }
+
+  ]
+
+}

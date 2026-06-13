@@ -1,0 +1,352 @@
+{
+  "options": {
+    "title": "<h1>중학교 파생어_심화</h1>",
+    "brief": "",
+    "name": "[Updated] 중학교 파생어_심화",
+    "description": "중학교 수준 어휘 75개를 바탕으로 파생어에 대한 심화(고급레벨) 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다. \n",
+    "greeting": "제시어(기본형)를 적절한 파생어 형태로 바꾸어 문장을 완성하세요. 화면 아래 입력창에 단어를 입력하면 됩니다.  문제 개수는 랜덤으로 변화합니다. \n<br><br>예제: She is very ________ when it comes to important matters.<br>\n답: decisive ",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": "문항 구글 시트 ID (메모리 참조 주소)"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>This offer is ______.\\n                   (condition)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"This offer is ______.\\n                   (condition)\",\n      \"answer\": \"conditional\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"conditional\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The book is ______, not fictional.\\n                    (fact)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"The book is ______, not fictional.\\n                    (fact)\",\n      \"answer\": \"factual\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"factual\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>There are 100 people ______ the plane.\\n                                   (board)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"There are 100 people ______ the plane.\\n                                   (board)\",\n      \"answer\": \"onboard\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"onboard\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>Coffee ______ me in the morning.\\n           (energy)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"Coffee ______ me in the morning.\\n           (energy)\",\n      \"answer\": \"energize\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"addresser\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>She is ______ nicely.\\n           (dress)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"She is ______ nicely.\\n           (dress)\",\n      \"answer\": \"dressed\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"dressed\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The statue is ______.\\n                      (fall)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"The statue is ______.\\n                      (fall)\",\n      \"answer\": \"fallen\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"fallen\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>Be ______ of others.\\n     (mind)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"Be ______ of others.\\n     (mind)\",\n      \"answer\": \"mindful\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"mindful\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>We follow safety ______.\\n                           (stand)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"We follow safety ______.\\n                           (stand)\",\n      \"answer\": \"standard\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"standard\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>No one trusts a ______.\\n                         (lie)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"No one trusts a ______.\\n                         (lie)\",\n      \"answer\": \"liar\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"fallen\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The bus ______ stopped the bus.\\n              (drive)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"The bus ______ stopped the bus.\\n              (drive)\",\n      \"answer\": \"driver\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"driver\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>______ comes first.\\n(Safe)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"______ comes first.\\n(Safe)\",\n      \"answer\": \"safety\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"Safety\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The story is ______.\\n                    (fun)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"The story is ______.\\n                    (fun)\",\n      \"answer\": \"funny\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"fun\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"3. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>You judged it ______.\\n                      (right)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"You judged it ______.\\n                      (right)\",\n      \"answer\": \"rightly\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"rightly\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The shop is ______ opened.\\n                    (new)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"The shop is ______ opened.\\n                    (new)\",\n      \"answer\": \"newly\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"badly\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>______, we clean the room.\\n(Last)\",\n      \"problem_reference\": \"\",\n      \"q_sentence\": \"______, we clean the room.\\n(Last)\",\n      \"answer\": \"lastly\",\n      \"derivative_q\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"Lastly\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 4,\n      \"Verb\": 4,\n      \"Adjective\": 3,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "어휘테스트 문항 Configuration"
+      },
+      "Rand_iteration": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "1회분 문항 반복 수 (turn 0에서 @N(2,5)@로 랜덤 생성)"
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"26001\"\n}",
+        "cond": "",
+        "desc": "학생이 입력하는 일련번호 (인증 입력값)"
+      },
+      "N_IDX": {
+        "org": "11",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "V_IDX": {
+        "org": "16",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "ADJ_IDX": {
+        "org": "19",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>This offer is ______.\\n                   (condition)\",\n  \"response\": \"conditional\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The statue is ______.\\n                      (fall)\",\n  \"response\": \"fallen\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>______ comes first.\\n(Safe)\",\n  \"response\": \"Safety\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The book is ______, not fictional.\\n                    (fact)\",\n  \"response\": \"factual\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>Be ______ of others.\\n     (mind)\",\n  \"response\": \"mindful\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The story is ______.\\n                    (fun)\",\n  \"response\": \"fun\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"label\": \"3. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>There are 100 people ______ the plane.\\n                                   (board)\",\n  \"response\": \"onboard\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"label\": \"3. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>We follow safety ______.\\n                           (stand)\",\n  \"response\": \"standard\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"label\": \"3. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>You judged it ______.\\n                      (right)\",\n  \"response\": \"rightly\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"label\": \"4. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>Please check the ______ before mailing.\\n                          (address)\",\n  \"response\": \"addresser\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"label\": \"4. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The statue is ______.\\n                      (fall)\",\n  \"response\": \"fallen\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"label\": \"4. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The machine works ______.\\n                                (bad)\",\n  \"response\": \"badly\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_N5": {
+        "org": "{\n  \"id\": \"P_N5\",\n  \"label\": \"5. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>She is ______ nicely.\\n           (dress)\",\n  \"response\": \"dressed\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 5번 문항 객체 (질문·선택지)"
+      },
+      "P_V5": {
+        "org": "{\n  \"id\": \"P_V5\",\n  \"label\": \"5. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>The bus ______ stopped the bus.\\n              (drive)\",\n  \"response\": \"driver\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 5번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ5": {
+        "org": "{\n  \"id\": \"P_ADJ5\",\n  \"label\": \"5. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>______, we clean the room.\\n(Last)\",\n  \"response\": \"Lastly\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 5번 문항 객체 (질문·선택지)"
+      },
+      "FLIST": {
+        "org": "DRV_N|PRM_N|DRV_V|PRM_V|DRV_ADJ|PRM_ADJ",
+        "cond": "SELF",
+        "desc": "문항 필드 파라미터 이름 목록 (반복 처리용)"
+      },
+      "DRV_N": {
+        "org": "advantageous|charger|contractor|criminal|recycling|elementary|forceful|unhealthy|identification|interesting|objection|official|disorder|peaceful|replant|practical|qualified|unreasonable|recording|scaled|senseless|stressed|subjective|terminal|viewable",
+        "cond": "SELF",
+        "desc": "명사(Noun) 파생어 보기 풀"
+      },
+      "PRM_N": {
+        "org": "This is ______  for us.\n         (advantage) |I need a _______  to turn on my phone.\n              (charge) |The ______ fixed my roof.\n     (contract)|He is a _______.\n             (crime)|______  is good.\n(recycle) |This is an _______ question for beginners. \n                (element)|He gave a _______ push.\n                   (force) |Drinking too much soda is _______.\n                                           (health)|Show me your _______, please.\n                       (identity)|I read a very _______ book.\n                      (interest)|I have an ________.\n                 (object)|This is an _______ letter.\n                (office)|After the party, the room was in ______ (order).\n|The park is _______ (peace). |The tree fell, so we will _______  it.\n                                      (plant)|This is a ______ idea.\n              (practice) |She is ______  for the job with 20-year career.\n          (quality)|That price is _______ for such a simple item.\n                    (reason)|I didn't come to the meeting, so I listened to the voice memo ______(record).|The size was big, so the picture was ______ down.\n                                                (scale)|They fought for no reason. That fight was ______(sense).|I feel ______ today. \n         (stress)|Beauty is ______(subject). |The new bus _______ is being built in our city.\n                        (term) |This video is not _______ on my phone.\n                            (view)",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "DRV_V": {
+        "org": "adaptable|affection|unappealing|argument|confirmation|convincing|definition|divisible|inescapable|reestablish|government|meaningless|mispronounce|referee|relationship|reporter|representative|requirement|response|signature|striking|successful|suitable|supposedly",
+        "cond": "SELF",
+        "desc": "동사(Verb) 파생어 보기 풀"
+      },
+      "PRM_V": {
+        "org": "She is ______ in a new place.\n            (adapt)|He showed ______ by hugging his mom.\n                   (affect)|The food looks ______ because of its strange color.\n                        (appeal)|They had an ______ about money.\n                     (argue)|I got a ______ email.\n           (confirm)|His story is _______.\n                 (convince)|What is the _______ of this word?\n                   (define)|Ten is _______ by two.\n           (divide) |Death is certain. It is ______ for all.\n                                 (escape)|After the fight, they ______ their friendship.\n                              (establish)|They run the country. They are the _______.\n                                                        (govern)|This fight is _______.\n                   (meaning)|This word is hard to say. I _______  it.  \n                                       (pronounce)|The ______ stopped the game.\n        (refer)|They have a good ______ and help each other.\n                              (relate)|The ______ asked me a question.\n       (report)|We chose a new ________.\n                           (represent)|This is a _______.\n              (require)|I got a _______.\n           (respond)|Write your _______ here.\n                   (sign)|She has ______ eyes.\n               (strike)|I got an A. The test was ______.\n                                    (success)|This movie is ______ for kids.\n                       (suit)|He is ______ sick, according to his friends.\n         (suppose)",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "DRV_ADJ": {
+        "org": "ability|absolutely|awareness|clarify|incomplete|complexity|constantly|incorrect|indirect|inequality|extremely|finally|generalize|illegal|majority|minority|modernize|unnecessary|imperfect|possibility|popularity|privacy|publicly|irresponsible|specify",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 파생어 보기 풀"
+      },
+      "PRM_ADJ": {
+        "org": "He has the ______ to swim.\n                   (able)|I ______ agree.\n  (absolute)|The class raised ______ of safety.\n                           (aware)|Please ______ your answer.\n             (clear)|Something is missing. This form is _______.\n                                                       (complete)|I don’t like the _______ of this plan.\n                        (complex)|The baby cries _______.\n                        (constant)|3 plus 4 is 7, not 8. Your answer is ______.\n                                                        (correct) |I heard it from Tom. It was ______ news.\n                                           (direct)|People talk about _______ between rich and poor.\n                              (equal)|The north pole is _______ cold.\n                            (extreme)                           |He tried many times, and he _____ won.\n                                              (final)|Don’t ______ about people.\n         (general)|Stealing is ______.\n                   (legal)|In our class, the ______ chose pizza.\n                           (major)|Only a ______ chose the red one.\n           (minor)|Our office is too old. We need to _______ it. \n                                                     (modern)|We have finished this. More work is ________.\n                                                          (necessary)|I forgot some parts. My memory is ______.\n                                                       (perfect)|There is a ______ of rain.\n                (possible)|His ______ is high.\n      (popular)|Please respect my _______.\n                               (private)|He apologized _______. \n                        (public)|It was _______ to drive so fast.\n        (responsible)|Don't just say \"later.\" Please ______ the time.\n                                             (specific)",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "ID_LOWER": {
+        "org": "26001",
+        "cond": "SELF",
+        "desc": "학생 인증: 최소 ID 번호 (26001부터 26160 범위)"
+      },
+      "ID_UPPER": {
+        "org": "26160",
+        "cond": "SELF",
+        "desc": "학생 인증: 최대 ID 번호 (26001부터 26160 범위)"
+      },
+      "Student_auth_list": {
+        "org": "@COMPARE(\"@EVAL(\"@TEXT(ID)@-26000\")@\", \"0\", \">\")@|@COMPARE(\"@EVAL(\"26161-@TEXT(ID)@\")@\", \"0\", \">\")@",
+        "cond": "SELF",
+        "desc": "학생 인증 검증: 1차 비교: (입력값 - 26000) > 0 = 입력값 >= 26001; 2차 비교: (26161 - 입력값) > 0 = 입력값 <= 26160"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ [셋업] 구글 시트에서 문항 테이블 로드 (GSTABLE)\n@GSTABLE(\"1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI\",\"derivatives_B2_T3!A1:F\")@\"",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] 1회분 문항 반복 수를 랜덤(@N(2,5)@)으로 생성\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 학생 일련번호 입력창 (26OOO 형식)\n@TEXT(ID, \"선생님이 배부해준 26OOO 형식의 일련번호를 입력하세요. (입력예시: 26113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 입력값이 허용 범위(ID_LOWER~ID_UPPER)인지 검증 — 실패 시 입력 turn 복귀, 통과 시 turn 4 진행\n@JUMP(@MAP(\"@EQUAL(\"@Student_auth_list@\", \"true|true\")@\", \"true\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [안내] 환영 메시지 및 총 문항 수 안내\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"3*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] POS별 문항 풀에서 랜덤 인덱스(*_IDX) 추출\n@SET(N_IDX, \"@INDEX(\"@PRM_N@\", \"@PRM_N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@PRM_V@\", \"@PRM_V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@PRM_ADJ@\", \"@PRM_ADJ[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] 추출한 문항·정답(·보기)을 JSON_test_config에 기록\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>@PRM_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].problem_reference, \"\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@DRV_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].derivative_q, \"\")@\n@UPJ(JSON_test_config.Noun[@R_i@].q_sentence, \"@PRM_N[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>@PRM_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].problem_reference, \"\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@DRV_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].derivative_q, \"\")@\n@UPJ(JSON_test_config.Verb[@R_i@].q_sentence, \"@PRM_V[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 아래 문장 속 주어진 단어의 파생어를 밑줄에 알맞게 써서 문장을 완성하시오.<br>@PRM_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].problem_reference, \"\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@DRV_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].derivative_q, \"\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].q_sentence, \"@PRM_ADJ[@ADJ_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(3)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 단답(@TEXT) 문항 입력창 — 전 POS\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@|\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@|\n@TEXT(P_ADJ@R_i@,\n\"@JSON_test_config.Adjective[@R_i@].problem@\")@|",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [채점] 학생 응답 정오 판정 후 점수·correctness 기록 (RWORD: 느슨한 단어 일치)\n\n1. Noun\nT/F boolean: @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",RWORD)@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",RWORD)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",RWORD)@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",RWORD)@)@\n\n2. Verb\nT/F boolean: @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",RWORD)@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",RWORD)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",RWORD)@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",RWORD)@)@\n\n3. Adjective\nT/F boolean: @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",RWORD)@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",RWORD)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",RWORD)@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",RWORD)@)@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the answer for the question, create a feedback report for each of three major POS questions (Noun, Verb, Adjective) that includes the following:\n            1. Translate the question sentence in Korean.\n            2. Explain why the particular derivative word from the question sentence comes in the sentence syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. use parser to distinguish each response of Noun, Verb, and Adjective, respectively\n    </rule>\n    <example>\n        <Noun>\n# 명사\n1. 문제 문장 한글 번역:  \n\"The ______ helps people with money.\"  \n→ \"______는(은) 사람들의 돈을 도와줍니다.\"\n\n2. 파생어가 문장에 들어가는 이유 설명:  \n문장에서 빈칸은 '사람'을 가리키는 자리입니다. 'bank(은행)'에서 파생된 'banker(은행원)'는 '은행에서 일하는 사람'이라는 뜻입니다. 영어에서는 '사람'을 나타내는 '-er'를 붙여서 'banker'처럼 만듭니다. 이 문장에서 'The banker helps people with money.'라고 하면, '은행원은 돈과 관련해서 사람들을 도와준다'라는 뜻이 되어 문장에 잘 어울립니다.\n\n<Verb>\n# 동사\n1. 문제 문장 한글 번역:  \n\"The road seems ______.\"  \n→ \"그 길은 ______처럼 보인다.\"\n\n2. 파생어가 문장에 들어가는 이유 설명:  \n문장에서 빈칸은 '길이 어떤 상태처럼 보인다'를 설명하는 자리입니다. 'end(끝)'에서 파생된 'endless(끝이 없는)'는 '끝이 없다'는 뜻의 형용사입니다. 영어에서는 '-less'를 붙여서 '~이 없는'이라는 뜻을 만듭니다. 그래서 'The road seems endless.'라고 하면, '그 길은 끝이 없어 보인다'라는 뜻이 되어 문장에 맞게 사용됩니다.\n\n<Adjective>\n# 형용사\n1. 문제 문장 한글 번역:  \n\"Stars shine ______.\"  \n→ \"별들은 ______ 빛난다.\"\n\n2. 파생어가 문장에 들어가는 이유 설명:  \n문장에서 빈칸은 '어떻게 빛나는지'를 설명하는 자리입니다. 'bright(밝은)'에서 파생된 'brightly(밝게)'는 '밝게'라는 뜻의 부사입니다. 영어에서는 '-ly'를 붙여서 '어떻게'라는 뜻을 더해줍니다. 그래서 'Stars shine brightly.'라고 하면, '별들은 밝게 빛난다'라는 뜻이 되어 문장에 딱 맞게 사용됩니다.\n    </example>\n</instructions>\n",
+      "user": "1. Noun\n- Question and the corresponding answer: @P_N@R_i@@\n- student answer: @JSON_test_config.Noun[@R_i@].Student_answer@\n- the particular derivative word from the question sentence: @JSON_test_config.Noun[@R_i@].answer@\n2. Verb\n- Question and the corresponding answer: @P_V@R_i@@\n- student answer: @JSON_test_config.Verb[@R_i@].Student_answer@\n- the particular derivative word from the question sentence: @JSON_test_config.Verb[@R_i@].answer@\n3. Adjective\n- Question and the corresponding answer: @P_ADJ@R_i@@\n- student answer: @JSON_test_config.Adjective[@R_i@].Student_answer@\n- the particular derivative word from the question sentence: @JSON_test_config.Adjective[@R_i@].answer@\n\n",
+      "temperature": "0.3",
+      "max-tokens": "4000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [피드백] LLM 해설 리포트 출력\n@TR@TN(-1)@@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [집계] 인덱싱 보정(-1) 후 POS 점수 누적 합산(Cumulative)\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [초기화] 다음 응시를 위한 점수·결과 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

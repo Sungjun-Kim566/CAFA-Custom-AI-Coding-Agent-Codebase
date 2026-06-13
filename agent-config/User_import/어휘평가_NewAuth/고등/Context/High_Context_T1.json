@@ -1,0 +1,374 @@
+{
+  "options": {
+    "title": "<h1>고등학교 Context Sensitivity_기본</h1>",
+    "brief": "",
+    "name": "[Updated] 고등학교 Context Sensitivity_기본",
+    "description": "고등학교 수준 어휘 75개를 바탕으로 문맥 민감성의 기본 능력을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+    "greeting": "다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>\n<br>\n예시)\n<br>\nShe tried to open the door, but she needed to ______ it harder.<br>\n<br>\n<b>A. pull</b><br>\nB. hit<br>\nC. lift<br>\nD. throw",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": "문항 구글 시트 아이디"
+      },
+      "Rand_iteration": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "1회분 문항 반복 수 (turn 0에서 @N(2,5)@로 랜덤 생성)"
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"26001\"\n}",
+        "cond": "",
+        "desc": "학생이 입력하는 일련번호 (인증 입력값)"
+      },
+      "N_IDX": {
+        "org": "39",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "V_IDX": {
+        "org": "8",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "ADJ_IDX": {
+        "org": "10",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "OTH_IDX": {
+        "org": "10",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>There is a ______ of success.\",\n      \"answer\": \"prospect\",\n      \"definition\": \"가능성\",\n      \"distractor\": \"prospect|aspect|eliminate|boundary\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"border\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>She sent a text ______.\",\n      \"answer\": \"message\",\n      \"definition\": \"교훈\",\n      \"distractor\": \"external|alike|eliminate|message\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"boundary\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>His ______ lasted decades.\",\n      \"answer\": \"rule\",\n      \"definition\": \"지배\",\n      \"distractor\": \"democracy|asset|rule|fundamental\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"mine\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>They overcame ______s.\",\n      \"answer\": \"problem\",\n      \"definition\": \"어려움\",\n      \"distractor\": \"aspect|problem|encounter|conclude\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"problem\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>We have soccer ______ every Tuesday after school.\",\n      \"answer\": \"practice\",\n      \"definition\": \"연습\",\n      \"distractor\": \"act|light|build|check\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>I don’t ______ of his behavior.\",\n      \"answer\": \"approve\",\n      \"definition\": \"찬성하다\",\n      \"distractor\": \"approve|prospect|encounter|chronic\",\n      \"LLM_FBK\": \"생각은 \\\"mind\\\"라는 단어의 한 가지 의미일 뿐이에요. 하지만 이 문제에서는 \\\"mind\\\"의 정확한 뜻인 \\\"신경 쓰다\\\" 또는 \\\"꺼리다\\\"를 써야 해요. 그래서 학생의 답변인 \\\"생각\\\"은 정답이 아니에요.\",\n      \"Student_answer\": \"implement\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>She ______ted an error.\",\n      \"answer\": \"commit\",\n      \"definition\": \"저지르다\",\n      \"distractor\": \"declare|input|commit|issue\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"interpret\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>He ______ted to the project.\",\n      \"answer\": \"commit\",\n      \"definition\": \"약속하다\",\n      \"distractor\": \"reject|issue|commit|mine\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"commit\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>They ______ed their work.\",\n      \"answer\": \"exhibit\",\n      \"definition\": \"전시하다, 보여주다\",\n      \"distractor\": \"confess|exhibit|symbol|concrete\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"exhibit\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The new game doesn’t ______ to me because it looks boring.\",\n      \"answer\": \"appeal\",\n      \"definition\": \"마음에 들다\",\n      \"distractor\": \"date|feel|decide|make\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The rubber is ______.\",\n      \"answer\": \"flexible\",\n      \"definition\": \"유연한\",\n      \"distractor\": \"flexible|implement|encounter|diverse\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"relevant\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>This is ______ information.\",\n      \"answer\": \"relevant\",\n      \"definition\": \"관련있는\",\n      \"distractor\": \"efficient|relevant|nonetheless|remove\",\n      \"LLM_FBK\": \"학생의 답변인 \\\"가벼운\\\"은 \\\"heavy\\\"의 뜻과 반대되는 의미입니다. \\\"heavy\\\"는 우리말로 \\\"무거운\\\" 또는 \\\"심한\\\"이라는 뜻이에요. \\\"가벼운\\\"은 영어로 \\\"light\\\"에 해당합니다. 따라서 \\\"heavy\\\"에 맞는 답은 \\\"무거운\\\" 또는 \\\"심한\\\"입니다.\",\n      \"Student_answer\": \"immune\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The rules are ______.\",\n      \"answer\": \"explicit\",\n      \"definition\": \"분명한\",\n      \"distractor\": \"evolve|diverse|chronic|explicit\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"relevant\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>She prepared an ______ meal.\",\n      \"answer\": \"elaborate\",\n      \"definition\": \"정성 들인\",\n      \"distractor\": \"efficient|distribute|elaborate|evolve\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"efficient\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"5. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>There is a ______ bus from my home to school.\",\n      \"answer\": \"direct\",\n      \"definition\": \"직접적인,\",\n      \"distractor\": \"above|bright|behind|old\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The trend is ______.\",\n      \"answer\": \"upward\",\n      \"definition\": \"상승하는\",\n      \"distractor\": \"mine|relevant|upward|hostile\",\n      \"LLM_FBK\": \"학생의 답변 \\\"안쪽\\\"은 \\\"inside\\\"의 뜻이지만, 문제에서 요구하는 정답은 \\\"일찍\\\", \\\"이른\\\", \\\"초기에\\\"입니다. \\\"inside\\\"가 아니라 \\\"early\\\"에 해당하는 우리말을 써야 했어요. \\\"일찍\\\", \\\"이른\\\", \\\"초기에\\\"와 같이 시간적으로 빠르다는 뜻을 써야 정답입니다.\",\n      \"Student_answer\": \"alike\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The news spread ______.\",\n      \"answer\": \"abroad\",\n      \"definition\": \"(소문·느낌 등이) 널리 퍼져\",\n      \"distractor\": \"abroad|meanwhile|initial|grateful\",\n      \"LLM_FBK\": \"학생의 답인 \\\"아래의\\\"는 영어 단어 \\\"below\\\"의 뜻 중 하나인 \\\"아래에 있는\\\"을 우리말로 옮긴 것입니다. 하지만 문제에서 요구한 정답은 \\\"위에, 끝나서, ~이상\\\"입니다. 즉, \\\"below\\\"가 아니라 \\\"above\\\"의 뜻을 묻는 문제였던 것 같습니다. \\\"아래의\\\"는 \\\"below\\\"에 해당하지만, 정답으로 제시된 \\\"위에, 끝나서, ~이상\\\"은 \\\"above\\\"에 더 알맞은 우리말입니다. 따라서 학생의 답은 문제에서 요구한 답과 다릅니다.\",\n      \"Student_answer\": \"whereas\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The product went ______ testing.\",\n      \"answer\": \"through\",\n      \"definition\": \"(장벽·단계·테스트를) 지나\",\n      \"distractor\": \"through|hence|likewise|outcome\",\n      \"LLM_FBK\": \"학생의 답변 \\\"없다\\\"는 영어 단어 \\\"off\\\"의 우리말 뜻과 맞지 않습니다. \\\"off\\\"는 \\\"아래에\\\", \\\"미만의\\\", \\\"~의 통제 하에\\\"와 같은 뜻을 가지고 있습니다. \\\"없다\\\"는 \\\"off\\\"의 일반적인 뜻이 아니므로, 올바른 우리말 뜻을 써야 합니다.\",\n      \"Student_answer\": \"through\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The twins look ______.\",\n      \"answer\": \"alike\",\n      \"definition\": \"비슷한\",\n      \"distractor\": \"problem|alike|aboard|result\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"alike\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>In the photo, the two friends stood _______ because they were shy.\",\n      \"answer\": \"apart\",\n      \"definition\": \"떨어져서, 따로\",\n      \"distractor\": \"right|safe|well|early\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "문항·정답·학생응답·정오·LLM_FBK·누적점수(Result)를 담는 중앙 메타데이터 JSON"
+      },
+      "N_ANS": {
+        "org": "administration|administration|academy|academy|border|border|border|boundary|boundary|currency|currency|effect|effect|identity|identity|identity|impact|impact|issue|issue|medium|medium|medium|message|message|mine|mine|outcome|outcome|plan|plan|problem|problem|profile|profile|prospect|prospect|rule|rule|symbol|symbol|value|value|value",
+        "cond": "SELF",
+        "desc": "명사(Noun) 정답 풀"
+      },
+      "N_DEF": {
+        "org": "행정, 관리|정부|학원|학술 기관|국경|경계|가장자리|경계선|한계선|화폐, 통화|통용, 유행|효과, 결과|영향|정체성|동질감|신원|영향|충격, 충돌|문제|(잡지·신문 같은 정기 간행물의) 호|매체|수단|도구|문자|교훈|광산|나의 것|결과|성과|계획, 방안|배치도|문제|어려움|개요|윤곽|전망, 예상|가능성|규칙, 규정|지배|상징|기호|가치|중요성|값",
+        "cond": "SELF",
+        "desc": "명사(Noun) 정답의 뜻(정의) 풀"
+      },
+      "N_SEN": {
+        "org": "She works in ______.|The ______ announced a new policy.|She goes to an English ______.|The ______ published a report.|The ______ was closed.|The ______ was closed.|She decorated the paper’s ______.|They crossed the ______.|He reached his mental ______.|Digital ______ is growing.|Digital ______ is growing.|The medicine had a good ______.|The change had a strong ______.|Culture shapes ______.|The team shared a strong ______.|Please show your ______.|Please show your ______.|The ______ caused damage.|Health is a major ______.|I bought the latest ______ of the magazine.|Television is a mass ______.|Money is a ______ of exchange.|Digital tools are a creative ______.|I got your ______.|She sent a text ______.|The ______ closed last year.|This bag is ______.|We are waiting for the ______.|The ______ was positive.|We made a ______.|Look at the floor ______.|It’s a common ______.|They overcame ______s.|The report includes a ______.|The mountain ______ is clear.|Job ______s are good.|There is a ______ of success.|The ______ is strict.|His ______ lasted decades.|The logo is a ______.|The math ______ is confusing.|This painting has ______.|Health has great ______.|Set the ______ to zero.",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 예문(빈칸 문장) 풀"
+      },
+      "N_DSTR": {
+        "org": "administration|aspect|asset|boundary|democracy|result|absorb|adjust|approve|commit|conduct|conclude|confess|declare|decline|delete|distinguish|distribute|eliminate|encounter|evolve|elaborate|explicit|external|false|flexible|frequent|fundamental|alike",
+        "cond": "SELF",
+        "desc": "명사(Noun) 오답 선택지(distractor) 풀"
+      },
+      "V_ANS": {
+        "org": "absorb|absorb|adjust|adjust|adjust|approve|approve|commit|commit|commit|conduct|conduct|conclude|conclude|decline|decline|evolve|evolve|exhibit|exhibit|explore|explore|implement|implement|interpret|interpret|publish|publish|remove|remove",
+        "cond": "SELF",
+        "desc": "동사(Verb) 정답 풀"
+      },
+      "V_DEF": {
+        "org": "흡수하다|받아들이다, 몰두하게 하다|조정하다|적응하다|바로 잡다|승인하다|찬성하다|약속하다|헌신하다|저지르다|수행하다|지휘하다|결론짓다|끝내다|거절하다|감소하다|진화하다|발전하다|전시하다, 보여주다|드러내다|탐험하다|탐구하다|실행하다|이행하다, 시행하다|해석하다|이해하다|출판하다|발표하다, 공개하다|제거하다|(옷을) 벗다",
+        "cond": "SELF",
+        "desc": "동사(Verb) 정답의 뜻(정의) 풀"
+      },
+      "V_SEN": {
+        "org": "This towel ______s water quickly.|The movie ______ed my attention.|Please ______ the volume.|The earth is ______ing to the climate change. |He ______ed his posture.|The committee ______d the budget.|I don’t ______ of his behavior.|He ______ted to the project.|He is ______ted to his family.|She ______ted an error.|She ______ed a survey.|He ______ed the orchestra.|We ______ that the plan works.|The meeting ______d at noon.|She ______ed the offer.|Sales ______ed last year.|Humans ______ed over time.|Her ideas ______ed gradually.|They ______ed their work.|He ______ed confidence.|They ______d the island.|She ______d different options.|The policy was ______ed.|The school ______ed changes.|She ______ed the data.|He ______ed the joke seriously.|She ______ed a book.|She ______ed the announcement.|Please ______ the sticker.|She ______d her coat.",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 예문(빈칸 문장) 풀"
+      },
+      "V_DSTR": {
+        "org": "confess|declare|delete|distinguish|distribute|eliminate|encounter|integrate|reject|input|issue|medium|message|mine|outcome|plan|problem|profile|prospect|result|rule|symbol|value|chronic|compatible|concrete|convenient|corrupt|diverse",
+        "cond": "SELF",
+        "desc": "동사(Verb) 오답 선택지(distractor) 풀"
+      },
+      "ADJ_ANS": {
+        "org": "accurate|accurate|available|available|available|concrete|concrete|elaborate|elaborate|explicit|explicit|external|external|false|false|false|flexible|flexible|genuine|genuine|hostile|hostile|immune|immune|immune|initial|initial|moderate|moderate|relevant|relevant|relevant",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 정답 풀"
+      },
+      "ADJ_DEF": {
+        "org": "정확한|정밀한|이용 가능한|시간 여유가 있는|구할 수 있는|구체적인, 확실한|콘크리트로 된|정교한|정성 들인|분명한|솔직한|외부의|외적인|거짓의|틀린|위조된|유연한|융통성 있는|진짜의|진실된|비우호적인, 적대적인|(진행·달성을) 어렵게 하는, 힘든|면역성이 있는|영향을 받지 않는|면제되는|초기의|처음의|보통의, 적당한|중간의, 중도의|관련있는|적절한|유의미한",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 정답의 뜻(정의) 풀"
+      },
+      "ADJ_SEN": {
+        "org": "The answer is ______.|The machine is ______.|Free Wi-Fi is ______.|I am ______ now.|Fresh food is ______.|We need ______ plans.|The floor is ______.|The design is ______.|She prepared an ______ meal.|The rules are ______.|She was ______ about it.|It’s an ______ link.|______ change is small.|The claim is ______.|Your answer is ______.|He used a ______ ID.|The rubber is ______.|The policy is ______.|This is ______ leather.|Her apology was ______.|The reaction was ______.|The weather was ______.|He is ______ to the virus.|He is ______ to stress.|She is ______ from duty.|The ______ stage is hard.|The ______ idea changed.|The price is ______.|Choose a ______ level.|This is ______ information.|His advice is ______.|The change is ______.",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 예문(빈칸 문장) 풀"
+      },
+      "ADJ_DSTR": {
+        "org": "apparent|chronic|compatible|convenient|corrupt|diverse|efficient|frequent|grateful|distribute|eliminate|encounter|evolve|exhibit|explore|implement|imply|integrate|interpret|permit|publish|reject|remove|meanwhile|nevertheless|nonetheless|overhead|overnight|value",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 오답 선택지(distractor) 풀"
+      },
+      "OTH_ANS": {
+        "org": "abroad|abroad|alike|alike|alongside|alongside|overnight|overnight|through|through|upward|upward|versus|versus|via|via|whereas|whereas",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 정답 풀"
+      },
+      "OTH_DEF": {
+        "org": "해외에|(소문·느낌 등이) 널리 퍼져|비슷한|똑같이|옆에, 나란히|~와 동시에|밤사이에, 하룻밤 사이에|갑자기|~을 통해|(장벽·단계·테스트를) 지나|위쪽으로|상승하는|(소송·스포츠 경기 등에서) ~대|~에 비해|(어떤 장소를) 경유하여|(특정한 사람·시스템 등을) 통하여|반면에|(공식적인 문서에서 문장 첫 부분에 쓰여) ~한 사실이 있으므로",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 정답의 뜻(정의) 풀"
+      },
+      "OTH_SEN": {
+        "org": "She studies ______.|The news spread ______.|The twins look ______.|Children should be treated ______.|She walked ______ me.|He worked ______ studying.|Snow fell ______.|He became famous ______.|I learned it ______ experience.|The product went ______ testing.|The balloon went ______.|The trend is ______.|It’s humans ______ nature.|Performance ______ cost is important.|The train goes ______ Berlin.|Apply ______ the website.|I like coffee, ______ he prefers tea.|______ the parties agreed, the contract is valid.",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 문항 예문(빈칸 문장) 풀"
+      },
+      "OTH_DSTR": {
+        "org": "aboard|hence|likewise|meanwhile|nevertheless|oversea|identity|impact|input|issue|medium|message|mine|outcome|plan|problem|profile|prospect|result|rule|symbol|value|genuine|grateful|hostile|ideal|immune|initial|relevant",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 오답 선택지(distractor) 풀"
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"question\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>There is a ______ of success.\",\n  \"choices\": [\n    \"prospect\",\n    \"aspect\",\n    \"eliminate\",\n    \"boundary\"\n  ],\n  \"textboxLabel\": \"\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"question\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>I don’t ______ of his behavior.\",\n  \"choices\": [\n    \"approve\",\n    \"prospect\",\n    \"encounter\",\n    \"chronic\"\n  ],\n  \"textboxLabel\": \"\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"question\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The rubber is ______.\",\n  \"choices\": [\n    \"flexible\",\n    \"implement\",\n    \"encounter\",\n    \"diverse\"\n  ],\n  \"textboxLabel\": \"\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH1": {
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"question\": \"1. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The trend is ______.\",\n  \"choices\": [\n    \"mine\",\n    \"relevant\",\n    \"upward\",\n    \"hostile\"\n  ],\n  \"textboxLabel\": \"\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"question\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>They crossed the ______.\",\n  \"choices\": [\n    \"elaborate\",\n    \"decline\",\n    \"fundamental\",\n    \"boundary\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"boundary\",\n  \"userResponse\": \"boundary\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"question\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>He ______ed the joke seriously.\",\n  \"choices\": [\n    \"interpret\",\n    \"input\",\n    \"integrate\",\n    \"corrupt\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"interpret\",\n  \"userResponse\": \"interpret\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"question\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>He is ______ to the virus.\",\n  \"choices\": [\n    \"frequent\",\n    \"immune\",\n    \"chronic\",\n    \"overnight\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"immune\",\n  \"userResponse\": \"immune\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH2": {
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"question\": \"2. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>I like coffee, ______ he prefers tea.\",\n  \"choices\": [\n    \"message\",\n    \"whereas\",\n    \"hostile\",\n    \"meanwhile\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"whereas\",\n  \"userResponse\": \"whereas\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"question\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The ______ closed last year.\",\n  \"choices\": [\n    \"eliminate\",\n    \"democracy\",\n    \"mine\",\n    \"distinguish\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"mine\",\n  \"userResponse\": \"mine\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"question\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>He ______ted to the project.\",\n  \"choices\": [\n    \"concrete\",\n    \"result\",\n    \"rule\",\n    \"commit\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"commit\",\n  \"userResponse\": \"commit\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"question\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>His advice is ______.\",\n  \"choices\": [\n    \"overhead\",\n    \"nonetheless\",\n    \"convenient\",\n    \"relevant\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"relevant\",\n  \"userResponse\": \"relevant\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH3": {
+        "org": "{\n  \"id\": \"P_OTH3\",\n  \"question\": \"3. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The product went ______ testing.\",\n  \"choices\": [\n    \"rule\",\n    \"symbol\",\n    \"meanwhile\",\n    \"through\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"through\",\n  \"userResponse\": \"through\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"question\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>They overcame ______s.\",\n  \"choices\": [\n    \"aspect\",\n    \"problem\",\n    \"encounter\",\n    \"conclude\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"problem\",\n  \"userResponse\": \"problem\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"question\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>They ______ed their work.\",\n  \"choices\": [\n    \"confess\",\n    \"exhibit\",\n    \"symbol\",\n    \"concrete\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"exhibit\",\n  \"userResponse\": \"exhibit\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"question\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>She prepared an ______ meal.\",\n  \"choices\": [\n    \"efficient\",\n    \"distribute\",\n    \"elaborate\",\n    \"evolve\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"efficient\",\n  \"userResponse\": \"efficient\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH4": {
+        "org": "{\n  \"id\": \"P_OTH4\",\n  \"question\": \"4. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>The twins look ______.\",\n  \"choices\": [\n    \"problem\",\n    \"alike\",\n    \"aboard\",\n    \"result\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"alike\",\n  \"userResponse\": \"alike\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 4번 문항 객체 (질문·선택지)"
+      },
+      "ID_LOWER": {
+        "org": "26001",
+        "cond": "SELF",
+        "desc": "학생 인증: 최소 ID 번호 (26001부터 26160 범위)"
+      },
+      "ID_UPPER": {
+        "org": "26160",
+        "cond": "SELF",
+        "desc": "학생 인증: 최대 ID 번호 (26001부터 26160 범위)"
+      },
+      "Student_auth_list": {
+        "org": "@COMPARE(\"@EVAL(\"@TEXT(ID)@-26000\")@\", \"0\", \">\")@|@COMPARE(\"@EVAL(\"26161-@TEXT(ID)@\")@\", \"0\", \">\")@",
+        "cond": "SELF",
+        "desc": "학생 인증 검증: 1차 비교: (입력값 - 26000) > 0 = 입력값 >= 26001; 2차 비교: (26161 - 입력값) > 0 = 입력값 <= 26160"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ [셋업] 1회분 문항 반복 수를 랜덤(@N(2,5)@)으로 생성\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": "sjmj2001@naver.com"
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 학생 일련번호 입력창 (26OOO 형식)\n@TEXT(ID, \"선생님이 배부해준 26OOO 형식의 일련번호를 입력하세요. (입력예시: 26113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 입력값이 허용 범위(ID_LOWER~ID_UPPER)인지 검증 — 실패 시 입력 turn 복귀, 통과 시 turn 4 진행\n@JUMP(@MAP(\"@EQUAL(\"@Student_auth_list@\", \"true|true\")@\", \"true\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [안내] 환영 메시지 및 총 문항 수 안내\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] POS별 문항 풀에서 랜덤 인덱스(*_IDX) 추출\n@SET(N_IDX, \"@INDEX(\"@N_SEN@\", \"@N_SEN[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@V_SEN@\", \"@V_SEN[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@ADJ_SEN@\", \"@ADJ_SEN[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@OTH_SEN@\", \"@OTH_SEN[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [셋업] 추출한 문항·정답(·보기)을 JSON_test_config에 기록\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>@N_SEN[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@N_ANS[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].distractor, \"@D(\"@N_ANS[@N_IDX@]@\", \"\", \"@N_DSTR@\", 4)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].definition, \"@N_DEF[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>@V_SEN[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@V_ANS[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].distractor, \"@D(\"@V_ANS[@V_IDX@]@\", \"\", \"@V_DSTR@\", 4)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].definition, \"@V_DEF[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>@ADJ_SEN[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ADJ_ANS[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].distractor, \"@D(\"@ADJ_ANS[@ADJ_IDX@]@\", \"\", \"@ADJ_DSTR@\", 4)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].definition, \"@ADJ_DEF[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. 다음 중 밑줄에 들어가기에 가장 적절한 단어는?<br>@OTH_SEN[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@OTH_ANS[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].distractor, \"@D(\"@OTH_ANS[@OTH_IDX@]@\", \"\", \"@OTH_DSTR@\", 4)@\")@\n@UPJ(JSON_test_config.others[@R_i@].definition, \"@OTH_DEF[@OTH_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(3)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 4지선다(RADIO) 문항 출제 — 전 POS\n@RADIO(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\",\n\"@JSON_test_config.Noun[@R_i@].distractor@\")@\n@RADIO(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\",\n\"@JSON_test_config.Verb[@R_i@].distractor@\")@\n@RADIO(P_ADJ@R_i@, \"@JSON_test_config.Adjective[@R_i@].problem@\",\n\"@JSON_test_config.Adjective[@R_i@].distractor@\")@\n@RADIO(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\",\n\"@JSON_test_config.others[@R_i@].distractor@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [채점] 학생 응답 정오 판정 후 점수·correctness 기록 (EXACT: 정확 일치)\n\n1. Noun\nT/F boolean: @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@RADIO(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n2. Verb\nT/F boolean: @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@RADIO(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n3. Adjective\nT/F boolean: @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@RADIO(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n4. Others\nT/F boolean: @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@RADIO(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the answer for the question and its distractors for the question, create a feedback report for each of four major POS questions (Noun, Verb, Adjective, others) that includes the POS of the given question, the meaning of the answer, explanations on the distractors' wrongnesses, and a short example sentence for each distractor for all POS questions as you evaluate the question sentence's context sensitivity with its Korean translation.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "1. Noun\n- Question: @P_N@R_i@@\n- Corresponding answer: @JSON_test_config.Noun[@R_i@].answer@\n- Distractors: @JSON_test_config.Noun[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Noun[@R_i@].Student_answer@\n2. Verb\n- Question: @P_V@R_i@@\n- Corresponding answer: @JSON_test_config.Verb[@R_i@].answer@\n- Distractors: @JSON_test_config.Verb[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Verb[@R_i@].Student_answer@\n3. Adjective\n- Question: @P_ADJ@R_i@@\n- Corresponding answer: @JSON_test_config.Adjective[@R_i@].answer@\n- Distractors: @JSON_test_config.Adjective[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Adjective[@R_i@].Student_answer@\n4. Others\n- Question: @P_OTH@R_i@@\n- Corresponding answer: @JSON_test_config.others[@R_i@].answer@\n- Distractors: @JSON_test_config.others[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.others[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "5000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [집계] 인덱싱 보정(-1) 후 POS 점수 누적 합산(Cumulative)\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [초기화] 다음 응시를 위한 점수·결과 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}
