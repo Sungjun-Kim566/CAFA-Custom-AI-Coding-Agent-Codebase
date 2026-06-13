@@ -1,0 +1,370 @@
+{
+  "options": {
+    "title": "<h1>중학교 Collocation_기본</h1>",
+    "brief": "",
+    "name": "[Updated] 중학교 Collocation_기본",
+    "description": "중학교 수준 어휘 75개를 바탕으로 연어의 대한 기본 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+    "greeting": "다음 주어진 단어와 가장 자연스럽게 결합되는 연어는 무엇입니까?<br>\n<br>\n예시)<br>\nWhich of the following verbs combines most naturally with damage?<br>\n<br>\nA. perform damage<br>\nB. take damage<br>\nC. <b>do damage</b>",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": "문항 구글 시트 ID (메모리 참조 주소)"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. Which of the following nouns combines most naturally with quality?\",\n      \"answer\": \"high quality\",\n      \"original_form\": \"\",\n      \"distractor\": \"legal quality|modern quality\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"high quality\",\n      \"correctness\": 1,\n      \"original\": \"quality\"\n    },\n    {\n      \"problem\": \"2. Which of the following nouns combines most naturally with identity?\",\n      \"answer\": \"identity card\",\n      \"original_form\": \"\",\n      \"distractor\": \"identity office|identity order\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"identity card\",\n      \"correctness\": 1,\n      \"original\": \"identity\"\n    },\n    {\n      \"problem\": \"3. Which of the following nouns combines most naturally with advantage?\",\n      \"answer\": \"take advantage of\",\n      \"original_form\": \"\",\n      \"distractor\": \"make advantage of|divide advantage of\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"take advantage of\",\n      \"correctness\": 1,\n      \"original\": \"advantage\"\n    },\n    {\n      \"problem\": \"4. Which of the following nouns combines most naturally with quality?\",\n      \"answer\": \"high quality\",\n      \"original_form\": \"\",\n      \"distractor\": \"legal quality|modern quality\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"high quality\",\n      \"correctness\": 1,\n      \"original\": \"quality\"\n    },\n    {\n      \"problem\": \"5. Which of the following nouns combines most naturally with peace?\",\n      \"answer\": \"at peace\",\n      \"original_form\": \"\",\n      \"distractor\": \"on peace|by peace\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"enter the market\",\n      \"correctness\": 1,\n      \"original\": \"peace\"\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. Which of the following verbs combines most naturally with require?\",\n      \"answer\": \"required to\",\n      \"original_form\": \"\",\n      \"distractor\": \"required with|required at\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"required to\",\n      \"correctness\": 1,\n      \"original\": \"require\"\n    },\n    {\n      \"problem\": \"2. Which of the following verbs combines most naturally with respond?\",\n      \"answer\": \"respond to\",\n      \"original_form\": \"\",\n      \"distractor\": \"respond at|respond for\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"respond to\",\n      \"correctness\": 1,\n      \"original\": \"respond\"\n    },\n    {\n      \"problem\": \"3. Which of the following verbs combines most naturally with mean?\",\n      \"answer\": \"mean by\",\n      \"original_form\": \"\",\n      \"distractor\": \"mean to|mean for\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"mean by\",\n      \"correctness\": 1,\n      \"original\": \"mean\"\n    },\n    {\n      \"problem\": \"4. Which of the following verbs combines most naturally with divide?\",\n      \"answer\": \"divide ~ into\",\n      \"original_form\": \"\",\n      \"distractor\": \"divide ~ to|divide ~ for\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"divide ~ into\",\n      \"correctness\": 1,\n      \"original\": \"divide\"\n    },\n    {\n      \"problem\": \"5. Which of the following verbs combines most naturally with respond?\",\n      \"answer\": \"respond to\",\n      \"original_form\": \"\",\n      \"distractor\": \"respond at| respond for\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"agree with\",\n      \"correctness\": 1,\n      \"original\": \"respond\"\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. Which of the following adjectives combines most naturally with perfect?\",\n      \"answer\": \"perfect score\",\n      \"original_form\": \"\",\n      \"distractor\": \"legal score|modern score\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"perfect score\",\n      \"correctness\": 1,\n      \"original\": \"perfect\"\n    },\n    {\n      \"problem\": \"2. Which of the following adjectives combines most naturally with aware?\",\n      \"answer\": \"aware of\",\n      \"original_form\": \"\",\n      \"distractor\": \"aware to|aware for\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"aware of\",\n      \"correctness\": 1,\n      \"original\": \"aware\"\n    },\n    {\n      \"problem\": \"3. Which of the following adjectives combines most naturally with popular?\",\n      \"answer\": \"popular among\",\n      \"original_form\": \"\",\n      \"distractor\": \"popular at|popular about\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"popular among\",\n      \"correctness\": 1,\n      \"original\": \"popular\"\n    },\n    {\n      \"problem\": \"4. Which of the following adjectives combines most naturally with aware?\",\n      \"answer\": \"aware of\",\n      \"original_form\": \"\",\n      \"distractor\": \"aware to|aware for\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"aware of\",\n      \"correctness\": 1,\n      \"original\": \"aware\"\n    },\n    {\n      \"problem\": \"5. Which of the following adjectives combines most naturally with private?\",\n      \"answer\": \"private matter\",\n      \"original_form\": \"\",\n      \"distractor\": \"equal matter|aware matter\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"cool breeze\",\n      \"correctness\": 1,\n      \"original\": \"private\"\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. Which of the following words combines most naturally with else?\",\n      \"answer\": \"anything else\",\n      \"original_form\": \"\",\n      \"distractor\": \"anything other|anything another\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"anything else\",\n      \"correctness\": 1,\n      \"original\": \"else\"\n    },\n    {\n      \"problem\": \"2. Which of the following words combines most naturally with rather?\",\n      \"answer\": \"would reather\",\n      \"original_form\": \"\",\n      \"distractor\": \"would prefer|would like rather\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"would prefer\",\n      \"correctness\": 0,\n      \"original\": \"rather\"\n    },\n    {\n      \"problem\": \"3. Which of the following words combines most naturally with except?\",\n      \"answer\": \"except for\",\n      \"original_form\": \"\",\n      \"distractor\": \"except of|except with\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"except for\",\n      \"correctness\": 1,\n      \"original\": \"except\"\n    },\n    {\n      \"problem\": \"4. Which of the following words combines most naturally with quite?\",\n      \"answer\": \"quite sure\",\n      \"original_form\": \"\",\n      \"distractor\": \"quite correct|quite clear\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"quite sure\",\n      \"correctness\": 1,\n      \"original\": \"quite\"\n    },\n    {\n      \"problem\": \"5. Which of the following words combines most naturally with either?\",\n      \"answer\": \"either ~ or ~\",\n      \"original_form\": \"\",\n      \"distractor\": \"either ~ nor ~|either ~ and ~\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"between ~ and ~\",\n      \"correctness\": 1,\n      \"original\": \"either\"\n    },\n    {\n      \"problem\": \"\",\n      \"answer\": \"\",\n      \"original_form\": \"\",\n      \"distractor\": [],\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "어휘테스트 문항 Configuration"
+      },
+      "POS": {
+        "org": "nouns|verbs|adjectives|words",
+        "cond": "SELF",
+        "desc": "POS tag"
+      },
+      "Rand_iteration": {
+        "org": "4",
+        "cond": "SELF",
+        "desc": "1회분 문항 반복 수 (turn 0에서 @N(2,5)@로 랜덤 생성)"
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"26001\"\n}",
+        "cond": "",
+        "desc": "학생이 입력하는 일련번호 (인증 입력값)"
+      },
+      "N_IDX": {
+        "org": "16",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "V_IDX": {
+        "org": "8",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "ADJ_IDX": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "OTH_IDX": {
+        "org": "9",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "N": {
+        "org": "advantage|charge|contract|crime|cycle|element|force|health|identity|interest|office|order|peace|plant|practice|quality|reason|record|scale|sense|stress|subject|term|view",
+        "cond": "SELF",
+        "desc": "명사(Noun) 표제어 풀"
+      },
+      "N_COL": {
+        "org": "take advantage of|free of charge|sign a contract|commit a crime|life cycle|key element|by force|good health|identity card|interest in|post office|in order to|at peace|power plant|practice test|high quality|reason for|keep a record of|on a large scale|make sense|under stress|school subject|short term|point of view",
+        "cond": "SELF",
+        "desc": "명사(Noun) 연어(collocation) 짝 풀"
+      },
+      "N_DSTR": {
+        "org": "make advantage of|divide advantage of|free in charge|free to charge|pronounce a contract|escape a contract|practice a crime|adapt a crime|cycle to life|cycle with life|modern element|legal element|on force|at force|direct health|equal health|identity office|identity order|interest to|interest of|scale office|cycle office|on order to|at order to|on peace|by peace|power practice|power subject|practice contract|practice office|legal quality|modern quality|reason to|reason with|keep a record to|keep a record with|in a large scale|at a large scale|take sense|do sense|on stress|at stress|private subject|modern subject|public term|aware term|point to view|scale of view|cycle of view",
+        "cond": "SELF",
+        "desc": "명사(Noun) 오답 선택지(distractor) 풀"
+      },
+      "V": {
+        "org": "adapt|affect|appeal|argue|confirm|convince|define|divide|escape|establish|govern|mean|refer|relate|report|require|respond|sign|succeed",
+        "cond": "SELF",
+        "desc": "동사(Verb) 표제어 풀"
+      },
+      "V_COL": {
+        "org": "adapt to|affect your health|appeal to|argue about|confirm your identity|convince ~ to|define ~ as|divide ~ into|escape from|establish a rule|govern a country|mean by|refer to|relate to|report to|required to|respond to|sign up for|succeed in",
+        "cond": "SELF",
+        "desc": "동사(Verb) 연어(collocation) 짝 풀"
+      },
+      "V_DSTR": {
+        "org": "adapt for|adapt with|affect your office|affect your chair|appeal at|appeal with|argue of|argue at|confirm your plant|confirm your office|convince ~ for|convince ~ to|define ~ to|define ~ for|divide ~ to|divide ~ for|escape to|escape with|establish a phone|establish a bicycle|govern a book|govern stress|mean to|mean for|refer at|refer with|relate at|relate for|report at|report with|required with|required at|respond at|respond for|sign up to|sign up in|succeed to|succeed for",
+        "cond": "SELF",
+        "desc": "동사(Verb) 오답 선택지(distractor) 풀"
+      },
+      "ADJ": {
+        "org": "able|absolute|aware|clear|complete|complex|constant|correct|direct|equal|extreme|final|general|legal|major|minor|modern|necessary|perfect|possible|popular|private|public|responsible|specific",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 표제어 풀"
+      },
+      "ADJ_COL": {
+        "org": "able to|absolute silence|aware of|a clear answer|complete set|complex problem|constant noise|correct answer|direct answer|equal rights|extreme weather|final decision|in general|legal advice|major change|minor mistake|modern art|necessary to|perfect score|as ~ as possible|popular among|private matter|public places|responsible for|specific example",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 연어(collocation) 짝 풀"
+      },
+      "ADJ_DSTR": {
+        "org": "able for|able with|complex silence|responsible silence|aware to|aware for|an aware answer|an equal answer|a constant set|an extreme set|a popular problem|an able problem|legal noise|necessary noise|equal answer|aware answer|equal answer|aware answer|equal difference|equal same|minor weather|legal weather|constant decision|able decision|on general|at general|modern advice|equal advice|aware change|correct change|perfect mistake|responsible mistake|correct art|responsible art|necessary at|necessary with|legal score|modern score|as ~ than possible|as ~ to possible|popular at|popular about|equal matter|aware matter|aware places|responsible places|responsible of|responsible with|specific overview|specific vagueness",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 오답 선택지(distractor) 풀"
+      },
+      "OTH": {
+        "org": "apart|aside|either|else|except|instead|neither|once|quite|rather|soon|though|through|until",
+        "cond": "SELF",
+        "desc": "기타 품사 표제어 풀"
+      },
+      "OTH_COL": {
+        "org": "apart from|aside from|either ~ or ~|anything else|except for|instead of|neither ~ nor ~|once in a while|quite sure|would reather|as soon as|even though|go through|not ~ until ~",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 연어(collocation) 짝 풀"
+      },
+      "OTH_DSTR": {
+        "org": "apart of|apart with|aside of|aside with|either ~ nor ~|either ~ and~|anything other|anything another|except of|except with|instead for|instead to|neither ~ or ~|neither ~ and ~|once on a while|once at a while|quite correct|quite clear|would prefer|would like rather|as quick as|as soon than|if though|all though|go across|go along|not ~ by ~|not ~ while",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 오답 선택지(distractor) 풀"
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"question\": \"1. Which of the following nouns combines most naturally with quality?\",\n  \"choices\": [\n    \"modern quality\",\n    \"legal quality\",\n    \"high quality\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"high quality\",\n  \"userResponse\": \"high quality\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"question\": \"1. Which of the following verbs combines most naturally with require?\",\n  \"choices\": [\n    \"required to\",\n    \"required with\",\n    \"required at\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"required to\",\n  \"userResponse\": \"required to\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"question\": \"1. Which of the following adjectives combines most naturally with perfect?\",\n  \"choices\": [\n    \"perfect score\",\n    \"modern score\",\n    \"legal score\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"perfect score\",\n  \"userResponse\": \"perfect score\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH1": {
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"question\": \"1. Which of the following words combines most naturally with else?\",\n  \"choices\": [\n    \"anything other\",\n    \"anything another\",\n    \"anything else\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"anything else\",\n  \"userResponse\": \"anything else\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"question\": \"2. Which of the following nouns combines most naturally with identity?\",\n  \"choices\": [\n    \"identity office\",\n    \"identity card\",\n    \"identity order\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"identity card\",\n  \"userResponse\": \"identity card\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"question\": \"2. Which of the following verbs combines most naturally with respond?\",\n  \"choices\": [\n    \"respond to\",\n    \"respond at\",\n    \"respond for\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"respond to\",\n  \"userResponse\": \"respond to\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"question\": \"2. Which of the following adjectives combines most naturally with aware?\",\n  \"choices\": [\n    \"aware for\",\n    \"aware to\",\n    \"aware of\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"aware of\",\n  \"userResponse\": \"aware of\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH2": {
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"question\": \"2. Which of the following words combines most naturally with rather?\",\n  \"choices\": [\n    \"would like rather\",\n    \"would reather\",\n    \"would prefer\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"would prefer\",\n  \"userResponse\": \"would prefer\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"question\": \"3. Which of the following nouns combines most naturally with advantage?\",\n  \"choices\": [\n    \"take advantage of\",\n    \"divide advantage of\",\n    \"make advantage of\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"take advantage of\",\n  \"userResponse\": \"take advantage of\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"question\": \"3. Which of the following verbs combines most naturally with mean?\",\n  \"choices\": [\n    \"mean to\",\n    \"mean for\",\n    \"mean by\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"mean by\",\n  \"userResponse\": \"mean by\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"question\": \"3. Which of the following adjectives combines most naturally with popular?\",\n  \"choices\": [\n    \"popular among\",\n    \"popular at\",\n    \"popular about\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"popular among\",\n  \"userResponse\": \"popular among\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH3": {
+        "org": "{\n  \"id\": \"P_OTH3\",\n  \"question\": \"3. Which of the following words combines most naturally with except?\",\n  \"choices\": [\n    \"except with\",\n    \"except for\",\n    \"except of\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"except for\",\n  \"userResponse\": \"except for\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"question\": \"4. Which of the following nouns combines most naturally with quality?\",\n  \"choices\": [\n    \"high quality\",\n    \"legal quality\",\n    \"modern quality\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"high quality\",\n  \"userResponse\": \"high quality\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"question\": \"4. Which of the following verbs combines most naturally with divide?\",\n  \"choices\": [\n    \"divide ~ to\",\n    \"divide ~ for\",\n    \"divide ~ into\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"divide ~ into\",\n  \"userResponse\": \"divide ~ into\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"question\": \"4. Which of the following adjectives combines most naturally with aware?\",\n  \"choices\": [\n    \"aware for\",\n    \"aware of\",\n    \"aware to\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"aware of\",\n  \"userResponse\": \"aware of\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH4": {
+        "org": "{\n  \"id\": \"P_OTH4\",\n  \"question\": \"4. Which of the following words combines most naturally with quite?\",\n  \"choices\": [\n    \"quite clear\",\n    \"quite sure\",\n    \"quite correct\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"quite sure\",\n  \"userResponse\": \"quite sure\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 4번 문항 객체 (질문·선택지)"
+      },
+      "ID_LOWER": {
+        "org": "26001",
+        "cond": "SELF",
+        "desc": "학생 인증: 최소 ID 번호 (26001부터 26160 범위)"
+      },
+      "ID_UPPER": {
+        "org": "26160",
+        "cond": "SELF",
+        "desc": "학생 인증: 최대 ID 번호 (26001부터 26160 범위)"
+      },
+      "Student_auth_list": {
+        "org": "@COMPARE(\"@EVAL(\"@TEXT(ID)@-26000\")@\", \"0\", \">\")@|@COMPARE(\"@EVAL(\"26161-@TEXT(ID)@\")@\", \"0\", \">\")@",
+        "cond": "SELF",
+        "desc": "학생 인증 검증: 1차 비교: (입력값 - 26000) > 0 = 입력값 >= 26001; 2차 비교: (26161 - 입력값) > 0 = 입력값 <= 26160"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ [셋업] 1회분 문항 반복 수를 랜덤(@N(2,5)@)으로 생성\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 학생 일련번호 입력창 (26OOO 형식)\n@TEXT(ID, \"선생님이 배부해준 26OOO 형식의 일련번호를 입력하세요. (입력예시: 26113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 입력값이 허용 범위(ID_LOWER~ID_UPPER)인지 검증 — 실패 시 입력 turn 복귀, 통과 시 turn 4 진행\n@JUMP(@MAP(\"@EQUAL(\"@Student_auth_list@\", \"true|true\")@\", \"true\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [안내] 환영 메시지 및 총 문항 수 안내\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] POS별 문항 풀에서 랜덤 인덱스(*_IDX) 추출\n@SET(N_IDX, \"@INDEX(\"@N@\", \"@N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@V@\", \"@V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@ADJ@\", \"@ADJ[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@OTH@\", \"@OTH[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [셋업] 추출한 문항·정답(·보기)을 JSON_test_config에 기록\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. Which of the following @POS[1]@ combines most naturally with @N[@N_IDX@]@?\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@N_COL[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].distractor, \"@N_DSTR[@EVAL(\"2*@INDEX(\"@N_DSTR@\", \"@N_DSTR[@N_IDX@]@\")@ - 1\")@:@EVAL(\"2*@INDEX(\"@N_DSTR@\", \"@N_DSTR[@N_IDX@]@\")@\")@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].original, \"@N[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. Which of the following @POS[2]@ combines most naturally with @V[@V_IDX@]@?\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@V_COL[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].distractor, \"@V_DSTR[@EVAL(\"2*@INDEX(\"@V_DSTR@\", \"@V_DSTR[@V_IDX@]@\")@ - 1\")@:@EVAL(\"2*@INDEX(\"@V_DSTR@\", \"@V_DSTR[@V_IDX@]@\")@\")@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].original, \"@V[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. Which of the following @POS[3]@ combines most naturally with @ADJ[@ADJ_IDX@]@?\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ADJ_COL[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].distractor, \"@ADJ_DSTR[@EVAL(\"2*@INDEX(\"@ADJ_DSTR@\", \"@ADJ_DSTR[@ADJ_IDX@]@\")@ - 1\")@:@EVAL(\"2*@INDEX(\"@ADJ_DSTR@\", \"@ADJ_DSTR[@ADJ_IDX@]@\")@\")@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].original, \"@ADJ[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. Which of the following @POS[4]@ combines most naturally with @OTH[@OTH_IDX@]@?\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@OTH_COL[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].distractor, \"@OTH_DSTR[@EVAL(\"2*@INDEX(\"@OTH_DSTR@\", \"@OTH_DSTR[@OTH_IDX@]@\")@ - 1\")@:@EVAL(\"2*@INDEX(\"@OTH_DSTR@\", \"@OTH_DSTR[@OTH_IDX@]@\")@\")@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].original, \"@OTH[@OTH_IDX@]@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(3)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 4지선다(RADIO) 문항 출제 — 전 POS\n@RADIO(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\",\n\"@D(\"@JSON_test_config.Noun[@R_i@].distractor@\", \n\"\",\n\"@JSON_test_config.Noun[@R_i@].answer@\", 3)@\")@\n@RADIO(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\",\n\"@D(\"@JSON_test_config.Verb[@R_i@].distractor@\", \n\"\",\n\"@JSON_test_config.Verb[@R_i@].answer@\", 3)@\")@\n@RADIO(P_ADJ@R_i@, \"@JSON_test_config.Adjective[@R_i@].problem@\",\n\"@D(\"@JSON_test_config.Adjective[@R_i@].distractor@\", \n\"\",\n\"@JSON_test_config.Adjective[@R_i@].answer@\", 3)@\")@\n@RADIO(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\",\n\"@D(\"@JSON_test_config.others[@R_i@].distractor@\", \n\"\",\n\"@JSON_test_config.others[@R_i@].answer@\", 3)@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [채점] 학생 응답 정오 판정 후 점수·correctness 기록 (EXACT: 정확 일치)\n\n1. Noun\nT/F boolean: @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@RADIO(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n2. Verb\nT/F boolean: @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@RADIO(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n3. Adjective\nT/F boolean: @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@RADIO(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n4. Others\nT/F boolean: @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@RADIO(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the answer for the question and its collocation distractors for the question, create a feedback report for each of four major POS questions (Noun, Verb, Adjective, others) that includes the POS of the given question, the meaning of the answer, explanations on the distractor collocations' wrongnesses, and a short example sentence with its Korean translation in Korean. \n    </task>\n    <rules>\n        1. Feedback Language: Korean\n    </rules>\n    <example>\n### 1. 명사 (Noun)\n\n- **문제 유형:** 명사 연어\n- **정답:** enter the market\n- **정답 의미:** \"enter the market\"는 '시장에 진입하다'라는 뜻으로, 비즈니스나 경제 상황에서 새로운 시장에 들어가는 것을 의미합니다.\n- **오답 해설:**\n  - **enter market:** 관사(the)가 빠져 있어서 자연스럽지 않습니다. 영어에서 특정 시장을 말할 때는 \"the market\"이라고 해야 올바른 표현이 됩니다.\n  - **enter to the market:** \"enter\"는 목적어를 바로 취하는 타동사이므로 \"to\"를 쓰지 않습니다. \"enter to\"는 문법적으로도, 의미상으로도 틀립니다.\n- **예문:**  \n  - The company plans to enter the market next year.  \n    (그 회사는 내년에 시장에 진입할 계획이다.)\n\n---\n\n### 2. 동사 (Verb)\n\n- **문제 유형:** 동사 연어\n- **정답:** end up\n- **정답 의미:** \"end up\"은 '~하게 되다', '결국 ~가 되다'의 뜻으로, 예상치 못한 결과나 상황에 이르게 됨을 나타냅니다.\n- **오답 해설:**\n  - **end as:** \"end as\"는 자연스러운 콜로케이션이 아니며, 보통 \"end up as\"의 형태로 써야 의미가 통합니다.\n  - **end between:** \"end between\"은 의미상 어색하며, 두 대상을 비교하거나 구분할 때 쓰이지 않습니다. \"end\"와 \"between\"은 자연스럽게 연결되지 않습니다.\n- **예문:**  \n  - If you keep spending like this, you'll end up broke.  \n    (이렇게 계속 돈을 쓰면 결국 빈털터리가 될 거야.)\n\n---\n\n### 3. 형용사 (Adjective)\n\n- **문제 유형:** 형용사 연어\n- **정답:** great deal\n- **정답 의미:** \"great deal\" '은 양', '대단한 것'이라는 뜻으로, 주로 \"a great deal of\"와 같이 많이 사용됩니다.\n- **오답 해설:**\n  - **great fat:** \"great\"과 \"fat\"은 함께 쓰이지 않으며, 의미상으로도 어색합니다.\n  - **great rain:** \"great rain\"도 자연스러운 콜로케이션이 아닙니다. 많은 비를 표현할 때는 \"heavy rain\"이 더 자연스럽습니다.\n- **예문:**  \n  - She has a great deal of experience in teaching.  \n    (그녀는 가르치는 데에 많은 경험이 있다.)\n\n---\n\n### 4. 기타 (Others)\n\n- **문제 유형:** 기타 연어\n- **정답:** just in case\n- **정답 의미:** \"just in case\"는 '만일을 대비해서'라는 뜻으로, 어떤 일이 일어날지도 모른다는 상황을 대비할 때 사용합니다.\n- **오답 해설:**\n  - **just into:** \"just\"와 \"into\"는 자연스럽게 연결되지 않으며, 의미상으로도 맞지 않습니다.\n  - **just from:** \"just\"와 \"from\"도 자연스러운 콜로케이션이 아니며, 의미 전달이 되지 않습니다.\n- **예문:**  \n  - Take an umbrella just in case it rains.  \n    (비가 올지도 모르니 우산을 챙겨가.)\n    </example>\n</instructions>",
+      "user": "1. Noun\n- Question: @P_N@R_i@@\n- Corresponding answer: @JSON_test_config.Noun[@R_i@].answer@\n- Collocation distractors: @JSON_test_config.Noun[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Noun[@R_i@].Student_answer@\n2. Verb\n- Question: @P_V@R_i@@\n- Corresponding answer: @JSON_test_config.Verb[@R_i@].answer@\n- Collocation distractors: @JSON_test_config.Verb[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Verb[@R_i@].Student_answer@\n3. Adjective\n- Question: @P_ADJ@R_i@@\n- Corresponding answer: @JSON_test_config.Adjective[@R_i@].answer@\n- Collocation distractors: @JSON_test_config.Adjective[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Adjective[@R_i@].Student_answer@\n4. Others\n- Question: @P_OTH@R_i@@\n- Corresponding answer: @JSON_test_config.others[@R_i@].answer@\n- Collocation distractors: @JSON_test_config.others[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.others[@R_i@].Student_answer@",
+      "temperature": "0.5",
+      "max-tokens": "5000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [피드백] LLM 해설 리포트 출력\n@TR@TN(-1)@@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [집계] 인덱싱 보정(-1) 후 POS 점수 누적 합산(Cumulative)\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [초기화] 다음 응시를 위한 점수·결과 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

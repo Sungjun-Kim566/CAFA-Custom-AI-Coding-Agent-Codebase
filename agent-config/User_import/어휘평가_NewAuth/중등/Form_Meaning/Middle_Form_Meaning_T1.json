@@ -1,0 +1,334 @@
+{
+  "options": {
+    "title": "<h1>중학교 Form+Meaning_기본</h1>",
+    "brief": "",
+    "name": "[Updated] 중학교 Form+Meaning_기본",
+    "description": "중학교 수준 어휘 75개를 바탕으로 형태-의미 연결의 기본 능력을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+    "greeting": "다음 주어진 의미를 가진 단어를 고르시오.<br>\n<br>\n예시)\n<br>\n문, 서랍, 사람을 당기다, 차를 길에 세우다<br>\n<br>\nA. agree<br>\nB. build<br>\nC. clear<br>\n<b>D. pull</b>",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": "문항 구글 시트 ID (메모리 참조 주소)"
+      },
+      "Rand_iteration": {
+        "org": "4",
+        "cond": "SELF",
+        "desc": "1회분 문항 반복 수 (turn 0에서 @N(2,5)@로 랜덤 생성)"
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"26001\"\n}",
+        "cond": "",
+        "desc": "학생이 입력하는 일련번호 (인증 입력값)"
+      },
+      "N_IDX": {
+        "org": "20",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "V_IDX": {
+        "org": "10",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "ADJ_IDX": {
+        "org": "24",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "OTH_IDX": {
+        "org": "8",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 단어 <b>식물, (공장) 공장/설비</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"plant\",\n      \"distractor\": \"peace|plant|identity|interest\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"plant\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 단어 <b>자전거, 순환/주기, (반복되는) 사이클, (수업·작업의) 한 과정</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"cycle\",\n      \"distractor\": \"stress|practice|plant|cycle\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"cycle\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 단어 <b>감각, 느낌, (의미) 뜻, 분별/판단력, 상식,</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"sense\",\n      \"distractor\": \"sense|charge|term|practice\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"sense\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 <b>규모, (측정) 척도/눈금, 저울, (지도) 축척, (음악) 음계</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"scale\",\n      \"distractor\": \"view|scale|advantage|stress\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"scale\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 캠페인, (조직적인) 운동에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"campaign\",\n      \"distractor\": \"빛, 조명|종이, 신문, 논문|은행, 강둑, 제방|campaign\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 단어 <b>나누다, 분할하다, (의견이) 갈라놓다/분열시키다, (수학) 나누다</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"divide\",\n      \"distractor\": \"convince|govern|divide|mean\",\n      \"LLM_FBK\": \"생각은 \\\"mind\\\"라는 단어의 한 가지 의미일 뿐이에요. 하지만 이 문제에서는 \\\"mind\\\"의 정확한 뜻인 \\\"신경 쓰다\\\" 또는 \\\"꺼리다\\\"를 써야 해요. 그래서 학생의 답변인 \\\"생각\\\"은 정답이 아니에요.\",\n      \"Student_answer\": \"divide\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 단어 <b>설립하다, 확립하다</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"establish\",\n      \"distractor\": \"affect|pronounce|refer|establish\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"establish\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 단어 <b>치다, (생각·재난이) 갑자기 닥치다, 파업하다, (합의에) 이르다</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"strike\",\n      \"distractor\": \"affect|adapt|divide|strike\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"strike\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 <b>설립하다, 확립하다</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"establish\",\n      \"distractor\": \"convince|establish|sign|suppose\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"establish\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 찾다, 발견하다, 알게 되다에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"find\",\n      \"distractor\": \"깨어지다, 부수다, 고장나다, (법·약속을) 어기다|끝내다, 끝나다|전화하다, 부르다|느끼다, ~라고 생각하다\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 단어 <b>책임 있는, (원인·결과에) 책임이 있는, 신뢰할 만한</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"responsible\",\n      \"distractor\": \"specific|responsible|minor|private\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"responsible\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 단어 <b>책임 있는, (원인·결과에) 책임이 있는, 신뢰할 만한</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"responsible\",\n      \"distractor\": \"correct|responsible|popular|extreme\",\n      \"LLM_FBK\": \"학생의 답변인 \\\"가벼운\\\"은 \\\"heavy\\\"의 뜻과 반대되는 의미입니다. \\\"heavy\\\"는 우리말로 \\\"무거운\\\" 또는 \\\"심한\\\"이라는 뜻이에요. \\\"가벼운\\\"은 영어로 \\\"light\\\"에 해당합니다. 따라서 \\\"heavy\\\"에 맞는 답은 \\\"무거운\\\" 또는 \\\"심한\\\"입니다.\",\n      \"Student_answer\": \"responsible\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 단어 <b>인기 있는, 대중적인, (정치) 민중의/대중의</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"popular\",\n      \"distractor\": \"direct|popular|perfect|final\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"popular\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 <b>책임 있는, (원인·결과에) 책임이 있는, 신뢰할 만한</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"responsible\",\n      \"distractor\": \"constant|perfect|responsible|aware\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"responsible\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 옳은, 오른쪽의, 알맞은에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"right\",\n      \"distractor\": \"자유로운, 무료의|안전한, 무사한|어려운, 딱딱한, 힘든|확실한, 어떤, 무슨\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. 단어 <b>곧, 머지않아</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"soon\",\n      \"distractor\": \"soon|despite|beyond|therefore\",\n      \"LLM_FBK\": \"학생의 답변 \\\"안쪽\\\"은 \\\"inside\\\"의 뜻이지만, 문제에서 요구하는 정답은 \\\"일찍\\\", \\\"이른\\\", \\\"초기에\\\"입니다. \\\"inside\\\"가 아니라 \\\"early\\\"에 해당하는 우리말을 써야 했어요. \\\"일찍\\\", \\\"이른\\\", \\\"초기에\\\"와 같이 시간적으로 빠르다는 뜻을 써야 정답입니다.\",\n      \"Student_answer\": \"soon\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 단어 <b>완전히, 전적으로, 모두 합쳐</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"altogether\",\n      \"distractor\": \"beyond|moreover|altogether|therefore\",\n      \"LLM_FBK\": \"학생의 답인 \\\"아래의\\\"는 영어 단어 \\\"below\\\"의 뜻 중 하나인 \\\"아래에 있는\\\"을 우리말로 옮긴 것입니다. 하지만 문제에서 요구한 정답은 \\\"위에, 끝나서, ~이상\\\"입니다. 즉, \\\"below\\\"가 아니라 \\\"above\\\"의 뜻을 묻는 문제였던 것 같습니다. \\\"아래의\\\"는 \\\"below\\\"에 해당하지만, 정답으로 제시된 \\\"위에, 끝나서, ~이상\\\"은 \\\"above\\\"에 더 알맞은 우리말입니다. 따라서 학생의 답은 문제에서 요구한 답과 다릅니다.\",\n      \"Student_answer\": \"altogether\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 단어 <b>~을 넘어서, ~이상으로, (능력/범위를) 초월하여</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"beyond\",\n      \"distractor\": \"without|either|beyond|though\",\n      \"LLM_FBK\": \"학생의 답변 \\\"없다\\\"는 영어 단어 \\\"off\\\"의 우리말 뜻과 맞지 않습니다. \\\"off\\\"는 \\\"아래에\\\", \\\"미만의\\\", \\\"~의 통제 하에\\\"와 같은 뜻을 가지고 있습니다. \\\"없다\\\"는 \\\"off\\\"의 일반적인 뜻이 아니므로, 올바른 우리말 뜻을 써야 합니다.\",\n      \"Student_answer\": \"beyond\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 <b>그 밖의, 다른</b>에 해당하는 단어를 고르시오.\",\n      \"answer\": \"else\",\n      \"distractor\": \"despite|otherwise|else|soon\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"else\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 위에, 끝나서, ~이상에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"over\",\n      \"distractor\": \"결코 ~않다, 한 번도 ~않다|위의, 초과하여|아래에, 미만의, ~의 통제 하에|DD1\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "문항·정답·학생응답·정오·LLM_FBK·누적점수(Result)를 담는 중앙 메타데이터 JSON"
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"question\": \"1. 단어 <b>식물, (공장) 공장/설비</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"peace\",\n    \"plant\",\n    \"identity\",\n    \"interest\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"plant\",\n  \"userResponse\": \"plant\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"question\": \"1. 단어 <b>나누다, 분할하다, (의견이) 갈라놓다/분열시키다, (수학) 나누다</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"convince\",\n    \"govern\",\n    \"divide\",\n    \"mean\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"divide\",\n  \"userResponse\": \"divide\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"question\": \"1. 단어 <b>책임 있는, (원인·결과에) 책임이 있는, 신뢰할 만한</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"specific\",\n    \"responsible\",\n    \"minor\",\n    \"private\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"responsible\",\n  \"userResponse\": \"responsible\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH1": {
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"question\": \"1. 단어 <b>곧, 머지않아</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"soon\",\n    \"despite\",\n    \"beyond\",\n    \"therefore\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"soon\",\n  \"userResponse\": \"soon\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"question\": \"2. 단어 <b>자전거, 순환/주기, (반복되는) 사이클, (수업·작업의) 한 과정</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"stress\",\n    \"practice\",\n    \"plant\",\n    \"cycle\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"cycle\",\n  \"userResponse\": \"cycle\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"question\": \"2. 단어 <b>설립하다, 확립하다</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"affect\",\n    \"pronounce\",\n    \"refer\",\n    \"establish\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"establish\",\n  \"userResponse\": \"establish\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"question\": \"2. 단어 <b>책임 있는, (원인·결과에) 책임이 있는, 신뢰할 만한</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"correct\",\n    \"responsible\",\n    \"popular\",\n    \"extreme\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"responsible\",\n  \"userResponse\": \"responsible\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH2": {
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"question\": \"2. 단어 <b>완전히, 전적으로, 모두 합쳐</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"beyond\",\n    \"moreover\",\n    \"altogether\",\n    \"therefore\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"altogether\",\n  \"userResponse\": \"altogether\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 2번 문항 객체 (질문·선택지)"
+      },
+      "ANS_N": {
+        "org": "advantage|charge|contract|crime|cycle|element|force|health|identity|interest|object|office|order|peace|plant|practice|quality|reason|record|scale|sense|stress|subject|term|view",
+        "cond": "SELF",
+        "desc": "명사(Noun) 정답 풀"
+      },
+      "PRM_N": {
+        "org": "이점, 유리한 점, 강점, (경기·게임) 우세/우위|요금/청구액, (범죄) 혐의, 책임/임무, (전기) 전하, 돌격/공격|계약(서), (근육이) 수축, (병에) 걸리다/감염(의 명사적 의미)|범죄, 죄행, (법률상) 위법 행위|자전거, 순환/주기, (반복되는) 사이클, (수업·작업의) 한 과정|요소, 성분/원소, (이야기·계획의) 구성요소, 자연의 힘/환경|힘/력, 강제력, (군) 병력/부대, (물리) 힘, (집단) 세력|건강, 보건, 건강 상태, (조직·경제의) 건전성|정체성, 신원, 동일성|관심/흥미, (금융) 이자, 이익/득, 이해관계|물체/사물, 대상, 목적/목표, (문법) 목적어|사무실, (기관) 부서, 직위/직책, (공공) 관청, (정치) 공직|순서, 주문, 명령, 질서/정돈, (식당) 주문한 음식|평화, 평온, (전쟁 없는) 휴전/평화 상태, (마음의) 안정|식물, (공장) 공장/설비|연습, (반복) 훈련, 관행/관례, (의사·변호사 등) 업무/개업, (이론 대비) 실무|품질, 질, (개인의) 자질/특성, (언어·음성) 특질|이유, 근거, (사고하는) 이성/이치|기록, 성적/기록물, (최고) 기록, (음악) 음반|규모, (측정) 척도/눈금, 저울, (지도) 축척, (음악) 음계|감각, 느낌, (의미) 뜻, 분별/판단력, 상식,|스트레스/긴장, 압박, (강조) 강세/강조점|주제, 과목, (실험) 피험자/대상, (국가) 신민/백성|용어, 기간/임기, 학기|견해/관점, 전망/경치, (TV) 시청",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "ANS_V": {
+        "org": "adapt|affect|appeal|argue|confirm|convince|define|divide|escape|establish|govern|mean|pronounce|refer|relate|report|represent|require|raise|respond|sign|strike|succeed|suit|suppose",
+        "cond": "SELF",
+        "desc": "동사(Verb) 정답 풀"
+      },
+      "PRM_V": {
+        "org": "적응하다, (용도에 맞게) 개조/변형하다, (책·영화로) 각색하다|영향을 미치다, (감정·태도에) 작용하다,|호소하다, 항소하다, 매력적이다/마음을 끌다, (~에) 관심을 불러일으키다|주장하다, 논쟁하다, (논리로) 설득하려 들다|확인하다, 확정하다, (진실로) 입증하다, (예약·참석을) 재확인하다|설득하다, 납득시키다, 확신시키다(=믿게 하다)|정의하다, 규정하다, (경계를) 분명히 하다, (특징을) 규정짓다|나누다, 분할하다, (의견이) 갈라놓다/분열시키다, (수학) 나누다|탈출하다, 벗어나다, (위험·처벌을) 면하다|설립하다, 확립하다|통치하다, 지배하다|의미하다, 뜻하다, 의도하다, (~을) 의미/뜻으로 하다|발음하다|언급하다, 참조하다|관련시키다, 연관되다|보고하다, 신고하다, 보도하다|대표하다, 나타내다/상징하다, (법률) 대리하다|요구하다, 필요로 하다|올리다, 키우다, 모금하다|응답하다, 반응하다, (요청·비판에) 대응하다|서명하다, (신호로) 알리다, 표지, 징후|치다, (생각·재난이) 갑자기 닥치다, 파업하다, (합의에) 이르다|성공하다, 뒤를 잇다/승계하다, (다음으로) 이어지다|어울리다/적합하다, (필요에) 맞다|가정하다, (~라고) 생각하다, (…하기로) 되어 있다",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "ANS_ADJ": {
+        "org": "able|absolute|aware|clear|complete|complex|constant|correct|direct|equal|extreme|final|general|legal|major|minor|modern|necessary|perfect|possible|popular|private|public|responsible|specific",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 정답 풀"
+      },
+      "PRM_ADJ": {
+        "org": "~할 수 있는, 유능한|절대적인, 완전한, 확실한(=명백한), (권력) 전제적인|알고 있는, 인지하는, 의식하는|분명한, 명확한, 맑은, 장애물이 없는, (혐의가) 무죄가 된|완전한, 전부의, 완료된, (동사로도) 완성하다|복잡한, 복합적인|끊임없는, 지속적인, 일정한|옳은, 정확한, 바른, (행동을) 교정된/수정된|직접적인, 곧바른, 솔직한, (길이) 직행의|동등한, 같은, (능력·가치가) 맞먹는|극단적인, 극도의, 과격한, (상황이) 심각한|최종의, 마지막의, 결승의, (시험) 기말의|일반적인, 전반적인, 대체적인, (군) 장군의|합법적인, 법률의, (문제·문서가) 법적으로 유효한|주요한, 큰, (전공) 전공의|사소한, 작은, 미성년의, (전공) 부전공의|현대의, 근대의, 최신식의|필요한, 필수의, 불가피한|완벽한, 이상적인, (문법) 완료의|가능한, 있을 법한, (최선의) 가능한 한|인기 있는, 대중적인, (정치) 민중의/대중의|사적인, 개인의, 비공개인|공공의, 공개적인, 대중의, 공적인|책임 있는, (원인·결과에) 책임이 있는, 신뢰할 만한|구체적인, 특정한, 명확히 정해진",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "ANS_OTH": {
+        "org": "although|altogether|apart|aside|beyond|despite|either|else|except|indeed|instead|moreover|neither|once|overall|otherwise|quite|rather|since|soon|therefore|though|through|until|without",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 정답 풀"
+      },
+      "PRM_OTH": {
+        "org": "비록 ~일지라도(양보), 하지만|완전히, 전적으로, 모두 합쳐|떨어져서, 따로, ~을 제외하고/~와 별도로(from~)|옆으로, 제쳐두고, ~을 제외하고(from~)|~을 넘어서, ~이상으로, (능력/범위를) 초월하여|~에도 불구하고|(둘 중) 어느 하나, ~든지|그 밖의, 다른|~을 제외하고, ~외에는|정말로, 사실은, 참으로(강조)|대신에, 오히려|게다가, 더욱이(추가 정보)|(둘 다) 아닌|한 번, (접속사) 일단 ~하면, 예전에|전반적으로(부사/형용사), 전체의|그렇지 않으면, 달리, 다른 방식으로|꽤, 상당히, 완전히(문맥에 따라)|오히려, 꽤/상당히|~이래로(시간), ~이므로(이유)|곧, 머지않아|그러므로, 따라서(결론 연결)|비록 ~일지라도, 하지만/그렇지만(구어)|~을 통해, ~내내, (끝까지) 완료하여|~까지(시간), ~할 때까지|~없이, ~하지 않고",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"question\": \"3. 단어 <b>감각, 느낌, (의미) 뜻, 분별/판단력, 상식,</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"sense\",\n    \"charge\",\n    \"term\",\n    \"practice\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"sense\",\n  \"userResponse\": \"sense\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"question\": \"3. 단어 <b>치다, (생각·재난이) 갑자기 닥치다, 파업하다, (합의에) 이르다</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"affect\",\n    \"adapt\",\n    \"divide\",\n    \"strike\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"strike\",\n  \"userResponse\": \"strike\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"question\": \"3. 단어 <b>인기 있는, 대중적인, (정치) 민중의/대중의</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"direct\",\n    \"popular\",\n    \"perfect\",\n    \"final\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"popular\",\n  \"userResponse\": \"popular\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH3": {
+        "org": "{\n  \"id\": \"P_OTH3\",\n  \"question\": \"3. 단어 <b>~을 넘어서, ~이상으로, (능력/범위를) 초월하여</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"without\",\n    \"either\",\n    \"beyond\",\n    \"though\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"beyond\",\n  \"userResponse\": \"beyond\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"question\": \"4. 단어 <b>규모, (측정) 척도/눈금, 저울, (지도) 축척, (음악) 음계</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"view\",\n    \"scale\",\n    \"advantage\",\n    \"stress\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"scale\",\n  \"userResponse\": \"scale\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"question\": \"4. 단어 <b>설립하다, 확립하다</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"convince\",\n    \"establish\",\n    \"sign\",\n    \"suppose\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"establish\",\n  \"userResponse\": \"establish\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"question\": \"4. 단어 <b>책임 있는, (원인·결과에) 책임이 있는, 신뢰할 만한</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"constant\",\n    \"perfect\",\n    \"responsible\",\n    \"aware\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"responsible\",\n  \"userResponse\": \"responsible\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH4": {
+        "org": "{\n  \"id\": \"P_OTH4\",\n  \"question\": \"4. 단어 <b>그 밖의, 다른</b>에 해당하는 단어를 고르시오.\",\n  \"choices\": [\n    \"despite\",\n    \"otherwise\",\n    \"else\",\n    \"soon\"\n  ],\n  \"textboxLabel\": \"\",\n  \"response\": \"else\",\n  \"userResponse\": \"else\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 4번 문항 객체 (질문·선택지)"
+      },
+      "ID_LOWER": {
+        "org": "26001",
+        "cond": "SELF",
+        "desc": "학생 인증: 최소 ID 번호 (26001부터 26160 범위)"
+      },
+      "ID_UPPER": {
+        "org": "26160",
+        "cond": "SELF",
+        "desc": "학생 인증: 최대 ID 번호 (26001부터 26160 범위)"
+      },
+      "Student_auth_list": {
+        "org": "@COMPARE(\"@EVAL(\"@TEXT(ID)@-26000\")@\", \"0\", \">\")@|@COMPARE(\"@EVAL(\"26161-@TEXT(ID)@\")@\", \"0\", \">\")@",
+        "cond": "SELF",
+        "desc": "학생 인증 검증: 1차 비교: (입력값 - 26000) > 0 = 입력값 >= 26001; 2차 비교: (26161 - 입력값) > 0 = 입력값 <= 26160"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ [셋업] 1회분 문항 반복 수를 랜덤(@N(2,5)@)으로 생성\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 학생 일련번호 입력창 (26OOO 형식)\n@TEXT(ID, \"선생님이 배부해준 26OOO 형식의 일련번호를 입력하세요. (입력예시: 26113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 입력값이 허용 범위(ID_LOWER~ID_UPPER)인지 검증 — 실패 시 입력 turn 복귀, 통과 시 turn 4 진행\n@JUMP(@MAP(\"@EQUAL(\"@Student_auth_list@\", \"true|true\")@\", \"true\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [안내] 환영 메시지 및 총 문항 수 안내\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] POS별 문항 풀에서 랜덤 인덱스(*_IDX) 추출\n@SET(N_IDX, \"@INDEX(\"@PRM_N@\", \"@PRM_N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@PRM_V@\", \"@PRM_V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@PRM_ADJ@\", \"@PRM_ADJ[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@PRM_OTH@\", \"@PRM_OTH[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [셋업] 추출한 문항·정답(·보기)을 JSON_test_config에 기록\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 <b>@PRM_N[@N_IDX@]@</b>에 해당하는 단어를 고르시오.\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@ANS_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].distractor, \"@D(\"@ANS_N[@N_IDX@]@\", \"\", \"@ANS_N@\", 4)@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 <b>@PRM_V[@V_IDX@]@</b>에 해당하는 단어를 고르시오.\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@ANS_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].distractor, \"@D(\"@ANS_V[@V_IDX@]@\", \"\", \"@ANS_V@\", 4)@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 <b>@PRM_ADJ[@ADJ_IDX@]@</b>에 해당하는 단어를 고르시오.\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ANS_ADJ[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].distractor, \"@D(\"@ANS_ADJ[@ADJ_IDX@]@\", \"\", \"@ANS_ADJ@\", 4)@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 <b>@PRM_OTH[@OTH_IDX@]@</b>에 해당하는 단어를 고르시오.\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@ANS_OTH[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].distractor, \"@D(\"@ANS_OTH[@OTH_IDX@]@\", \"\", \"@ANS_OTH@\", 4)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(3)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 4지선다(RADIO) 문항 출제 — 전 POS\n@RADIO(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\",\n\"@JSON_test_config.Noun[@R_i@].distractor@\")@\n@RADIO(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\",\n\"@JSON_test_config.Verb[@R_i@].distractor@\")@\n@RADIO(P_ADJ@R_i@, \"@JSON_test_config.Adjective[@R_i@].problem@\",\n\"@JSON_test_config.Adjective[@R_i@].distractor@\")@\n@RADIO(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\",\n\"@JSON_test_config.others[@R_i@].distractor@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [채점] 학생 응답 정오 판정 후 점수·correctness 기록 (EXACT: 정확 일치)\n\n1. Noun\nT/F boolean: @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@RADIO(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @MAP(\"@RADIO(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n2. Verb\nT/F boolean: @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@RADIO(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @MAP(\"@RADIO(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n3. Adjective\nT/F boolean: @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@RADIO(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @MAP(\"@RADIO(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n4. Others\nT/F boolean: @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@RADIO(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @MAP(\"@RADIO(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the answer for the question and its distractors for the question, create a feedback report for each of four major POS questions (Noun, Verb, Adjective, others) that includes the POS of the given question, the meaning of the answer, explanations on the distractors' wrongnesses, and a short example sentence for each distractor for all POS questions with its Korean translation.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "1. Noun\n- Question: @P_N@R_i@@\n- Corresponding answer: @JSON_test_config.Noun[@R_i@].answer@\n- Distractors: @JSON_test_config.Noun[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Noun[@R_i@].Student_answer@\n2. Verb\n- Question: @P_V@R_i@@\n- Corresponding answer: @JSON_test_config.Verb[@R_i@].answer@\n- Distractors: @JSON_test_config.Verb[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Verb[@R_i@].Student_answer@\n3. Adjective\n- Question: @P_ADJ@R_i@@\n- Corresponding answer: @JSON_test_config.Adjective[@R_i@].answer@\n- Distractors: @JSON_test_config.Adjective[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.Adjective[@R_i@].Student_answer@\n4. Others\n- Question: @P_OTH@R_i@@\n- Corresponding answer: @JSON_test_config.others[@R_i@].answer@\n- Distractors: @JSON_test_config.others[@R_i@].distractor@\n- Student answer:\n@JSON_test_config.others[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "5000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [집계] 인덱싱 보정(-1) 후 POS 점수 누적 합산(Cumulative)\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [초기화] 다음 응시를 위한 점수·결과 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

@@ -1,38 +1,66 @@
 {
   "main": {
-    "id": "66bc1f0dae17a579",
+    "id": "8b07fb03b859c45f",
     "type": "split",
     "children": [
       {
-        "id": "1462549e028140fb",
+        "id": "d584ba116dd7db71",
         "type": "tabs",
         "children": [
           {
-            "id": "23d4599558f4e3df",
+            "id": "31a67773ee6cd3a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "agent-config/wiki/protocol.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "protocol"
-            }
-          },
-          {
-            "id": "585dff5848f617c9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "agent-config/README.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "README"
+            }
+          },
+          {
+            "id": "5679999f79ea0e76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "고등/High_Context.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "High_Context"
+            }
+          },
+          {
+            "id": "9be444dcac1b1aa3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "초등/Primary_Context.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Primary_Context"
+            }
+          },
+          {
+            "id": "152262ed8594c2f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "중등/Middle_Context.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Middle_Context"
             }
           }
         ],
@@ -42,15 +70,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "dae3e813e370e5b5",
+    "id": "3e6fdf1de92139b0",
     "type": "split",
     "children": [
       {
-        "id": "bad506aae0f2bc04",
+        "id": "3378715951f26b01",
         "type": "tabs",
         "children": [
           {
-            "id": "1373d3892eb2c741",
+            "id": "d1f032884c41c77d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -63,7 +91,7 @@
             }
           },
           {
-            "id": "d02c661287d848b1",
+            "id": "66fdd15b324c1e8a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -80,7 +108,7 @@
             }
           },
           {
-            "id": "dca91b196ebfadfe",
+            "id": "95abc3467ee91af0",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -96,20 +124,20 @@
     "width": 300
   },
   "right": {
-    "id": "447cc30fc645e571",
+    "id": "41a35e3f3c2150f8",
     "type": "split",
     "children": [
       {
-        "id": "c04b261637fcbb2c",
+        "id": "2e0477965a3cf5c1",
         "type": "tabs",
         "children": [
           {
-            "id": "e14e248c367197e6",
+            "id": "4b31f3f66618a1bb",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fix_log/2026-06-10.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,25 +147,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026-06-10"
+              "title": "Backlinks for README"
             }
           },
           {
-            "id": "aafa7c146062061e",
+            "id": "cb8ce659bf5839de",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fix_log/2026-06-10.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026-06-10"
+              "title": "Outgoing links from README"
             }
           },
           {
-            "id": "b0bc3119cafee8c5",
+            "id": "4c0e45440e5462ff",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -152,7 +180,7 @@
             }
           },
           {
-            "id": "4b0e9b39fd2ef514",
+            "id": "9d668a171dfdb076",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -166,18 +194,18 @@
             }
           },
           {
-            "id": "75252bead4b4a719",
+            "id": "c6e58ad419620f7c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fix_log/2026-06-10.md",
+                "file": "README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026-06-10"
+              "title": "Outline of README"
             }
           }
         ]
@@ -198,43 +226,25 @@
       "bases:Create new base": false
     }
   },
-  "active": "585dff5848f617c9",
+  "active": "5679999f79ea0e76",
   "lastOpenFiles": [
-    "agent-config/fix-log/2026-06-10.md",
+    "고등/High_Collocation.md",
     "README.md",
-    "CLAUDE.md",
-    "agent-config/README.md",
-    "agent-config/fix-log/2026-06-13-loop-result-indexing.md",
-    "agent-config/fix-log/2026-06-13-vocab-eval-auth-migration-and-docs.md",
-    "agent-config/User_import/어휘평가_NewAuth/README.md",
-    "agent-config/User_import/어휘평가/README.md",
-    "1/00_System_Instruction.md",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Form_Meaning/High_Form_Meaning_T3.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Form_Meaning/High_Form_Meaning_T2.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Form_Meaning/High_Form_Meaning_T1.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Context/High_Context_T3.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Context/High_Context_T2.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Context/High_Context_T1.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Derivatives/High_Derivatives_T3.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Derivatives/High_Derivatives_T2.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Derivatives/High_Derivatives_T1.json",
-    "agent-config/User_import/어휘평가_NewAuth copy/고등/Collocation/High_Collocation_T3.json",
-    "agent-config/User_import/어휘평가/고등/High_Form_Meaning.md",
-    "agent-config/User_import/어휘평가/고등/High_Derivatives.md",
-    "agent-config/User_import/어휘평가/고등/High_Collocation.md",
-    "agent-config/User_import/어휘평가/고등/High_Context.md",
-    "agent-config/User_import/어휘평가/AUTHENTICATION_FIX_DOCUMENTATION.md",
-    "agent-config/User_import/어휘평가/초등/Primary_Form_Meaning.md",
-    "agent-config/User_import/어휘평가/초등/Primary_Derivatives.md",
-    "agent-config/User_import/어휘평가/초등/Primary_Context.md",
-    "agent-config/User_import/어휘평가/초등/Primary_Collocation.md",
-    "agent-config/User_import/어휘평가/중등/Middle_Form_Meaning.md",
-    "agent-config/User_import/어휘평가/중등/Middle_Context.md",
-    "agent-config/User_import/PAGERANK-REFACTOR-NOTES.md",
-    "agent-config/User_import/pagerank.md",
-    "1/01_CAFA Agent Code Linter and Rules.md",
-    "1/4_CAFA_Agent_Code_Bank.md",
-    "1/2_CAFA_Protocol.md",
-    "agent-config/prompts/validator.md"
+    "고등/High_Context.md",
+    "중등/Middle_Collocation.md",
+    "중등/Middle_Form_Meaning.md",
+    "중등/Middle_Derivatives.md",
+    "중등/Middle_Context.md",
+    "README.pdf",
+    "2026-05-30.md",
+    "초등/Primary_Context.md",
+    "고등/High_Form_Meaning.md",
+    "초등/Primary_Form_Meaning.md",
+    "초등/Primary_Derivatives.md",
+    "초등/Primary_Collocation.md",
+    "고등/High_Derivatives.md",
+    "고등",
+    "중등",
+    "초등"
   ]
 }

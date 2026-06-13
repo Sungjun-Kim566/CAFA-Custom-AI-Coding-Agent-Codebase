@@ -1,0 +1,380 @@
+{
+  "options": {
+    "title": "<h1>고등학교 Collocation_심화</h1>",
+    "brief": "",
+    "name": "[Updated] 고등학교 Collocation_심화",
+    "description": "고등학교 수준 어휘 75개를 바탕으로 연어의 대한 심화 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+    "greeting": "다음 문장에서 밑줄 친 곳에 들어갈 단어를 쓰시오<br>\n<br>\n예시)<br>\nThe storm d____ serious damage to the roof.   <b>did/does</b> <br>\nThe worker p_____ the rope to lift the heavy box.   <b>pulled/pulls</b>",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "Identification": {
+        "org": "S-113",
+        "cond": "SELF",
+        "desc": "배부된 일련번호"
+      },
+      "POS": {
+        "org": "nouns|verbs|adjectives|words",
+        "cond": "SELF",
+        "desc": "POS tag"
+      },
+      "Rand_iteration": {
+        "org": "4",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "N_IDX": {
+        "org": "20",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_IDX": {
+        "org": "14",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_IDX": {
+        "org": "10",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_IDX": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. He works in a c____ mine.\",\n      \"answer\": \"coal\",\n      \"collocation\": \"coal mine\",\n      \"distractor\": \"review a campaign|do a campaign\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"coal\",\n      \"correctness\": 1,\n      \"original\": \"mine\"\n    },\n    {\n      \"problem\": \"2. They crossed the n_____ border.\",\n      \"answer\": \"national\",\n      \"collocation\": \"national border\",\n      \"distractor\": \"onto earth|above earth\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"near\",\n      \"correctness\": 0,\n      \"original\": \"border\"\n    },\n    {\n      \"problem\": \"3. S____ effects vary by person.\",\n      \"answer\": \"side\",\n      \"collocation\": \"side effect\",\n      \"distractor\": \"of fact|to fact\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"Side\",\n      \"correctness\": 1,\n      \"original\": \"effect\"\n    },\n    {\n      \"problem\": \"4. The dove is a p____ symbol.\",\n      \"answer\": \"peace\",\n      \"collocation\": \"peace symbol\",\n      \"distractor\": \"review a campaign|do a campaign\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"peace\",\n      \"correctness\": 1,\n      \"original\": \"symbol\"\n    },\n    {\n      \"problem\": \"5. Solar is r______ energy.\",\n      \"answer\": \"renewable\",\n      \"collocation\": \"renewable energy\",\n      \"distractor\": \"enter market|enter to the market\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"renewable\",\n      \"correctness\": 1,\n      \"original\": \"energy\"\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. The town evolved i____ a city.\",\n      \"answer\": \"into\",\n      \"collocation\": \"evolve into\",\n      \"distractor\": \"end as|end between\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"in\",\n      \"correctness\": 0,\n      \"original\": \"evolve\"\n    },\n    {\n      \"problem\": \"2. Errors were eliminated f____ the report.\",\n      \"answer\": \"from\",\n      \"collocation\": \"eliminate from\",\n      \"distractor\": \"focus up|focus at\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"from\",\n      \"correctness\": 1,\n      \"original\": \"eliminate\"\n    },\n    {\n      \"problem\": \"3. Books were distributed t__ students.\",\n      \"answer\": \"to\",\n      \"collocation\": \"distribute to\",\n      \"distractor\": \"answer the mobile|answer the message\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"to\",\n      \"correctness\": 1,\n      \"original\": \"distribute\"\n    },\n    {\n      \"problem\": \"4. The study explores i____ causes.\",\n      \"answer\": \"into\",\n      \"collocation\": \"explore into\",\n      \"distractor\": \"decide of|decide with\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"in\",\n      \"correctness\": 0,\n      \"original\": \"explore\"\n    },\n    {\n      \"problem\": \"5. Please stand s____.\",\n      \"answer\": \"still\",\n      \"collocation\": \"stand still\",\n      \"distractor\": \"agree of|agree up to\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"still\",\n      \"correctness\": 1,\n      \"original\": \"stand\"\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. She resisted external p_______.\",\n      \"answer\": \"pressure\",\n      \"collocation\": \"external pressure\",\n      \"distractor\": \"do fun|play fun\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"pack\",\n      \"correctness\": 0,\n      \"original\": \"external\"\n    },\n    {\n      \"problem\": \"2. She resisted external p_______.\",\n      \"answer\": \"pressure\",\n      \"collocation\": \"external pressure\",\n      \"distractor\": \"take free|keep free\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"pack\",\n      \"correctness\": 0,\n      \"original\": \"external\"\n    },\n    {\n      \"problem\": \"3. She resisted external p_______.\",\n      \"answer\": \"pressure\",\n      \"collocation\": \"external pressure\",\n      \"distractor\": \"stay fallen|stay broken\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"pck\",\n      \"correctness\": 0,\n      \"original\": \"external\"\n    },\n    {\n      \"problem\": \"4. She showed genuine i______.\",\n      \"answer\": \"interest\",\n      \"collocation\": \"genuine interest\",\n      \"distractor\": \"clean answer|clean noise\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"interest\",\n      \"correctness\": 1,\n      \"original\": \"genuine\"\n    },\n    {\n      \"problem\": \"5. You should s____ hard.\",\n      \"answer\": \"study\",\n      \"collocation\": \"study hard\",\n      \"distractor\": \"cool news|cool sun\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"study\",\n      \"correctness\": 1,\n      \"original\": \"hard\"\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. The overhead p______ broke.\",\n      \"answer\": \"projector\",\n      \"collocation\": \"overhead projector\",\n      \"distractor\": \"early of|early to\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"plk\",\n      \"correctness\": 0,\n      \"original\": \"overhead\"\n    },\n    {\n      \"problem\": \"2. Passengers g__ aboard early.\",\n      \"answer\": \"go\",\n      \"collocation\": \"go aboard\",\n      \"distractor\": \"far above|far upto\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"go\",\n      \"correctness\": 1,\n      \"original\": \"aboard\"\n    },\n    {\n      \"problem\": \"3. Passengers g__ aboard early.\",\n      \"answer\": \"go\",\n      \"collocation\": \"go aboard\",\n      \"distractor\": \"over and again|over in\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"go\",\n      \"correctness\": 1,\n      \"original\": \"aboard\"\n    },\n    {\n      \"problem\": \"4. The twins l_____ alike.\",\n      \"answer\": \"look\",\n      \"collocation\": \"look alike\",\n      \"distractor\": \"between in|between from\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"look\",\n      \"correctness\": 1,\n      \"original\": \"alike\"\n    },\n    {\n      \"problem\": \"5. It rained o__ and off.\",\n      \"answer\": \"on\",\n      \"collocation\": \"on and off\",\n      \"distractor\": \"between in|between from\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"on\",\n      \"correctness\": 1,\n      \"original\": \"off\"\n    },\n    {\n      \"problem\": \"\",\n      \"answer\": \"\",\n      \"collocation\": \"\",\n      \"distractor\": [],\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"흙의\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"S-113\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "N": {
+        "org": "administration|aspect|asset|border|currency|democracy|effect|identity|impact|medium|message|mine|outcome|plan|problem|profile|prospect|result|rule|symbol|value",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "N_COL": {
+        "org": "public administration|social aspect|financial asset|national border|foreign currency|representative democracy|side effect|identity theft|high impact|communication medium|text message|coal mine|desired outcome|backup plan|serious problem|high profile|future prospect|final result|rule a country|peace symbol|market value",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "N_SEN": {
+        "org": "P_____ administration is complex because there are so many rules to follow.|The s_____ aspect is important because it helps students learn how to work together.|He manages f_____ assets.|They crossed the n_____ border.|Exchange f_____ currency.|Many countries use r__________ democracy.|S____ effects vary by person.|Identity t_____ is a serious crime.|This decision will be h____ impact.|Email is a common c_________ medium.|I sent a t____ message.|He works in a c____ mine.|We worked toward the d_____ outcome.|You should have a b____ plan.|Pollution is a s_____ problem.|She is a h___-profile lawyer.|The job has good f____ prospects.|The f____ result was surprising.|The king wanted to rule a c_____ with peace.|The dove is a p____ symbol.|M_____ value changes over time.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "N_ANS": {
+        "org": "public|social|financial|national|foreign|representative|side|theft|high|communication|text|coal|desired|backup|serious|high|future|final|country|peace|market",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V": {
+        "org": "absorb|adjust|approve|commit|conclude|confess|declare|decline|delete|distinguish|distribute|eliminate|evolve|explore|imply|integrate|permit|publish|reject",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_COL": {
+        "org": "absorb into|adjust to|approve of|commit to|conclude with|confess to|declare for|decline to|delete from|distinguish between|distribute to|eliminate from|evolve into|explore into|imply that|integrate into|permit entry|publish in|reject as",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_SEN": {
+        "org": "The rain absorbed i___ the soil.|She adjusted t__ college life.|I don’t approve o__ his behavior.|He committed t__ exercising daily.|The movie concluded w____ hope.|He confessed t__ the crime.|He declared f___ the candidate.|He declined t__ answer.|She was deleted f____ the mailing list|Can you distinguish b______ them?|Books were distributed t__ students.|Errors were eliminated f____ the report.|The town evolved i____ a city.|The study explores i____ causes.|He implied t____ she knew.|The system integrated i____ the platform.|The sign permits e____.|She published i__ a journal.|The claim was rejected a__ false.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_ANS": {
+        "org": "into|to|of|to|with|to|for|to|from|between|to|from|into|into|that|into|entry|in|as",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ": {
+        "org": "apparent|chronic|compatible|concrete|corrupt|diverse|efficient|external|false|genuine|grateful|hostile|ideal|immune|initial|relevant",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_COL": {
+        "org": "apparent reason|chronic illness|compatible devices|concrete plan|corrupt system|diverse culture|cost efficient|external pressure|false information|genuine interest|grateful for|hostile reaction|ideal point|immune to|initial stage|relevant to",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_SEN": {
+        "org": "The child cries for no apparent r_____.|He suffers from a chronic i_______.|These are compatible d_____.|We need a concrete p___.|They fought a corrupt s_____.|The city has a diverse c______.|This method is c_____ efficient.|She resisted external p_______.|False i________ spreads fast.|She showed genuine i______.|I’m grateful f___ your help.|His suggestion received a hostile r_____ from the class.|We reached the ideal p____.|He is immune t__ the virus.|The project is in the initial s_____.|This is relevant t__ the topic.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_ANS": {
+        "org": "reason|illness|devices|plan|system|culture|cost|pressure|information|interest|for|reaction|point|to|stage|to",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH": {
+        "org": "aboard|abroad|alike|alongside|overhead|through|via",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_COL": {
+        "org": "go aboard|study abroad|look alike|work alongside|overhead projector|go through|via email",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_SEN": {
+        "org": "Passengers g__ aboard early.|He plans to s______ abroad.|The twins l_____ alike.|I w____ alongside her.|The overhead p______ broke.|Let’s g__ through the report.|Send it via e_____.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_ANS": {
+        "org": "go|study|look|work |projector|go|email",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. He works in a c____ mine.\",\n  \"response\": \"coal\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. The town evolved i____ a city.\",\n  \"response\": \"in\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. She resisted external p_______.\",\n  \"response\": \"pack\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH1": {
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"label\": \"1. The overhead p______ broke.\",\n  \"response\": \"plk\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. They crossed the n_____ border.\",\n  \"response\": \"near\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. Errors were eliminated f____ the report.\",\n  \"response\": \"from\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. She resisted external p_______.\",\n  \"response\": \"pack\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH2": {
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"label\": \"2. Passengers g__ aboard early.\",\n  \"response\": \"go\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"label\": \"3. S____ effects vary by person.\",\n  \"response\": \"Side\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"label\": \"3. Books were distributed t__ students.\",\n  \"response\": \"to\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"label\": \"3. She resisted external p_______.\",\n  \"response\": \"pck\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH3": {
+        "org": "{\n  \"id\": \"P_OTH3\",\n  \"label\": \"3. Passengers g__ aboard early.\",\n  \"response\": \"go\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"label\": \"4. The dove is a p____ symbol.\",\n  \"response\": \"peace\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"label\": \"4. The study explores i____ causes.\",\n  \"response\": \"in\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"label\": \"4. She showed genuine i______.\",\n  \"response\": \"interest\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH4": {
+        "org": "{\n  \"id\": \"P_OTH4\",\n  \"label\": \"4. The twins l_____ alike.\",\n  \"response\": \"look\"\n}",
+        "cond": "",
+        "desc": ""
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@TEXT(ID, \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/틀리면 turn 2, 맞으면 turn 4\n@JUMP(@MAP(\"@TEXT(ID)@\", \"@Identification@\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@SET(N_IDX, \"@INDEX(\"@N@\", \"@N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@V@\", \"@V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@ADJ@\", \"@ADJ[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@OTH@\", \"@OTH[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// 문항 JSON 셋업\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. @N_SEN[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@N_ANS[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].original, \"@N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].collocation, \"@N_COL[@N_IDX@]@\")@\n\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. @V_SEN[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@V_ANS[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].original, \"@V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].collocation, \"@V_COL[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. @ADJ_SEN[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ADJ_ANS[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].original, \"@ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].collocation, \"@ADJ_COL[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. @OTH_SEN[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@OTH_ANS[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].original, \"@OTH[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].collocation, \"@OTH_COL[@OTH_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(3)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@|\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@|\n@TEXT(P_ADJ@R_i@,\n\"@JSON_test_config.Adjective[@R_i@].problem@\")@|\n@TEXT(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n1. Noun\nT/F boolean: @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @MAP(\"@TEXT(P_N@R_i@)@\", \"@JSON_test_config.Noun[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n2. Verb\nT/F boolean: @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @MAP(\"@TEXT(P_V@R_i@)@\", \"@JSON_test_config.Verb[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n3. Adjective\nT/F boolean: @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @MAP(\"@TEXT(P_ADJ@R_i@)@\", \"@JSON_test_config.Adjective[@R_i@].answer@\", \"1|0\",EXACT)@)@\n\n4. Others\nT/F boolean: @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@TEXT(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @MAP(\"@TEXT(P_OTH@R_i@)@\", \"@JSON_test_config.others[@R_i@].answer@\", \"1|0\",EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the information for the question, create a feedback report for each of four major POS questions (Noun, Verb, Adjective, others) that includes the POS of the given question, the meaning of the answer, and explanations on the answer's correctness--student's answers' wrongnesses, if the student is wrong. \n    </task>\n    <rules>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. use parser to distinguish each response of Noun, Verb, and Adjective, respectively\n        5. Feedback Language: Korean.\n    </rules>\n</instructions>",
+      "user": "1. Noun\n- Question: @P_N@R_i@@\n- Corresponding answer: @JSON_test_config.Noun[@R_i@].answer@\n- Student answer: @JSON_test_config.Noun[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.Noun[@R_i@].collocation@\n- original form: @JSON_test_config.Noun[@R_i@].original@\n2. Verb\n- Question: @P_V@R_i@@\n- Corresponding answer: @JSON_test_config.Verb[@R_i@].answer@\n- Student answer: @JSON_test_config.Verb[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.Verb[@R_i@].collocation@\n- original form: @JSON_test_config.Verb[@R_i@].original@\n3. Adjective\n- Question: @P_ADJ@R_i@@\n- Corresponding answer: @JSON_test_config.Adjective[@R_i@].answer@\n- Student answer: @JSON_test_config.Adjective[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.Adjective[@R_i@].collocation@\n- original form: @JSON_test_config.Adjective[@R_i@].original@\n4. Others\n- Question: @P_OTH@R_i@@\n- Corresponding answer: @JSON_test_config.others[@R_i@].answer@\n- Student answer: @JSON_test_config.others[@R_i@].Student_answer@\n- Corresponding collocation: @JSON_test_config.others[@R_i@].collocation@\n- original form: @JSON_test_config.others[@R_i@].original@",
+      "temperature": "0.5",
+      "max-tokens": "5000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ Final LLM Feedback Report\n@TR@TN(-1)@@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//Adjust Final Score; Cumulative score and due to CAFA indexing issue\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/다음 인풋을 위한 점수 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

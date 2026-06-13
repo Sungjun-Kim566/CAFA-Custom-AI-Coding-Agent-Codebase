@@ -1,0 +1,494 @@
+{
+  "options": {
+    "title": "<h1>CAFA Agent</h1>",
+    "brief": "",
+    "name": "[Update] 초등학교 파생어_중급 ",
+    "description": "초등학교 수준 어휘 75개를 바탕으로 파생어에 대한 기본 지식을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다. ",
+    "greeting": "주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오\n. \n\n\n(예시) This offer is <u>conditional</u>. ---> 뜻: 조건부의 (<u>conditional</u>)<br>\n파생어: conditional / conditionally / conditioned",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "FLIST": {
+        "org": "DRV_N|DRV_NQ|ANS_N|PRM_N|DRV_V|DRV_VQ|ANS_V|PRM_V|DRV_ADJ|DRV_ADJQ|ANS_ADJ|PRM_ADJ",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_N": {
+        "org": "addressable / addresser|banker / bankrupt|onboard / boarded|bodily / embody|checklist / checkup / checkable|classy / classified / classification|conditional / conditionally / conditioned|cultural / culturally / multicultural|datable / outdated / dateless|dressed / undress / dressy|energetic / energetically / energize|earthy / earthen|factual / factful / factless|formal / formation / reform|grouping / ungroup / regroup|lighting / lightly / lighten|marketing / marketer / marketable|memorable / memorization / memorized|modeling / modeler / remodel|paperwork / paperless|placement / misplaced / replace|powerful / powerless / empower",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_NQ": {
+        "org": "addresser|banker|onboard|bodily|checkup|classified|conditional|cultural|outdated|dressed|energize|earthy|factual|formal|regroup|lightly|marketer|memorable|remodel|paperwork|replace|powerful",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ANS_N": {
+        "org": "발신인|은행가|배나 비행기에 탄, 기내의|신체적인, 육체의|정기검진|분류된|조건부의|문화의|구식의, 오래된|옷을 입은|활력을 주다, 기운나게 하다|흙의, 흙 같은|사실에 근거한|격식 있는, 공식적인|다시 모이다|가볍게, 살짝|판매자, 마케터|기억에 남는|재구성하다, 개조하다|서류작업|교체하다, 대신하다|강력한",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "PRM_N": {
+        "org": "Please check the <u>addresser</u> before mailing.|The <u>banker</u> helps people with money.|There are 100 people <u>onboard</u> the plane.|<u>Bodily</u> strength is important in sports.|I have a doctor <u>checkup</u> tomorrow.|These files are <u>classified</u>.|This offer is <u>conditional</u>.|Music is an important <u>cultural</u> activity.|The book is <u>outdated</u>.|She is <u>dressed</u> nicely.|Coffee <u>energizes</u> me in the morning|The garden smells <u>earthy</u> after rain.|The book is <u>factual</u>, not fictional.|He wore a <u>formal</u> suit to the meeting.|We need to <u>regroup</u> after lunch.|She touched the cat <u>lightly</u>.|The <u>marketer</u> sells new products.|We had a <u>memorable</u> trip.|We will <u>remodel</u> the kitchen.|I finished the <u>paperwork</u> today.|I <u>replace</u> the old batteries.|This engine is <u>powerful</u>.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_V": {
+        "org": "action / active / activity|agreement / disagreement|belief / believable / disbelief|broken / breakable / breakdown|builder / rebuild|caller / recall / callback|changeable / exchange|choice / choosable|controller / uncontrollable|decision / decisive / indecisive|driver / driven|endless / endpoint|fallen / downfall|focused / refocus|holder / uphold|liar / lied|maker / remake|mindful / reminder / mindless|missing / dismiss|standing / standard",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_VQ": {
+        "org": "activity|agreement|belief|broken|rebuild|callback|exchange|choice|controller|decision|driver|endless|fallen|focused|holder|liar|maker|mindful|missing|standard",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ANS_V": {
+        "org": "활동|합의, 동의|믿음|부서진, 깨진|재건하다|회신|교환하다|선택|관리자, 조종 장치|결정|운전자|끝없는|떨어진, 쓰러진|집중한|소유자|거짓말쟁이|제작자, 생산자, 만드는 사람, 생산하는 사람|염두해두는, 의식하는, 주의 깊은|실종된, 없어진|기준, 표준",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "PRM_V": {
+        "org": "Reading is a fun <u>activity</u>.|They reached an <u>agreement</u>.|I have a strong <u>belief</u> in you.|The window is <u>broken</u>.|They will <u>rebuild</u> the house.|I left a message for a <u>callback</u>.|I want to <u>exchange</u> this shirt.|You have no other <u>choice</u>.|I lost the TV <u>controller</u>.|She made a quick <u>decision</u>.|The bus <u>driver</u> stopped the bus.|The road seems <u>endless</u>.|The statue is <u>fallen</u>.|Stay <u>focused</u> in class.|She is the ticket <u>holder</u>.|No one trusts a <u>liar</u>.|She is a film <u>maker</u>.|Be <u>mindful</u> of others.|My keys are <u>missing</u>.|We follow safety <u>standards</u>.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_ADJ": {
+        "org": "badly / badness|brightness / brightly / brighten|certainty / certainly / uncertain|cleanliness / cleanly / unclean|clarity / clearly / unclear|closure / closely / enclose|coldness / coldly|coolness / cooler / cooling|darkness / darken|deadly / death|difficulty / difficultly|freely / freedom|funny / funnily|greatly / greatness|hardly / hardness / harden|heavily / heav|highly / height / heighten|lastly / lasting|newness / newly / renew|openly / openness\n / reopen|rightly / rightness|safety / safely / unsafe",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "DRV_ADJQ": {
+        "org": "badly|brightly|certainly|cleanly|clearly|closure|coldness|cooler|darken|death|difficulty|freely|funny|greatly|hardly|heavily|highly|lastly|newly|openly|rightly|safety",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ANS_ADJ": {
+        "org": "나쁘게|밝게|확실히|깔끔하게, 깨끗이|분명히|폐쇄, 마감|냉담함, 쌀쌀맞음, 차가움|냉각기|어두워지다|죽음|어려움, 곤경|자유롭게|우스운, 웃기는|대단히, 크게, 매우|거의 ~아니다|무겁게|매우|마지막으로|새로, 최근에|공개적으로, 솔직하게|올바르게|안전",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "PRM_ADJ": {
+        "org": "The machine works <u>badly</u>.|Stars shine <u>brightly</u>.|That is <u>certainly</u> true.|Cut it <u>cleanly</u>.|He spoke <u>clearly</u>.|Road <u>closure</u> starts today.|Winter brings <u>coldness</u>.|Put the drinks in the <u>cooler</u>.|The sky will <u>darken</u>.|He feared <u>death</u>.|I have <u>difficulty</u> with math.|Birds fly <u>freely</u>.|The story is <u>funny</u>.|I am <u>greatly</u> thankful.|I <u>hardly</u> sleep these days.|It rained <u>heavily</u>.|He is <u>highly</u> skilled.|<u>Lastly</u>, we clean the room.|The shop is <u>newly</u> opened.|She <u>openly</u> shared her idea.|You judged it <u>rightly</u>.|<u>Safety</u> comes first.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> I finished the <u>paperwork</u> today.\",\n      \"problem_reference\": \"paperwork / paperless\",\n      \"q_sentence\": \"I finished the <u>paperwork</u> today.\",\n      \"answer\": \"서류작업\",\n      \"derivative_q\": \"paperwork\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"서류작업\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This engine is <u>powerful</u>.\",\n      \"problem_reference\": \"powerful / powerless / empower\",\n      \"q_sentence\": \"This engine is <u>powerful</u>.\",\n      \"answer\": \"강력한\",\n      \"derivative_q\": \"powerful\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"강력한\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Music is an important <u>cultural</u> activity.\",\n      \"problem_reference\": \"cultural / culturally / multicultural\",\n      \"q_sentence\": \"Music is an important <u>cultural</u> activity.\",\n      \"answer\": \"문화의\",\n      \"derivative_q\": \"cultural\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"문화읜\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Please check the <u>addresser</u> before mailing.\",\n      \"problem_reference\": \"addressable / addresser\",\n      \"q_sentence\": \"\",\n      \"answer\": \"발신인\",\n      \"derivative_q\": \"addresser\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"dress\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> We had a <u>memorable</u> trip.\",\n      \"problem_reference\": \"memorable / memorization / memorized\",\n      \"q_sentence\": \"\",\n      \"answer\": \"기억에 남는\",\n      \"derivative_q\": \"memorable\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"market\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> I want to <u>exchange</u> this shirt.\",\n      \"problem_reference\": \"changeable / exchange\",\n      \"q_sentence\": \"I want to <u>exchange</u> this shirt.\",\n      \"answer\": \"교환하다\",\n      \"derivative_q\": \"exchange\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"교환하다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The bus <u>driver</u> stopped the bus.\",\n      \"problem_reference\": \"driver / driven\",\n      \"q_sentence\": \"The bus <u>driver</u> stopped the bus.\",\n      \"answer\": \"운전자\",\n      \"derivative_q\": \"driver\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"운전사\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> She is a film <u>maker</u>.\",\n      \"problem_reference\": \"maker / remake\",\n      \"q_sentence\": \"She is a film <u>maker</u>.\",\n      \"answer\": \"제작자, 생산자, 만드는 사람, 생산하는 사람\",\n      \"derivative_q\": \"maker\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"제작자\",\n      \"correctness\": \"1|1|1\"\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The bus <u>driver</u> stopped the bus.\",\n      \"problem_reference\": \"driver / driven\",\n      \"q_sentence\": \"\",\n      \"answer\": \"운전자\",\n      \"derivative_q\": \"driver\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"miss\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Reading is a fun <u>activity</u>.\",\n      \"problem_reference\": \"action / active / activity\",\n      \"q_sentence\": \"\",\n      \"answer\": \"활동\",\n      \"derivative_q\": \"activity\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"act\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> That is <u>certainly</u> true.\",\n      \"problem_reference\": \"certainty / certainly / uncertain\",\n      \"q_sentence\": \"That is <u>certainly</u> true.\",\n      \"answer\": \"확실히\",\n      \"derivative_q\": \"certainly\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"확실히\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Birds fly <u>freely</u>.\",\n      \"problem_reference\": \"freely / freedom\",\n      \"q_sentence\": \"Birds fly <u>freely</u>.\",\n      \"answer\": \"자유롭게\",\n      \"derivative_q\": \"freely\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"자유롭게\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Cut it <u>cleanly</u>.\",\n      \"problem_reference\": \"cleanliness / cleanly / unclean\",\n      \"q_sentence\": \"Cut it <u>cleanly</u>.\",\n      \"answer\": \"깔끔하게, 깨끗이\",\n      \"derivative_q\": \"cleanly\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"확실히\",\n      \"correctness\": \"1|1|1\"\n    },\n    {\n      \"problem\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> It rained <u>heavily</u>.\",\n      \"problem_reference\": \"heavily / heav\",\n      \"q_sentence\": \"\",\n      \"answer\": \"무겁게\",\n      \"derivative_q\": \"heavily\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"hard\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The shop is <u>newly</u> opened.\",\n      \"problem_reference\": \"newness / newly / renew\",\n      \"q_sentence\": \"\",\n      \"answer\": \"새로, 최근에\",\n      \"derivative_q\": \"newly\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"cleane\",\n      \"correctness\": 0\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "어휘테스트 문항 Configuration in JSON"
+      },
+      "Rand_iteration": {
+        "org": "2",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"S-113\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "Identification": {
+        "org": "S-113",
+        "cond": "SELF",
+        "desc": "배부된 일련번호"
+      },
+      "N_IDX": {
+        "org": "22",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_IDX": {
+        "org": "11",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_IDX": {
+        "org": "12",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> I finished the <u>paperwork</u> today.\",\n  \"response\": \"서류작업\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> I want to <u>exchange</u> this shirt.\",\n  \"response\": \"교환하다\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> That is <u>certainly</u> true.\",\n  \"response\": \"확실히\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> This engine is <u>powerful</u>.\",\n  \"response\": \"강력한\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The bus <u>driver</u> stopped the bus.\",\n  \"response\": \"운전사\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Birds fly <u>freely</u>.\",\n  \"response\": \"자유롭게\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> Music is an important <u>cultural</u> activity.\",\n  \"response\": \"문화읜\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> She is a film <u>maker</u>.\",\n  \"response\": \"제작자\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"label\": \"3. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> That is <u>certainly</u> true.\",\n  \"response\": \"확실히\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> We will <u>remodel</u> the kitchen.\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> No one trusts a <u>liar</u>.\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"label\": \"4. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> The sky will <u>darken</u>.\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "LLM_FBK": {
+        "org": "{\n  \"Noun\": [\n    \"1. 문장 해석:  \\n\\\"I finished the <u>paperwork</u> today.\\\"는 \\\"나는 오늘 <u>서류작업</u>을 끝냈다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- paperwork의 기본형은 \\\"paper\\\"입니다.  \\n- \\\"paper\\\"는 종이라는 뜻이고, paperwork는 \\\"서류 작업\\\"이나 \\\"문서 처리\\\"라는 뜻으로 쓰입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"paperwork\\\"는 명사로 쓰였습니다.\\n- \\\"finish\\\"는 \\\"~을 끝내다\\\"라는 뜻의 동사입니다.  \\n- 영어에서 \\\"finish\\\" 뒤에는 무엇을 끝냈는지 알려주는 명사가 필요합니다.  \\n- 그래서 \\\"paperwork\\\"가 \\\"finish\\\"의 목적어(무엇을 끝냈는지 나타내는 말)로 들어간 것입니다.\\n- 즉, \\\"paperwork\\\"는 \\\"끝낸 것\\\"이 무엇인지를 알려주기 위해 명사 자리(목적어 자리)에 들어갔습니다.\\n\\n요약:  \\n- \\\"paperwork\\\"는 \\\"paper\\\"에서 파생된 명사로, \\\"서류작업\\\"이라는 뜻입니다.\\n- 문장에서 \\\"finish\\\"의 목적어로 쓰여, \\\"나는 오늘 서류작업을 끝냈다\\\"라는 의미가 됩니다.\",\n    \"1. 문장 해석:  \\n\\\"I finished the <u>paperwork</u> today.\\\"는 \\\"나는 오늘 <u>서류작업</u>을 끝냈다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- paperwork의 기본형은 \\\"paper\\\"입니다.  \\n- \\\"paper\\\"는 종이라는 뜻이고, paperwork는 \\\"서류 작업\\\"이나 \\\"문서 처리\\\"라는 뜻으로 쓰입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"paperwork\\\"는 명사로 쓰였습니다.\\n- \\\"finish\\\"는 \\\"~을 끝내다\\\"라는 뜻의 동사입니다.  \\n- 영어에서 \\\"finish\\\" 뒤에는 무엇을 끝냈는지 알려주는 명사가 필요합니다.  \\n- 그래서 \\\"paperwork\\\"가 \\\"finish\\\"의 목적어(무엇을 끝냈는지 나타내는 말)로 들어간 것입니다.\\n- 즉, \\\"paperwork\\\"는 \\\"끝낸 것\\\"이 무엇인지를 알려주기 위해 명사 자리(목적어 자리)에 들어갔습니다.\\n\\n요약:  \\n- \\\"paperwork\\\"는 \\\"paper\\\"에서 파생된 명사로, \\\"서류작업\\\"이라는 뜻입니다.\\n- 문장에서 \\\"finish\\\"의 목적어로 쓰여, \\\"나는 오늘 서류작업을 끝냈다\\\"라는 의미가 됩니다.|1. 문장 해석  \\n\\\"This engine is <u>powerful</u>.\\\"의 한국어 번역은  \\n\\\"이 엔진은 <u>강력한</u> 것이다.\\\" 또는 \\\"이 엔진은 <u>강력하다</u>.\\\"입니다.\\n\\n2. 파생어의 기본형  \\n\\\"powerful\\\"의 기본형은 \\\"power\\\"입니다.  \\n\\\"power\\\"는 '힘', '능력'이라는 뜻의 명사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명  \\n- \\\"powerful\\\"은 \\\"power\\\"에 \\\"-ful\\\"이라는 접미사가 붙어서 만들어진 형용사입니다.  \\n- \\\"-ful\\\"은 '~이 가득한', '~한'이라는 뜻을 더해줍니다.  \\n- 그래서 \\\"powerful\\\"은 \\\"힘이 가득한\\\", 즉 \\\"강력한\\\"이라는 뜻이 됩니다.\\n\\n문장 구조를 보면,  \\n\\\"This engine is powerful.\\\"에서  \\n- \\\"This engine\\\"은 주어(누가? 무엇이?),  \\n- \\\"is\\\"는 동사(이다),  \\n- \\\"powerful\\\"은 형용사로, 주어의 상태나 성질을 설명해 주는 말(서술어 자리)입니다.  \\n- 영어에서 \\\"is\\\" 뒤에 형용사가 오면, 주어의 성질이나 상태를 설명합니다.  \\n- 한국어로 번역할 때는 \\\"강력하다\\\" 또는 \\\"강력한\\\"이라고 해석합니다.\\n\\n정리  \\n- \\\"powerful\\\"은 \\\"power\\\"에서 파생된 형용사로, '강력한'이라는 뜻입니다.  \\n- 이 문장에서 \\\"powerful\\\"이 쓰인 이유는, 엔진이 어떤 성질(힘이 세다, 강하다)을 가지고 있는지 설명하기 위해서입니다.  \\n- 영어에서 \\\"is\\\" 뒤에 형용사가 오면, 주어의 상태나 성질을 나타내는 자리이기 때문에 \\\"powerful\\\"이 들어간 것입니다.  \\n- 그래서 \\\"이 엔진은 강력하다\\\"라고 해석할 수 있습니다.\",\n    \"1. 문장 해석:  \\nThe <u>marketer</u> sells new products.  \\n→ \\\"<u>마케터</u>는 신제품을 판매한다.\\\" 또는 \\\"<u>판매자</u>는 신제품을 판다.\\\"라고 해석할 수 있습니다.\\n\\n2. 파생어의 기본형:  \\n- marketer의 기본형은 \\\"market\\\"입니다.  \\n- \\\"market\\\"은 원래 '시장'이라는 뜻의 명사이지만, 동사로는 '판매하다', '시장에 내놓다'라는 뜻도 있습니다.  \\n- 여기서 \\\"marketer\\\"는 \\\"market\\\"에 사람을 뜻하는 \\\"-er\\\"이 붙어서 '판매하는 사람', '마케팅을 하는 사람'이라는 뜻이 됩니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 문장 \\\"The marketer sells new products.\\\"에서 \\\"marketer\\\"는 명사로 쓰였습니다.\\n- 영어에서 \\\"-er\\\"이 붙은 단어는 보통 \\\"무엇을 하는 사람\\\"이라는 뜻을 만듭니다. 예를 들어, \\\"teach(가르치다)\\\" + \\\"er\\\" = \\\"teacher(가르치는 사람, 선생님)\\\"처럼요.\\n- \\\"market\\\"에 \\\"-er\\\"이 붙어서 \\\"marketer\\\"가 되면, '시장에 내놓는 사람', 즉 '판매자'나 '마케터'가 됩니다.\\n- 이 문장에서는 \\\"marketer\\\"가 주어 자리(문장의 맨 앞)에 와서, \\\"누가?\\\"라는 질문에 답하는 역할을 합니다.\\n- 따라서, \\\"marketer\\\"는 '판매하는 사람', '마케터'라는 뜻으로, 이 문장에서 누가 신제품을 파는지 알려주는 단어입니다.\\n\\n요약:  \\n- \\\"marketer\\\"의 기본형은 \\\"market\\\"입니다.\\n- \\\"marketer\\\"는 '판매자', '마케터'라는 뜻이고, 문장에서는 '누가?'에 해당하는 주어로 쓰였습니다.\\n- \\\"-er\\\"이 붙어서 \\\"무엇을 하는 사람\\\"이라는 뜻이 되기 때문에, 이 문장에서는 신제품을 파는 사람을 나타냅니다.  \\n- 학생 답변인 \\\"홍보하는사람\\\"도 비슷한 의미이지만, marketer는 단순히 홍보뿐 아니라 실제로 제품을 팔거나 시장에 내놓는 사람까지 포함하는 더 넓은 뜻입니다.|1. 문장 해석:\\nThe <u>banker</u> helps people with money.  \\n→ \\\"<u>은행가</u>는 사람들을 돈과 관련해서 도와줍니다.\\\"\\n\\n2. 파생어의 기본형:\\n- banker의 기본형은 \\\"bank\\\"입니다.  \\n- \\\"bank\\\"는 \\\"은행\\\"이라는 뜻의 명사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\\n- \\\"banker\\\"는 \\\"bank\\\"에 \\\"-er\\\"이 붙어서 만들어진 단어입니다.\\n- 영어에서 \\\"-er\\\"은 \\\"~하는 사람\\\"이라는 뜻을 더해주는 접미사예요.  \\n- 그래서 \\\"bank\\\"에 \\\"-er\\\"이 붙으면 \\\"은행에서 일하는 사람\\\" 또는 \\\"은행가\\\"라는 뜻이 됩니다.\\n- 문장에서 \\\"The banker\\\"는 사람을 가리키는 명사로 쓰였어요.\\n- \\\"helps\\\"는 동사이고, \\\"people with money\\\"는 \\\"사람들을 돈과 관련해서\\\"라는 뜻의 목적어와 부사구입니다.\\n- 즉, 이 문장에서 \\\"banker\\\"는 \\\"은행에서 일하는 사람\\\"이라는 의미로, 주어(누가?) 자리에 들어가서 \\\"도와주는 사람\\\"이 누구인지를 알려줍니다.\\n\\n요약:\\n- \\\"banker\\\"는 \\\"bank(은행)\\\"에 \\\"-er(사람)\\\"이 붙어서 \\\"은행가\\\"라는 뜻이 되었어요.\\n- 이 문장에서 \\\"banker\\\"는 주어 자리에 들어가서, \\\"도와주는 사람\\\"이 은행가임을 나타냅니다.|1. 문장 해석 (번역):  \\nMusic is an important <u>cultural</u> activity.  \\n→ 음악은 중요한 <u>문화의</u> 활동입니다.\\n\\n2. 파생어의 기본형(원형):  \\n- cultural의 기본형은 \\\"culture\\\"입니다.  \\n- \\\"culture\\\"는 명사로 \\\"문화\\\"라는 뜻입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 주어진 문장에서 \\\"cultural\\\"은 \\\"activity(활동)\\\"를 꾸며주는 역할을 합니다.\\n- 영어에서 \\\"cultural\\\"은 \\\"culture(문화)\\\"에 \\\"-al\\\"이 붙어서 형용사가 된 말이에요.  \\n- 형용사는 명사를 꾸며주기 위해 사용됩니다.  \\n- 그래서 \\\"cultural activity\\\"는 \\\"문화의 활동\\\" 또는 \\\"문화와 관련된 활동\\\"이라는 뜻이 됩니다.\\n- 만약 \\\"culture activity\\\"라고 하면 어색하고, 올바른 영어 문장이 되지 않습니다.  \\n- 우리말로 \\\"문화의\\\"처럼, 영어에서는 \\\"cultural\\\"이 \\\"activity\\\"를 꾸며주기 위해 꼭 필요합니다.\\n\\n요약:\\n- \\\"cultural\\\"은 \\\"culture\\\"의 형용사형으로, 명사(여기서는 \\\"activity\\\")를 꾸며주기 위해 사용됩니다.\\n- 그래서 문장에서 \\\"cultural\\\"이 들어가야 \\\"문화의 활동\\\"이라는 뜻이 완성됩니다.\"\n  ],\n  \"Verb\": [\n    \"1. 문장 해석:  \\n\\\"I want to <u>exchange</u> this shirt.\\\"는 \\\"저는 이 셔츠를 교환하고 싶어요.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- exchange의 기본형은 \\\"exchange\\\"입니다. 이 단어는 동사로, \\\"교환하다\\\"라는 뜻입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"I want to exchange this shirt.\\\"에서 \\\"exchange\\\"는 동사로 쓰였습니다.\\n- \\\"want to\\\" 다음에는 동사의 기본형(원형)이 와야 합니다. \\\"want to\\\"는 \\\"~하고 싶다\\\"라는 뜻이기 때문에, 그 뒤에 \\\"exchange(교환하다)\\\"라는 동사가 오게 됩니다.\\n- \\\"this shirt\\\"는 \\\"exchange\\\"의 목적어(무엇을 교환하다?)입니다.\\n- 그래서 \\\"exchange\\\"는 동사 자리(동사 위치)에 들어가고, \\\"this shirt\\\"가 목적어로 따라와서 \\\"이 셔츠를 교환하다\\\"라는 뜻이 완성됩니다.\\n\\n요약:  \\n- \\\"exchange\\\"는 동사로서, \\\"교환하다\\\"라는 뜻입니다.\\n- \\\"want to\\\" 뒤에는 동사의 기본형이 오기 때문에, \\\"exchange\\\"가 동사 자리에서 쓰였습니다.\\n- 뒤에 목적어(\\\"this shirt\\\")가 와서 \\\"무엇을 교환하다\\\"인지 알려줍니다.\",\n    \"1. 문장 해석:  \\n\\\"The bus <u>driver</u> stopped the bus.\\\"는 \\\"버스 운전사가 버스를 멈췄다.\\\" 또는 \\\"버스 운전자가 버스를 멈췄다.\\\"라고 번역할 수 있습니다.\\n\\n2. 파생어의 기본형:  \\n- driver의 기본형은 \\\"drive\\\"입니다.  \\n\\\"drive\\\"는 \\\"운전하다\\\"라는 뜻의 동사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"driver\\\"는 \\\"drive\\\"에 \\\"-er\\\"이 붙어서 만들어진 단어입니다.  \\n- 영어에서 동사에 \\\"-er\\\"을 붙이면 \\\"그 동작을 하는 사람\\\"이라는 뜻이 됩니다.  \\n- 그래서 \\\"drive(운전하다)\\\" + \\\"-er\\\" = \\\"driver(운전하는 사람)\\\"이 됩니다.  \\n- 문장에서 \\\"The bus driver\\\"는 \\\"버스 운전사(운전자)\\\"라는 뜻의 명사로 쓰였어요.  \\n- \\\"driver\\\"는 \\\"누가 버스를 멈췄는지\\\"를 알려주는 주어 역할을 합니다.  \\n- 즉, \\\"driver\\\"는 \\\"운전하다\\\"라는 동작을 하는 사람을 가리키기 위해 사용된 것입니다.\\n\\n요약:  \\n- \\\"driver\\\"의 기본형은 \\\"drive\\\"이고, \\\"-er\\\"이 붙어서 \\\"운전하는 사람\\\"이라는 뜻의 명사가 됩니다.  \\n- 문장에서 \\\"driver\\\"는 \\\"버스를 운전하는 사람\\\"을 나타내는 주어로 쓰였습니다.  \\n- \\\"운전자\\\"와 \\\"운전사\\\" 모두 맞지만, \\\"운전자\\\"가 더 넓은 의미로 쓰일 수 있습니다.\",\n    \"1. 문장 해석  \\n\\\"The window is <u>broken</u>.\\\"는 \\\"창문이 부서진 상태이다.\\\" 또는 \\\"창문이 깨졌다.\\\"라는 뜻입니다.  \\n밑줄 친 broken의 우리말 의미는 \\\"부서진\\\" 또는 \\\"깨진\\\"입니다.\\n\\n2. 파생어의 기본형  \\nbroken의 기본형은 \\\"break\\\"입니다.  \\nbreak는 \\\"깨다\\\", \\\"부수다\\\"라는 뜻의 동사입니다.\\n\\n3. 왜 이 파생어(broken)가 이 문장에 쓰였는지 설명  \\n- 여기서 \\\"broken\\\"은 \\\"break\\\"의 과거분사형이에요.  \\n- 영어에서 \\\"be동사 + 과거분사\\\"는 \\\"~된 상태이다\\\" 또는 \\\"~되어 있다\\\"라는 뜻을 나타낼 때 자주 써요.  \\n- \\\"The window is broken.\\\"에서 \\\"is\\\"는 be동사, \\\"broken\\\"은 과거분사로, \\\"창문이 (이미) 부서진 상태이다\\\"라는 의미가 돼요.  \\n- 즉, \\\"broken\\\"은 창문이 지금 부서져 있는 상태임을 나타내기 위해 사용된 거예요.\\n\\n요약  \\n- broken의 기본형은 break입니다.  \\n- \\\"The window is broken.\\\"에서 broken은 창문이 부서진 상태임을 나타내는 말로 쓰였어요.  \\n- 그래서 \\\"부서진\\\" 또는 \\\"깨진\\\"이라고 해석할 수 있습니다.  \\n- 학생의 답 \\\"부서진\\\"도 맞는 답입니다.|1. 문장 해석:  \\n\\\"The statue is <u>fallen</u>.\\\"는 \\\"그 동상은 떨어진 상태이다.\\\" 또는 \\\"그 동상은 쓰러져 있다.\\\"라고 해석할 수 있습니다. 학생 답변인 \\\"떨어진\\\"도 맞는 표현이지만, 상황에 따라 \\\"쓰러진\\\"도 자연스러운 번역입니다.\\n\\n2. 파생어의 기본형:  \\n- \\\"fallen\\\"의 기본형은 \\\"fall\\\"입니다.  \\n- \\\"fall\\\"은 \\\"떨어지다\\\", \\\"넘어지다\\\", \\\"쓰러지다\\\"라는 뜻의 동사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- \\\"fallen\\\"은 \\\"fall\\\"의 과거분사형이에요.\\n- 영어에서 \\\"The statue is fallen.\\\"처럼 \\\"be동사 + 과거분사\\\" 형태는, 어떤 상태가 되어 있음을 나타낼 때 써요.\\n- 여기서 \\\"fallen\\\"은 \\\"떨어진\\\" 또는 \\\"쓰러진\\\" 상태를 말해요. 즉, 동상이 이미 넘어져 있거나 떨어져 있는 상태임을 나타냅니다.\\n- 그래서 \\\"fallen\\\"이란 단어가 들어가서, 동상이 지금 어떤 상태인지(=넘어져 있거나 떨어져 있음)를 설명해주는 거예요.\\n\\n요약:  \\n- \\\"fallen\\\"의 기본형은 \\\"fall\\\"입니다.  \\n- \\\"The statue is fallen.\\\"에서 \\\"fallen\\\"은 동상이 이미 떨어지거나 쓰러진 상태임을 나타내는 말로, 상태를 설명하기 위해 과거분사형이 쓰였습니다.  \\n- 우리말로는 \\\"떨어진\\\" 또는 \\\"쓰러진\\\"이라고 해석할 수 있습니다.|1. 문장 해석:  \\n\\\"She is a film <u>maker</u>.\\\"는 \\\"그녀는 영화 제작자이다.\\\"라고 번역할 수 있습니다.\\n\\n2. 파생어의 기본형:  \\n- maker의 기본형은 \\\"make\\\"입니다. \\\"make\\\"는 \\\"만들다\\\"라는 뜻의 동사입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"maker\\\"는 \\\"make\\\"에 \\\"~er\\\"이 붙어서 만들어진 단어입니다. 영어에서 동사 뒤에 \\\"~er\\\"을 붙이면 \\\"그 동작을 하는 사람\\\"이라는 뜻이 됩니다.  \\n- 예를 들어, \\\"teach(가르치다)\\\" + \\\"er\\\" = \\\"teacher(가르치는 사람, 선생님)\\\"처럼, \\\"make(만들다)\\\" + \\\"er\\\" = \\\"maker(만드는 사람, 제작자)\\\"가 됩니다.\\n- 문장에서 \\\"film maker\\\"는 \\\"영화를 만드는 사람\\\"이라는 뜻으로, \\\"maker\\\"가 명사 자리(사람을 나타내는 명사)에 들어가 있습니다.\\n- 그래서 \\\"She is a film maker.\\\"에서 \\\"maker\\\"는 \\\"만드는 사람\\\"이라는 의미로, \\\"영화\\\"를 만드는 사람, 즉 \\\"영화 제작자\\\"라는 뜻이 됩니다.\\n\\n요약:  \\n- \\\"maker\\\"는 \\\"make\\\"에서 파생된 명사로, \\\"~을 만드는 사람\\\"이라는 뜻입니다.\\n- 문장에서 \\\"maker\\\"는 \\\"영화를 만드는 사람\\\"을 나타내어 \\\"영화 제작자\\\"라는 의미로 쓰였습니다.\"\n  ],\n  \"Adjective\": [\n    \"1. 문장 해석:  \\nThat is <u>certainly</u> true.  \\n→ 그것은 확실히 사실이다.\\n\\n2. 파생어의 기본형:  \\n- certainly의 기본형은 \\\"certain\\\"입니다.  \\n- \\\"certain\\\"은 형용사로, \\\"확실한\\\"이라는 뜻입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"certainly\\\"는 \\\"certain\\\"에 \\\"-ly\\\"가 붙어서 만들어진 부사입니다.  \\n- 부사는 동사, 형용사, 다른 부사, 또는 문장 전체를 꾸며주며, \\\"어떻게, 얼마나, 언제, 어디서\\\"와 같은 정보를 더해줍니다.\\n- \\\"That is certainly true.\\\"에서 \\\"certainly\\\"는 \\\"true(사실이다)\\\"라는 형용사를 꾸며주고 있습니다.  \\n- 즉, \\\"true\\\"가 얼마나 확실한지, 즉 \\\"정말로 사실이다\\\"라는 뜻을 강조해 주는 역할을 합니다.\\n- 그래서 \\\"certainly\\\"는 문장에서 부사 자리(형용사 앞이나 동사 앞)에 쓰여서, \\\"true\\\"의 의미를 더 강하게 만들어 줍니다.\\n\\n요약:  \\n- \\\"certainly\\\"는 \\\"certain\\\"의 부사형으로, \\\"확실히\\\"라는 뜻입니다.  \\n- 문장에서 \\\"certainly\\\"는 \\\"true\\\"를 꾸며주며, \\\"정말로 사실이다\\\"라는 의미를 강조해 줍니다.  \\n- 그래서 \\\"certainly\\\"가 이 자리에 들어가야 문장이 자연스럽고, 의미가 더 분명해집니다.\",\n    \"1. 문장 해석:  \\n\\\"Birds fly <u>freely</u>.\\\"는 \\\"새들은 자유롭게 날아다닌다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- \\\"freely\\\"의 기본형은 \\\"free\\\"입니다.  \\n- \\\"free\\\"는 형용사로 \\\"자유로운\\\"이라는 뜻이고, \\\"freely\\\"는 부사로 \\\"자유롭게\\\"라는 뜻입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- \\\"freely\\\"는 \\\"fly(날다)\\\"라는 동사를 꾸며주는 부사입니다.  \\n- 영어에서 부사는 동사, 형용사, 또는 다른 부사를 꾸며주며, 여기서는 \\\"어떻게 날아다니는지\\\"를 설명해줍니다.  \\n- 즉, \\\"새들이 어떻게 날아다니는가?\\\"에 대한 답으로 \\\"자유롭게(freely)\\\"가 들어간 것입니다.  \\n- 우리말로도 \\\"자유롭게\\\"는 \\\"어떻게?\\\"라는 질문에 답하는 말이기 때문에, 부사로 쓰여서 동사를 꾸며줍니다.\\n\\n요약:  \\n- \\\"freely\\\"는 \\\"free\\\"의 부사형으로, 동사 \\\"fly\\\"를 꾸며주기 위해 문장에 들어갔습니다.  \\n- \\\"자유롭게\\\"는 \\\"어떻게 날아다니는가?\\\"를 설명하는 부사 역할을 합니다.\",\n    \"1. 문장 해석:  \\n\\\"I have <u>difficulty</u> with math.\\\"는 \\\"나는 수학에 <u>어려움</u>이 있다.\\\" 또는 \\\"나는 수학을 어려워한다.\\\"라는 뜻입니다.\\n\\n2. 파생어의 기본형:  \\n- difficulty의 기본형은 \\\"difficult\\\"입니다.  \\n- \\\"difficulty\\\"는 \\\"difficult\\\"에서 파생된 명사로, \\\"어려움\\\" 또는 \\\"곤란함\\\"이라는 뜻입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- 여기서 \\\"difficulty\\\"는 명사입니다.  \\n- \\\"have\\\" 뒤에는 보통 '가지고 있는 것'이 와야 하므로, 명사가 필요합니다.  \\n- \\\"difficult\\\"는 형용사(어떤 상태나 성질을 나타내는 말)이고, \\\"difficulty\\\"는 명사(사물이나 상태를 나타내는 말)입니다.  \\n- \\\"I have difficulty\\\"에서 \\\"difficulty\\\"는 '어려움'이라는 상태나 상황을 나타내기 때문에 명사로 쓰인 것입니다.  \\n- 만약 \\\"difficult\\\"를 쓴다면 \\\"I have difficult\\\"가 되는데, 이는 문법에 맞지 않습니다. 왜냐하면 \\\"difficult\\\"는 명사가 아니라 형용사이기 때문입니다.  \\n- 그래서 \\\"I have difficulty with math.\\\"에서 \\\"difficulty\\\"가 쓰인 이유는, '어려움'이라는 상태(명사)를 가지고 있다는 뜻을 나타내기 위해서입니다.\\n\\n요약:  \\n- \\\"difficulty\\\"는 명사로, '어려움'이라는 뜻입니다.  \\n- \\\"have\\\" 다음에는 명사가 와야 하므로, \\\"difficulty\\\"가 쓰였습니다.  \\n- \\\"difficult\\\"는 형용사라서 이 자리에 올 수 없습니다.  \\n- 따라서 \\\"difficulty\\\"가 들어간 것입니다.|1. 문장 해석:  \\nHe spoke <u>clearly</u>.  \\n→ 그는 <u>분명히</u> 말했다.\\n\\n2. 파생어의 기본형:  \\n- clearly의 기본형은 \\\"clear\\\"입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- \\\"clearly\\\"는 \\\"clear\\\"에 -ly가 붙어서 만들어진 부사입니다.\\n- 영어에서 부사는 동사(여기서는 \\\"spoke\\\")를 꾸며서, 어떻게 말했는지(말하는 방식)를 설명해 줍니다.\\n- \\\"clearly\\\"는 \\\"분명히, 또렷하게\\\"라는 뜻으로, \\\"그가 어떻게 말했다\\\"를 나타냅니다.\\n- 그래서 \\\"He spoke clearly.\\\"에서 \\\"clearly\\\"는 동사 \\\"spoke\\\"를 꾸며 주는 부사 자리(부사 위치)에 들어갑니다.\\n\\n요약:  \\n- \\\"clearly\\\"는 \\\"clear\\\"의 부사형으로, \\\"분명히\\\"라는 뜻입니다.  \\n- 문장에서 \\\"clearly\\\"는 동사 \\\"spoke\\\"를 꾸며 주기 위해 사용되었습니다.  \\n- 학생 답변 \\\"명확하게\\\"도 비슷한 뜻이지만, 우리말로는 \\\"분명히\\\"가 더 자연스럽고 정확한 번역입니다.|1. 문장 해석:  \\n\\\"That is <u>certainly</u> true.\\\"는 \\\"그것은 <u>확실히</u> 사실이다.\\\" 또는 \\\"그것은 <u>틀림없이</u> 사실이다.\\\"라고 해석할 수 있습니다.\\n\\n2. 파생어의 기본형:  \\n- \\\"certainly\\\"의 기본형은 \\\"certain\\\"입니다.  \\n  \\\"certain\\\"은 형용사로 \\\"확실한\\\"이라는 뜻이고, \\\"certainly\\\"는 여기에 \\\"-ly\\\"가 붙어서 부사(어떻게?)가 된 형태입니다.\\n\\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:  \\n- \\\"certainly\\\"는 \\\"certain\\\"에 부사형 어미 \\\"-ly\\\"가 붙어서 만들어진 부사입니다.  \\n- 영어에서 부사는 주로 동사, 형용사, 또는 문장 전체를 꾸며서, \\\"어떻게\\\", \\\"얼마나\\\", \\\"정말로\\\" 같은 의미를 더해줍니다.\\n- 여기서 \\\"certainly\\\"는 \\\"true(사실이다)\\\"라는 말 전체를 꾸며주면서, \\\"정말로 그렇다\\\", \\\"확실히 그렇다\\\"는 뜻을 강조해 줍니다.\\n- 즉, \\\"That is true.\\\"(그것은 사실이다)에 \\\"certainly\\\"가 들어가면, \\\"그것은 정말로 사실이다\\\" 또는 \\\"그것은 확실히 사실이다\\\"처럼, 사실임을 더 강하게 강조하는 역할을 합니다.\\n- 우리말로도 \\\"확실히\\\"는 동사나 형용사 앞에서 \\\"정말로\\\", \\\"틀림없이\\\"라는 뜻을 더해주는 부사로 쓰입니다.\\n\\n요약:  \\n- \\\"certainly\\\"는 \\\"certain\\\"의 부사형으로, 문장에서 \\\"true\\\"를 꾸며주며 \\\"확실히\\\", \\\"정말로\\\"라는 뜻을 더해줍니다.  \\n- 그래서 \\\"That is <u>certainly</u> true.\\\"에서 \\\"certainly\\\"는 \\\"확실히\\\"라는 의미로 쓰인 것입니다.\"\n  ]\n}",
+        "cond": "",
+        "desc": "LLM Feedback accumulator"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@TEXT(ID, \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/틀리면 turn 2, 맞으면 turn 4\n@JUMP(@MAP(\"@TEXT(ID)@\", \"@Identification@\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"3*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@SET(N_IDX, \"@INDEX(\"@PRM_N@\", \"@PRM_N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@PRM_V@\", \"@PRM_V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@PRM_ADJ@\", \"@PRM_ADJ[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문항 JSON 셋업\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].problem_reference, \"@DRV_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@ANS_N[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].derivative_q, \"@DRV_NQ[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].q_sentence, \"@PRM_N[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].problem_reference, \"@DRV_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@ANS_V[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].derivative_q, \"@DRV_VQ[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].q_sentence, \"@PRM_V[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 주어진 문장 속 밑줄 친 단어의 의미를 우리말로 쓰시오<br> @PRM_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].problem_reference, \"@DRV_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ANS_ADJ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].derivative_q, \"@DRV_ADJQ[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].q_sentence, \"@PRM_ADJ[@ADJ_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Noun\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ noun question input\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n1. Noun\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Noun[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Noun[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Noun[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Noun[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Noun[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n- student answer: @JSON_test_config.Noun[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ llm feedback update: noun \n@UPJ(LLM_FBK.Noun[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Verb\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ verb question input\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "// automatic scoring\n2. Verb\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Verb[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Verb[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Verb[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Verb[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Verb[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n- student answer: @JSON_test_config.Verb[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ update llm feedback:verb\n@UPJ(LLM_FBK.Verb[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Verb\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@TEXT(P_ADJ@R_i@,\n\"@JSON_test_config.Adjective[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "//\n3. Adjective\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        1. Translate @JSON_test_config.Adjective[@R_i@].q_sentence@ in Korean.\n        2. determine the root form of @JSON_test_config.Adjective[@R_i@].derivative_q@\n        3. Explain why this particular derivative word of '@JSON_test_config.Adjective[@R_i@].derivative_q@' comes in the sentence of \"@JSON_test_config.Adjective[@R_i@].problem@\" syntax-wise in Korean.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to middle-school-aged children in Korea.\n        3. Clear, succinct explanations.\n    </rule>\n    <example>\n1. 문장 해석:\n\"Please clarify your answer.\"는 \"제발 너의 답변을 명확하게 해줘.\"라는 뜻입니다.\n\n2. 파생어의 기본형:\n- clarify의 기본형은 \"clarify\"입니다. 이 단어는 동사로, \"명확하게 하다\" 또는 \"분명하게 설명하다\"라는 의미입니다.\n\n3. 왜 해당 파생어가 들어갔는지 문법적 설명:\n- 여기서 \"Please clarify your answer.\"는 명령문이에요.\n- \"please\"는 정중하게 부탁할 때 쓰는 말이고, \"clarify\"는 동사입니다.\n- \"your answer\"는 \"clarify\"의 목적어(무엇을 명확하게 하다?)이기 때문에, \"clarify\"는 동사로서 뒤에 목적어를 필요로 합니다.\n- 그래서 \"clarify\"는 동사 자리(동사 위치)에 들어가야 하고, 그 뒤에 \"your answer\"라는 명사구가 와서 \"무엇을?\"을 알려줍니다.\n\n요약:\n- \"clarify\"는 동사로서, \"무엇을?\" 하는 내용을 설명하거나 명확히 할 때 쓰입니다.\n- 문장에서 \"clarify\"는 동사 위치에 있어서, 뒤에 목적어(여기선 \"your answer\")가 와야 문장이 완성됩니다.\n    </example>\n    \n</instructions>",
+      "user": "- Derivatives: @JSON_test_config.Adjective[@R_i@].problem_reference@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n- student answer: @JSON_test_config.Adjective[@R_i@].Student_answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/llm feedback update: adjective\n@UPJ(LLM_FBK.Adjective[@R_i@], \"@TR@TN(-1)@[@R_i@]@\")@\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//Adjust Final Score; Cumulative score and due to CAFA indexing issue\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// Final Report\n명사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Noun@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n\n동사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Verb@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n\n형용사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Adjective@개 단어의 파생어 의미를 떠올릴 수 있습니다.\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/다음 인풋을 위한 점수 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

@@ -1,0 +1,565 @@
+{
+  "options": {
+    "title": "<h1>초등학교 Form+Meaning_중급</h1>",
+    "brief": "",
+    "name": "[Updated] 초등학교 Form+Meaning_중급",
+    "description": "초등학교 수준 어휘 75개를 바탕으로 형태-의미 연결의 중급 능력을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+    "greeting": "주어진 영어 단어에 해당하는 한국어 번역을 쓰시오.<br>\n<br>\n예시)\n<br>\n<b>pull</b><br>\n정답: <b>문이나 사람을 당기다, 차를 길에 세우다</b>",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": "문항 구글 시트 ID (메모리 참조 주소)"
+      },
+      "PRM_N": {
+        "org": "address|bank|board|body|campaign|check|class|condition|culture|date|dress|energy|earth|fact|field|form|group|light|market|memory|model|paper|place|power|service",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "PRM_V": {
+        "org": "act|agree|answer|believe|break|build|call|change|choose|control|decide|drive|end|fall|feel|find|focus|get|hold|keep|lie|make|mind|miss|stand",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "PRM_ADJ": {
+        "org": "bad|bright|certain|clean|clear|close|cold|cool|dark|dead|difficult|free|fun|good|great|hard|heavy|high|last|little|new|old|open|right|safe",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "PRM_OTH": {
+        "org": "above|across|after|along|around|before|behind|below|between|early|far|fast|inside|just|late|near|never|off|once|out|over|together|under|up|well",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 문항 소스 풀(파생어 그룹·형태소 단서)"
+      },
+      "ANS_N": {
+        "org": "주소, 연설, 호칭|은행, 강둑, 제방|판자, 위원회, 이사회|몸, 신체, 단체|캠페인, (조직적인) 운동|확인, 수표, 계산서|수업, 계층|상태, 조건, 질병|문화, 교양, 배양|날짜, 연대, 데이트|옷, 드레스|에너지, 힘, 활력|지구, 땅, 흙|사실, (~라는) 점|들판, 분야, 경기장|형태, 양식, 서식|그룹, 집단, 무리|빛, 조명|시장, 상점가|기억, 추억, 회상|모형, (상품의) 모델, 본보기|종이, 신문, 논문|장소, 위치, 자리|힘, 권력|서비스, 사업, 봉사",
+        "cond": "SELF",
+        "desc": "명사(Noun) 정답 풀"
+      },
+      "ANS_V": {
+        "org": "행동하다, 연기하다, (역할·상황에 맞게) 처신하다|동의하다, 의견이 일치하다, 합의하다|대답하다, 응답하다, 답하다|믿다, 생각하다, 여기다|깨어지다, 부수다, 고장나다, (법·약속을) 어기다|(건물을) 짓다, 건설하다, 만들다, (관계·능력을) 쌓다|전화하다, 부르다|바꾸다, 변하다|선택하다, 고르다|통제하다, 조절하다|결정하다, 결심하다|운전하다, 태워다 주다, (기계에) 동력을 공급하다|끝내다, 끝나다|떨어지다, 넘어지다, 감소하다|느끼다, ~라고 생각하다|찾다, 발견하다, 알게 되다|집중하다, 초점을 맞추다|얻다, 받다|잡다, 유지하다, 견디다|유지하다, 계속하다, 남겨 두다|눕다, 거짓말하다, 놓여 있다|만들다, ~하게 하다|신경 쓰다, 꺼리다|놓치다, 그리워하다|서다, 세우다",
+        "cond": "SELF",
+        "desc": "동사(Verb) 정답 풀"
+      },
+      "ANS_ADJ": {
+        "org": "나쁜, 심한|밝은, 선명한, 똑똑한|확실한, 어떤, 무슨|깨끗한, 깔끔한|분명한, 확실한, 또렷한|가까운, 친한, 거의 (~할 뻔한)|차가운, 추운, 냉정한|시원한, 멋진|어두운, 검은(색의)|죽은, 완전히 멈춘|어려운, 힘든|자유로운, 무료의|재미있는, 즐거운|좋은, 유능한|훌륭한, 큰|어려운, 딱딱한, 힘든|무거운, 심한|높은, 많은|마지막의, 지난|작은, 적은, 어린|새로운, 새 것의|오래된, 나이 많은|열린, 개방된|옳은, 오른쪽의, 알맞은|안전한, 무사한",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 정답 풀"
+      },
+      "ANS_OTH": {
+        "org": "위의, 초과하여|건너서, 건너편의|후에, 뒤에|~을 따라, ~와 함께|주위의, 대략|전에, 앞에, ~보다 먼저|뒤에, 뒤처진|아래에, 미만으로|사이에, 가운데|일찍, 이른, 초기에|멀리, 훨씬, 저쪽에|빨리, 빠르게|안에, 내부에|방금, 단지, 정확히|늦은, 늦게|가까운, 가까이|결코 ~않다, 한 번도 ~않다|꺼진, 취소된|한 번, 한때, ~하자마자|밖으로, ~이 없는|위에, 끝나서, ~이상|함께, 동시에|아래에, 미만의, ~의 통제 하에|위로, 위쪽으로, 위에|잘, 좋게",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 정답 풀"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 단어 culture에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"문화, 교양, 배양\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"문화\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 단어 dress에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"옷, 드레스\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"옷\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 단어 dress에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"옷, 드레스\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"옷\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 body에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"몸, 신체, 단체\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"신체\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"\",\n      \"answer\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 단어 choose에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"선택하다, 고르다\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"고르다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 단어 control에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"통제하다, 조절하다\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"조종하다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 단어 get에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"얻다, 받다\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"가지다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 hold에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"잡다, 유지하다, 견디다\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"쥐다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 feel에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"느끼다, ~라고 생각하다\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 단어 little에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"작은, 적은, 어린\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"작은\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 단어 safe에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"안전한, 무사한\",\n      \"LLM_FBK\": \"학생의 답인 \\\"안정회\\\"는 \\\"safe\\\"의 우리말 뜻이 아닙니다. \\\"safe\\\"는 \\\"안전한\\\" 또는 \\\"무사한\\\"이라는 뜻이에요. \\\"안정회\\\"는 올바른 우리말 단어도 아니고, \\\"safe\\\"와 의미가 맞지 않아요. \\\"안전한\\\"이나 \\\"무사한\\\"이라고 써야 정답입니다.\",\n      \"Student_answer\": \"안정회\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"3. 단어 open에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"열린, 개방된\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"열린\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 clean에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"깨끗한, 깔끔한\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"깨끗한\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 hard에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"어려운, 딱딱한, 힘든\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. 단어 just에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"방금, 단지, 정확히\",\n      \"LLM_FBK\": \"학생의 답변인 \\\"정의\\\"는 just의 우리말 뜻이 아닙니다. just는 \\\"방금\\\", \\\"단지\\\", \\\"정확히\\\"와 같은 뜻을 가지고 있습니다. \\\"정의\\\"는 전혀 다른 의미이므로, just에 해당하는 우리말이 아닙니다.\",\n      \"Student_answer\": \"정의\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"2. 단어 fast에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"빨리, 빠르게\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"빠른\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 단어 fast에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"빨리, 빠르게\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"빨리\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 never에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"결코 ~않다, 한 번도 ~않다\",\n      \"LLM_FBK\": \"학생의 답변 \\\"절대\\\"는 \\\"never\\\"의 뜻을 일부만 담고 있습니다. \\\"never\\\"는 \\\"결코 ~않다\\\" 또는 \\\"한 번도 ~않다\\\"처럼 어떤 일이 전혀 일어나지 않음을 나타내는 표현입니다. \\\"절대\\\"만 쓰면 뒷부분이 빠져 있어서 완전한 뜻이 전달되지 않습니다. \\\"결코 ~않다\\\" 또는 \\\"한 번도 ~않다\\\"라고 써야 정답입니다.\",\n      \"Student_answer\": \"절대\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 above에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"위의, 초과하여\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": "문항·정답·학생응답·정오·LLM_FBK·누적점수(Result)를 담는 중앙 메타데이터 JSON"
+      },
+      "Rand_iteration": {
+        "org": "4",
+        "cond": "SELF",
+        "desc": "1회분 문항 반복 수 (turn 0에서 @N(2,5)@로 랜덤 생성)"
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"26001\"\n}",
+        "cond": "",
+        "desc": "학생이 입력하는 일련번호 (인증 입력값)"
+      },
+      "N_IDX": {
+        "org": "4",
+        "cond": "SELF",
+        "desc": "명사(Noun) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "V_IDX": {
+        "org": "19",
+        "cond": "SELF",
+        "desc": "동사(Verb) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "ADJ_IDX": {
+        "org": "4",
+        "cond": "SELF",
+        "desc": "형용사(Adjective) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "OTH_IDX": {
+        "org": "17",
+        "cond": "SELF",
+        "desc": "기타 품사(부사·전치사 등) 문항 풀에서 추출한 랜덤 인덱스"
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. 단어 culture에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"문화\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. 단어 dress에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"옷\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"label\": \"3. 단어 dress에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"옷\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. 단어 choose에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"고르다\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. 단어 control에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"조종하다\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"label\": \"3. 단어 get에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"가지다\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. 단어 little에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"작은\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. 단어 safe에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"안정회\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"label\": \"3. 단어 open에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"열린\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH1": {
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"label\": \"1. 단어 just에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"정의\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 1번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH2": {
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"label\": \"2. 단어 fast에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"빠른\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 2번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH3": {
+        "org": "{\n  \"id\": \"P_OTH3\",\n  \"label\": \"3. 단어 fast에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"빨리\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 3번 문항 객체 (질문·선택지)"
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"label\": \"4. 단어 body에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"신체\"\n}",
+        "cond": "",
+        "desc": "명사(Noun) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"label\": \"4. 단어 hold에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"쥐다\"\n}",
+        "cond": "",
+        "desc": "동사(Verb) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"label\": \"4. 단어 clean에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"깨끗한\"\n}",
+        "cond": "",
+        "desc": "형용사(Adjective) 4번 문항 객체 (질문·선택지)"
+      },
+      "P_OTH4": {
+        "org": "{\n  \"id\": \"P_OTH4\",\n  \"label\": \"4. 단어 never에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"절대\"\n}",
+        "cond": "",
+        "desc": "기타 품사(부사·전치사 등) 4번 문항 객체 (질문·선택지)"
+      },
+      "ID_LOWER": {
+        "org": "26001",
+        "cond": "SELF",
+        "desc": "학생 인증: 최소 ID 번호 (26001부터 26160 범위)"
+      },
+      "ID_UPPER": {
+        "org": "26160",
+        "cond": "SELF",
+        "desc": "학생 인증: 최대 ID 번호 (26001부터 26160 범위)"
+      },
+      "Student_auth_list": {
+        "org": "@COMPARE(\"@EVAL(\"@TEXT(ID)@-26000\")@\", \"0\", \">\")@|@COMPARE(\"@EVAL(\"26161-@TEXT(ID)@\")@\", \"0\", \">\")@",
+        "cond": "SELF",
+        "desc": "학생 인증 검증: 1차 비교: (입력값 - 26000) > 0 = 입력값 >= 26001; 2차 비교: (26161 - 입력값) > 0 = 입력값 <= 26160"
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ [셋업] 1회분 문항 반복 수를 랜덤(@N(2,5)@)으로 생성\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 학생 일련번호 입력창 (26OOO 형식)\n@TEXT(ID, \"선생님이 배부해준 26OOO 형식의 일련번호를 입력하세요. (입력예시: 26113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [인증] 입력값이 허용 범위(ID_LOWER~ID_UPPER)인지 검증 — 실패 시 입력 turn 복귀, 통과 시 turn 4 진행\n@JUMP(@MAP(\"@EQUAL(\"@Student_auth_list@\", \"true|true\")@\", \"true\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [안내] 환영 메시지 및 총 문항 수 안내\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [셋업] POS별 문항 풀에서 랜덤 인덱스(*_IDX) 추출\n@SET(N_IDX, \"@INDEX(\"@PRM_N@\", \"@PRM_N[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@PRM_V@\", \"@PRM_V[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@PRM_ADJ@\", \"@PRM_ADJ[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@PRM_OTH@\", \"@PRM_OTH[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [셋업] 추출한 문항·정답(·보기)을 JSON_test_config에 기록\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 @PRM_N[@N_IDX@]@에 해당하는 우리말을 쓰시오.\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@ANS_N[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 @PRM_V[@V_IDX@]@에 해당하는 우리말을 쓰시오.\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@ANS_V[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 @PRM_ADJ[@ADJ_IDX@]@에 해당하는 우리말을 쓰시오.\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ANS_ADJ[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. 단어 @PRM_OTH[@OTH_IDX@]@에 해당하는 우리말을 쓰시오.\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@ANS_OTH[@OTH_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 명사 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 명사 단답(@TEXT) 문항 입력창\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "// [채점] 명사 학생 응답 정오 판정 후 점수·correctness 기록 (LLM 판정 결과(1/0) 사용)\n\n1. Noun\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the question, student's answer, and true answer for the question, \n            1. If @TR@TN(-2)@[@R_i@]@ == 0, explain why student's answer is wrong compared to the true answer. \n2. Otherwise, return \"정답입니다!\"\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- question and student's answer: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [저장] 명사 LLM 피드백을 JSON_test_config에 저장\n@UPJ(JSON_test_config.Noun[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 동사 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 동사 단답(@TEXT) 문항 입력창\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [채점] 동사 학생 응답 정오 판정 후 점수·correctness 기록 (LLM 판정 결과(1/0) 사용)\n\n2. Verb\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the question, student's answer, and true answer for the question, \n            1. If @TR@TN(-2)@[@R_i@]@ == 0, explain why student's answer is wrong compared to the true answer. \n2. Otherwise, return \"정답입니다!\"\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- question and student's answer: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [저장] 동사 LLM 피드백을 JSON_test_config에 저장\n@UPJ(JSON_test_config.Verb[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 형용사 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 형용사 단답(@TEXT) 문항 입력창\n@TEXT(P_ADJ@R_i@, \"@JSON_test_config.Adjective[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [채점] 형용사 학생 응답 정오 판정 후 점수·correctness 기록 (LLM 판정 결과(1/0) 사용)\n\n3. Adjective\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the question, student's answer, and true answer for the question, \n            1. If @TR@TN(-2)@[@R_i@]@ == 0, explain why student's answer is wrong compared to the true answer. \n2. Otherwise, return \"정답입니다!\"\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- problem and student response: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [저장] 형용사 LLM 피드백을 JSON_test_config에 저장\n@UPJ(JSON_test_config.Adjective[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [루프] 기타 문항 풀이 iteration 시작\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [문제] 기타 단답(@TEXT) 문항 입력창\n@TEXT(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_OTH@R_i@@\n- true answer: @JSON_test_config.others[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [채점] 기타 학생 응답 정오 판정 후 점수·correctness 기록 (LLM 판정 결과(1/0) 사용)\n\n4. Others\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@TEXT(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the question, student's answer, and true answer for the question, \n            1. If @TR@TN(-2)@[@R_i@]@ == 0, explain why student's answer is wrong compared to the true answer. \n2. Otherwise, return \"정답입니다!\"\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- problem and student response: @P_OTH@R_i@@\n- true answer: @JSON_test_config.others[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [저장] 기타 LLM 피드백을 JSON_test_config에 저장\n@UPJ(JSON_test_config.others[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [집계] 인덱싱 보정(-1) 후 POS 점수 누적 합산(Cumulative)\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// [리포트] 최종 결과 리포트 출력\n명사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Noun@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n동사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Verb@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n형용사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Adjective@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n기타 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].others@개 단어의 연어 의미를 떠올릴 수 있습니다.\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ [초기화] 다음 응시를 위한 점수·결과 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}

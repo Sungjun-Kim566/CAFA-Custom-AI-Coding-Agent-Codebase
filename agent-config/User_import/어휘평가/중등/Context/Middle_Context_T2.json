@@ -1,0 +1,575 @@
+{
+  "options": {
+    "title": "<h1>중학교 Context Sensitivity_중급</h1>",
+    "brief": "",
+    "name": "[Updated] 중학교 Context Sensitivity_중급",
+    "description": "중학교 수준 어휘 75개를 바탕으로 문맥 민감성의 중급 능력을 평가합니다. 이 앱은 개인정보를 수집하지 않습니다.",
+    "greeting": "아래 문장 속 <b>pull</b>의 의미를 우리말로 쓰시오.<br>\n<br>\n예시)\n<br>\nHe pulled the chair closer to the table.<br>\n정답: <b>당겼다</b><br>\nThe company decided to pull the product from the market.<br>\n정답: <b>(제품을) 회수하다</b>",
+    "keep-in-app-cafakey": false,
+    "is-template": false,
+    "is-public": false,
+    "params": {
+      "GSID": {
+        "org": "1aBlR9qtUs1FQpvI_zf-efVIPFGJWz2MJ0T6QaU3OAFI",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "Identification": {
+        "org": "S-113",
+        "cond": "SELF",
+        "desc": "배부된 일련번호"
+      },
+      "JSON_test_config": {
+        "org": "{\n  \"Noun\": [\n    {\n      \"problem\": \"1. 아래 문장 속 <b>subject</b>의 의미를 우리말로 쓰시오<br>In the past, each person was a subject of the king.\",\n      \"answer\": \"백성\",\n      \"polysemy\": \"subject\",\n      \"LLM_FBK\": \"학생의 답변 \\\"백성\\\"은 주어진 문장에서 \\\"subject\\\"의 의미를 정확하게 파악했습니다.  \\n여기서 \\\"subject\\\"는 \\\"왕의 신하\\\" 또는 \\\"왕의 통치를 받는 사람들\\\"이라는 뜻으로, 우리말로 \\\"백성\\\"이 맞습니다.\\n\\n예시 문장:\\n- true answer(백성): In the past, each person was a subject of the king.  \\n  (옛날에는 모든 사람이 왕의 백성이었다.)\\n\\n학생의 답변이 정답과 일치하므로, 추가 설명이 필요하지 않습니다.  \\n아주 잘했습니다!\",\n      \"Student_answer\": \"백성\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 아래 문장 속 <b>term</b>의 의미를 우리말로 쓰시오<br>One important term is that you must pay by Friday.\",\n      \"answer\": \"조건\",\n      \"polysemy\": \"term\",\n      \"LLM_FBK\": \"학생의 답변 \\\"조건\\\"은 정답 \\\"조건\\\"과 일치합니다.\\n\\n문장에서 \\\"term\\\"은 계약이나 약속에서 지켜야 하는 \\\"조건\\\"이라는 뜻으로 쓰였습니다.  \\n예시 문장:- 정답(조건): \\\"계약의 한 조건(term)은 매달 돈을 내는 것입니다.\\\"  \\n- 오답 예시(만약 학생이 '기간'이라고 썼다면): \\\"학기의 기간(term)은 3개월입니다.\\\"\\n\\n따라서 학생은 문맥에 맞는 의미를 잘 골랐습니다.\",\n      \"Student_answer\": \"조건\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 아래 문장 속 <b>term</b>의 의미를 우리말로 쓰시오<br>The president served a four-year term, from 2022 to 2026.\",\n      \"answer\": \"임기, 기간\",\n      \"polysemy\": \"term\",\n      \"LLM_FBK\": \"학생의 답변 \\\"기간\\\"은 부분적으로 맞았습니다. 이 문장에서 \\\"term\\\"은 \\\"임기\\\" 또는 \\\"기간\\\" 모두 맞지만, 더 정확하게는 \\\"임기\\\"가 더 어울립니다. \\\"임기\\\"는 특정 직책을 맡는 기간을 말하고, \\\"기간\\\"은 그냥 어떤 시간이 흐르는 것을 의미합니다.\\n\\n예시:\\n- true answer(임기): \\\"대통령의 임기는 4년이다.\\\"  \\n- student's answer(기간): \\\"여름방학 기간은 2주이다.\\\"\\n\\n따라서 \\\"기간\\\"도 맞지만, \\\"임기\\\"가 더 정확한 답입니다.\",\n      \"Student_answer\": \"기간\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 body에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"몸, 신체, 단체\",\n      \"polysemy\": \"\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"신체\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"\",\n      \"answer\": \"\",\n      \"polysemy\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Verb\": [\n    {\n      \"problem\": \"1. 아래 문장 속 <b>mean</b>의 의미를 우리말로 쓰시오<br>I didn’t mean to make you angry.\",\n      \"answer\": \"의도하다\",\n      \"polysemy\": \"mean\",\n      \"LLM_FBK\": \"학생의 답변 \\\"의도하다\\\"는 주어진 문장 \\\"I didn’t mean to make you angry.\\\"에서의 mean의 의미와 정확히 일치합니다. 여기서 mean은 \\\"의도하다\\\"라는 뜻으로 쓰였습니다.\\n\\n예시 문장:\\n- true answer(의도하다): I didn’t mean to hurt your feelings. (나는 네 기분을 상하게 할 의도가 아니었어.)\\n- 만약 학생이 다른 의미(예: \\\"의미하다\\\")로 답했다면: What does this word mean? (이 단어는 무엇을 의미하니?)\\n\\n따라서 학생의 답변은 맞았습니다.\",\n      \"Student_answer\": \"의도하다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 아래 문장 속 <b>sign</b>의 의미를 우리말로 쓰시오<br>The sign on the door says “No Entry,” so we can’t go in.\",\n      \"answer\": \"표지판\",\n      \"polysemy\": \"sign\",\n      \"LLM_FBK\": \"학생의 답변 \\\"표지판\\\"은 문맥에 맞는 정확한 의미를 잘 골랐습니다.  \\n문장에서 \\\"The sign on the door says 'No Entry'\\\"에서 sign은 문이나 벽 등에 붙어 있는 안내문이나 표지판을 의미합니다.\\n\\n예시 문장:  \\n- true answer(표지판): \\\"문에 붙은 표지판에 '출입금지'라고 써 있다.\\\"  \\n- student's answer(표지판): \\\"문에 붙은 표지판에 '출입금지'라고 써 있다.\\\"\\n\\n학생의 답변이 정답과 일치합니다. 잘 했어요!\",\n      \"Student_answer\": \"표지판\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"3. 아래 문장 속 <b>mean</b>의 의미를 우리말로 쓰시오<br>Don’t be mean to your friends; you should be kind and respectful.\",\n      \"answer\": \"못된,심술궂은\",\n      \"polysemy\": \"mean\",\n      \"LLM_FBK\": \"학생의 답변 \\\"못된\\\"은 정답 \\\"못된, 심술궂은\\\"과 의미가 잘 맞습니다.  \\n문장에서 \\\"Don’t be mean to your friends; you should be kind and respectful.\\\"에서 mean은 \\\"못된\\\" 또는 \\\"심술궂은\\\"이라는 뜻으로 쓰였습니다.\\n\\n예시 문장:\\n- 정답(못된/심술궂은): He was mean to his little sister. (그는 여동생에게 못되게 굴었다.)\\n- 학생 답변(못된): She is mean to her classmates. (그녀는 반 친구들에게 못되게 군다.)\\n\\n학생의 답변은 문맥에 맞는 정확한 의미를 잘 골랐습니다.\",\n      \"Student_answer\": \"못된\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 아래 문장 속 <b>sign</b>의 의미를 우리말로 쓰시오<br>The teacher had to sign to the class with her finger and lips, meaning “Be quiet.”\",\n      \"answer\": \"손짓하다, 신호하다\",\n      \"polysemy\": \"sign\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"쥐다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 아래 문장 속 <b>succeed</b>의 의미를 우리말로 쓰시오<br>In some stories, peace succeeds a long period of war.\",\n      \"answer\": \"뒤따르다,다음에 오다\",\n      \"polysemy\": \"succeed\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Adjective\": [\n    {\n      \"problem\": \"1. 아래 문장 속 <b>general</b>의 의미를 우리말로 쓰시오<br>The general spoke to the soldiers before the parade.\",\n      \"answer\": \"장군\",\n      \"polysemy\": \"general\",\n      \"LLM_FBK\": \"학생의 답변 \\\"장군\\\"은 주어진 문장에서의 \\\"general\\\"의 의미와 정확히 일치합니다.\\n\\n문장에서 \\\"The general spoke to the soldiers before the parade.\\\"에서 \\\"general\\\"은 군대에서 높은 계급을 가진 사람, 즉 \\\"장군\\\"을 뜻합니다. 학생이 올바르게 답변했습니다.\\n\\n예시 문장:\\n- 정답 의미(장군): The general led his army to victory. (장군이 그의 군대를 승리로 이끌었다.)\\n- 만약 학생이 \\\"일반적인\\\"이라고 잘못 답했다면: This is a general rule. (이것은 일반적인 규칙이다.)\\n\\n따라서 학생의 답변은 정확합니다!\",\n      \"Student_answer\": \"장군\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 아래 문장 속 <b>direct</b>의 의미를 우리말로 쓰시오<br>My coach gave direct advice to help me improve.\",\n      \"answer\": \"솔직한, 돌려 말하지 않는\",\n      \"polysemy\": \"direct\",\n      \"LLM_FBK\": \"학생의 답변 \\\"직접적인\\\"은 \\\"direct\\\"의 가장 기본적인 뜻을 잘 알고 쓴 것이지만, 이 문장에서는 \\\"direct advice\\\"가 \\\"솔직하게, 돌려 말하지 않고 바로 하는 조언\\\"이라는 의미로 쓰였습니다. 즉, 숨기거나 돌려서 말하지 않고 솔직하게 말하는 조언이라는 뜻입니다.\\n\\n예시 문장:\\n- 정답(솔직한, 돌려 말하지 않는): My coach gave direct advice and told me exactly what I was doing wrong.  \\n  (코치가 솔직하게 내가 뭘 잘못하고 있는지 바로 말해줬다.)\\n- 학생 답변(직접적인): I received direct help from my teacher, not through anyone else.  \\n  (나는 다른 사람을 거치지 않고 선생님에게서 직접적인 도움을 받았다.)\\n\\n따라서 학생의 답변은 문맥에 맞는 의미를 정확히 파악하지 못했습니다. \\\"솔직한, 돌려 말하지 않는\\\"이 더 적절합니다.\",\n      \"Student_answer\": \"직접적인\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"3. 아래 문장 속 <b>major</b>의 의미를 우리말로 쓰시오<br>She will major in math at college.\",\n      \"answer\": \"전공하다\",\n      \"polysemy\": \"major\",\n      \"LLM_FBK\": \"학생의 답: \\\"전공을 하다\\\"  \\n정답: \\\"전공하다\\\"\\n\\n두 답 모두 \\\"major\\\"가 \\\"어떤 과목을 집중적으로 공부하다\\\"라는 뜻에서 \\\"전공하다\\\"로 잘 해석되었습니다. \\\"전공하다\\\"와 \\\"전공을 하다\\\"는 의미상 거의 차이가 없고, 모두 문맥에 맞게 답했습니다.\\n\\n예시 문장:  \\n정답(전공하다): 나는 대학에서 수학을 전공하다.  \\n학생 답(전공을 하다): 나는 대학에서 수학을 전공을 하다.\\n\\n따라서 학생의 답은 맞았습니다!\",\n      \"Student_answer\": \"전공을 하다\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 아래 문장 속 <b>correct</b>의 의미를 우리말로 쓰시오<br>The teacher corrected my spelling mistake.\",\n      \"answer\": \"바로잡다, 수정하다\",\n      \"polysemy\": \"correct\",\n      \"LLM_FBK\": \"정답입니다!\",\n      \"Student_answer\": \"깨끗한\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 아래 문장 속 <b>public</b>의 의미를 우리말로 쓰시오<br>Public transportation is convenient in big cities.\",\n      \"answer\": \"공공의, 공적인\",\n      \"polysemy\": \"public\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"others\": [\n    {\n      \"problem\": \"1. 아래 문장 속 <b>beyond</b>의 의미를 우리말로 쓰시오<br>The library is beyond the park, so we have to walk a little more.\",\n      \"answer\": \"~너머\",\n      \"polysemy\": \"beyond\",\n      \"LLM_FBK\": \"학생의 답: \\\"넘어\\\"  \\n정답: \\\"~너머\\\"  \\n\\n설명:  \\n문장에서 \\\"beyond\\\"는 \\\"공원 너머에 도서관이 있다\\\"처럼, 어떤 장소를 지나서 더 멀리 있다는 뜻입니다.  \\n학생의 답 \\\"넘어\\\"는 동작(넘어가다)처럼 들릴 수 있고, \\\"~너머\\\"는 위치(공원 너머에)처럼 쓰입니다.  \\n예시:  \\n정답(~너머): \\\"산 너머에 마을이 있어요.\\\"  \\n학생 답(넘어): \\\"강을 넘어 건너편으로 갔어요.\\\"  \\n\\n따라서 \\\"~너머\\\"가 위치를 더 잘 나타내므로, 학생의 답은 아쉽게도 정확하지 않습니다.\",\n      \"Student_answer\": \"넘어\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"2. 아래 문장 속 <b>altogether</b>의 의미를 우리말로 쓰시오<br>The tickets cost 5 dollars each, so it was 20 dollars altogether.\",\n      \"answer\": \"모두 합쳐, 총\",\n      \"polysemy\": \"altogether\",\n      \"LLM_FBK\": \"학생의 답변 \\\"다같이\\\"는 \\\"altogether\\\"의 문맥상 의미와 다릅니다.  \\n문장에서 \\\"altogether\\\"는 \\\"모두 합쳐서\\\" 또는 \\\"총\\\"이라는 뜻으로, 티켓 값 전체 합계를 말합니다.  \\n\\\"다같이\\\"는 \\\"함께\\\"라는 뜻으로, 여러 사람이 같이 행동한다는 의미에 더 가깝습니다.\\n\\n예시 문장:  \\n- 정답 의미(모두 합쳐, 총):  \\n  \\\"The tickets cost 5 dollars each, so it was 20 dollars altogether.\\\"  \\n  → \\\"티켓이 각 5달러라서 모두 합쳐 20달러였다.\\\"\\n\\n- 학생 답변 의미(다같이):  \\n  \\\"We went to the park altogether.\\\"  \\n  → \\\"우리는 다같이(함께) 공원에 갔다.\\\"\\n\\n따라서, 학생의 답변은 문맥에 맞지 않습니다. \\\"모두 합쳐\\\" 또는 \\\"총\\\"이 올바른 답입니다.\",\n      \"Student_answer\": \"다같이\",\n      \"correctness\": 0\n    },\n    {\n      \"problem\": \"3. 아래 문장 속 <b>apart</b>의 의미를 우리말로 쓰시오<br>In the photo, the two friends stood apart because they were shy.\",\n      \"answer\": \"떨어져서, 따로\",\n      \"polysemy\": \"apart\",\n      \"LLM_FBK\": \"학생의 답변 \\\"떨어져서\\\"는 주어진 문장에서 \\\"apart\\\"의 의미를 잘 파악한 것입니다.  \\n문장에서 \\\"the two friends stood apart because they were shy\\\"는 두 친구가 부끄러워서 서로 떨어져 서 있었다는 뜻이므로, \\\"떨어져서\\\"는 맞는 해석입니다.  \\n정답인 \\\"떨어져서, 따로\\\" 중 \\\"떨어져서\\\"를 썼으므로, 답변이 맞습니다.\\n\\n예시 문장:  \\n- True answer (\\\"떨어져서\\\"): 두 친구는 부끄러워서 떨어져서 서 있었다.  \\n- Student's answer (\\\"떨어져서\\\"): 두 친구는 부끄러워서 떨어져서 서 있었다.\\n\\n학생의 답변이 문맥에 맞는 올바른 의미를 잘 썼습니다.\",\n      \"Student_answer\": \"떨어져서\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"4. 단어 never에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"결코 ~않다, 한 번도 ~않다\",\n      \"polysemy\": \"\",\n      \"LLM_FBK\": \"학생의 답변 \\\"절대\\\"는 \\\"never\\\"의 뜻을 일부만 담고 있습니다. \\\"never\\\"는 \\\"결코 ~않다\\\" 또는 \\\"한 번도 ~않다\\\"처럼 어떤 일이 전혀 일어나지 않음을 나타내는 표현입니다. \\\"절대\\\"만 쓰면 뒷부분이 빠져 있어서 완전한 뜻이 전달되지 않습니다. \\\"결코 ~않다\\\" 또는 \\\"한 번도 ~않다\\\"라고 써야 정답입니다.\",\n      \"Student_answer\": \"절대\",\n      \"correctness\": 1\n    },\n    {\n      \"problem\": \"5. 단어 above에 해당하는 우리말을 쓰시오.\",\n      \"answer\": \"위의, 초과하여\",\n      \"polysemy\": \"\",\n      \"LLM_FBK\": \"\",\n      \"Student_answer\": \"\",\n      \"correctness\": 1\n    }\n  ],\n  \"Result\": [\n    {\n      \"Noun\": 1,\n      \"Verb\": 1,\n      \"Adjective\": 1,\n      \"others\": 1,\n      \"Cumulative\": 1,\n      \"Direction\": \"\"\n    }\n  ]\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "Rand_iteration": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ID": {
+        "org": "{\n  \"id\": \"ID\",\n  \"label\": \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\",\n  \"response\": \"S-113\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "N_IDX": {
+        "org": "44",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_IDX": {
+        "org": "8",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_IDX": {
+        "org": "22",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_IDX": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "P_N1": {
+        "org": "{\n  \"id\": \"P_N1\",\n  \"label\": \"1. 아래 문장 속 <b>subject</b>의 의미를 우리말로 쓰시오<br>In the past, each person was a subject of the king.\",\n  \"response\": \"백성\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N2": {
+        "org": "{\n  \"id\": \"P_N2\",\n  \"label\": \"2. 아래 문장 속 <b>term</b>의 의미를 우리말로 쓰시오<br>One important term is that you must pay by Friday.\",\n  \"response\": \"조건\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N3": {
+        "org": "{\n  \"id\": \"P_N3\",\n  \"label\": \"3. 아래 문장 속 <b>term</b>의 의미를 우리말로 쓰시오<br>The president served a four-year term, from 2022 to 2026.\",\n  \"response\": \"기간\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V1": {
+        "org": "{\n  \"id\": \"P_V1\",\n  \"label\": \"1. 아래 문장 속 <b>mean</b>의 의미를 우리말로 쓰시오<br>I didn’t mean to make you angry.\",\n  \"response\": \"의도하다\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V2": {
+        "org": "{\n  \"id\": \"P_V2\",\n  \"label\": \"2. 아래 문장 속 <b>sign</b>의 의미를 우리말로 쓰시오<br>The sign on the door says “No Entry,” so we can’t go in.\",\n  \"response\": \"표지판\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V3": {
+        "org": "{\n  \"id\": \"P_V3\",\n  \"label\": \"3. 아래 문장 속 <b>mean</b>의 의미를 우리말로 쓰시오<br>Don’t be mean to your friends; you should be kind and respectful.\",\n  \"response\": \"못된\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ1": {
+        "org": "{\n  \"id\": \"P_ADJ1\",\n  \"label\": \"1. 아래 문장 속 <b>general</b>의 의미를 우리말로 쓰시오<br>The general spoke to the soldiers before the parade.\",\n  \"response\": \"장군\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ2": {
+        "org": "{\n  \"id\": \"P_ADJ2\",\n  \"label\": \"2. 아래 문장 속 <b>direct</b>의 의미를 우리말로 쓰시오<br>My coach gave direct advice to help me improve.\",\n  \"response\": \"직접적인\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ3": {
+        "org": "{\n  \"id\": \"P_ADJ3\",\n  \"label\": \"3. 아래 문장 속 <b>major</b>의 의미를 우리말로 쓰시오<br>She will major in math at college.\",\n  \"response\": \"전공을 하다\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH1": {
+        "org": "{\n  \"id\": \"P_OTH1\",\n  \"label\": \"1. 아래 문장 속 <b>beyond</b>의 의미를 우리말로 쓰시오<br>The library is beyond the park, so we have to walk a little more.\",\n  \"response\": \"넘어\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH2": {
+        "org": "{\n  \"id\": \"P_OTH2\",\n  \"label\": \"2. 아래 문장 속 <b>altogether</b>의 의미를 우리말로 쓰시오<br>The tickets cost 5 dollars each, so it was 20 dollars altogether.\",\n  \"response\": \"다같이\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH3": {
+        "org": "{\n  \"id\": \"P_OTH3\",\n  \"label\": \"3. 아래 문장 속 <b>apart</b>의 의미를 우리말로 쓰시오<br>In the photo, the two friends stood apart because they were shy.\",\n  \"response\": \"떨어져서\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_N4": {
+        "org": "{\n  \"id\": \"P_N4\",\n  \"label\": \"4. 단어 body에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"신체\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_V4": {
+        "org": "{\n  \"id\": \"P_V4\",\n  \"label\": \"4. 단어 hold에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"쥐다\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_ADJ4": {
+        "org": "{\n  \"id\": \"P_ADJ4\",\n  \"label\": \"4. 단어 clean에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"깨끗한\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "P_OTH4": {
+        "org": "{\n  \"id\": \"P_OTH4\",\n  \"label\": \"4. 단어 never에 해당하는 우리말을 쓰시오.\",\n  \"response\": \"절대\"\n}",
+        "cond": "",
+        "desc": ""
+      },
+      "N_POLY": {
+        "org": "charge|charge|charge|contract|contract|contract|force|force|force|interest|interest|interest|object|object|object|order|order|order|plant|plant|plant|practice|practice|practice|reason|reason|reason|record|record|record|scale|scale|scale|sense|sense|sense|sense|subject|subject|subject|subject|subject|term|term|term|term",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "N_SEN": {
+        "org": "There is an extra charge for checked baggage. |The restaurant will charge us for the drinks. |I need to charge my phone before I go out.|She read the employment contract carefully before signing.| Our school will contract a bus company for the field trip.|You can contract a cold from someone who is sick.|The force of the wind broke the window. |They tried to force him into apologizing.|The UN peacekeeping force arrived in the area.|He has a strong interest in science.|The bank will pay 3% interest on your savings. |The company must protect the public interest.|Please remove that object from the road. |In the sentence “Tom saw her,” “her” is the object. |Many students object to the new rule because it is unfair.|The officer gave an order to stop immediately.|Put the books in alphabetical order.|Let’s order two sandwiches for lunch.|This plant needs sunlight and water. |The company opened a new plant to make cars.|They will plant trees along the road this spring.|We have soccer practice every Tuesday after school.|It is common practice to take off your shoes indoors in East Asian countries.|You should practice this dialogue before the test.|The reason for the delay was heavy snow.|After days without sleep, he began to lose his reason. |Let’s reason through the problem step by step.|Keep a record of your daily study time.|The teacher will record your attendance every morning. |Please record the lecture so you can listen again later.|The project is being done on a large scale.|Put the apples on the scale to check their weight.|The company plans to scale up its online business next year.|After the accident, he lost his sense of smell. | I don’t understand the sense of this sentence.| Use your sense and don’t click unknown links.|I could sense that something was wrong from his voice.|Science is my favorite subject at school. |Let’s change the subject and talk about something else.|The schedule is subject to change without notice. |In the past, each person was a subject of the king.|Every subject completed the experiment online for her research.|In science class, the term “gravity” means the force that pulls things down.|The president served a four-year term, from 2022 to 2026.|The spring term starts in March and ends in July at our school.|One important term is that you must pay by Friday.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "N_ANS": {
+        "org": "요금|청구하다|충전하다|계약|계약하다|걸리다|힘,강제력|강요하다, 압박하다|군대,병력|흥미,관심|이자|이해관계,이익|물건,대상|목적어|반대하다|주문,명령|순서,질서|주문하다,명령하다|식물|공장|심다|연습|관행,실습|연습하다|이유|이성,분별|추론하다, 이성적으로 생각하다|기록|기록하다|녹음하다,녹화하다|규모|저울|규모를 키우다, 규모를 확대하다|감각|의미|분별,상식|느끼다,감지하다|과목|주제|에 달려 있는,의 영향을 받는|백성|피실험자|용어, 말|임기, 기간|학기|조건",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_POLY": {
+        "org": "adapt|adapt|appeal|appeal|appeal|mean|mean|mean|mean|raise|raise|raise|raise|refer|refer|refer|refer|sign|sign|sign|strike|strike|strike|strike|succeed|succeed|succeed",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_SEN": {
+        "org": "It took him a few weeks to adapt to his new school.|We need to adapt our hiking plan because of bad weather|The new game doesn’t appeal to me because it looks boring.|They will appeal the court’s decision.|She should appeal to her parents for permission to go on the travel.|What does this word mean?|I didn’t mean to make you angry.|Don’t be mean to your friends; you should be kind and respectful.|He is mean with money and never buys snacks.|Please raise your hand if you know the answer. |She had to raise her younger brother after their parents died. |They held an event to raise money for charity.|In the meeting, we raise a question about the new rule because it seems unfair.|I didn’t refer to you in my speech.|Please refer  to page 15 for the chart.|The clinic decide to refer her to the hospital for more tests.|This rule refers to students who are absent more than three times.|Before you submit the application, sign your name at the bottom of the paper.|The teacher had to sign to the class with her finger and lips, meaning “Be quiet.”|The sign on the door says “No Entry,” so we can’t go in.|He tried to strike the ball with a bat.|The workers went on strike for higher pay. |It suddenly did strike me that I had left my phone at home.| A weather forecast predicts that a strong snowstorm will strike the area in a week.|With hard work, she can succeed in her new job.|The prince will succeed the king after his father dies.|In some stories, peace succeeds a long period of war.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "V_ANS": {
+        "org": "적응하다|바꾸다,조정하다|마음에 들다|항소하다|호소하다,간청하다|의미하다,뜻하다, 말하다|의도하다|못된,심술궂은|째째한,인색한|올리다|키우다|모금하다|(문제를) 제기하다|언급하다|참조하다|의뢰하다|적용되다, 연관되다|서명하다|손짓하다, 신호하다|표지판|치다|파업|갑자기 떠오르다,와닿다|발생하다,덮치다|성공하다|계승하다|뒤따르다,다음에 오다",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_POLY": {
+        "org": "clear|clear|clear|complete|complete|complete|complex|complex|constant|constant|correct|correct|direct|direct|direct|general|general|legal|legal|major|major|major|minor|minor|minor|popular|popular|private|private|public|public|public",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_SEN": {
+        "org": "The teacher gave clear instructions for the project.|After the rain, the sky became clear.|Please clear your desk before you leave.|This book has a complete list of the rules.|The report is complete, so we can submit it now.|I need to complete this form for the club.|The math question was too complex for me at first.|He lives in an apartment complex near the station.|The constant noise made it hard to study.|In math class, we learned that π is a constant.|The correct answer is B.|The teacher corrected my spelling mistake.|There is a direct bus from my home to school.|My coach gave direct advice to help me improve.|She directed the school play and helped the actors practice.|I only have a general idea of the story.|The general spoke to the soldiers before the parade.|It is legal to vote when you become an adult.|She asked for legal advice about the contract.|This is a major problem for our school, so we must deal with it first.|My major is English education.|She will major in math at college.|It was only a minor mistake, so don’t worry.|A minor cannot buy alcohol in many countries.|He plans to minor in history while studying science.|That song is popular among students.|We talked about popular culture in class.|I keep a private diary at home.|They had a private meeting after school.|Public transportation is convenient in big cities.|She goes to a public school near her house.|The public wants clear information about the news.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "ADJ_ANS": {
+        "org": "분명한, 명확한|밝은, 투명한, 장애물 없는|치우다, 비우다, 통과하다|완전한, 전체의|완료된|완성하다, 마치다|복잡한|단지, 단체 건물군|끊임없는, 지속적인|상수|정확한|바로잡다, 수정하다|직접적인, |솔직한, 돌려 말하지 않는|지휘하다, 감독하다|일반적인, 전체적인|장군|합법적인|법률의, 법과 관련된|주요한,중요한|전공|전공하다|사소한,덜 중요한|미성년자|부전공하다|인기 있는|대중적인, 대중의|개인의, 사적인|비공개의, 사설의, 사립의|공공의, 공적인|공립의|대중, 사람",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_POLY": {
+        "org": "altogether|altogether|apart|apart|apart|aside|aside|aside|beyond|beyond|beyond|either|either|else|else|neither|neither|once|once|once|rather|rather|since|since|though|though|through|through|through|through|without|without",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_SEN": {
+        "org": "I’m altogether sure this is the right answer.|The tickets cost 5 dollars each, so it was 20 dollars altogether.|In the photo, the two friends stood apart because they were shy.|Apart from English, he also studies Spanish after school.|The old box fell apart when I picked it up.|Please step aside so people can get off the bus.|She set aside some money each week to buy a new phone.|Aside from the homework, we also have a short quiz tomorrow.|The library is beyond the park, so we have to walk a little more.|The temperature rose beyond 30 degrees, so we stayed indoors.|That question is beyond my knowledge, so I need to look it up.|You can choose either the blue jacket or the black one.|I don’t like horror movies, and my sister doesn’t like them either.|Do you want anything else from the store?|Wear your helmet, or else you might get hurt.|Neither my brother nor I can drive yet.|“I didn’t sleep well.” “Neither did I.”|I visited Jeju once when I was in middle school.|Our town once had only one small bookstore.|Once you finish your homework, you can play games.|The water is rather cold, so I’ll wait a bit.|I’d rather stay home tonight and rest.|I have lived in this city since 2020.|Since it was raining, the game was canceled.|Though he was tired, he finished his project.|I don’t like spicy food. I’ll try a little, though.|We walked through a tunnel to get to the beach.|She studied through the night for the exam.|Through your help, I understood the lesson better.|I’m through with my homework, so I can relax now.|He left the house without his phone and had to come back.|She passed the test without studying much because she listened carefully in class.",
+        "cond": "SELF",
+        "desc": ""
+      },
+      "OTH_ANS": {
+        "org": "완전히, 전적으로|모두 합쳐, 총|떨어져서, 따로| 제외하면|조각조각, 산산이|옆으로, |제쳐 두고, 따로 모아두고|게다가, ~이외에|~너머| ~이상, ~보다 더, |~범위를 넘어|둘 중 어느 하나, 어느 쪽이든, |~도 또한(부정문에서)|다른, 그 밖의|그렇지 않으면|둘 다 아님|역시 ~ 하지 않다|한 번, |한때, 예전에, |일단 ~하면|꽤, 다소, |차라리, 오히려|~이래로, ~부터 지금까지|~이므로, ~때문에|비록 ~일지라도.| 하지만, 그래도|~을 통과해서, 가로질러, |~동안 내내|, ~을 통해, 덕분에|, 끝까지, 완전히|~없이|~하지 않고",
+        "cond": "SELF",
+        "desc": ""
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/\n@SET(Rand_iteration, \"@N(2,5)@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@TEXT(ID, \"선생님이 배부해준 S-OOO 형식의 일련번호를 입력하세요. (입력예시: S-113) 틀린 일련번호 입력시, 일련번호 입력창이 다시 로드됩니다.\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/틀리면 turn 2, 맞으면 turn 4\n@JUMP(@MAP(\"@TEXT(ID)@\", \"@Identification@\", \"4|@TN(-1)@\", EXACT)@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n어휘 테스트에 오신것을 환영합니다. <br>\n테스트 1회분의 문제수는 @EVAL(\"4*@Rand_iteration@\")@개 입니다",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration\n@REPEAT(@TN(1)@, @TN(2)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/\n@SET(N_IDX, \"@INDEX(\"@N_SEN@\", \"@N_SEN[.]@\")@\", SELF)@\n@SET(V_IDX, \"@INDEX(\"@V_SEN@\", \"@V_SEN[.]@\")@\", SELF)@\n@SET(ADJ_IDX, \"@INDEX(\"@ADJ_SEN@\", \"@ADJ_SEN[.]@\")@\", SELF)@\n@SET(OTH_IDX, \"@INDEX(\"@OTH_SEN@\", \"@OTH_SEN[.]@\")@\", SELF)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// 문항 JSON 셋업\n@UPJ(JSON_test_config.Noun[@R_i@].problem, \"@EVAL(@R_i@)@. 아래 문장 속 <b>@N_POLY[@N_IDX@]@</b>의 의미를 우리말로 쓰시오<br>@N_SEN[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].answer, \"@N_ANS[@N_IDX@]@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].polysemy, \"@N_POLY[@N_IDX@]@\")@\n\n@UPJ(JSON_test_config.Verb[@R_i@].problem, \"@EVAL(@R_i@)@. 아래 문장 속 <b>@V_POLY[@V_IDX@]@</b>의 의미를 우리말로 쓰시오<br>@V_SEN[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].answer, \"@V_ANS[@V_IDX@]@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].polysemy, \"@V_POLY[@V_IDX@]@\")@\n\n@UPJ(JSON_test_config.Adjective[@R_i@].problem, \"@EVAL(@R_i@)@. 아래 문장 속 <b>@ADJ_POLY[@ADJ_IDX@]@</b>의 의미를 우리말로 쓰시오<br>@ADJ_SEN[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].answer, \"@ADJ_ANS[@ADJ_IDX@]@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].polysemy, \"@ADJ_POLY[@ADJ_IDX@]@\")@\n\n@UPJ(JSON_test_config.others[@R_i@].problem, \"@EVAL(@R_i@)@. 아래 문장 속 <b>@OTH_POLY[@OTH_IDX@]@</b>의 의미를 우리말로 쓰시오<br>@OTH_SEN[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].answer, \"@OTH_ANS[@OTH_IDX@]@\")@\n@UPJ(JSON_test_config.others[@R_i@].polysemy, \"@OTH_POLY[@OTH_IDX@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Noun\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ noun question input\n@TEXT(P_N@R_i@, \"@JSON_test_config.Noun[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": "1|0"
+    },
+    {
+      "system": "",
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n1. Noun\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Noun@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Noun[@R_i@].Student_answer, \"@TEXT(P_N@R_i@)@\")@\n@UPJ(JSON_test_config.Noun[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        The question evaluates student's ability to recall the context-appropriate meaning of the word form in a specific context. Given the question, student's answer, true answer, and its polysemy root word, assess if the student's answer correctly determined and recalled the meaning of the given polysemy for the question sentence.\n        Compare the true answer and the student's answer in terms of contextual derivations of the given polysemy and give a short example sentence for both the true answer and the student's answer if the student is wrong.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- question and student's answer: @P_N@R_i@@\n- true answer: @JSON_test_config.Noun[@R_i@].answer@\n- polysemy: @JSON_test_config.Noun[@R_i@].polysemy@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ llm feedback update: noun \n@UPJ(JSON_test_config.Noun[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Verb\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ verb question input\n@TEXT(P_V@R_i@, \"@JSON_test_config.Verb[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n2. Verb\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Verb@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Verb[@R_i@].Student_answer, \"@TEXT(P_V@R_i@)@\")@\n@UPJ(JSON_test_config.Verb[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        The question evaluates student's ability to recall the context-appropriate meaning of the word form in a specific context. Given the question, student's answer, true answer, and its polysemy root word, assess if the student's answer correctly determined and recalled the meaning of the given polysemy for the question sentence.\n        Compare the true answer and the student's answer in terms of contextual derivations of the given polysemy and give a short example sentence for both the true answer and the student's answer if the student is wrong.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- question and student's answer: @P_V@R_i@@\n- true answer: @JSON_test_config.Verb[@R_i@].answer@\n- polysemy: @JSON_test_config.Verb[@R_i@].polysemy@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ llm feedback update: verb \n@UPJ(JSON_test_config.Verb[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: Adjective\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ adjective question input\n@TEXT(P_ADJ@R_i@, \"@JSON_test_config.Adjective[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n3. Adjective\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].Adjective@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.Adjective[@R_i@].Student_answer, \"@TEXT(P_ADJ@R_i@)@\")@\n@UPJ(JSON_test_config.Adjective[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        The question evaluates student's ability to recall the context-appropriate meaning of the word form in a specific context. Given the question, student's answer, true answer, and its polysemy root word, assess if the student's answer correctly determined and recalled the meaning of the given polysemy for the question sentence.\n        Compare the true answer and the student's answer in terms of contextual derivations of the given polysemy and give a short example sentence for both the true answer and the student's answer if the student is wrong.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- question and student's answer: @P_ADJ@R_i@@\n- true answer: @JSON_test_config.Adjective[@R_i@].answer@\n- polysemy: @JSON_test_config.Adjective[@R_i@].polysemy@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": true,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ llm feedback update: adjective \n@UPJ(JSON_test_config.Adjective[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ 문제 풀이 iteration: others\n@REPEAT(@TN(1)@, @TN(5)@, @Rand_iteration@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ others question input\n@TEXT(P_OTH@R_i@, \"@JSON_test_config.others[@R_i@].problem@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        Given the student's response for the question, the question itself, and the true answer for the question, determine if the student's answer is correct. Evaluating the similarity of the student's answer with the true answer for the given question, return 1 if correct, else return 0.\n    </task>\n</instructions>",
+      "user": "- problem and student response: @P_OTH@R_i@@\n- true answer: @JSON_test_config.others[@R_i@].answer@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//automatic scoring; need to subtract 1 from final score due to indexing issue\n\n4. Others\nT/F boolean: @TR@TN(-1)@[@R_i@]@\n\nCurrent Score: @JSON_test_config.Result[1].others@\n\nEnumerated: @EVAL(\"@JSON_test_config.Result[1].others@ + @TR@TN(-1)@[@R_i@]@\")@\n\nupdate:\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ + @TR@TN(-1)@[@R_i@]@\")@)@\n@UPJ(JSON_test_config.others[@R_i@].Student_answer, \"@TEXT(P_OTH@R_i@)@\")@\n@UPJ(JSON_test_config.others[@R_i@].correctness, @TR@TN(-1)@[@R_i@]@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "<instructions>\n    <task>\n        The question evaluates student's ability to recall the context-appropriate meaning of the word form in a specific context. Given the question, student's answer, true answer, and its polysemy root word, assess if the student's answer correctly determined and recalled the meaning of the given polysemy for the question sentence.\n        Compare the true answer and the student's answer in terms of contextual derivations of the given polysemy and give a short example sentence for both the true answer and the student's answer if the student is wrong.\n    </task>\n    <rule>\n        1. Do not use jargons unless you cannot explain without them.\n        2. If jargons are used, make sure these must be comprensible to primary-school-aged children in Korea.\n        3. Clear, succinct explanations.\n        4. Feedback Language: Korean.\n    </rule>\n</instructions>",
+      "user": "- question and student's answer: @P_OTH@R_i@@\n- true answer: @JSON_test_config.others[@R_i@].answer@\n- polysemy: @JSON_test_config.others[@R_i@].polysemy@",
+      "temperature": "0.3",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/ llm feedback update: adjective \n@UPJ(JSON_test_config.others[@R_i@].LLM_FBK, \"@TR@TN(-1)@[@R_i@]@\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "//Adjust Final Score; Cumulative score and due to CAFA indexing issue\n@UPJ(JSON_test_config.Result[1].Noun, @EVAL(\"@JSON_test_config.Result[1].Noun@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Verb, @EVAL(\"@JSON_test_config.Result[1].Verb@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].Adjective, @EVAL(\"@JSON_test_config.Result[1].Adjective@ - 1\")@)@\n@UPJ(JSON_test_config.Result[1].others, @EVAL(\"@JSON_test_config.Result[1].others@ - 1\")@)@\n\n@UPJ(JSON_test_config.Result[1].Cumulative, @EVAL(\"@JSON_test_config.Result[1].Noun@+@JSON_test_config.Result[1].Verb@+@JSON_test_config.Result[1].Adjective@+@JSON_test_config.Result[1].others@\")@)@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "// Final Report\n명사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Noun@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n동사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Verb@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n형용사 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].Adjective@개 단어의 연어 의미를 떠올릴 수 있습니다.\n\n기타 @Rand_iteration@개 단어 중에서 @JSON_test_config.Result[1].others@개 단어의 연어 의미를 떠올릴 수 있습니다.\n",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    },
+    {
+      "system": "",
+      "user": "/다음 인풋을 위한 점수 초기화\n@UPJ(JSON_test_config.Result[1].Noun, 1)@\n@UPJ(JSON_test_config.Result[1].Verb, 1)@\n@UPJ(JSON_test_config.Result[1].Adjective, 1)@\n@UPJ(JSON_test_config.Result[1].others, 1)@\n@UPJ(JSON_test_config.Result[1].Cumulative, 1)@\n@UPJ(JSON_test_config.Result[1].Direction, \"\")@",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "send-mail": false,
+      "markdown": false,
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "output-values": ""
+    }
+  ]
+}
