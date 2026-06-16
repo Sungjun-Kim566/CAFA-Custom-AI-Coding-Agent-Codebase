@@ -1,0 +1,273 @@
+I0616 16:06:59.718989 59076 server.go:1318] Starting language server process with pid 59076
+I0616 16:06:59.721536 59076 server.go:491] Language server will attempt to listen on host localhost
+I0616 16:06:59.723183 59076 server.go:505] Language server listening on random port at 54791 for HTTPS (gRPC)
+I0616 16:06:59.723394 59076 server.go:512] Language server listening on random port at 54792 for HTTP
+W0616 16:06:59.990455 59076 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+E0616 16:07:00.001984 59076 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I0616 16:07:00.002060 59076 manager.go:93] Creating trajectory store manager with proto store and SQLite store
+W0616 16:07:00.003394 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.003420 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.004408 59076 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.004427 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.004637 59076 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.004867 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.004898 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.005437 59076 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.005459 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.005656 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.005669 59076 client.go:82] failed to set auth token
+I0616 16:07:00.012155 59076 server.go:2326] Auth succeeded, refreshing features and managers
+E0616 16:07:00.012198 59076 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.012370 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.012388 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.014269 59076 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.014288 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.014468 59076 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0616 16:07:00.014634 59076 server.go:2332] State refresh took 2ms
+I0616 16:07:00.014679 59076 server.go:2445] [RemoteControl] Resolved proxyServerURL: ""
+I0616 16:07:00.014933 59076 server.go:1972] initialized server successfully in 295.653333ms
+W0616 16:07:00.015315 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.015337 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.015703 59076 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.015733 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.015877 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.015888 59076 client.go:82] failed to set auth token
+E0616 16:07:00.015895 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.015900 59076 client.go:82] failed to set auth token
+I0616 16:07:00.048411 59076 auto_updater.go:253] Spawned background update process with PID 59079
+I0616 16:07:00.048504 59076 common.go:106] Launching CLI mode
+E0616 16:07:00.048522 59076 common.go:125] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0616 16:07:00.048546 59076 common.go:156] CLI app data directory: /Users/sungjunkim/.gemini/antigravity-cli
+I0616 16:07:00.049317 59076 server.go:210] Creating CLI server backend: product=antigravity workspaceDirs=[/Users/sungjunkim/Desktop/CAFA-Custom-AI-Coding-Agent-Codebase] appDataDir=/Users/sungjunkim/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+I0616 16:07:00.049716 59076 project.go:165] project: no project found from /Users/sungjunkim/Desktop/CAFA-Custom-AI-Coding-Agent-Codebase, creating new project
+I0616 16:07:00.081856 59076 project.go:145] project: created project "/Users/sungjunkim/Desktop/CAFA-Custom-AI-Coding-Agent-Codebase" (id=51268508-08bf-42cb-9f01-c44b6ff1dd58) at /Users/sungjunkim/.gemini/config/projects/51268508-08bf-42cb-9f01-c44b6ff1dd58.json (no symlink)
+I0616 16:07:00.081912 59076 server.go:1357] Backend project ID updated dynamically to: 51268508-08bf-42cb-9f01-c44b6ff1dd58
+W0616 16:07:00.084319 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.084413 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.084787 59076 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.084808 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.084985 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.084993 59076 client.go:82] failed to set auth token
+W0616 16:07:00.085189 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.085295 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.085583 59076 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.085594 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.085698 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.085704 59076 client.go:82] failed to set auth token
+W0616 16:07:00.085794 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.085824 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.085981 59076 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.086000 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.086137 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.086144 59076 client.go:82] failed to set auth token
+I0616 16:07:00.086536 59076 manager.go:303] Initializing CLI store manager for workspace /Users/sungjunkim/Desktop/CAFA-Custom-AI-Coding-Agent-Codebase
+I0616 16:07:00.088751 59076 cli_setting_manager.go:68] config.json not found or unreadable, using CLI settings only: open /Users/sungjunkim/.gemini/config/config.json: no such file or directory
+I0616 16:07:00.088785 59076 cli_setting_manager.go:663] Skipping telemetry propagation because user is not logged in
+I0616 16:07:00.088791 59076 cli_setting_manager.go:80] CLI settings initialized: permissions=<nil>, toolPermission=request-review
+I0616 16:07:00.089583 59076 manager.go:453] CLI store manager initialized successfully
+I0616 16:07:00.089592 59076 common.go:393] CLI store manager created successfully
+I0616 16:07:00.089612 59076 cli_setting_manager.go:199] ApplyProjectPermissionGrants: no grants for project "/Users/sungjunkim/Desktop/CAFA-Custom-AI-Coding-Agent-Codebase", cleared project permissions
+I0616 16:07:00.089636 59076 quota_manager.go:63] quotaRefreshLoop: skipped (not logged in)
+I0616 16:07:00.096645 59076 common.go:524] Starting CLI program
+CLI ready for user input (startup took 48.130125ms)
+ERROR: logging before google.Init: I0616 16:07:00.103003       9 terminal_info_manager.go:160] Terminal detection: TERM="xterm-256color" altScreen=true ssh=false
+I0616 16:07:00.103405 59076 manager.go:1319] Reloading system slash commands and skills
+I0616 16:07:00.103445 59076 manager.go:1295] Reloading system slash commands
+W0616 16:07:00.103576 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.103603 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+I0616 16:07:00.104065 59076 gemini_extensions.go:28] Detecting Gemini extensions in /Users/sungjunkim/.gemini/extensions
+I0616 16:07:00.104132 59076 gemini_extensions.go:49] No extensions found
+W0616 16:07:00.104247 59076 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.104329 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.104671 59076 server.go:413] failed to get model config: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0616 16:07:00.104694 59076 manager.go:1299] Slash commands unchanged, skipping update
+W0616 16:07:00.104979 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.105015 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.105303 59076 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.105329 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.105476 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.105487 59076 client.go:82] failed to set auth token
+W0616 16:07:00.105663 59076 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.105688 59076 log.go:398] error getting token source: You are not logged into Antigravity.
+W0616 16:07:00.105934 59076 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.105949 59076 log.go:398] failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0616 16:07:00.106060 59076 server.go:630] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0616 16:07:00.106065 59076 client.go:82] failed to set auth token
+I0616 16:07:00.826030 59076 auth.go:114] ChainedAuth: authenticated via keyring (effective: keyring)
+I0616 16:07:00.826093 59076 server_oauth.go:212] applyAuthResult: email=shes5058@gmail.com, authMethod=consumer, quotaProject=
+I0616 16:07:00.826111 59076 server_oauth.go:217] OAuth: authenticated successfully as shes5058@gmail.com
+I0616 16:07:00.826123 59076 server_oauth.go:223] b.codeAssistClient.AuthProvider (0x12cfe75cb00) is same as b.cliAuth (0x12cfe75cb00)
+I0616 16:07:02.702258 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb4f5000143a6176c
+I0616 16:07:03.506273 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x167ef1eb1efd4141
+I0616 16:07:03.509041 59076 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0616 16:07:03.509119 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=true)
+I0616 16:07:04.173526 59076 input_loop.go:518] Auth done received, triggering experiment refresh
+I0616 16:07:04.173682 59076 experiment_manager.go:35] Starting experiment refresh after login
+I0616 16:07:04.750698 59076 experiment_manager.go:39] Experiments refreshed after login
+I0616 16:07:04.750956 59076 manager.go:1295] Reloading system slash commands
+I0616 16:07:06.051448 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa1541ef1553f9088
+I0616 16:07:07.716969 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x21f7bc242e101ea1
+I0616 16:07:08.228566 59076 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0616 16:07:08.228701 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=true)
+I0616 16:07:08.228759 59076 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0616 16:07:08.698233 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=true)
+I0616 16:07:08.809846 59076 input_loop.go:518] Auth done received, triggering experiment refresh
+I0616 16:07:08.809939 59076 experiment_manager.go:35] Starting experiment refresh after login
+I0616 16:07:08.941306 59076 input_loop.go:518] Auth done received, triggering experiment refresh
+I0616 16:07:08.941443 59076 experiment_manager.go:35] Starting experiment refresh after login
+I0616 16:07:09.194532 59076 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.5 Flash (Medium)"
+I0616 16:07:09.298958 59076 experiment_manager.go:39] Experiments refreshed after login
+I0616 16:07:09.299174 59076 manager.go:1295] Reloading system slash commands
+I0616 16:07:09.302480 59076 manager.go:1299] Slash commands unchanged, skipping update
+I0616 16:07:09.350229 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=true)
+I0616 16:07:09.601517 59076 experiment_manager.go:39] Experiments refreshed after login
+I0616 16:07:09.601663 59076 manager.go:1295] Reloading system slash commands
+I0616 16:07:09.602971 59076 manager.go:1299] Slash commands unchanged, skipping update
+I0616 16:07:09.926235 59076 input_loop.go:518] Auth done received, triggering experiment refresh
+I0616 16:07:09.926376 59076 experiment_manager.go:35] Starting experiment refresh after login
+I0616 16:07:10.392338 59076 experiment_manager.go:39] Experiments refreshed after login
+I0616 16:07:10.392507 59076 manager.go:1295] Reloading system slash commands
+I0616 16:07:10.393735 59076 manager.go:1299] Slash commands unchanged, skipping update
+I0616 16:07:10.568452 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1a548ec624ca3ea1
+I0616 16:07:11.045166 59076 conversation_manager.go:320] Starting new conversation (agent=false)
+I0616 16:07:11.045322 59076 server.go:724] Creating new cascade trajectory (agentScript=false)
+I0616 16:07:11.045361 59076 server.go:727] Conversation using project ID: 51268508-08bf-42cb-9f01-c44b6ff1dd58
+I0616 16:07:11.059283 59076 server.go:755] Created conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc
+I0616 16:07:11.059420 59076 server.go:2094] GetConversationDetail: found conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (active=true)
+I0616 16:07:11.060039 59076 server.go:2094] GetConversationDetail: found conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (active=true)
+I0616 16:07:11.060085 59076 conversation_manager.go:367] project: switching to conversation belonging to project ID: 51268508-08bf-42cb-9f01-c44b6ff1dd58
+I0616 16:07:11.060211 59076 server.go:1357] Backend project ID updated dynamically to: 51268508-08bf-42cb-9f01-c44b6ff1dd58
+I0616 16:07:11.060239 59076 cli_setting_manager.go:199] ApplyProjectPermissionGrants: no grants for project "/Users/sungjunkim/Desktop/CAFA-Custom-AI-Coding-Agent-Codebase", cleared project permissions
+I0616 16:07:11.060404 59076 manager.go:1319] Reloading system slash commands and skills
+I0616 16:07:11.060461 59076 manager.go:1295] Reloading system slash commands
+I0616 16:07:11.061390 59076 conversation_manager.go:423] project: synced active project to "/Users/sungjunkim/Desktop/CAFA-Custom-AI-Coding-Agent-Codebase" (id=51268508-08bf-42cb-9f01-c44b6ff1dd58) and updated workspace cache
+I0616 16:07:11.061424 59076 conversation_manager.go:537] Streaming conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc
+I0616 16:07:11.061489 59076 manager.go:1319] Reloading system slash commands and skills
+I0616 16:07:11.061603 59076 manager.go:1295] Reloading system slash commands
+I0616 16:07:11.061672 59076 server.go:764] Starting conversation update stream for 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc
+I0616 16:07:11.062386 59076 manager.go:1299] Slash commands unchanged, skipping update
+I0616 16:07:11.062955 59076 manager.go:1299] Slash commands unchanged, skipping update
+I0616 16:07:11.063041 59076 quota_manager.go:68] quotaRefreshLoop: skipped (throttled)
+I0616 16:10:12.094966 59076 input_loop.go:34] HandleUserInput called with text: "Create a Quiz Agent using the AoA (Architecture of Alignment / Assessment) framework. \n\n1. Target Mechanism: An iterative critique/scoring loop where the agent presents a question, captures user input via a TEXTAREA, evaluates the answer against a rigid rubric, updates a dynamic score variable, and routes the user to the next question or a final score report.\n2. Structure: Ensure a strict \"Sandwich\" architecture (Symbolic Input → LLM Evaluation → Hidden Control/Routing). \n3. Rules: Follow all CAFA Protocol rules, including model: null for symbolic turns, standalone hidden logic turns, and strict double-quote string formatting.\n\ncreate a new directory to store your work"
+I0616 16:10:12.095290 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 16:10:12.095303 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 16:11:01.088963 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x59de0370539244fe ResponseID: 1fYwaoeZDOCx2roPi8TBkAk
+I0616 16:11:02.627299 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x52db6c35e0fa6a1a ResponseID: BvcwaoXsDZ_r2roPuvvo6Qc
+I0616 16:11:06.695894 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x3dc7f6db39a7dc25 ResponseID: Cfcwao25EfW22roP-4fOyQE
+I0616 16:11:33.750183 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4271c42bd8c916f9 ResponseID: C_cwauL0Fc652roP_aCYyAo
+I0616 16:11:38.291409 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xf5e96ea8ad5c8d40 ResponseID: JvcwarPaLp6g0-kPx8yFsAo
+I0616 16:11:42.146598 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xdcaa8664dd3795d6 ResponseID: K_cwat_HGu2g0-kPoObJsQs
+I0616 16:13:00.996562 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd9cea381e32f8921
+I0616 16:13:02.430192 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x37ff0d9f3021059e
+I0616 16:19:00.641918 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8093ba42e37cc6aa
+I0616 16:19:01.958371 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xbffd7bb96d0b6fb3
+I0616 16:21:23.471432 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8af0549d5c9a65f9 ResponseID: L_cwau_RCsuB2roPksXzoQM
+I0616 16:21:23.477118 59076 log_context.go:117] Encountered retryable api error. retrying in 1s. Error (The stream was interrupted. Please continue the task you were working on.): INTERNAL (code 500): Internal error encountered.: INTERNAL (code 500): Internal error encountered.
+E0616 16:21:24.478286 59076 log.go:398] INTERNAL (code 500): Internal error encountered.: INTERNAL (code 500): Internal error encountered.
+I0616 16:21:26.135373 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4467cc158003555f ResponseID: dPkwarW4OP612roPx_zI0Ak
+I0616 16:21:36.214415 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x6e05a3bb9dafdbcf ResponseID: d_kwaoDrFZLKrfcPn7-oyAs
+I0616 16:21:38.728206 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb05400cd8cc397a7 ResponseID: gPkwaoa0O_Ck2roPpM2H0As
+I0616 16:21:40.368613 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xb28ff4e39906edc7 ResponseID: g_kwatK7MN3L2roPt97tuAU
+I0616 16:21:42.839733 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x181d09fb32c58fe8 ResponseID: hfkwauSUBPW12roP25aC6AY
+I0616 16:21:44.642583 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbf56e28208ad192c ResponseID: h_kwauSnLPPo2roPiJ-juAk
+I0616 16:21:48.970025 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbee7164c095106d7 ResponseID: ifkwaqG3IuSerfcP-L_KkA8
+I0616 16:21:54.505926 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xef817065d71c2dc ResponseID: kfkwap6aMcrY2roP_LiBoAs
+I0616 16:21:57.335615 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8e7bbfecac96895a ResponseID: k_kwaramGf612roPy_zI0Ak
+I0616 16:21:59.018211 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xc42465c42e96139d ResponseID: lvkwauTKC7DKrfcPp-_F-As
+I0616 16:22:01.775561 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x495283abe69f14a3 ResponseID: l_kwas32KP612roPx_zI0Ak
+I0616 16:22:08.035855 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x43bc468aa2e4bbdc ResponseID: n_kwaq8Y7rfaug-wppWgAw
+I0616 16:22:09.919498 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x9d0ff2a0332e1dc0 ResponseID: oPkwaonlKfyA0-kPja2c0Aw
+I0616 16:22:14.886405 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x7b86653efa5de5e0 ResponseID: ovkwasa_IerN2roPr_6d0A8
+I0616 16:22:21.133505 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x8434aa0413e6d1c0 ResponseID: q_kwaobyEOyb0-kPr9WCIA
+I0616 16:22:21.357543 59076 tool_confirmation_manager.go:77] Surfacing tool confirmation: "Bash" at step 44
+I0616 16:22:24.466667 59076 input_loop.go:459] Responding to tool confirmation: convID=8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc, stepIdx=44, approved=true, sandboxOverride=false, turnGrants=[]
+I0616 16:22:24.466857 59076 server.go:1605] Tool confirmation for conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc step 44 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0616 16:22:27.490212 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xec69d1f6bb93b2d2 ResponseID: sPkwauvuM87C0-kPnuGOqQw
+I0616 16:22:38.114546 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 16:25:00.854064 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x142373b065eccc10
+I0616 16:25:01.742660 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf0e46d962f8cb037
+I0616 16:31:00.727438 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x67c485c213b827b4
+I0616 16:31:01.838359 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x88e6c63e71fe639e
+I0616 16:37:00.715914 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x963abe514d87b51f
+I0616 16:37:01.790437 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x94af41e269fd8d37
+I0616 16:49:02.661744 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3592c1f992b7b44d
+I0616 16:49:04.228362 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf96ff37dcd10de8
+I0616 16:54:07.383476 59076 input_loop.go:34] HandleUserInput called with text: "how to check the response latency time for previous response on antigravity cli"
+I0616 16:54:07.384279 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 16:54:07.384294 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 16:54:07.981717 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x40e12a38fbe5bc9b
+I0616 16:54:10.007513 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe9a0329b886e67f5
+I0616 16:54:10.941077 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe921934165599ef0 ResponseID: IQExatiFIcfr2roPgY7I-As
+I0616 16:54:14.354136 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbae58a5713afcb16 ResponseID: JAExavmXEvW12roPzb-CmAg
+I0616 16:54:17.804290 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x2d806c714de38c98 ResponseID: JwExatOPH_f82roP6MqIyAw
+I0616 16:54:20.570198 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x92f1af1d79d173a0 ResponseID: KgExasDOPMTK2roPr7G8CA
+I0616 16:54:24.869440 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbc80aad4d22e3f28 ResponseID: LQExarb3Bpqv2roPnf-PyQo
+I0616 16:54:25.141747 59076 tool_confirmation_manager.go:77] Surfacing tool confirmation: "Bash" at step 56
+I0616 16:54:33.647402 59076 input_loop.go:459] Responding to tool confirmation: convID=8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc, stepIdx=56, approved=true, sandboxOverride=false, turnGrants=[]
+I0616 16:54:33.647567 59076 server.go:1605] Tool confirmation for conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc step 56 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0616 16:54:33.648850 59076 tool_confirmation_manager.go:77] Surfacing tool confirmation: "Bash" at step 56
+I0616 16:54:34.696474 59076 input_loop.go:459] Responding to tool confirmation: convID=8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc, stepIdx=56, approved=true, sandboxOverride=false, turnGrants=[]
+I0616 16:54:34.696641 59076 server.go:1605] Tool confirmation for conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc step 56 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0616 16:54:36.340658 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xbed832ec084db0a1 ResponseID: OwExaoSNBvTLrfcPrP-C6A4
+I0616 16:54:36.636047 59076 tool_confirmation_manager.go:77] Surfacing tool confirmation: "Bash" at step 58
+I0616 16:54:38.746431 59076 input_loop.go:459] Responding to tool confirmation: convID=8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc, stepIdx=58, approved=true, sandboxOverride=false, turnGrants=[]
+I0616 16:54:38.746527 59076 server.go:1605] Tool confirmation for conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc step 58 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0616 16:54:41.049679 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xa038647258ebd3b9 ResponseID: PwExaqvQCfHI2roP0ayB-A4
+I0616 16:54:42.925123 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xcd8887a551918dea ResponseID: QQExaqn0JeLLrfcPgNux6As
+I0616 16:54:46.684629 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xa33b0a07f05fb0b3 ResponseID: QwExaoS9N9uz2roP38nLsA0
+I0616 16:54:49.213926 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xdc391bfa44025b8e ResponseID: RgExasy1Oo-t2roP5JqIiAw
+I0616 16:54:49.455120 59076 tool_confirmation_manager.go:77] Surfacing tool confirmation: "Bash" at step 66
+I0616 16:54:54.663267 59076 input_loop.go:459] Responding to tool confirmation: convID=8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc, stepIdx=66, approved=true, sandboxOverride=false, turnGrants=[]
+I0616 16:54:54.663435 59076 server.go:1605] Tool confirmation for conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc step 66 (type=*gemini_coder_go_proto.Step_RunCommand approved=true)
+I0616 16:54:58.456950 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xa6924a7c1521cb72 ResponseID: TwExaorECurN2roP34KfmAM
+I0616 16:55:00.830098 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 17:00:02.487299 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf6c41eb6a3a3bfe3
+I0616 17:00:03.994340 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2a1ec31dea1e7674
+I0616 17:04:17.248074 59076 input_loop.go:34] HandleUserInput called with text: "according to the log, the latency for the previous task (quiz generation) was not normal(more than 12 minutes). potential reason?"
+I0616 17:04:17.248258 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:04:17.248272 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:04:27.503442 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x4077e3ca9a323470 ResponseID: ggMxaubmC_fo2roPj-rTyQo
+I0616 17:04:30.357111 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 17:06:02.426540 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x12c44ec27eb0c8df
+I0616 17:06:03.443732 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe7d5493421d60b3c
+I0616 17:09:24.810008 59076 input_loop.go:34] HandleUserInput called with text: "so it is more of compiler issue rather than longer context issue?"
+I0616 17:09:24.810660 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:09:24.810676 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:09:28.304777 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x5a8f812bdbc4d7a4 ResponseID: tQQxauWcIojd2roPm-P9-Aw
+I0616 17:09:29.613336 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 17:10:30.147896 59076 input_loop.go:34] HandleUserInput called with text: "so network instability between local cli and remote LLM server? any solutions that i can take action"
+I0616 17:10:30.148207 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:10:30.148236 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:10:32.968588 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x89be7f5b0132633d ResponseID: 9gQxar7qMMTK2roPr7G8CA
+I0616 17:10:34.375887 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 17:12:03.116297 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x58bd8370d4ef2cca
+I0616 17:12:03.475937 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1b4568dbf1b25836
+I0616 17:12:40.354338 59076 input_loop.go:34] HandleUserInput called with text: "so during the data tranfer, the context was too long so that it constantly caused timeouts in sockets and network instability?"
+I0616 17:12:40.355026 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:12:40.355041 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:12:43.535624 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x1fd20e4878d8b0d2 ResponseID: eAUxavmaNcuy2roPo-j34Ao
+I0616 17:12:44.542010 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 17:13:55.567558 59076 input_loop.go:34] HandleUserInput called with text: "potential solution for this? maybe chunck the data to be transferred into several pieces or use concurrency for faster and stable data transfer?"
+I0616 17:13:55.567835 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:13:55.567855 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:13:58.180381 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x12c630d2305f3891 ResponseID: xAUxataBH7e50-kPpJ-O6Ak
+I0616 17:13:59.585795 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 17:15:29.657927 59076 input_loop.go:34] HandleUserInput called with text: "for current situation, whenever I open and start a new converstaion session, this problem will come up and for initialization and caching"
+I0616 17:15:29.658489 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:15:29.658559 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:15:32.904547 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x26007a76d156238c ResponseID: IgYxavjLJ77TrfcPxManyAk
+I0616 17:15:34.615327 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+I0616 17:18:02.821838 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6bfc1f203b73f0c4
+I0616 17:18:03.535982 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x41fc1ca0d5d2885e
+E0616 17:19:20.683171 59076 log.go:398] Failed to poll ListExperiments: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:listExperiments": read tcp 172.30.1.95:55535->216.239.38.223:443: read: can't assign requested address
+E0616 17:20:08.473871 59076 client.go:59] Post "https://play.googleapis.com/log": read tcp 172.30.1.95:55636->216.239.38.223:443: read: can't assign requested address
+E0616 17:20:46.968400 59076 log.go:398] Failed to poll ListExperiments: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:listExperiments": read tcp 172.30.1.95:55575->216.239.32.223:443: read: can't assign requested address
+I0616 17:21:41.377906 59076 input_loop.go:34] HandleUserInput called with text: "Change wiki/ directory's name to knowledge_base/\nchange the related documents that mention wiki/ directory to knowledge_base/ accordingly"
+I0616 17:21:41.378938 59076 conversation_manager.go:463] Forwarding user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:21:41.378960 59076 server.go:1058] Sending user message to conversation 8b5a4e3a-ff91-4da1-8add-f35c5bbee6bc (items=1, media=0)
+I0616 17:21:44.219546 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x771f1226c48f3767 ResponseID: lgcxarOiFKCL0-kPx870iQo
+E0616 17:21:45.523000 59076 log.go:398] agent executor error: RESOURCE_EXHAUSTED (code 429): Individual quota reached. Contact your administrator to enable overages. Resets in 96h25m27s.: RESOURCE_EXHAUSTED (code 429): Individual quota reached. Contact your administrator to enable overages. Resets in 96h25m27s.
+I0616 17:21:45.527216 59076 quota_manager.go:72] quotaRefreshLoop: starting reload (force=false)
+E0616 17:21:45.527418 59076 log.go:398] RESOURCE_EXHAUSTED (code 429): Individual quota reached. Contact your administrator to enable overages. Resets in 96h25m27s.: RESOURCE_EXHAUSTED (code 429): Individual quota reached. Contact your administrator to enable overages. Resets in 96h25m27s.
+I0616 17:24:02.720817 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb850dcb2e6e07da9
+I0616 17:24:03.730533 59076 http_helpers.go:186] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2bb89c3f2a552d57

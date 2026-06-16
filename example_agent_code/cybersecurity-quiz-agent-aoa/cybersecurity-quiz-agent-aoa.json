@@ -1,0 +1,73 @@
+{
+  "options": {
+    "title": "<b>AoA Quiz Agent</b>: Cybersecurity Fundamentals",
+    "brief": "An AoA-framework quiz that presents cybersecurity questions, captures free-text answers, grades each against a rigid rubric, updates a running score, and reports a final result.",
+    "name": "AoA Cybersecurity Quiz Agent",
+    "description": "This agent implements the AoA (Architecture of Alignment / Assessment) framework as a strict Symbolic-Input -> LLM-Evaluation -> Hidden-Control sandwich, looped once per question via REPEAT. Each cycle presents a question (TEXTAREA capture), grades the answer against a rigid 4-level rubric, maps the verdict to points, and updates a dynamic SCORE variable. A final symbolic turn reports the total, percentage, and a per-question breakdown.",
+    "greeting": "Welcome to the Cybersecurity Fundamentals Quiz. You will answer 3 short constructed-response questions. Each answer is graded against a rigid rubric, and your running score is tracked. Let's begin.",
+    "params": {
+      "TOTAL_QUESTIONS": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "Number of questions in the quiz; drives the REPEAT loop count."
+      },
+      "MAX_SCORE": {
+        "org": "9",
+        "cond": "SELF",
+        "desc": "Maximum achievable score (TOTAL_QUESTIONS x 3 points per question). Used for the final percentage."
+      },
+      "SCORE": {
+        "org": "0",
+        "cond": "SELF",
+        "desc": "Dynamic running score, initialized to 0 and incremented each loop iteration by the points earned on that question."
+      },
+      "QUESTIONS": {
+        "org": "Explain the CIA triad in information security and briefly describe what each of its three components protects.|What is phishing, and name one practical measure a user or organization can take to defend against it?|Describe the difference between symmetric and asymmetric encryption, and give one example algorithm of each.",
+        "cond": "SELF",
+        "desc": "The ordered bank of constructed-response questions presented one per loop iteration."
+      },
+      "RUBRICS": {
+        "org": "Full credit requires: (a) names the CIA triad as Confidentiality, Integrity, and Availability; (b) Confidentiality keeps data accessible only to authorized parties; (c) Integrity ensures data is accurate and unaltered, and Availability ensures systems and data are accessible when needed.|Full credit requires: (a) phishing is a social-engineering attack that tricks users into revealing credentials or sensitive data, often via deceptive emails, links, or sites; (b) one valid defense such as user awareness training, multi-factor authentication, email filtering, or verifying sender identity before clicking.|Full credit requires: (a) symmetric encryption uses a single shared key for both encryption and decryption; (b) asymmetric encryption uses a public/private key pair; (c) one valid example of each, such as AES or DES for symmetric versus RSA or ECC for asymmetric.",
+        "cond": "LINK(QUESTIONS)",
+        "desc": "Rigid scoring criteria, order-linked to QUESTIONS so each rubric stays paired with its question."
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ Hidden control: loop the question sandwich (present -> evaluate -> score) once per question.\n@REPEAT(@TN(1)@, @TN(3)@, \"@TOTAL_QUESTIONS@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Symbolic Input layer: present question @R_i@ and capture the constructed response.\n## Question @R_i@ of @TOTAL_QUESTIONS@\n\n@QUESTIONS[@R_i@]@\n\n@TEXTAREA(\"answer_@R_i@\", \"Type your full answer here, then press Submit.\")@",
+      "show": true,
+      "model": null,
+      "markdown": true
+    },
+    {
+      "system": "You are a strict, consistent assessment grader. Score the student's answer ONLY against the provided rubric for this specific question. Use this rigid 4-level scale:\n- Fully Correct: the answer satisfies every criterion in the rubric.\n- Mostly Correct: the answer satisfies most criteria with only a minor omission or error.\n- Partially Correct: the answer satisfies some criteria but has significant gaps.\n- Incorrect: the answer is irrelevant, wrong, or misses the rubric criteria.\nDo not reward fluency, length, or unrelated facts. Output exactly one of the four labels and nothing else.",
+      "user": "Question:\n@QUESTIONS[@R_i@]@\n\nScoring rubric (rigid):\n@RUBRICS[@R_i@]@\n\nStudent answer:\n@TEXTAREA(\"answer_@R_i@\")@\n\nReturn the single most accurate grade label.",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.1",
+      "max-tokens": "100",
+      "output-values": "Incorrect|Partially Correct|Mostly Correct|Fully Correct"
+    },
+    {
+      "system": "",
+      "user": "/ Hidden Control layer: convert this iteration's verdict to points and update the dynamic running SCORE.\n@SET(\"VERDICT_@R_i@\", \"@TR@TN(-1)@[@R_i@]@\")@\n@SET(\"POINTS_@R_i@\", \"@MAP(\"@TR@TN(-1)@[@R_i@]@\", \"Incorrect|Partially Correct|Mostly Correct|Fully Correct\", \"0|1|2|3|0\")@\")@\n@SET(\"SCORE\", \"@EVAL(\"@SCORE@ + @MAP(\"@TR@TN(-1)@[@R_i@]@\", \"Incorrect|Partially Correct|Mostly Correct|Fully Correct\", \"0|1|2|3|0\")@\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Final score report (runs after the loop completes).\n# Quiz Complete\n\nYou answered **@TOTAL_QUESTIONS@** questions.\n\n**Total score: @SCORE@ / @MAX_SCORE@**\n\n**Percentage: @EVAL(\"Math.round(@SCORE@ / @MAX_SCORE@ * 100)\")@%**\n\n---\n\n### Question 1\n@QUESTIONS[1]@\n\n- **Your answer:** @TEXTAREA(\"answer_1\")@\n- **Verdict:** @VERDICT_1@ (@POINTS_1@/3)\n\n### Question 2\n@QUESTIONS[2]@\n\n- **Your answer:** @TEXTAREA(\"answer_2\")@\n- **Verdict:** @VERDICT_2@ (@POINTS_2@/3)\n\n### Question 3\n@QUESTIONS[3]@\n\n- **Your answer:** @TEXTAREA(\"answer_3\")@\n- **Verdict:** @VERDICT_3@ (@POINTS_3@/3)",
+      "show": true,
+      "model": null,
+      "markdown": true
+    }
+  ]
+}
