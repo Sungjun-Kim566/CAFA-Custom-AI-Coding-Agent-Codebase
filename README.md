@@ -23,7 +23,7 @@ MCP server. The broader *PageIndex + Wiki + Validator* architecture is documente
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                  CLAUDE.md  (Agent Core)                   │
+│                  AGENTS.md  (Agent Core)                   │
 │            Identity · Workflow · Retrieval rules           │
 └───────────────┬──────────────────────────┬────────────────┘
                 │                          │
@@ -57,7 +57,7 @@ prompt; keep a small instruction file plus selective, grounded retrieval.
 
 ```
 agent-config/
-├─ CLAUDE.md              # Agent Core: Identity · Workflow · Retrieval instructions
+├─ AGENTS.md              # Agent Core: Identity · Workflow · Retrieval instructions
 │
 ├─ prompts/               # Workflow instruction strings, one per stage/role
 │  ├─ coding-agent.md     #   design + code  (Blueprint, ontology, turns, command rules)
@@ -85,7 +85,7 @@ agent-config/
 
 ---
 
-## 1. The Agent Core (`CLAUDE.md`)
+## 1. The Agent Core (`AGENTS.md`)
 
 Holds only **Identity**, **Workflow**, and **Retrieval instructions** — deliberately
 small. Detailed instruction strings live in `prompts/`; framework knowledge lives in
@@ -218,7 +218,7 @@ Where each file in this layer came from when the codebase was restructured (see
 
 | File | Derived from |
 |------|--------------|
-| `CLAUDE.md` | `1/00_System_Instruction.md` (persona, workflow, KB index, scope rules) |
+| `AGENTS.md` | `1/00_System_Instruction.md` (persona, workflow, KB index, scope rules) |
 | `prompts/coding-agent.md` | `1/00_System_Instruction.md` §3,5–8 (blueprint, ontology, turn, command rules) |
 | `prompts/validator.md` | `1/00_System_Instruction.md` §4 + `1/01_…Linter and Rules.md` |
 | `prompts/reviewer.md` | `1/00_System_Instruction.md` §9,10,12,13 + references |

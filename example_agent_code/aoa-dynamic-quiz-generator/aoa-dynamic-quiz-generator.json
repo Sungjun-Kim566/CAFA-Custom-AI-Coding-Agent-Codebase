@@ -1,0 +1,139 @@
+{
+  "options": {
+    "title": "<b>AoA Dynamic Quiz Generator</b>: Configurable On-the-fly Item Generation, Grading &amp; Routing",
+    "brief": "An AoA-framework quiz generator. The user first configures the quiz (topic or source data, number of questions, and difficulty); the agent then runs a dynamic loop that tracks the current question number, generates a tailored non-repeating question, captures a free-text answer, grades it on a rigid scale, updates a running score, and routes to the next turn. It closes with a deterministic score report and an LLM performance analysis.",
+    "name": "AoA Dynamic Quiz Generator",
+    "description": "Implements the AoA (Architecture of Alignment / Assessment) framework as a strict three-layer sandwich: Symbolic Input (configuration) -> LLM Generation & Assessment -> Hidden Control / Routing / Looping. An initial configuration stage captures the quiz topic or inference data (TEXTAREA), the number of questions (RADIO), and the difficulty level (RADIO). A hidden control turn commits those into Agent Parameters, then a REPEAT loop whose count equals the user-chosen number runs a per-question cycle: the LLM generates a question tailored to the topic and difficulty while avoiding prior questions (dynamic question-number tracking via @R_i@), a TEXTAREA captures the answer, the LLM grades it against a rigid 4-level scale constrained by output-values, a standalone hidden turn maps the verdict to points and updates the dynamic SCORE, and a second hidden turn accumulates the transcript. Final turns render a deterministic score breakdown and an LLM coaching analysis.",
+    "greeting": "Welcome to the AoA Dynamic Quiz Generator. First, configure your quiz: choose a topic (or paste source material), how many questions you want, and a difficulty level. Then I will generate questions one at a time, grade each answer, track your score, and finish with a personalized analysis. Let's set it up.",
+    "params": {
+      "TOPIC": {
+        "org": "",
+        "cond": "SELF",
+        "desc": "User-provided quiz topic or source material / inference data captured in the configuration stage and injected into the per-question generation prompt."
+      },
+      "NUM_QUESTIONS": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "User-chosen number of questions; drives the REPEAT loop count and the score denominator. Pre-initialized to 3 as a safe default before configuration is committed."
+      },
+      "DIFFICULTY": {
+        "org": "Medium",
+        "cond": "SELF",
+        "desc": "User-chosen difficulty level (Easy / Medium / Hard) that conditions the generation prompt. Pre-initialized to Medium."
+      },
+      "SCORE": {
+        "org": "0",
+        "cond": "SELF",
+        "desc": "Dynamic running score, initialized to 0 and incremented each iteration by the points earned on that question."
+      },
+      "POINTS_PER_Q": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "Maximum points per question (Fully Correct = 3). Used to compute the maximum score and percentage."
+      },
+      "GENERATOR_PERSONA": {
+        "org": "You are an expert quiz item writer. You write exactly ONE clear, self-contained constructed-response question at a time, precisely tailored to the requested topic (or supplied source material) and difficulty level. Do not provide the answer, hints, sub-questions, multiple-choice options, or any preamble. Never repeat or closely paraphrase a question that already appears in the provided history. Output ONLY the new question text.",
+        "cond": "SELF",
+        "desc": "System prompt for the per-iteration LLM question-generation turn."
+      },
+      "GRADER_PERSONA": {
+        "org": "You are a strict, consistent quiz grader. Judge the student's answer to the given question using this rigid 4-level scale:\n- Fully Correct: the answer is complete and accurate.\n- Mostly Correct: accurate with only a minor omission or error.\n- Partially Correct: shows some understanding but has significant gaps.\n- Incorrect: irrelevant, wrong, or empty.\nJudge only correctness for the exact question asked. Do not reward fluency, length, or unrelated facts. Output exactly one of the four labels and nothing else.",
+        "cond": "SELF",
+        "desc": "System prompt for the per-iteration LLM grading turn; paired with output-values for a parseable verdict."
+      },
+      "ANALYST_PERSONA": {
+        "org": "You are an expert learning coach. Given a quiz transcript (each question, the student's answer, and its verdict) plus the total score, write a concise overall analysis covering: the student's strengths, recurring weaknesses, and 2-3 specific, actionable suggestions for improvement. Be encouraging, concrete, and brief.",
+        "cond": "SELF",
+        "desc": "System prompt for the final holistic LLM performance-analysis turn."
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ Symbolic Input (config 1/3): capture the quiz topic or source material / inference data.\n@TEXTAREA(\"quiz_topic\", \"What topic or source material should the quiz cover? (e.g., 'Photosynthesis', 'Causes of World War I', or paste reference text to be quizzed on.)\")@",
+      "show": true,
+      "model": null,
+      "markdown": true
+    },
+    {
+      "system": "",
+      "user": "/ Symbolic Input (config 2/3): capture the number of questions.\n@RADIO(\"num_questions\", \"How many questions would you like?\", \"3|5|10\")@",
+      "show": true,
+      "model": null,
+      "markdown": true
+    },
+    {
+      "system": "",
+      "user": "/ Symbolic Input (config 3/3): capture the difficulty level.\n@RADIO(\"difficulty\", \"Select a difficulty level:\", \"Easy|Medium|Hard\")@",
+      "show": true,
+      "model": null,
+      "markdown": true
+    },
+    {
+      "system": "",
+      "user": "/ Hidden Control: commit the captured configuration into named Agent Parameters for the loop to consume.\n@SET(\"TOPIC\", \"@TEXTAREA(\"quiz_topic\")@\")@\n@SET(\"NUM_QUESTIONS\", \"@RADIO(\"num_questions\")@\")@\n@SET(\"DIFFICULTY\", \"@RADIO(\"difficulty\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Hidden Control: loop the generation sandwich (generate -> answer -> grade -> score -> log) once per question.\n@REPEAT(@TN(1)@, @TN(5)@, \"@NUM_QUESTIONS@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "@GENERATOR_PERSONA@",
+      "user": "Generate question number @R_i@ of @NUM_QUESTIONS@ for a quiz.\n\nTopic / source material:\n@TOPIC@\n\nDifficulty: @DIFFICULTY@\n\nPreviously asked questions (do NOT repeat or paraphrase any of these):\n@TR@TN(4)@@\n\nOutput ONLY the new question text.",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.7",
+      "max-tokens": "400",
+      "markdown": true
+    },
+    {
+      "system": "",
+      "user": "/ Symbolic Input: present the generated question for this iteration and capture the constructed response.\n## Question @R_i@ of @NUM_QUESTIONS@\n\n@TR@TN(-1)@[@R_i@]@\n\n@TEXTAREA(\"answer_@R_i@\", \"Type your full answer here, then press Submit.\")@",
+      "show": true,
+      "model": null,
+      "markdown": true
+    },
+    {
+      "system": "@GRADER_PERSONA@",
+      "user": "Question:\n@TR@TN(-2)@[@R_i@]@\n\nStudent answer:\n@TEXTAREA(\"answer_@R_i@\")@\n\nReturn the single most accurate grade label.",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.1",
+      "max-tokens": "100",
+      "output-values": "Incorrect|Partially Correct|Mostly Correct|Fully Correct"
+    },
+    {
+      "system": "",
+      "user": "/ Hidden Control: convert this iteration's verdict to points and update the dynamic running SCORE.\n@SET(\"VERDICT_@R_i@\", \"@TR@TN(-1)@[@R_i@]@\")@\n@SET(\"POINTS_@R_i@\", \"@MAP(\"@TR@TN(-1)@[@R_i@]@\", \"Incorrect|Partially Correct|Mostly Correct|Fully Correct\", \"0|1|2|3|0\")@\")@\n@SET(\"SCORE\", \"@EVAL(\"@SCORE@ + @MAP(\"@TR@TN(-1)@[@R_i@]@\", \"Incorrect|Partially Correct|Mostly Correct|Fully Correct\", \"0|1|2|3|0\")@\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Hidden Routing: accumulate this iteration into the running transcript (TR grows across iterations and feeds the next generation, the report, and the analysis).\n### Question @R_i@ of @NUM_QUESTIONS@ (Difficulty: @DIFFICULTY@)\n- **Question:** @TR@TN(-4)@[@R_i@]@\n- **Your answer:** @TEXTAREA(\"answer_@R_i@\")@\n- **Verdict:** @TR@TN(-2)@[@R_i@]@\n",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ \n# Quiz Complete\n\n**Topic:** @TOPIC@\n\n**Difficulty:** @DIFFICULTY@\n\n**Questions answered:** @NUM_QUESTIONS@\n\n**Total score: @SCORE@ / @EVAL(\"@NUM_QUESTIONS@ * @POINTS_PER_Q@\")@**\n\n**Percentage: @EVAL(\"Math.round(@SCORE@ / (@NUM_QUESTIONS@ * @POINTS_PER_Q@) * 100)\")@%**\n\n---\n\n## Per-Question Breakdown\n@TR@TN(-1)@@",
+      "show": true,
+      "model": null,
+      "markdown": true
+    },
+    {
+      "system": "@ANALYST_PERSONA@",
+      "user": "Here is the student's quiz transcript:\n\n@TR@TN(-2)@@\n\nTotal score: @SCORE@ out of @EVAL(\"@NUM_QUESTIONS@ * @POINTS_PER_Q@\")@.\n\nProvide a concise overall analysis of the student's performance: strengths, recurring weaknesses, and 2-3 specific, actionable suggestions for improvement.",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.3",
+      "max-tokens": "1500",
+      "markdown": true
+    }
+  ]
+}
