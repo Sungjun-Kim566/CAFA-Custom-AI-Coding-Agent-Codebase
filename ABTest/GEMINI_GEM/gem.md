@@ -19,9 +19,9 @@ code-bank.md
 ```
 Files are uploaded without directory information in this version. `fix-log` not updated.
 
-4. Model: gemini-3.1 flash standard thinking level
 
-## Coding Test
+
+## Coding Test: gemini-3.1 flash standard thinking level
 ### Simple Quiz Agent
 Prompt: 
 ```markdown
@@ -313,6 +313,341 @@ Errors:
 
     성능 평가: **양호** <- no idea how this came out or where it came from or being evaluated on
     ```
+
+
+### OMG Quiz Agent
+Output code:
+```json
+{
+    "options": {
+        "title": "Dynamic OMG Assessment Engine",
+        "brief": "An automated quiz agent implementing the OMG framework with randomized item alignment and symbolic auto-grading loops.",
+        "name": "OMG_Dynamic_Quiz_Agent",
+        "description": "This operational engine shuffles quiz questions while preserving option-to-answer integrity through parallel linked parameters, administering items iteratively and tracking state dynamically.",
+        "greeting": "Welcome to the Dynamic Quiz Assessment! You will be presented with 3 randomized questions. Let's begin.",
+        "params": {
+            "QUESTIONS": {
+                "org": "What is the capital of France?|Which planet is known as the Red Planet?|What is the largest mammal on Earth?",
+                "cond": "SHUFFLE",
+                "desc": "Primary array containing the quiz question stems."
+            },
+            "OPTIONS_A": {
+                "org": "Paris|Mars|Blue Whale",
+                "cond": "LINK(QUESTIONS)",
+                "desc": "Parallel list holding the first multiple-choice option."
+            },
+            "OPTIONS_B": {
+                "org": "London|Venus|Elephant",
+                "cond": "LINK(QUESTIONS)",
+                "desc": "Parallel list holding the second multiple-choice option."
+            },
+            "OPTIONS_C": {
+                "org": "Berlin|Jupiter|Giraffe",
+                "cond": "LINK(QUESTIONS)",
+                "desc": "Parallel list holding the third multiple-choice option."
+            },
+            "ANSWERS": {
+                "org": "Paris|Mars|Blue Whale",
+                "cond": "LINK(QUESTIONS)",
+                "desc": "Parallel ground-truth keys linked to the shuffled question stems."
+            },
+            "USER_SCORE": {
+                "org": "0",
+                "cond": "SELF",
+                "desc": "Scalar memory parameter used to accumulate student score updates."
+            }
+        }
+    },
+    "prompts": [
+        {
+            "system": "",
+            "user": "/ Initialization Turn\n@SET(\"USER_SCORE\", \"0\")@",
+            "show": false
+        },
+        {
+            "system": "",
+            "user": "/ Dedicated Control Flow Loop Orchestration Turn\n@REPEAT(@TN(1)@, @TN(2)@, \"3\")@",
+            "show": false
+        },
+        {
+            "system": "",
+            "user": "/ Loop Step 1: Display Interactive Survey Control\nQuestion @R_i@ of 3:\n@RADIO(\"user_ans_@R_i@\", \"@QUESTIONS[@R_i@]@\", \"@OPTIONS_A[@R_i@]@|@OPTIONS_B[@R_i@]@|@OPTIONS_C[@R_i@]@\")@",
+            "show": true
+        },
+        {
+            "system": "",
+            "user": "/ Loop Step 2: Atomic Evaluation Gate\n@SET(\"USER_SCORE\", \"@EVAL(\"@USER_SCORE@ + @MAP(\"@RADIO(user_ans_@R_i@)@\", \"@ANSWERS[@R_i@]@\", \"1|0\")@\")@\")@",
+            "show": false
+        },
+        {
+            "system": "",
+            "user": "/ Post-Loop Synthesis State\n# Assessment Complete!\n\nThank you for participating. Your final synchronized score has been processed.\n\n### Final Result: **@USER_SCORE@** out of 3 points.",
+            "show": true,
+            "markdown": true
+        }
+    ]
+}
+```
+Notable issues/Errors:
+- no linter errors
+  - neither unnecessary double quotes nor `\` that causes parsing errors without any fix turns
+- follows OMG Framework well
+- performs better than pro models.
+
+### Mock LLM Wiki on CAFA Agents
+
+Output code:
+#### 1. Architecture
+```json
+{
+  "options": {
+    "title": "LLM Wiki Builder",
+    "brief": "Authoring tool for generating structured, interlinked wiki pages from raw documents.",
+    "name": "wiki_builder",
+    "description": "Ingests raw sources, distills them using an LLM, persists them to a structured state, and exports the bundle.",
+    "greeting": "Welcome to the LLM Wiki Builder. Select an option from the menu to begin.",
+    "raw_curr_idx": { "org": "local", "cond": "SELF", "desc": "Snapshot of the raw source count before editing" },
+    "raw": { "org": "local", "cond": "SELF", "desc": "Array containing raw document contents" },
+    "raw_name": { "org": "local", "cond": "SELF", "desc": "Array containing raw document titles" },
+    "wiki": { "org": "local", "cond": "SELF", "desc": "Nested dictionary structure containing finished wiki pages" },
+    "wiki_index": { "org": "local", "cond": "SELF", "desc": "Table of contents/index metadata for the generated wiki" },
+    "wiki_log": { "org": "local", "cond": "SELF", "desc": "History and activity log of wiki modification batches" },
+    "Agent_Config": { "org": "local", "cond": "SELF", "desc": "System rulebook containing Identity, rules, and citation_rules" },
+    "page_format": { "org": "local", "cond": "SELF", "desc": "Template layout specification for generated markdown pages" }
+  },
+  "prompts": [
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/SET raw_curr_idx = \"@raw_name.length@\""
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Present the administration dashboard menu options to the user.",
+      "user": "/RADIO menu \"Select an administrative action:\" [\"Add raw sources\", \"Lint/Audit\", \"Launch the Runnable\", \"End\"]"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/JUMP @MAP(\"@TR@TN(\"-1\")@\", [\"Add raw sources\", \"Lint/Audit\", \"Launch the Runnable\", \"End\"], \"@TN(\"1\")@\", \"@TN(\"5\")@\", \"@TN(\"11\")@\", \"@TN(\"19\")@\")@"
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Prompt user for the raw source document details.",
+      "user": "/TEXT source_title \"Enter document title:\""
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Prompt user for the text content of the raw document.",
+      "user": "/TEXTAREA source_body \"Paste the document text content here:\""
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/UPJ raw = \"@TR@TN(\"-1\")@\"\n/UPJ raw_name = \"@TR@TN(\"-2\")@\""
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Ask the user if they wish to ingest another document or commit.",
+      "user": "/RADIO add_more \"Would you like to add another source?\" [\"Yes\", \"No\"]"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/JUMP @MAP(\"@TR@TN(\"-1\")@\", [\"Yes\"], \"@TN(\"-5\")@\", \"@TN(\"1\")@\")@"
+    },
+    {
+      "model": "gpt-4.1",
+      "show": true,
+      "system": "Rules:\n@Agent_Config.rules@\n\nCitations:\n@Agent_Config.citation_rules@\n\nAnalyze the newly added raw items and extract core atomic takeaways.",
+      "user": "Review the following raw elements and provide key insights:\n@raw@"
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Ask the manager how to handle the extracted text insights.",
+      "user": "/RADIO post_distill \"Choose the next stage for the extracted insights:\" [\"Continue\", \"Revise\", \"Menu\"]"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/JUMP @MAP(\"@TR@TN(\"-1\")@\", [\"Continue\", \"Revise\"], \"@TN(\"4\")@\", \"@TN(\"-2\")@\", \"@TN(\"1\")@\")@"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/REPEAT \"@EVAL(\"@raw_name.length@ - @raw_curr_idx@\")@\" @TN(\"1\")@"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/DELJ raw_name = \"@EVAL(\"@raw_name.length@ + 1 - @R_i@\")@\"\n/DELJ raw = \"@EVAL(\"@raw.length@ + 1 - @R_i@\")@\""
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/JUMP @TN(\"-12\")@"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/REPEAT \"@raw.length@\" @TN(\"1\")@"
+    },
+    {
+      "model": "gpt-4.1",
+      "show": false,
+      "system": "Format requirements:\n@page_format@",
+      "user": "Write a clean wiki article markdown document for topic \"@raw_name[@R_i@]@\" given source source text content: \"@raw[@R_i@]@\" and matching takeaways: \"@TR@TN(\"-7\")@\""
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/UPJ wiki = {\"@raw_name[@R_i@]@\": \"@TR@TN(\"-1\")@\"}"
+    },
+    {
+      "model": "gpt-4.1",
+      "show": false,
+      "system": "You are a master index engineer.",
+      "user": "Regenerate the unified `wiki_index` directory using all compiled pages stored here: @wiki@"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/SET wiki_index = \"@TR@TN(\"-1\")@\"\n/UPJ wiki_log = {\"timestamp\": \"@NOW@\", \"actions\": \"Batch addition of records\"}"
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Inquire if user wants to transition directly to reading or return to control dashboard.",
+      "user": "/RADIO target_agent \"Deploy or back to start?\" [\"Chat\", \"Menu\"]"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/JUMP @MAP(\"@TR@TN(\"-1\")@\", [\"Chat\"], \"@TN(\"1\")@\", \"@TN(\"-20\")@\")@"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/EXPORT URL \"@EXPORT(Agent_Config, raw, wiki, wiki_index, wiki_log, page_format)@\""
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/END"
+    }
+  ]
+}
+```
+
+#### Runner
+```json
+{
+  "options": {
+    "title": "LLM Wiki Chat Viewer",
+    "brief": "Consumer client serving conversational RAG across loaded knowledge databases.",
+    "name": "wiki_runner",
+    "description": "Hydrates a pre-built workspace wiki payload via deep-linking and manages interactive context-bounded questioning sessions.",
+    "greeting": "Wiki database connected. Type your prompt to consult the indexed documentation sets.",
+    "Agent_Config": { "org": "import", "cond": "LINK(\"wiki_builder.Agent_Config\")", "desc": "Imported configuration policies" },
+    "raw": { "org": "import", "cond": "LINK(\"wiki_builder.raw\")", "desc": "Imported backup raw texts array" },
+    "wiki": { "org": "import", "cond": "LINK(\"wiki_builder.wiki\")", "desc": "Imported complete catalog of wiki pages" },
+    "wiki_index": { "org": "import", "cond": "LINK(\"wiki_builder.wiki_index\")", "desc": "Imported active searchable metadata indexes" },
+    "wiki_log": { "org": "import", "cond": "LINK(\"wiki_builder.wiki_log\")", "desc": "Imported change logs payload structural array" },
+    "page_format": { "org": "import", "cond": "LINK(\"wiki_builder.page_format\")", "desc": "Imported page templates layout formatting metrics" },
+    "chat_log": { "org": "local", "cond": "SELF", "desc": "Sequential message thread logs representation" },
+    "Q_answer_rule": { "org": "local", "cond": "SELF", "desc": "Strict constraints and procedures for rendering responses strictly using the provided context blocks" }
+  },
+  "prompts": [
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/IMPORT @ID_ID@"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/SET chat_log = []"
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Announce safe establishment of operational workspace.",
+      "user": "The client has initialized. The database houses @wiki_log.length@ modifications updates."
+    },
+    {
+      "model": "gpt-4.1",
+      "show": true,
+      "markdown": true,
+      "system": "Instructions:\n@Q_answer_rule@\n\nReference Material Index:\n@wiki_index@\n\nFull Reference Body Texts:\n@wiki@\n\nPrior Discourse Timeline:\n@chat_log@",
+      "user": ""
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Inquire if another session pass is required.",
+      "user": "/RADIO session_gate \"Do you have further follow-up queries?\" [\"Yes\", \"No\"]"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/JUMP @MAP(\"@TR@TN(\"-1\")@\", [\"Yes\"], \"@TN(\"1\")@\", \"@TN(\"3\")@\")@"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/UPJ chat_log = {\"query\": \"@TU@TN(\"-3\")@\", \"response\": \"@TR@TN(\"-3\")@\"}"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/JUMP @TN(\"-4\")@"
+    },
+    {
+      "model": null,
+      "show": true,
+      "system": "Sign-off process formulation.",
+      "user": "Closing active session tunnel. Goodbye!"
+    },
+    {
+      "model": null,
+      "show": false,
+      "system": "",
+      "user": "/END"
+    }
+  ]
+}
+```
+
+notable issues/Errors:
+- fails to follow basic CAFA coding protocols and linter. cannot run the agent at all.
+- fix failed: unknown reason to fail fix
+  - due to the issue, I was unable to proceed testing the model's coding performance
+- response time: $\approx$ 15 - 30 seconds.
+
 ## Coding test: gemini-3.1 pro extended thinking model
 ### Simple Quiz Agent
 
@@ -572,6 +907,385 @@ However, Grading is skipped and question variance is too low (too low default te
 
 Conclusion: This level of code complexity seems to be the upper limit of current Gem's ability as a coding agent. Further experiments with this version seems worthless as it seems to be inefficient, taking too much time and less quality compared to previous claude code version or gemini-3.1 pro standard model.
 
+### OMG Quiz Agent
+Prompt:
+```markdown
+Role & Goal:
+You are the CAFA Agent Foundry Agent. Please translate my request into a valid, executable CAFA agent JSON. I need an intermediate-to-expert level Dynamic Quiz Agent with Automatic Scoring that implements the OMG (Ontology Model-centered Generation) framework combined with an iterative REPEAT loop.
+Instructions & Constraints:
+
+Workflow & Blueprint: Do not skip stages. Begin with the design stage by providing a comprehensive Blueprint [Design]. This must include the primary goal, framework used, a complete list of commands, the AP/JP ontology specifications, and a turn architecture plan [Symbolic vs. LLM classification].
+Ontology & Data Handling:
+Define a robust tabular ontology in options.params with parallel lists for Questions (Stems), Options (flattened or dynamically sliced), and Correct Answers.
+Use the SHUFFLE condition on the primary list and LINK on the dependent lists to randomize the quiz while preserving semantic pairing.
+Initialize a USER_SCORE variable to "0" in an early hidden turn.
+Advanced Logic & Loop Administration:
+Set up a REPEAT loop using relative turn numbering (@TN()) to administer the quiz.
+Inside the loop, present each question using a RADIO control. Use the loop iteration index [@R_i@] to dynamically pull the correct stem and options.
+Grade the response deterministically in a hidden symbolic turn. Use @MAP to compare the user's RADIO input against the linked correct answer (returning 1 or 0), and update the USER_SCORE using @EVAL.
+Strict Linter Compliance:
+Control-flow Isolation: Ensure the REPEAT command is strictly isolated in its own hidden symbolic turn ("show": false).
+Dependency Rule: Do not reference the newly updated USER_SCORE within the exact same turn it is modified; wait until a subsequent turn.
+UI Constraints: Ensure there is only one input control per visible turn.
+Output Packaging: Provide your response in exactly this order: The Blueprint, the full Agent Code (as a single valid JSON block), a minimal verification summary, the standard CAFA import instructions, and exactly two APA references.
+```
+Output code:
+```json
+{
+  "options": {
+    "title": "OMG Dynamic Assessment Agent",
+    "name": "OMG Dynamic Quiz with REPEAT",
+    "brief": "A dynamic quiz agent leveraging linked ontology models and an automatic scoring loop.",
+    "description": "This agent shuffles a set of questions while maintaining the semantic pairing of its options and correct answers. It uses a REPEAT loop to administer the quiz and an EVAL/MAP combination to deterministically score the user.",
+    "greeting": "Welcome to the Dynamic Quiz! Let's test your general knowledge.",
+    "params": {
+      "STEMS": {
+        "org": "What is the largest planet in our solar system?|Who painted the Mona Lisa?|What is the chemical symbol for water?",
+        "cond": "SHUFFLE",
+        "desc": "Primary list of question stems, shuffled dynamically per session."
+      },
+      "OPT_A": {
+        "org": "Earth|Vincent van Gogh|H2O2",
+        "cond": "LINK(STEMS)",
+        "desc": "First answer option, linked to the stems."
+      },
+      "OPT_B": {
+        "org": "Saturn|Leonardo da Vinci|HO2",
+        "cond": "LINK(STEMS)",
+        "desc": "Second answer option, linked to the stems."
+      },
+      "OPT_C": {
+        "org": "Jupiter|Pablo Picasso|H2O",
+        "cond": "LINK(STEMS)",
+        "desc": "Third answer option, linked to the stems."
+      },
+      "ANSWERS": {
+        "org": "Jupiter|Leonardo da Vinci|H2O",
+        "cond": "LINK(STEMS)",
+        "desc": "Correct answers perfectly aligned with the stems."
+      },
+      "TOTAL_QUESTIONS": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "Number of quiz loop iterations."
+      }
+    }
+  },
+  "prompts": [
+    {
+      "user": "/ T1: Initialize the user's score to zero.\n@SET(\"USER_SCORE\", \"0\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T2: Setup the REPEAT loop to execute the next three turns for each question.\n@REPEAT(\"@TN(1)@\", \"@TN(3)@\", \"@TOTAL_QUESTIONS@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T3 (Loop 1/3): Display the current question using a RADIO control.\n@RADIO(\"ans_@R_i@\", \"Question @R_i@ of @TOTAL_QUESTIONS@:<br><br>**@STEMS[@R_i@]@**\", \"@OPT_A[@R_i@]@|@OPT_B[@R_i@]@|@OPT_C[@R_i@]@\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T4 (Loop 2/3): Evaluate the user's response deterministically and store the increment.\n@SET(\"SCORE_INC_@R_i@\", \"@MAP(\\\"@TR3[@R_i@]@\\\", \\\"@ANSWERS[@R_i@]@\\\", \\\"1|0\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T5 (Loop 3/3): Update the cumulative score safely in a dedicated turn.\n@SET(\"USER_SCORE\", \"@EVAL(\\\"@USER_SCORE@ + @SCORE_INC_@R_i@@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T6: Final summary displaying the completed quiz score.\n## Quiz Complete!\n\nYour final score is **@USER_SCORE@** out of @TOTAL_QUESTIONS@.",
+      "show": true,
+      "markdown": true,
+      "model": null
+    }
+  ]
+}
+```
+Notable issues/Errors:
+- linter issue
+  - the model cannot understand the basic linting rules (keeps HTML parsing character `\` in the functions' arguments and unncessary double quotes)
+  - incorrect mapping (seems to focus too much on "deterministic"; not using AP dynamically for `@MAP@` and also incorrectly seems to be a minor issue), causing scoring error
+  - code fix did not happen after a few turns of fixing prompts.
+
+- It uses Content APs (questions, distractors, answers) dynamically using `SHUFFLE` and `LINK` options.
+- Seems to follow OMG framework according to the `protocol.md`
+
+
+### Mock LLM Wiki on CAFA Agents
+Output code:
+#### Architecture
+```json
+{
+  "options": {
+    "title": "LLM Wiki Builder",
+    "name": "mock_wiki_CAFA_builder",
+    "brief": "Authoring tool to ingest sources and generate a wiki.",
+    "description": "Menu-driven wiki builder agent utilizing LLM distillation and structured state management.",
+    "greeting": "Welcome to the LLM Wiki Builder. Select an action to begin.",
+    "params": {
+      "raw_curr_idx": { "org": "0", "cond": "SELF", "desc": "Snapshot of source count" },
+      "raw": { "org": "[]", "cond": "SELF", "desc": "Array of raw {title, content} objects" },
+      "raw_name": { "org": "[]", "cond": "SELF", "desc": "Array of raw source titles" },
+      "wiki": { "org": "{}", "cond": "SELF", "desc": "Generated wiki pages" },
+      "wiki_log": { "org": "[]", "cond": "SELF", "desc": "Audit log for tracking generations" },
+      "Agent_Config": { "org": "{\"rules\":\"Strict accuracy\",\"citation_rules\":\"APA format\"}", "cond": "SELF", "desc": "Configuration rules" },
+      "page_format": { "org": "Markdown with headers", "cond": "SELF", "desc": "Page format template" },
+      "wiki_index": { "org": "", "cond": "SELF", "desc": "Index of wiki pages" }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ Init state\n@SET(\"raw_curr_idx\", \"@EVAL(\\\"@raw_name.length@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Main menu\n@RADIO(\"menu\", \"Select an action:\", \"Add raw sources|Lint/Audit|Launch the Runnable|End\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Menu router\n@JUMP(\"@MAP(\\\"@RADIO(menu)@\\\", \\\"Add raw sources|Lint/Audit|Launch the Runnable|End\\\", \\\"@TN(\\\"1\\\")@|@TN(\\\"15\\\")@|@TN(\\\"19\\\")@|@TN(\\\"21\\\")@|@TN(\\\"21\\\")@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Source title\n@TEXT(\"title\", \"Enter source title:\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Source body\n@TEXTAREA(\"body\", \"Enter source content:\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Append source\n@UPJ(\"raw\", \"{\\\"title\\\": \\\"@TEXT(title)@\\\", \\\"content\\\": \\\"@TEXTAREA(body)@\\\"}\")@\n@UPJ(\"raw_name\", \"\\\"@TEXT(title)@\\\"\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Add more prompt\n@RADIO(\"add_more\", \"Add another source?\", \"Yes|No\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Route Add Source\n@JUMP(\"@MAP(\\\"@RADIO(add_more)@\\\", \\\"Yes|No\\\", \\\"@TN(\\\"-4\\\")@|@TN(\\\"1\\\")@|@TN(\\\"1\\\")@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "Rules: @Agent_Config.rules@\nCitations: @Agent_Config.citation_rules@",
+      "user": "List key takeaways from these sources:\n@raw@",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.5",
+      "max-tokens": "2000"
+    },
+    {
+      "system": "",
+      "user": "/ Revise menu\n@RADIO(\"revise_menu\", \"Next step?\", \"Continue|Revise|Menu\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Route revise menu\n@JUMP(\"@MAP(\\\"@RADIO(revise_menu)@\\\", \\\"Continue|Revise|Menu\\\", \\\"@TN(\\\"4\\\")@|@TN(\\\"-2\\\")@|@TN(\\\"1\\\")@|@TN(\\\"4\\\")@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Rollback loop setup\n@REPEAT(\"@TN(\\\"1\\\")@\", \"@TN(\\\"1\\\")@\", \"@EVAL(\\\"@raw_name.length@ - @raw_curr_idx@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Rollback execution\n@DELJ(\"raw\", \"@EVAL(\\\"@raw_name.length@+1-@R_i@\\\")@\")@\n@DELJ(\"raw_name\", \"@EVAL(\\\"@raw_name.length@+1-@R_i@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Return to Main menu\n@JUMP(\"@TN(\\\"-13\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Generation loop setup\n@REPEAT(\"@TN(\\\"1\\\")@\", \"@TN(\\\"2\\\")@\", \"@raw.length@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "Write a wiki page per: @page_format@",
+      "user": "Source material: @raw[@R_i@]@\nKey Takeaways: @TR@TN(\"-7\")@[@R_i@]@",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.5",
+      "max-tokens": "2000"
+    },
+    {
+      "system": "",
+      "user": "/ Save wiki page\n@UPJ(\"wiki\", \"{\\\"@raw_name[@R_i@]@\\\": \\\"@TR@TN(\\\"-1\\\")@[@R_i@]@\\\"}\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "You are a wiki indexer.",
+      "user": "Regenerate the wiki_index from the current wiki pages:\n@wiki@",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.1",
+      "max-tokens": "1000"
+    },
+    {
+      "system": "",
+      "user": "/ Finalize index and log\n@SET(\"wiki_index\", \"@TR@TN(\\\"-1\\\")@@\")@\n@UPJ(\"wiki_log\", \"{\\\"date\\\": \\\"@NOW@\\\", \\\"sources\\\": \\\"@raw_name@\\\"}\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Handoff menu\n@RADIO(\"handoff\", \"Generation complete. Proceed to:\", \"Chat|Menu\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Route handoff\n@JUMP(\"@MAP(\\\"@RADIO(handoff)@\\\", \\\"Chat|Menu\\\", \\\"@TN(\\\"1\\\")@|@TN(\\\"-19\\\")@|@TN(\\\"1\\\")@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Export payload\n@EXPORT(\"Agent_Config|raw|wiki|wiki_index|wiki_log|page_format\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Display launch link\n[Launch Runner Chat](https://ai.cafalab.com/runner?ID_ID=@TR@TN(\"-1\")@@)",
+      "show": true,
+      "markdown": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ End session\n@END@",
+      "show": false,
+      "model": null
+    }
+  ]
+}
+```
+
+#### Runner
+```json
+{
+  "options": {
+    "title": "LLM Wiki Chat Runner",
+    "name": "mock_wiki_CAFA_runner",
+    "brief": "Serves an interactive RAG chat over the exported wiki.",
+    "description": "Consumes the exported wiki bundle and runs a continuous Q&A loop.",
+    "greeting": "Welcome! Hydrating wiki data...",
+    "params": {
+      "Q_answer_rule": { "org": "Read index -> read pages -> synthesize -> cite -> say if absent -> offer to file good answers back", "cond": "SELF", "desc": "System instructions for Q&A" },
+      "chat_log": { "org": "[]", "cond": "SELF", "desc": "Conversation accumulator" },
+      "Agent_Config": { "org": "", "cond": "SELF", "desc": "Imported configuration placeholder" },
+      "raw": { "org": "", "cond": "SELF", "desc": "Imported raw sources placeholder" },
+      "wiki": { "org": "", "cond": "SELF", "desc": "Imported wiki placeholder" },
+      "wiki_index": { "org": "", "cond": "SELF", "desc": "Imported index placeholder" },
+      "wiki_log": { "org": "", "cond": "SELF", "desc": "Imported log placeholder" },
+      "page_format": { "org": "", "cond": "SELF", "desc": "Imported format placeholder" }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ Hydrate wiki data\n@IMPORT(\"@ID_ID@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Sanity echo\n@SET(\"sanity_check\", \"@wiki_index@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Greeting\nWiki successfully loaded. You can now chat with the knowledge base.",
+      "show": true,
+      "markdown": true,
+      "model": null
+    },
+    {
+      "system": "Rules:\n@Q_answer_rule@\nWiki pages:\n@wiki@\nWiki index:\n@wiki_index@\nChat Log:\n@chat_log@",
+      "user": "",
+      "show": true,
+      "markdown": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.1",
+      "max-tokens": "2000"
+    },
+    {
+      "system": "",
+      "user": "/ Continue gate\n@RADIO(\"continue_chat\", \"Continue chatting?\", \"Yes|No\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Route continue\n@JUMP(\"@MAP(\\\"@RADIO(continue_chat)@\\\", \\\"Yes|No\\\", \\\"@TN(\\\"1\\\")@|@TN(\\\"3\\\")@|@TN(\\\"3\\\")@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Accumulate chat\n@UPJ(\"chat_log\", \"{\\\"user\\\": \\\"@TU@TN(\\\"-3\\\")@@\\\", \\\"bot\\\": \\\"@TR@TN(\\\"-3\\\")@@\\\"}\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Loop back\n@JUMP(\"@TN(\\\"-4\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Exit message\nChat session ended. Thank you for using the LLM Wiki Chat.",
+      "show": true,
+      "markdown": true,
+      "model": null
+    }
+  ]
+}
+```
+
+notable issues/Error:
+- cannot update sources properly.
+  - function argument linting issue (keeps adding `\` and unnecessary double quotes in the arguments); seems not following `linter.md` and/or `protocol.md` due to excessive context length (explicitly stated in gemini response.)
+- code fix trial worsened the code corruption
+  - `@RADIO` arguement errors with unnecessary double quotes and `\` $\rightarrow$ possibly cause: the model keeps following HTML parsing rules, not CAFA-specific linter and protocol.
+  - due to this problem, I was not able to proceed with the model's coding performance evaluation.
+
+
 ## Coding test: gemini-3.1 pro standard thinking model
 ### Simple Quiz Agent
 Output code:
@@ -823,3 +1537,338 @@ Error:<br>
 
 Error correction via prompt:
 with only 2 turns of conversation with the model (assess the problem and fix the code accordingly), it fixed the exact errors above and function well.
+
+### OMG Quiz Agent
+Output Code:
+```json
+{
+  "options": {
+    "title": "Dynamic Quiz Agent with Automatic Scoring",
+    "name": "OMG Dynamic Quiz Agent",
+    "description": "Administers an adaptive quiz by shuffling questions while keeping options linked. Scores are calculated deterministically.",
+    "greeting": "Welcome to the Dynamic Quiz! Let's get started.",
+    "brief": "An OMG-framework quiz that dynamically scores and evaluates answers.",
+    "params": {
+      "QUESTIONS": {
+        "org": "What is the capital of France?|What is the chemical symbol for water?|What is 5 * 6?",
+        "cond": "SHUFFLE",
+        "desc": "The primary stems for the quiz."
+      },
+      "OPT_A": {
+        "org": "Berlin|CO2|25",
+        "cond": "LINK(QUESTIONS)",
+        "desc": "First multiple choice option."
+      },
+      "OPT_B": {
+        "org": "Paris|H2O|30",
+        "cond": "LINK(QUESTIONS)",
+        "desc": "Second multiple choice option."
+      },
+      "OPT_C": {
+        "org": "Madrid|O2|35",
+        "cond": "LINK(QUESTIONS)",
+        "desc": "Third multiple choice option."
+      },
+      "ANSWERS": {
+        "org": "Paris|H2O|30",
+        "cond": "LINK(QUESTIONS)",
+        "desc": "Correct answers linked to stems."
+      },
+      "TOTAL_QUESTIONS": {
+        "org": "3",
+        "cond": "SELF",
+        "desc": "Number of questions to ask."
+      },
+      "USER_SCORE": {
+        "org": "0",
+        "cond": "SELF",
+        "desc": "Tracks the cumulative score of the user."
+      },
+      "TEMP_SCORE": {
+        "org": "0",
+        "cond": "SELF",
+        "desc": "Temporary holding variable for evaluating each answer."
+      }
+    }
+  },
+  "prompts": [
+    {
+      "system": "",
+      "user": "/ Setup Quiz Loop\n@REPEAT(\"@TN(\\\"1\\\")@\", \"@TN(\\\"3\\\")@\", \"@TOTAL_QUESTIONS@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Display Question\nQuestion @R_i@:\n@RADIO(\"ans\", \"@QUESTIONS[@R_i@]@\", \"@OPT_A[@R_i@]@|@OPT_B[@R_i@]@|@OPT_C[@R_i@]@\")@",
+      "show": true,
+      "markdown": true,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Grade Response\n@SET(\"TEMP_SCORE\", \"@MAP(\\\"@TR2[@R_i@]@\\\", \\\"@ANSWERS[@R_i@]@\\\", \\\"1|0\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Update Score\n@SET(\"USER_SCORE\", \"@EVAL(\\\"@USER_SCORE@ + @TEMP_SCORE@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "",
+      "user": "/ Final Summary\n**Quiz Complete!**\n\nYour final score is: **@USER_SCORE@ / @TOTAL_QUESTIONS@**.",
+      "show": true,
+      "markdown": true,
+      "model": null
+    }
+  ]
+}
+```
+
+Notable issue/Errors:
+- linter issue
+  - consistently shows parsing errors (using `\` for every arguments of the function and unnecessary double quotes that prevent the engine to read the code properly)
+  - code fix did not happen after a few fix turns
+- seems to follow OMG Framework well
+
+
+### Mock LLM Wiki on CAFA Agents
+Prompt: 
+refer `PROMPT.md` at `User_import/mock_wiki_CAFA`
+
+#### Output codes:
+1. Architecture
+```json
+{
+  "options": {
+    "title": "LLM Wiki Builder",
+    "name": "Wiki_Builder",
+    "brief": "Authoring tool to ingest sources and generate an LLM Wiki.",
+    "description": "Agent A for building an interlinked wiki from raw sources.",
+    "greeting": "Welcome to the LLM Wiki Builder. Please select an action.",
+    "params": {
+      "raw_curr_idx": { "org": "0", "cond": "SELF", "desc": "Current source count snapshot" },
+      "raw": { "org": "[]", "cond": "SELF", "desc": "JSON array of raw sources" },
+      "raw_name": { "org": "[]", "cond": "SELF", "desc": "JSON array of source titles" },
+      "wiki": { "org": "{}", "cond": "SELF", "desc": "Nested JSON KB for wiki pages" },
+      "wiki_log": { "org": "[]", "cond": "SELF", "desc": "Log of indexing actions" },
+      "wiki_index": { "org": "", "cond": "SELF", "desc": "Text index of the wiki" },
+      "page_format": { "org": "# Title\n\n## Key Takeaways\n\n## Content\n", "cond": "SELF", "desc": "Template for generated pages" },
+      "Agent_Config": { "org": "{\"Identity\": \"Wiki Author\", \"Purpose\": \"Distill and Generate\", \"Folder_structure\": \"flat\", \"rules\": \"Be objective and clear.\", \"citation_rules\": \"Cite all sources using standard referencing.\"}", "cond": "SELF", "desc": "Ontology configuration for the LLM" }
+    }
+  },
+  "prompts": [
+    {
+      "user": "/ T1: Init current index\n@SET(\"raw_curr_idx\", \"@EVAL(\\\"@raw.length@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T2: Main Menu\n@RADIO(\"menu_choice\", \"Select an action:\", \"Add raw sources|Lint/Audit|Launch the Runnable|End\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T3: Router\n@JUMP(@MAP(\"@RADIO(menu_choice)@\", \"Add raw sources|Lint/Audit|Launch the Runnable|End\", \"@TN(1)@|@TN(6)@|@TN(17)@|@TN(21)@|@TN(21)@\")@)@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T4: Add Title\n@TEXT(\"source_title\", \"Enter source title:\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T5: Add Body\n@TEXTAREA(\"source_body\", \"Enter source content:\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T6: Append Source\n@UPJ(\"raw\", \"{\\\"title\\\": \\\"@TEXT(source_title)@\\\", \\\"content\\\": \\\"@TEXTAREA(source_body)@\\\"}\")@\n@UPJ(\"raw_name\", \"\\\"@TEXT(source_title)@\\\"\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T7: Add More Gate\n@RADIO(\"add_more\", \"Add another source?\", \"Yes|No\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T8: Route Add More\n@JUMP(@MAP(\"@RADIO(add_more)@\", \"Yes|No\", \"@TN(-4)@|@TN(1)@|@TN(1)@\")@)@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "Rules: @Agent_Config.rules@\nCitation: @Agent_Config.citation_rules@\nList key takeaways from the provided sources.",
+      "user": "Sources:\n@raw@",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "markdown": true
+    },
+    {
+      "user": "/ T10: Revise Junction\n@RADIO(\"revise_choice\", \"Select action:\", \"Continue|Revise|Menu\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T11: Route Revise\n@JUMP(@MAP(\"@RADIO(revise_choice)@\", \"Continue|Revise|Menu\", \"@TN(4)@|@TN(-2)@|@TN(1)@|@TN(1)@\")@)@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T12: Rollback Loop\n@REPEAT(@TN(1)@, @TN(1)@, \"@EVAL(\\\"@raw_name.length@ - @raw_curr_idx@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T13: DELJ Tail\n@DELJ(\"raw\", \"@EVAL(\\\"@raw_name.length@ + 1 - @R_i@\\\")@\")@\n@DELJ(\"raw_name\", \"@EVAL(\\\"@raw_name.length@ + 1 - @R_i@\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T14: Back to Menu (snapshot state refresh)\n@JUMP(@TN(-13)@)@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T15: Generation Loop\n@REPEAT(@TN(1)@, @TN(2)@, \"@raw.length@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "Format:\n@page_format@\nWrite a wiki page using the specified format.",
+      "user": "Source:\n@raw[@R_i@]@\nTakeaways:\n@TR@TN(-7)@[@R_i@]@",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "markdown": true
+    },
+    {
+      "user": "/ T17: Store Page\n@UPJ(\"wiki\", \"{\\\"@raw_name[@R_i@]@\\\": \\\"@TR@TN(-1)@[@R_i@]@\\\"}\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "system": "Regenerate the wiki index based on the accumulated pages.",
+      "user": "Wiki:\n@wiki@",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.5",
+      "max-tokens": "2000",
+      "markdown": true
+    },
+    {
+      "user": "/ T19: Update Index and Log\n@SET(\"wiki_index\", \"@TR@TN(-1)@@\")@\n@UPJ(\"wiki_log\", \"{\\\"date\\\": \\\"@NOW@\\\", \\\"action\\\": \\\"Index rebuilt\\\"}\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T20: Handoff\n@RADIO(\"handoff_choice\", \"Export and launch chat, or return to menu?\", \"Chat|Menu\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T21: Route Handoff\n@JUMP(@MAP(\"@RADIO(handoff_choice)@\", \"Chat|Menu\", \"@TN(1)@|@TN(-20)@|@TN(1)@\")@)@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T22: Export Bundle\n@SET(\"export_id\", \"@EXPORT(\\\"Agent_Config|raw|wiki|wiki_index|wiki_log|page_format\\\", \\\"runner_handoff\\\")@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T23: Launch Link\nReady to launch.\n<a href=\"?ID_ID=@export_id@\">Launch Runner</a>",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T24: Terminus\n@END@",
+      "show": false,
+      "model": null
+    }
+  ]
+}
+```
+2. Runner
+```json
+{
+  "options": {
+    "title": "LLM Wiki Chat Runner",
+    "name": "Wiki_Runner",
+    "brief": "RAG chat over exported wiki.",
+    "description": "Agent B for querying wiki pages.",
+    "greeting": "Welcome to the Wiki Chat.",
+    "params": {
+      "Q_answer_rule": { "org": "Read index -> read pages -> synthesize -> cite -> say if absent -> offer to file good answers back.", "cond": "SELF", "desc": "Rule for Q&A" },
+      "chat_log": { "org": "[]", "cond": "SELF", "desc": "Accumulated chat history" }
+    }
+  },
+  "prompts": [
+    {
+      "user": "/ T1: Import Wiki Bundle\n@IMPORT(\"@ID_ID@\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T2: Sanity Echo\n@SET(\"sanity\", \"Imported @raw.length@ items\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T3: Greeting\nReady to answer questions based on the wiki.",
+      "show": true,
+      "model": null
+    },
+    {
+      "system": "@Q_answer_rule@\n\nWiki Index:\n@wiki_index@\n\nWiki Content:\n@wiki@\n\nChat Log:\n@chat_log@",
+      "user": "",
+      "show": true,
+      "model": "gpt-4.1-nano",
+      "temperature": "0.1",
+      "max-tokens": "2000",
+      "markdown": true
+    },
+    {
+      "user": "/ T5: Continue Gate\n@RADIO(\"continue_chat\", \"Continue chat?\", \"Yes|No\")@",
+      "show": true,
+      "model": null
+    },
+    {
+      "user": "/ T6: Route Continue\n@JUMP(@MAP(\"@RADIO(continue_chat)@\", \"Yes|No\", \"@TN(1)@|@TN(3)@|@TN(3)@\")@)@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T7: UPJ Chat Log\n@UPJ(\"chat_log\", \"{\\\"user\\\": \\\"@TU4@\\\", \\\"bot\\\": \\\"@TR4@\\\"}\")@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T8: Loop Back\n@JUMP(@TN(-4)@)@",
+      "show": false,
+      "model": null
+    },
+    {
+      "user": "/ T9: Exit Message\nSession Ended. Thank you.",
+      "show": true,
+      "model": null
+    }
+  ]
+}
+```
+notable issues/Errors:
+- cannot update sources properly.
+  - function argument linting issue (keeps adding `\` and unnecessary double quotes in the arguments); seems not following `linter.md` and/or `protocol.md` due to excessive context length (explicitly stated in gemini response.)
+- code fix with additional prompt failed; possible due to out-of-context length that can be processed in web version.
+  - due to this problem, I was not able to test the model's coding performance (technical issue on gemini side)
+- response time: $\approx$ 1.5 - 2 min.
+
+
+
