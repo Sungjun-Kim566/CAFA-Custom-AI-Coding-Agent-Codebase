@@ -11,11 +11,85 @@ Its job is to turn a user request into two artifacts:
 - a **Blueprint** — the design of a CAFA agent, and
 - **CAFA Agent Code** — valid, executable CAFA agent JSON generated from the Blueprint.
 
-Per `fix-log/2026-06-10.md`, the current codebase is the **LLM-Wiki-based** implementation
-(instruction strings, framework knowledge, and code/syntax references separated into
-layers), with verification handled by dedicated workflow prompts rather than a separate
-MCP server. The broader *PageIndex + Wiki + Validator* architecture is documented in
-`../README.md`; this directory is where the Wiki + Validator half lives and runs.
+# Claude Code Installation
+## (Windows) Windows Native Installer (Recommended)
+This is recommended by Official Claude Code Document written by Anthropic.
+
+1. Install [git for Windows](https://git-scm.com/install/windows). 
+![git for windows image](./README_Screenshots/git_for_win.png)
+* you may click "enter" until you reach to the installation process for configuration. It does not affect the claude code usages. Change your git configuration if you wish so.
+* After the installation, you will be able to use `claude` command to start your claude code session on Powershell, CMD, and Git Bash.
+
+2. Install claude code using native installer <br><br>
+Press `Win` key, search `PowerShell`, and press Enter.<br><br>
+Copy & Paste this command below once you opened up `Powershell`:
+     ```Powershell
+     irm https://claude.ai/install.ps1 | iex
+     ```
+* *Note: Do not confuse with Windows CMD. The installing command and the environment of Powershell is different from CMD.*
+![claude code native installer UI](./README_Screenshots/claude_code_native_install.png)
+
+3. Add Claude to your Environment PATH<br>
+We need to add the installation script to start claude code in any folder and with any Command Line Interface (CLI; e.g. Powershell, CMD, Git Bash, terminal (for MacOS))
+     1. Press `Win + R`, type `sysdm.cpl` and hit enter.
+![win R](./README_Screenshots/win_r.png)
+     2. Go to `Advanced` tab and click Environment Variables
+![env_var_setup1](./README_Screenshots/env_var_setup1.png)
+     3. Click `Path` and click `Edit...`
+![env_var_setup2](./README_Screenshots/env_var_setup2.png)
+     4. Click `New` and write the following Path on the left arrow. Once you typed in your path, press `Enter` and click `OK`. The Path syntax is the following:
+     ```Powershell
+     C:\Users\Username\.local\bin
+     ```
+     *Note: if you don't know your `Username`, refer 3-2. Install claude code using native installer secion. the `Location` on the powershell image shows you your exact username. In this example, the Username is `Sungjun Kim`*<br>
+![env_var_setup3](./README_Screenshots/env_var_setup3.png)<br>
+     5. Click ok for all tab. The Environment Variable setup is complete.
+
+4. Create a folder or directory
+To test our friend claude code, create a folder for claude code to play around!
+For example, I'll create `dev` folder on `Desktop`. Make sure you are strict about where you create your folder! Does not really matter where you create one but it matters for claude code and us to initiate claude code on CLI!
+![mkdir1](./README_Screenshots/mkdir1.png)
+![mkdir2](./README_Screenshots/mkdir2.png)
+
+5. Find your folder on Powershell and start claude code
+By Default, you will be at `PS C:\Users\Username`
+![default_dir](./README_Screenshots/default_dir.png)<br>
+<br>
+If you created the folder on `Desktop`, here is the following command to go to your folder on Powershell:
+```Powershell
+cd .\Desktop\your_folder_name\
+```
+Now you are on the right folder, write the following command to start claude code:
+```Powershell
+claude
+```
+This will automatically prompt several choice of your UI and other settings. Just to use the claude code, you can just hit enter.
+
+![login](./README_Screenshots/login.png)
+At some point, you will be prompt to login with your Anthropic or claude account. If you are subscriber (Pro, Max, or Enterprise plan), go ahead with option 1: Use your anthropic account to log in and follow their instructions.
+
+If you are not a subscriber, you will have to go with option 2: log in via Anthropic API.
+
+### Optional: If you created your directory or folder at choice of yours
+If you created your folder in different location, here are some commands that can be useful to find your folder or directory:
+```
+cd PATH: go to the specified path
+ls: look at what's inside current location 
+```
+### Example codes
+Currently at `PS C:\Users\Sungjun Kim`
+```Powershell
+ls
+```
+![ls](./README_Screenshots/ls_command.png)
+
+```Powershell
+cd .\Desktop\dev\
+ls
+```
+![cd](./README_Screenshots/cd_command.png)
+*there is nothing in `dev` folder so `ls` command shows you nothing.*
+![nothing_in_dev](./README_Screenshots/empty_dir.png)
 
 ---
 
