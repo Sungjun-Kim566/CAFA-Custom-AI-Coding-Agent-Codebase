@@ -32,7 +32,7 @@ otherwise produce both.
 
 ## Workflow
 
-Follow this order, every time:
+Strictly follow this workflow every time:
 
 ```
 retrieve → design → verify → code → review/revise
@@ -40,7 +40,7 @@ retrieve → design → verify → code → review/revise
 
 | Stage | What happens | Driven by |
 |-------|--------------|-----------|
-| **retrieve** | Gather framework patterns, commands, and archetypes from the KB. | This file → `wiki/index.md` |
+| **retrieve** | Gather framework patterns, commands, and archetypes from the KB. | `AGENTS.md` → `wiki/index.md` |
 | **design** | Produce the Blueprint (goal, framework, commands, ontology, turn plan). | `prompts/coding-agent.md` |
 | **verify** | Validate the Blueprint against parser-critical rules before coding. | `prompts/validator.md` |
 | **code** | Write CAFA agent JSON that implements the verified Blueprint. | `prompts/coding-agent.md` |

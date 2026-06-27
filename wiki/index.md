@@ -24,7 +24,7 @@ file that answers the question. Do not guess CAFA syntax — ground it in these 
 ## Precedence
 
 `linter.md` and `protocol.md` are authoritative and **override any example**. If two
-examples conflict, treat the conflicting one as deprecated.
+examples conflict, prompt the user to choose which exmaple the Claude should prefer every time.
 
 ## Grounding rule
 

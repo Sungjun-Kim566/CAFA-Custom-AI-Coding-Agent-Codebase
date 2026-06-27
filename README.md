@@ -1,4 +1,4 @@
-# agent-config — CAFA Agent Foundry
+# CAFA-Claude Code Coding Agent
 
 The operational core of the **CAFA Custom AI Coding Agent**. This directory is the
 concrete, file-based realization of the **LLM Wiki** direction described in the
@@ -12,10 +12,11 @@ Its job is to turn a user request into two artifacts:
 - **CAFA Agent Code** — valid, executable CAFA agent JSON generated from the Blueprint.
 
 # Claude Code Installation
+- Prerequisite: Claude Account
 ## (Windows) Windows Native Installer (Recommended)
 This is recommended by Official Claude Code Document written by Anthropic.
 
-1. Install [git for Windows](https://git-scm.com/install/windows). 
+1. Install [git for Windows](https://git-scm.com/install/windows). Click the hyperlink at the end of the arrow.
 ![git for windows image](./README_Screenshots/git_for_win.png)
 * you may click "enter" until you reach to the installation process for configuration. It does not affect the claude code usages. Change your git configuration if you wish so.
 * After the installation, you will be able to use `claude` command to start your claude code session on Powershell, CMD, and Git Bash.
@@ -56,19 +57,123 @@ By Default, you will be at `PS C:\Users\Username`
 ![default_dir](./README_Screenshots/default_dir.png)<br>
 <br>
 If you created the folder on `Desktop`, here is the following command to go to your folder on Powershell:
+     ```Powershell
+     cd .\Desktop\your_folder_name\
+     ```
+Now you are on the right folder, write the following command to start claude code:<br>
+     ```
+     claude
+     ```<br>
+This will automatically prompt several choice of your UI and other settings. Just to use the claude code, you can just hit enter.
+
+#### Login (via Claude Account)
+![login](./README_Screenshots/login.png)<br>
+At some point, you will be prompt to login with your Anthropic or claude account. If you are a subscriber (Pro, Max, or Enterprise plan), go ahead with option 1: Use your Claude account to log in and follow their instructions.
+
+#### Login (via Anthropic Console account)
+If you are not a subscriber, you will have to go with option 2: log in via Anthropic API.
+
+1. type the following command to login via Anthropic API:
+     ```Powershell
+     /login
+     ```
+     ![api_login1](./README_Screenshots/api_login1.png)<br>
+
+2. Use your navigation keys to select "Anthropic Console account and hit Enter.
+![api_login2](./README_Screenshots/api_login2.png)
+
+3. You will be directed to the webpage that you can log into your Claude Account. Follow their instructions to continue logging in. 
+![api_login3](./README_Screenshots/api_login3.png)<br>
+*In case the webpage is not prompted:*<br>
+![api_page_not_popped](./README_Screenshots/api_page_not_prompted.png)<br>
+     - Sometimes you will need to copy and paste authentication code to your CLI to log in. Don't panick if you don't see what you have pasted on your CLI when you brought the auth code! It is completely normal and it is for security matter. After you copied and pasted the auth code, please hit enter and you should be all set!
+
+4. If this is your first time using Anthropic API or consumed all your token limits for your API key, you may have to add extra dollars on your account before you start using claude code with your API!
+![payment1](./README_Screenshots/api_credit_add.png)
+
+     *We recommend adding $5 for a starter. The token usage speed may heavily depend on your requests, the contexts, task complexity, etc.*<br>
+![processing](./README_Screenshots/payment%20processing.png)<br>
+
+5. Setup complete! you may go back to your claude code and enjoy coding with our pal, Claude Code!
+![completed](./README_Screenshots/api_setup_complete.png)
+
+# Claude Code Uninstallation
+## (Windows) Windows Native Installer
+1. Uninstall all the files created by the Native installer
+All files created by the Native installer is in `.claude` folder. <br>
+We have to delete the `.claude` folder to uninstall claude code.
+<br>
+Copy and paste the code below to the powershell:
 ```Powershell
-cd .\Desktop\your_folder_name\
+Remove-Item -Recurse -Force "$env:USERPROFILE\.claude"
 ```
-Now you are on the right folder, write the following command to start claude code:
+
+2. Delete `Claude` Environment Variable from the local
+
+     1. Press `Win + R`, type `sysdm.cpl` and hit enter.<br>
+![win R](./README_Screenshots/win_r.png)
+     2. Go to `Advanced` tab and click Environment Variables<br>
+![env_var_setup1](./README_Screenshots/env_var_setup1.png)
+     3. Click `Path` and click `Edit...`
+![env_var_setup2](./README_Screenshots/env_var_setup2.png)
+     4. Click the Environment Variable we created when we installed Claude Code, click Delete, and click OK. The Path or Environment Variable syntax is the following:
+          ```Powershell
+          C:\Users\Username\.local\bin
+          ```
+
+          ![env_var_setup3](./README_Screenshots/env_var_setup3.png)<br>
+     5. Click ok for all tab. The Environment Variable and Claude Code delete is complete.
+
+3. Varify if Claude Code is not in your local machine
+Close all Powershell tab and relaunch it. Copy and paste the following code on the reopened Powershell tab:
 ```Powershell
 claude
 ```
-This will automatically prompt several choice of your UI and other settings. Just to use the claude code, you can just hit enter.
+If you see `CommandNotFoundException` Error that looks like below, the Uninstallation is successful!:
+```Powershell
+claude : The term 'claude' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ claude
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (claude:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+```
 
-![login](./README_Screenshots/login.png)
-At some point, you will be prompt to login with your Anthropic or claude account. If you are subscriber (Pro, Max, or Enterprise plan), go ahead with option 1: Use your anthropic account to log in and follow their instructions.
+# CAFA Coding Agent Installation
+CAFA Coding Agent Configuration and Setup does not difer depending on the Operating System of your local machine. (e.g. MacOS, Windows, Linux, etc.)
 
-If you are not a subscriber, you will have to go with option 2: log in via Anthropic API.
+- Any text editor or Integrated Development Enviroment (IDE) would be recommended.
+     - VSCode (Recommended)
+     - Obsidian (Recommended)
+     - Vim
+     - Notepad++
+
+- Installing `Obsidian` is strongly recommended for Markdown files.
+
+1. Go to [CAFA Coding Agent Github Repository](https://github.com/Sungjun-Kim566/CAFA-Custom-AI-Coding-Agent-Codebase).
+     - If you use `git`, then you may proceed cloning the repository.
+     - otherwise, you can click `Code` on the right arrow and click `Download zip`.
+![github_setup](./README_Screenshots/github_download.png)
+2. You may unzip the file and move the following folders to your developing folder:
+```markdown
+agent-config/
+├─ AGENTS.md  # Agent Core: Identity · Workflow · Retrieval instructions
+│
+├─ prompts/               # Workflow instruction strings, one per stage/role
+│  ├─ coding-agent.md     #   design + code  (Blueprint, ontology, turns, command rules)
+│  ├─ validator.md        #   verify         (pre-code, parser-critical checklist)
+│  └─ reviewer.md         #   review/revise  (final JSON gate + output packaging)
+│
+├─ wiki/                  # Knowledge Base (retrieval targets) — grounding source
+│  ├─ index.md            #   KB routing table — retrieval ALWAYS starts here
+│  ├─ protocol.md         #   full command/syntax reference (authoritative)
+│  ├─ linter.md           #   schema, allowed keys, parser rules (authoritative)
+│  └─ examples/
+│     └─ code-bank.md     #   known-good agent archetypes to adapt
+│
+└─ User_import/ # User projects the agent inspects / edits; put your data in this folder 
+```
 
 ### Optional: If you created your directory or folder at choice of yours
 If you created your folder in different location, here are some commands that can be useful to find your folder or directory:
@@ -87,7 +192,7 @@ ls
 cd .\Desktop\dev\
 ls
 ```
-![cd](./README_Screenshots/cd_command.png)
+![cd](./README_Screenshots/cd_command.png)<br>
 *there is nothing in `dev` folder so `ls` command shows you nothing.*
 ![nothing_in_dev](./README_Screenshots/empty_dir.png)
 
