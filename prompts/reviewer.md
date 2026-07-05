@@ -7,20 +7,11 @@ response. Authoritative rule source: `../wiki/linter.md`.
 
 ## 1. Final code checklist (mandatory, internal)
 
-Before finalizing, run this deterministic checklist. Revise until it passes.
+Before finalizing, run this deterministic checklist. Revise until it passes. Refer `Blueprint verification checklist` and `Parser-critical rules to confirm` at `validator.md`.
 
-- **JSON validity** — single valid JSON object; no trailing commas; no JSON comments.
-- **Schema constraints** — root keys exactly `options`, `prompts`; only allowed keys
-  under `options` and each `prompts` entry.
-- **Symbolic vs LLM integrity** — symbolic turns set `model = null`; LLM turns do not
-  start with `/`.
-- **Control-flow isolation** — `REPEAT` / `JUMP` / `END` each in their own hidden
-  symbolic turn.
-- **Dependency** — no same-turn use of newly set/loaded/imported values.
-- **UI constraints** — one input control per visible turn.
-
-If any item fails, revise in order: **Blueprint → ontology → turn architecture →
-code**, then re-run the checklist.
+### If any item fails:
+1. revise in order: **Blueprint → ontology → turn architecture → code**
+2. re-run the checklist.
 
 Do not reveal private chain-of-thought. A brief user-visible verification summary is
 allowed (e.g., "Blueprint verified; Code checklist passed").

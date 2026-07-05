@@ -1,7 +1,7 @@
 # Coding Agent — Design & Code Generation
 
-Drives the **design** and **code** stages of the workflow. Produce the Blueprint
-first, verify it (`validator.md`), then generate the JSON.
+Purpose: Drives the **design** and **code** stages of the workflow. Produce the Blueprint
+first, verify it (`validator.md`, `reviewer.md`), then generate the JSON.
 
 ---
 
@@ -21,10 +21,11 @@ first, verify it internally, then use it to generate the code.
   `../wiki/protocol.md`.)
 - **Example codes** — identify the closest known-good archetype you are adapting; note
   what you reuse vs. modify. (Retrieve from `../wiki/examples/code-bank.md`.)
+  - Refer `CAFA Agent Code Bank Master Index` to route to the right index of the appropriate examples efficiently.
 - **Ontology model specifications**
-  - **AP spec** — stable parameters in `options.params` (rubrics, lists, personas,
+  - **Agent Parameters (`AP`) spec** — stable parameters in `options.params` (rubrics, lists, personas,
     routing tables, templates).
-  - **JP spec** (if needed) — structured intermediate objects that persist across turns.
+  - **JSON Parameters (`JP`) spec** (if needed) — structured intermediate objects that persist across turns.
   - **Link rules** — if lists must stay paired, specify `LINK` relationships.
 - **Turn architecture plan** — enumerate every turn in order; classify each as
   Symbolic or LLM; identify hidden control-flow turns and visible UI turns (one input
@@ -38,9 +39,9 @@ Proceed to coding only after the Blueprint passes verify.
 
 ## 2. Ontology rules (AP and JP)
 
-- **AP (Agent Parameters)** — stable knowledge, reusable rubrics, lists, personas,
+- **`AP`** — stable knowledge, reusable rubrics, lists, personas,
   routing keys, templates. Define in `options.params`.
-- **JP (JSON Parameters)** — only when you need structured intermediate artifacts that
+- **`JP`** — only when you need structured intermediate artifacts that
   persist across turns. Keep field names stable and referenced consistently.
 
 Rules:
@@ -77,8 +78,7 @@ when the output benefits from formatting.
   `@RADIO("name", "prompt", "options"[, "other_prompt"])@`
 
 **Argument quoting**
-- All command arguments enclosed in double quotes. Single quotes forbidden.
-- Numeric arguments must also be quoted strings.
+- All command arguments enclosed in double quotes, including numeric arguments. Single quotes forbidden.
 
 **Character escaping**
 - No double backslashes — single backslashes for standard JSON escapes (`\n`, `\"`).
@@ -101,9 +101,11 @@ when the output benefits from formatting.
 **Dedicated control-flow turns** — `REPEAT`, `JUMP`, `END` must be the only command/text
 in that turn's prompt. They must be symbolic, hidden (`"show": false`), and isolated.
 
-**One input control per visible UI turn** — only one of `RADIO`, `CHECKBOX`, `TEXT`,
-`TEXTAREA`, `SELECT` per visible (`"show": true`) symbolic turn. Displaying an input
-control pauses the agent and provides a submit button.
+**Input controls per visible UI turn** — default to one of `RADIO`, `CHECKBOX`, `TEXT`,
+`TEXTAREA`, `SELECT` per visible (`"show": true`) symbolic turn. Multiple controls in
+one visible turn are engine-supported (a single Submit gathers all; every
+non-`CHECKBOX` control must be filled before submission proceeds). Displaying input
+control(s) pauses the agent and provides a submit button.
 
 **Dependency next-turn rule** — values created/changed by `SET`, `LOAD`, `IMPORT`,
 `MAP`, etc. cannot be used in the same turn; they become available only in a

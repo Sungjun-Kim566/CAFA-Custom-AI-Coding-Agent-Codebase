@@ -7,8 +7,6 @@ CAFA Protocol: Technical Protocol Specification and Commands
 # Master Index for CAFA Protocol
 
 ## 1. Agent Architecture
-
-- CAFA Agent Code Linter and Rules
 - Agent Code Elements and Structure (ACES): Technical Specification and Logic
         
 - Turn Types (LLM vs. Symbolic): Hybrid Logic Execution Modes
@@ -16,608 +14,170 @@ CAFA Protocol: Technical Protocol Specification and Commands
     - **Keywords:** Turns LLM; Symbolic Flow Control; HybridAI; Execution Mode; Logic Separation
         
 
-## 2. Parameter Systems (AP, SP, JP)
+## 2. Parameter Systems (`AP`, `SP`, `JP`)
 
-- Agent Parameters (AP): Ontology Model and Local Variable Storage
+- Agent Parameters (`AP`): Ontology Model and Local Variable Storage
     
-    - **Keywords:** Parameters AP; Variable Assignment; Local Scope; Ontology Model; Data Storage
+    - **Keywords:** Parameters `AP`; Variable Assignment; Local Scope; Ontology Model; Data Storage
         
-- System Parameters (SP): Runtime Context Variables
+- System Parameters (`SP`): Runtime Context Variables
     
-    - **Keywords:** Parameters SP; Runtime Context; Turn Reference; User ID; System Scope
+    - **Keywords:** Parameters `SP`; Runtime Context; Turn Reference; User ID; System Scope
         
-- JSON Parameters (JP): Complex Object Data Handling
+- JSON Parameters (`JP`): Complex Object Data Handling
     
-    - **Keywords:** Parameters JP; Complex Data; JSON Objects; Arrays; Ontology Model Handling
+    - **Keywords:** Parameters `JP`; Complex Data; JSON Objects; Arrays; Ontology Model Handling
         
 
 ## 3. Logic & Flow Control Commands
 
-- **SET Command: Define and Update Agent Parameters**
+- **`SET`: Define and Update Agent Parameters**
     
-    - **Keywords:** SET; VariableAssignment; DataManipulation; StateManagement; APUpdate; Logic
-- TN Command: Relative Turn Numbering
+    - **Keywords:** `SET`; VariableAssignment; DataManipulation; StateManagement; APUpdate; Logic
+- `TN`: Relative Turn Numbering
         
-- **SETJ Command: Define and Update JSON Parameters**
+- **`SETJ`: Define and Update JSON Parameters**
     
-    - **Keywords:** SETJ; JSON; DataManipulation; ComplexData; ObjectCreation; JPSyntax; StateManagement
+    - **Keywords:** `SETJ`; JSON; DataManipulation; ComplexData; ObjectCreation; JPSyntax; StateManagement
         
-- **JSONVALS Command: Extract Values from JSON Object**
+- **`JSONVALS`: Extract Values from JSON Object**
     
-    - **Keywords:** JSONVALS; Extraction; DataParsing; ArrayConversion; ValuesOnly; JSONUtility
+    - **Keywords:** `JSONVALS`; Extraction; DataParsing; ArrayConversion; ValuesOnly; JSONUtility
         
-- **EVAL Command: Execute JavaScript Math and Logic**
+- **`EVAL`: Execute JavaScript Math and Logic**
     
-    - **Keywords:** EVAL; Math; Logic Ternary; Calculation; JavaScript; ConditionalLogic; Expression
-- **EVAL Command: Ternary Logic Gates**
+    - **Keywords:** `EVAL`; Math; Logic Ternary; Calculation; JavaScript; ConditionalLogic; Expression
+- **`EVAL`: Ternary Logic Gates**
             
-- **MAP Command: Route Logic via Conditional Lookup**
+- **`MAP`: Route Logic via Conditional Lookup**
     
-    - **Keywords:** MAP; ConditionalLogic; Routing Lookup; FlowControl; N+1Rule; DataMatching
+    - **Keywords:** `MAP`; ConditionalLogic; Routing Lookup; FlowControl; N+1Rule; DataMatching
         
-- **REPEAT Command: Iterate and Loop Through Turns**
+- **`REPEAT`: Iterate and Loop Through Turns**
     
-    - **Keywords:** REPEAT; Loop; Iteration FlowControl; MultiTurn; Workflow; Automation
+    - **Keywords:** `REPEAT`; Loop; Iteration FlowControl; MultiTurn; Workflow; Automation
         
-- **JUMP Command: Control Execution Flow and Branching**
+- **`JUMP`: Control Execution Flow and Branching**
     
-    - **Keywords:** JUMP; Branching; Routing FlowControl; NonLinear; LogicGate; Sequence
+    - **Keywords:** `JUMP`; Branching; Routing FlowControl; NonLinear; LogicGate; Sequence
         
-- **END Command: Terminate and Close Agent Session**
+- **`END`: Terminate and Close Agent Session**
     
-    - **Keywords:** END; Exit; Termination; SessionControl; Stop; FlowControl
+    - **Keywords:** `END`; Exit; Termination; SessionControl; Stop; FlowControl
         
-- **INDEX Command: Retrieving Knowledge from Tabular Ontology Models**
+- **`INDEX`: Retrieving Knowledge from Tabular Ontology Models**
     
-    - **Keywords:** INDEX; Search; Lookup Retrieval; 1BasedIndexing; Ontology; ListSearch
-- **COMPARE Command: Element-wise List Comparison**
-- EQUAL Command: Holistic List Equality and Pattern Matching
-- FILTER Command: Conditional List Creation
-- **D Command: Generate Distractors for Multiple Choice**
+    - **Keywords:** `INDEX`; Search; Lookup Retrieval; 1BasedIndexing; Ontology; ListSearch
+- **`COMPARE`: Element-wise List Comparison**
+- `EQUAL`: Holistic List Equality and Pattern Matching
+- `FILTER`: Conditional List Creation
+- **`D`: Generate Distractors for Multiple Choice**
     
-    - **Keywords:** D; Distractor; AIG Generation; ADAM; Assessment; ItemModeling; Choices
+    - **Keywords:** `D`; Distractor; AIG Generation; ADAM; Assessment; ItemModeling; Choices
         
 ## 4. Data Persistence & I/O Commands
 
-- **SAVE Command: Persist Data to System Log**
+- **`SAVE`: Persist Data to System Log**
     
-    - **Keywords:** SAVE; Persistence; Log Memory Write; Storage; DataID; State
+    - **Keywords:** `SAVE`; Persistence; Log Memory Write; Storage; DataID; State
         
-- **LOAD Command: Retrieve Data from Artifacts or Log**
+- **`LOAD`: Retrieve Data from Artifacts or Log**
     
-    - **Keywords:** LOAD; Retrieval; Memory Read; DID; DataAccess; StateRecovery
-- **EXPORT Command: Serialize and Persist Structured Ontology Models**
+    - **Keywords:** `LOAD`; Retrieval; Memory Read; DID; DataAccess; StateRecovery
+- **`EXPORT`: Serialize and Persist Structured Ontology Models**
     
-    - **Keywords:** EXPORT; DataOutput; FileGeneration; Download; JSONExport; CSVExport     
+    - **Keywords:** `EXPORT`; DataOutput; FileGeneration; Download; JSONExport; CSVExport     
     - 
-- **IMPORT Command: Load Content from External Modules**
+- **`IMPORT`: Load Content from External Modules**
     
     - **Keywords:** IMPORT; ContentLoading; ExternalSource; DataIngestion; Integration; ModuleLoading
       
-- **GS Command: Fetch Raw Data from Google Sheets**
+- **`GS`: Fetch Raw Data from Google Sheets**
     
-    - **Keywords:** GS; GoogleSheets; ExternalData; Fetch; RawData; Import; IO
+    - **Keywords:** `GS`; GoogleSheets; ExternalData; Fetch; RawData; Import; IO
         
-- **GSTABLE Command: Import Google Sheet as Data Table**
+- **`GSTABLE`: Import Google Sheet as Data Table**
     
-    - **Keywords:** GSTABLE; GoogleSheets; TableImport; Ontology; ExternalData; APCreation; Database
+    - **Keywords:** `GSTABLE`; GoogleSheets; TableImport; Ontology; ExternalData; APCreation; Database
         
-- **RUN Command: Execute Asynchronous Background Agent Process**
+- **`RUN`: Execute Asynchronous Background Agent Process**
     
-    - **Keywords:** RUN; MacroRun; Asynchronous Automation; BackgroundProcess; Orchestration; MultiAgent
+    - **Keywords:** `RUN`; MacroRun; Asynchronous Automation; BackgroundProcess; Orchestration; MultiAgent
                 
 ## 5. UI & Interactive Commands
 
-- **RADIO Command: Select Single Option via Radio Buttons**
+- **`RADIO`: Select Single Option via Radio Buttons**
     
-    - **Keywords:** RADIO; UI; Input Form; Selection; UserInteraction; MultipleChoice; Control
+    - **Keywords:** `RADIO`; UI; Input Form; Selection; UserInteraction; MultipleChoice; Control
         
-- **CHECKBOX Command: Select Multiple Options via Checkboxes**
+- **`CHECKBOX`: Select Multiple Options via Checkboxes**
     
-    - **Keywords:** CHECKBOX; UI; Input Form; MultiSelect; UserInteraction; ListSelection; Control
+    - **Keywords:** `CHECKBOX`; UI; Input Form; MultiSelect; UserInteraction; ListSelection; Control
         
-- **TEXT Command: Input Short Single Line Text**
+- **`TEXT`: Input Short Single Line Text**
     
-    - **Keywords:** TEXT; UI; Input Form; UserInteraction; SingleLine; Control
+    - **Keywords:** `TEXT`; UI; Input Form; UserInteraction; SingleLine; Control
         
-- **TEXTAREA Command: Input Long Multi Line Text Block**
+- **`TEXTAREA`: Input Long Multi Line Text Block**
     
-    - **Keywords:** TEXTAREA; UI; Input Form; UserInteraction; MultiLine; Control
+    - **Keywords:** `TEXTAREA`; UI; Input Form; UserInteraction; MultiLine; Control
         
-- **SELECT Command: Choose Option from Dropdown Menu**
+- **`SELECT`: Choose Option from Dropdown Menu**
     
-    - **Keywords:** SELECT; UI; Input Form; UserInteraction; Selection; Control
+    - **Keywords:** `SELECT`; UI; Input Form; UserInteraction; Selection; Control
         
-- **TTS Command: Output Audio via Text to Speech**
+- **`TTS`: Output Audio via Text to Speech**
     
-    - **Keywords:** TTS; Audio Output; Accessibility; SpeechSynthesis; Voice; UserInteraction
+    - **Keywords:** `TTS`; Audio Output; Accessibility; SpeechSynthesis; Voice; UserInteraction
         
 
 ## 6. Math & Visualization Commands
 
-- **MATH Command: Specialized Symbolic Mathematical Operations**
+- **`MATH`: Specialized Symbolic Mathematical Operations**
     
-    - **Keywords:** MATH; Calculation; Functions Trigonometry; Combinatorics; Rounding; Scientific
+    - **Keywords:** `MATH`; Calculation; Functions Trigonometry; Combinatorics; Rounding; Scientific
         
-- **FR Command: Format Fraction for Display Output and Arithmetic**
+- **`FR`: Format Fraction for Display Output and Arithmetic**
     
-    - **Keywords:** FR; Fraction; LaTeX Display; MathOutput; Formatting; Arithmetic
+    - **Keywords:** `FR`; Fraction; LaTeX Display; MathOutput; Formatting; Arithmetic
         
-- **FRADD Command: Symbolic Fraction Addition**
+- **`FRADD`: Symbolic Fraction Addition**
     
-    - **Keywords:** FRADD; Arithmetic; Calculation Fraction; MathOutput; SymbolicMath; Operation
-- **FRSUB Command: Symbolic Fraction Subtraction**
+    - **Keywords:** `FRADD`; Arithmetic; Calculation Fraction; MathOutput; SymbolicMath; Operation
+- **`FRSUB`: Symbolic Fraction Subtraction**
         
-- **FRMULT Command: Symbolic Fraction Multiplication**
+- **`FRMULT`: Symbolic Fraction Multiplication**
     
-    - **Keywords:** FRMULT; Arithmetic; Calculation Fraction; MathOutput; SymbolicMath; Operation
-- **FRDIV Command: Symbolic Fraction Division**
-- **FRREC Command: Symbolic Fraction Reciprocal**
-- **FRVAL Command: Convert Symbolic Fraction to Decimal Value**
-- **SIMPLIFY Command: Reduce Fractions to Lowest Terms**
+    - **Keywords:** `FRMULT`; Arithmetic; Calculation Fraction; MathOutput; SymbolicMath; Operation
+- **`FRDIV`: Symbolic Fraction Division**
+- **`FRREC`: Symbolic Fraction Reciprocal**
+- **`FRVAL`: Convert Symbolic Fraction to Decimal Value**
+- **`SIMPLIFY`: Reduce Fractions to Lowest Terms**
         
-- **POLY Command: Format and Display Polynomials**
+- **`POLY`: Format and Display Polynomials**
     
-    - **Keywords:** POLY; Polynomial; LaTeX Display; Algebra; MathOutput; Formatting; Expression
+    - **Keywords:** `POLY`; Polynomial; LaTeX Display; Algebra; MathOutput; Formatting; Expression
         
-- **POLYDISP Command: Display Polynomial in Math Mode**
+- **`POLYDISP`: Display Polynomial in Math Mode**
     
-    - **Keywords:** POLYDISP; Polynomial; LaTeX Display; Visualization; MathOutput; Formatting; Output
+    - **Keywords:** `POLYDISP`; Polynomial; LaTeX Display; Visualization; MathOutput; Formatting; Output
         
-- **POLYEVAL Command: Calculate Numerical Value of Polynomial**
+- **`POLYEVAL`: Calculate Numerical Value of Polynomial**
     
-    - **Keywords:** POLYEVAL; Polynomial; Evaluation Calculation; Math; Numerical; Substitution; Function
+    - **Keywords:** `POLYEVAL`; Polynomial; Evaluation Calculation; Math; Numerical; Substitution; Function
         
-- **POLYDIFF Command: Symbolic Polynomial Differentiation**
+- **`POLYDIFF`: Symbolic Polynomial Differentiation**
     
-    - **Keywords:** POLYDIFF; Calculus; Differentiation; SymbolicMath; MathOutput; Algebra; Derivative
+    - **Keywords:** `POLYDIFF`; Calculus; Differentiation; SymbolicMath; MathOutput; Algebra; Derivative
         
-- **POLYINT Command: Compute Symbolic Integral of Polynomial**
+- **`POLYINT`: Compute Symbolic Integral of Polynomial**
     
-    - **Keywords:** POLYINT; Calculus; Integration; SymbolicMath; MathOutput; Algebra; Integral
+    - **Keywords:** `POLYINT`; Calculus; Integration; SymbolicMath; MathOutput; Algebra; Integral
         
-- **MERMAID Command: Render Flowcharts and Diagrams Code**
+- **`MERMAID`: Render Flowcharts and Diagrams Code**
     
-    - **Keywords:** MERMAID; Visualization; Flowchart Diagrams; ProcessMapping; CodeToImage; Display
+    - **Keywords:** `MERMAID`; Visualization; Flowchart Diagrams; ProcessMapping; CodeToImage; Display
         
-
-# CAFA Agent Code Linter and Rules
-
-20251023
-## 1. Introduction
-
-This document serves as a comprehensive guide and checklist for the syntax rules, best practices, and potential pitfalls when developing CAFA (Collective AI on the Foundation AI) agents. Adhering to these rules is essential for creating valid, functional, reliable, and maintainable agents on the CAFA platform. Use this guide for linting (analyzing code for potential errors), code reviews, and ensuring compliance with the CAFA Protocol.
-
-## 2. General JSON Structure & Syntax
-
-The foundation of every CAFA agent is a single, valid JSON object.
-
-- Rule 2.1 (Valid JSON): The entire agent code must strictly adhere to JSON formatting rules.
-	-  Check: Validate the entire code block using a JSON validator.
-- Rule 2.2 (Root Keys): The root object must contain exactly two keys: "options" (a JSON object) and "prompts" (a JSON array).
-	-  Check: Verify the presence and types of "options" and "prompts" at the root level.    
-
-- Rule 2.3 (Double Quotes): All JSON keys and string values must be enclosed in double quotes ("). Single quotes (') are forbidden.
-    - Check: Scan for single quotes used for keys or string values.
-    
-- Rule 2.4 (No Trailing Commas): Trailing commas after the last element in an object or array are not allowed.
-    - Check: Detect trailing commas.
-    
-- Rule 2.5 (No JSON Comments): Standard JSON does not support comments (//, /* */). Agent code must not contain JSON comments.
-    - Exception: Use Symbolic Turn commenting (/ Comment\n) for in-code notes (See Section 5.3). Use the "desc" field in parameters for documentation.
-    - Check: Detect JSON comment syntax.
-    
-- Rule 2.6 (Character Escaping): Avoid unnecessary or incorrect character escaping.
-    - Backslashes: Never use a double backslash (\\). For literal newlines within strings (primarily in Symbolic Turn comments or specific string formatting), use a single escaped newline (\n). Double quotes within string values must be escaped (\").
-    - Square Brackets: Never use escaped square brackets (\[ or \]). Use standard, unescaped brackets ([ and ]) for all parameter access and list slicing (e.g., @AP[1:3]@).
-    - Check: Detect \\, \[, \]. Ensure " within strings are escaped as \".
-    
-## 3. Agent Configuration: The options Object
-
-This object contains agent metadata and pre-defined Agent Parameters (APs).
-
-- Rule 3.1 (Metadata Keys): Must include standard string keys: "title", "brief", "name", "description", and "greeting".
-    - Info: The "title" field can accept basic HTML tags for formatting.
-    -  Check: Verify the presence and string type of these keys.
-    
-- Rule 3.2 (params Object): This nested object is the designated location for pre-defining Agent Parameters (APs) – the agent's static knowledge base or ontology model.
-    - Best Practice: Store all static data (quiz questions, personas, rubrics, fixed lists, initial state variables) here. This separates content from logic, improving maintainability and modularity.
-    - See Section 7 for detailed AP definition rules within params.
-    
-
-## 4. Workflow Definition: The prompts Array
-
-This array defines the agent's step-by-step workflow. Each element must be a valid JSON object representing a single turn.
-
-- Rule 4.1 (Turn Object Structure): Each turn object requires specific properties based on its type (See Section 5).
-    
-- Rule 4.2 (Relative Turn Numbering - TN): Always use the TN() command for references between turns (e.g., @TR@TN(-1)@@, @JUMP(@TN(2)@)@) instead of hardcoded absolute numbers (e.g., @TR1@, @JUMP(3)@).
-    
-
-- Benefit: Makes agent logic robust against adding/removing turns during development.
-    
-- Check: Detect hardcoded turn references like @TR1@, @TU2@ and suggest replacing them with TN() equivalents.
-    
-
-- Rule 4.3 (Hiding Turns): Set "show": false to execute a turn's logic (setup, calculations, data storage/retrieval, routing) without displaying its output to the user.
-    
-
-- Best Practice: All turns containing only control flow commands (REPEAT, JUMP, END) or non-user-facing data manipulation (SET, LOAD, IMPORT, SAVE, EXPORT) should have "show": false.
-    
-- Check: Verify show: false on turns with only control/data commands.
-    
-
-- Rule 4.4 (Final Output Formatting): For the final user-facing turn displaying results or a summary, it is recommended to set "markdown": true.
-    
-
-- Best Practice Check: Suggest adding "markdown": true to the last visible turn if it's likely to contain formatted text (headings, lists, bolding).
-    
-
-## 5. Turn Specifications (LLM vs. Symbolic)
-
-Every turn is processed as either an LLM Turn or a Symbolic Turn based solely on the content of its "user" or "system" prompt string.
-
-- Rule 5.1 (Symbolic Turn Trigger): A turn becomes Symbolic if its "user" or "system" prompt string starts with:
-    
-
-- A forward slash (/)
-    
-- OR a control flow command (@REPEAT()@, @JUMP()@, @END@).
-    
-- Processing: Bypasses the LLM. Commands are executed directly by the CAFA system.
-    
-- Check: Identify turns starting with / or control commands as Symbolic.
-    
-
-- Rule 5.2 (LLM Turn  Trigger): A turn is processed as an LLM Turn (default behavior) if it does not meet the Symbolic trigger criteria.
-    
-
-- Crucial Rule: An LLM turn's "user" or "system" prompt must not start with /. This will force it into Symbolic mode, skipping the LLM entirely.
-    
-- Processing: Sends "system" and "user" prompts (after parameter substitution) to the specified language model.
-    
-- Check: Flag LLM turns where "user" or "system" starts with /.
-    
-
-- Rule 5.3 (Symbolic Turn Commenting): Developer comments are allowed only within Symbolic Turns.
-    
-
-- Syntax: Any text following a / on the same line is ignored until the next line break (\n).
-    
-- Limit: Only one comment line (starting with /) is permitted per Symbolic turn prompt ("user" or "system"). Multiple lines starting with / are not supported for commenting.
-    
-- Example (Correct): "user": "/ This comment is ignored.\nThis content is processed."
-    
-- Example (Incorrect): "user": "/ First comment line.\n/ Second comment line.\nThis content is processed."
-    
-- Usage: Use / \n (slash, space, newline) if you need a symbolic turn to display content but have no comment.
-    
-- Check: Ensure comment syntax is used correctly only in Symbolic turns and that only one line starts with /.
-    
-
-- Rule 5.4 (User Input in LLM Turn): Setting "user": "" in an LLM turn pauses the agent to await user input.
-    
-
-- Info: This is the standard way to make an LLM turn interactive.
-    
-
-### 5.5 Turn Property Requirements Table
-
-Adhere to these property requirements for clarity and performance.
-
-|   |   |   |   |
-|---|---|---|---|
-|Property|LLM Turn 🤖|Symbolic Turn ⚙️|Notes|
-|"system"|Required|Required|String. Can be "". Can contain / or command to trigger Symbolic.|
-|"user"|Required|Required|String. Can be "". "" in LLM Turn awaits user input.|
-|"show"|Required|Required|Boolean (true or false).|
-|"model"|Required|Omit|String (e.g., "gpt-4.1-nano"). Unnecessary, omit for Symbolic.|
-|"temperature"|Optional|Omit|String/Number (e.g., "0.1"). Defaults to 0.1. Unnecessary.|
-|"max-tokens"|Optional|Omit|String/Number (e.g., "2000"). Defaults to 2000. Unnecessary.|
-|"output-values"|Optional|Omit|String (List `A|
-|"markdown"|Optional|Optional|Boolean (true or false). Recommended true for final output.|
-
-- Check (Symbolic): Flag if model, temperature, max-tokens, or output-values keys are present. They should be omitted.
-    
-- Check (LLM): Ensure model key is present and has a non-null string value. Ensure system, user, show are present.
-    
-
-## 6. Command Syntax & Rules
-
-CAFA commands (@COMMAND(...)@) orchestrate logic and follow strict syntax.
-
-### 6.1 General Command Rules
-
-- Rule 6.1.1 (Double Quotes Only for Args): All arguments for all CAFA commands must be enclosed in double quotes ("). Single quotes (') are forbidden and will cause errors. Numbers used as arguments must also be quoted strings (e.g., @REPEAT("2", "5", "3")@).
-    
-
-- Check: Validate syntax for all command arguments. Flag any using single quotes or unquoted numbers.
-    
-
-- Rule 6.1.2 (Dedicated Control Flow Turns): Commands that control the execution path (@REPEAT()@, @JUMP()@, @END@) must reside in their own dedicated, hidden ("show": false) symbolic turn, and be the only command or text in that turn's prompt string.
-    
-
-- Check: Ensure these commands appear alone in a Symbolic turn with "show": false.
-    
-
-- Rule 6.1.3 (Command Formatting Reference): When referencing commands in documentation or explanations, use the full syntax (@SET()@) or the uppercase name (SET). Never use only the leading @ (@SET).
-    
-
-- Info: Style guide for documentation.
-    
-
-### 6.2 Specific Command Rules & Behavior
-
-- SET
-    
-
-- Atomicity / Dependency Rule: Commands within a single turn are processed simultaneously (atomically). Therefore, a parameter created or modified using SET in a turn is not guaranteed to be available to other commands within that same turn. It is only reliably available in subsequent turns. Do not SET ParamA and use ParamA (e.g., in EVAL, MAP, another SET, or as part of a prompt string being processed by the system or LLM) within the same turn.
-    
-- Check: Detect if a parameter name assigned via SET is referenced by another command within the same turn's prompt string.
-    
-
-- MAP
-    
-
-- return_list must have exactly one more item (N+1) than value_list (N). The last item is the default. End return_list with a pipe character for a null/empty default.
-    
-
-- EVAL
-    
-
-- Executes JavaScript math/logic expressions. Can access standard Math object methods (e.g., Math.sqrt(), Math.random(), Math.PI). Handles basic arithmetic (+, -, *, /, %, **) and comparisons (>, >=, ==, !=, <=, <). Respects the Atomicity/Dependency Rule for parameters used inside.
-    
-
-- INDEX
-    
-
-- Returns 1-based index; returns 0 if not found. Case-sensitive search.
-    
-
-- REPEAT
-    
-
-- Must be in its own dedicated hidden turn. turn_start argument must refer to a turn after the current turn. All arguments (start, end, number) must be quoted strings. Use TN() for robustness.
-    
-- Loop-Result Accumulation: Results of turns inside the loop accumulate across iterations into pipe-delimited SPs. To read a single iteration's value, index it with `[@R_i@]` (e.g. `@TR@TN(-1)@[@R_i@]@`). See Section 8.1.
-    
-
-- JUMP
-    
-
-- Must be in its own dedicated hidden turn. Target turn argument must be a quoted string. Use TN() for robustness.
-    
-
-- END
-    
-
-- Must be in its own dedicated hidden turn. Immediately terminates the agent session.
-    
-
-- Input Controls (RADIO, CHECKBOX, TEXT, TEXTAREA, SELECT)
-    
-
-- Only one input control command per visible ("show": true) turn. Displaying an input control pauses the agent and automatically generates a "Submit" button.
-    
-
-- RADIO (Extended)
-    
-
-- Optional 4th argument (other_prompt) adds a text box (for SCREAM framework). Retrieval via @RADIO("name")@ returns a pipe-separated string: "SelectedOption|WrittenText". Without the 4th arg, it returns only the selected option.
-    
-
-- SAVE
-    
-
-- Agent must be saved on platform first. Default action for ID="LOG" is append. To overwrite the LOG, the third argument must be explicitly "false".
-    
-
-- LOAD
-    
-
-- Separation Rule / Dependency Rule: LOAD data in one turn, then use/process it in a subsequent turn. The loaded data is not available within the same turn it is loaded.
-    
-- Check: Detect usage of data loaded via LOAD within the same turn.
-    
-
-- EXPORT
-    
-
-- Bundles specified APs into an Ontology Model package. Default action for ID="LOG" is overwrite (replaces entire log). Agent must be saved first.
-    
-
-- IMPORT
-    
-
-- Loads Ontology Model package and auto-SETs contained APs. Separation Rule / Dependency Rule: IMPORT in one turn, use the imported parameters in subsequent turns. Parameters are not available within the same turn IMPORT is called.
-    
-- Check: Detect usage of parameters populated via IMPORT within the same turn.
-    
-
-- GS
-    
-
-- Fetches raw data from Google Sheet as a double-delimited string: Row1Cell1&Row1Cell2 pipe-separated by Row2Cell1&Row2Cell2. Sheet requires "Anyone with link can view" permission.
-    
-
-- GSTABLE
-    
-
-- Imports Google Sheet table, auto-creates APs from headers (default behavior) or P1, P2... (if "NO" option is used as 3rd arg). Sheet requires "Anyone with link can view" permission. Respects the Atomicity/Dependency rule (use imported parameters in subsequent turns).
-    
-
-- TTS
-    
-
-- Text-to-Speech. Symbolic command. Generates a button if caption argument is non-empty ("Click Me"). Plays audio automatically if caption is "". Only one interactive command (@TTS with button, @RADIO, etc.) per visible turn.
-    
-
-- output-values (Turn Property, not a command)
-    
-
-- Hard constraint on LLM output format (e.g., a pipe-separated list like "Low|Medium|High" or a JSON schema like "{\"key\":\"ValueA|ValueB\"}"). Critical for reliable downstream symbolic logic (MAP, EVAL, INDEX) that processes LLM output.
-    
-
-## 7. Agent Parameter (AP) Specification
-
-Rules for defining and accessing Agent Parameters (APs).
-
-### 7.1 Definition (in options.params or via SET)
-
-- Structure (options.params): Each AP is a key-value pair. Key = parameter name (string). Value = object with required "org" (string) and "cond" (string) keys, optional "desc" (string).
-    
-
-- "org": String containing the value(s). Use pipe (|) for multiple values/list items. Avoid | and @ within actual data values themselves.
-    
-- "cond": Required for standard APs (holding simple strings or pipe-separated lists). Must be one of: "SELF", "SHUFFLE", "SORT", "DSORT", or "LINK(TargetParameter)". Controls ordering/linking.
-    
-
-- "SELF": Preserves original order.
-    
-- "SHUFFLE": Randomizes order per session.
-    
-- "SORT": Sorts ascending (A-Z, 0-9).
-    
-- "DSORT": Sorts descending (Z-A, 9-0).
-    
-- "LINK(TargetParameter)": Mirrors the order of TargetParameter. Crucial for parallel lists/Ontology Models. TargetParameter cannot be "SELF" if dynamic ordering is needed via the link.
-    
-
-- "desc": Optional, but highly recommended. String for developer documentation explaining the parameter's purpose.
-    
-
-- Rule 7.1.1 (Description Best Practice): Always include a meaningful "desc" key for parameters defined in options.params. This significantly improves code readability, maintainability, and semantic expressiveness, making the agent's ontology model easier to understand.
-    
-- Check: Verify that standard APs in options.params have a "desc" key with a non-empty string value.
-    
-
-- Check: Verify that standard APs in options.params have a valid "cond" value.
-    
-
-- Definition (SET): @SET("ParamName", "Value1|Value2"[, "cond"])@. Creates or modifies AP during execution.
-    
-
-- Default cond: If the optional "cond" argument is omitted when using the SET command, it defaults to "SELF".
-    
-- Respect SET Atomicity/Dependency Rule (Rule 6.2).
-    
-
-### 7.2 Accessing APs
-
-- @ParamName[index]@: Retrieves the item at the specified 1-based index.
-    
-- @ParamName[N]@: Retrieves the total number of items in the list.
-    
-- @ParamName[.]@: Retrieves a single randomly chosen item from the list.
-    
-- @ParamName[start:end]@: Retrieves a sublist (slice) from start index to end index (inclusive).
-    
-- @ParamName@: Retrieves the entire pipe-separated string (useful for MAP's value_list or INDEX's list).
-    
-- Indirection: Use double-at syntax (@@ParamNameContainingAnotherParamName@[index]@) to dynamically access a parameter whose name is stored within another parameter.
-    
-
-## 8. System Parameter (SP) Specification
-
-Provide contextual information about the agent's state. Always accessed using @SP_NAME@.
-
-- Common SPs:
-    
-
-- @TUt[index]@: User prompt content from turn t (optional index for loop results). Use TN() for t.
-    
-- @TRt[index]@: Result (LLM response or Symbolic output) from turn t. Use TN() for t.
-    
-- @TSt[index]@: System prompt content from turn t. Use TN() for t.
-    
-- @R_i@: Current iteration number (1-based) within a REPEAT() loop.
-    
-- @R_s@, @R_e@, @R_n@: Start turn, end turn, total repetitions for the current REPEAT() loop.
-    
-- @UID@: Unique User Identifier for the current session user.
-    
-- @DATE@, @TIME@: Current date and time (at the moment the turn executes).
-    
-
-### 8.1 Loop-Result Indexing (TR / TU inside REPEAT)
-
-When a turn runs inside a REPEAT() loop, its results are **accumulated**, not overwritten. Each iteration appends its output to a single pipe-delimited System Parameter. Therefore, after the loop has run k times, `@TR@TN(-1)@@` (or `@TU...@`) returns the entire list so far — e.g. `verdict1|verdict2|...|verdictk` — not just the latest value.
-
-- **Symptom:** Feeding an un-indexed loop result into MAP, INDEX, EVAL, or SET on iteration ≥ 2 silently fails. MAP cannot match the multi-element string against a single-value `value_list`, so it returns the default; a SET stores the appended list instead of the current item; downstream scores/branches are corrupted.
-
-- **Fix — index by the iteration number:** Use `@TRt[@R_i@]@` (e.g. `@TR@TN(-1)@[@R_i@]@`) to retrieve only the **current** iteration's result before any symbolic processing. The same applies to `@TUt[@R_i@]@` and `@TSt[@R_i@]@`.
-
-- **Rule 8.1 (Index loop-internal results):** Any reference to `TR`/`TU`/`TS` of a turn that executes inside a REPEAT loop must be indexed with `[@R_i@]` (or the specific iteration index) when its value is consumed by another command (MAP, INDEX, EVAL, SET) or stored. Un-indexed loop results are valid only when you intentionally want the full accumulated list.
-    - Check: Flag `@TR@TN(...)@@` / `@TU@TN(...)@@` used inside a loop body and fed to MAP/INDEX/EVAL/SET without a trailing `[@R_i@]` index.
-    - Example (Incorrect): `@SET("V_@R_i@", "@TR@TN(-1)@@")@` — stores the growing list.
-    - Example (Correct): `@SET("V_@R_i@", "@TR@TN(-1)@[@R_i@]@")@` — stores only this iteration's result.
-    
-
-## 9. Data Integrity & State Management Best Practices
-
-Essential for stateful (memory-based) and multi-user agents.
-
-- Rule 9.1 (Sanitize User Input): User input intended for storage (especially LOG) or use in list-based commands must be validated or sanitized to remove reserved CAFA characters (|, @) to prevent data corruption and command injection/parsing errors.
-    
-
-- Best Practice Check: Recommend adding validation/sanitation steps before saving user-provided free text.
-    
-
-- Rule 9.2 (Separation of Concerns for Data Ops): Strictly separate data operations into distinct, sequential turns following the Atomicity/Dependency rule:
-    
-
-1. LOAD / IMPORT (Turn N)
-    
-2. MODIFY (Operate on in-memory parameters using SET, EVAL, INDEX etc.) (Turn N+1)
-    
-3. SAVE / EXPORT (Turn N+2)
-    
-
-- Check: Detect violations of this Load → Modify → Save pattern across separate turns. Ensure data loaded/imported in Turn N is not used until Turn N+1.
-    
-
-- Rule 9.3 (Concurrency Golden Rule for LOG Updates): When updating data loaded from the LOG in a potentially multi-user context:
-    
-
-1. Get user input needed for the update (Turn N).
-    
-2. MODIFY Step (Hidden Turn N+1):
-    
-
-- Re-LOAD or IMPORT the LOG data into a temporary parameter (e.g., TEMP_LOG_DATA).
-    
-- Re-INDEX to find the specific user/record's current position within TEMP_LOG_DATA.
-    
-- SET the changes within the TEMP_LOG_DATA parameter using the calculated index.
-    
-
-3. SAVE Step (Hidden Turn N+2):
-    
-
-- SAVE or EXPORT the entire modified TEMP_LOG_DATA parameter back to the LOG, overwriting the previous state ("false" for SAVE, default for EXPORT).
-    
-
-- Check: Verify this Re-Fetch → Re-Index → Modify-in-Memory → Save-Modified pattern for LOG updates, ensuring separation of LOAD/IMPORT, modification, and SAVE/EXPORT across turns.
-    
-
-- Rule 9.4 (Initialize Stateful Parameters): Pre-define parameters that will be loaded via IMPORT (especially from "LOG") with default empty values (e.g., "org": "") in options.params.
-    
-
-- Benefit: Prevents errors on the very first run when the LOG is empty and the parameters don't exist yet.
-    
-- Check: Ensure parameters used in @IMPORT("LOG")@ are also defined in options.params.
-    
-
-- Rule 9.5 (LOG is Not Permanent Storage): Treat Agent Data (DIDs) and Agent Log (LOG) as transitional or semi-persistent storage. Do not rely on them for critical, long-term data archival.
-    
-
-- Best Practice: Recommend backing up or exporting critical LOG data to external storage (e.g., Google Sheets via IMPORTDATA) for long-term needs and robust analytics.
-    
-
-## 10. Conclusion
-
-Rigorous adherence to these rules and best practices is crucial for developing functional, reliable, scalable, and maintainable CAFA agents. Consistent validation against these guidelines during the development process will minimize errors, improve debugging efficiency, and lead to more successful agent deployments.
-
 ---
 # Agent Code Elements and Structure (ACES): Technical Specification and Logic
 
@@ -629,7 +189,7 @@ Rigorous adherence to these rules and best practices is crucial for developing f
     
 - RAG Keywords: JSON, schema, options, prompts, metadata, agent-structure, blueprint, workflow-engine, state-machine, initialization, global-config, turn-array, parameters, serialization, execution-context, ontology-model.
     
-- Related Commands: SET, AP, SP, LLM-Turn, Symbolic-Turn, TN().
+- Related Commands: `SET`, `AP`, `SP`, LLM-Turn, Symbolic-Turn, `TN()`.
     
 
 ## 2. Architectural Logic & Rationale (The "Why")
@@ -644,7 +204,7 @@ Rigorous adherence to these rules and best practices is crucial for developing f
 ## 3. Formal Syntax & Parameter Schema (The "What")
 
 ### Golden Template (Root Structure)
-
+```json
 {  
   "options": {  
     "title": "Agent Title",  
@@ -663,7 +223,7 @@ Rigorous adherence to these rules and best practices is crucial for developing f
     }  
   ]  
 }  
-  
+```
   
 
 ### Argument Table: Root Keys
@@ -1259,7 +819,7 @@ JSONVALS acts as the "Column Selector" or "Map function." It is the critical bri
 
 ---
 
-# SET Command: Define and Update Agent Parameters
+# `SET`: Define and Update Agent Parameters
 
 ## 1. Metadata & Retrieval Keys
 
@@ -1355,12 +915,12 @@ CAFA parameters follow a strict Turn-Boundary Lifecycle. Commands within a singl
 
 ## 5. Reference
 
-- Choi, J. (2025). SET Command: Define and Update Agent Parameters. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `SET`: Define and Update Agent Parameters. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 
 ---
-# TN Command: Relative Turn Numbering
+# `TN`: Relative Turn Numbering
 
 ## 1. Metadata & Retrieval Keys
 
@@ -1463,11 +1023,11 @@ The use of TN is mandatory for building complex, reusable logic blocks:
 
 ## 6. Reference
 
-- Choi, J. (2025). TN Command: Relative Turn Numbering. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `TN`: Relative Turn Numbering. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# SETJ Command: Define and Update JSON Parameters
+# `SETJ`: Define and Update JSON Parameters
 
 ## 1. Metadata & Retrieval Keys
 
@@ -1492,7 +1052,7 @@ The use of TN is mandatory for building complex, reusable logic blocks:
 ## 3. Formal Syntax & Parameter Schema (The "What")
 
 - Golden Template: The Quote-Free Exception  
-    Unlike virtually every other CAFA command, SETJ arguments MUST NOT be enclosed in their own pair of double quotes. This is a mandatory exception to Rule 6.1.1.
+    Unlike virtually every other CAFA command, SETJ arguments MUST NOT be enclosed in their own pair of double quotes. This is a mandatory exception to the universal argument-quoting rule (Linter & Rules, Rule 6.1.1).
     
 
 Template A: Object Root
@@ -1588,11 +1148,11 @@ A sophisticated CAFA architectural pattern involves creating a "Data Pipeline" u
 
 ## 6. Reference
 
-- Choi, J. (2025). SETJ Command: Define and Update JSON Parameters. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `SETJ`: Define and Update JSON Parameters. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# JSONVALS Command: Extract and Flatten JSON Data
+# `JSONVALS`: Extract and Flatten JSON Data
 
 ## 1. Metadata & Retrieval Keys
 
@@ -1725,12 +1285,12 @@ In the context of Evidence-Centered Design (ECD), JSONVALS is used to reconstruc
 
 ## 7. Reference
 
-- Choi, J. (2025). JSONVALS Command: Extract and Flatten JSON Data. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `JSONVALS`: Extract and Flatten JSON Data. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 **
 
-# EVAL Command: Execute JavaScript Math and Logic
+# `EVAL`: Execute JavaScript Math and Logic
 
 ## 1. Metadata & Retrieval Keys
 
@@ -1809,7 +1369,7 @@ The EVAL command follows a precise order of operations to ensure data integrity 
 4. Result Stringification: The final JS output (e.g., a numeric 42 or a boolean true) is cast back into a CAFA-standard string. This is crucial because CAFA parameters are stored as strings to ensure cross-compatibility between AP, SP, and JP systems.
     
 
-### 4.2 The Atomicity Constraint & Synchronization (Rule 6.2)
+### 4.2 The Atomicity Constraint & Synchronization (Linter & Rules, Rule 6.2)
 
 EVAL is subject to the Turn-Boundary Dependency Rule. Because turns are processed atomically, an EVAL command cannot access a parameter that was updated in the same turn.
 
@@ -1846,11 +1406,11 @@ EVAL is subject to the Turn-Boundary Dependency Rule. Because turns are processe
 
 ## 5. Reference
 
-- Choi, J. (2025). EVAL Command: Execute JavaScript Math and Logic. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `EVAL`: Execute JavaScript Math and Logic. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# EVAL Command: Ternary Logic Gates
+# `EVAL`: Ternary Logic Gates
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2016,7 +1576,7 @@ Returning different "Action Lists" based on performance. This allows Turn $N+1$ 
 
 ---
 
-# MAP Command: Route Logic via Conditional Lookup
+# `MAP`: Route Logic via Conditional Lookup
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2175,7 +1735,7 @@ This transparency is the foundation of Algorithmic Accountability in AI. MAP ens
     
 
 ---
-# REPEAT Command: Iterate and Loop Through Turns
+# `REPEAT`: Iterate and Loop Through Turns
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2261,6 +1821,19 @@ Upon the termination of a loop, the engine performs a high-speed heuristic analy
 2. The Synthesis (Formatting): Upon the final iteration's exit, the engine applies the detected delimiter (pipe or comma/bracket).
     
 3. The Manifestation (Commit): The final aggregated string is committed to the TR of the turn that called @REPEAT@. It is now accessible via @TR@TN(-t)@.
+    
+
+### 4.3 Loop-Internal Result Access: Index with @R_i@
+
+Results of turns executing inside the loop block also accumulate during execution. Each iteration appends its output to a single pipe-delimited System Parameter, so after $k$ iterations a loop-internal reference such as @TR@TN(-1)@@ (likewise @TU...@ / @TS...@) returns the entire accumulated list (Result1|Result2|...|Resultk), not the current iteration's value.
+
+- Symptom: Feeding an un-indexed loop result into MAP, INDEX, EVAL, or SET silently fails from iteration $2$ onward — MAP cannot match the multi-element string against a single-value value_list and returns its default; SET stores the growing list instead of the current item.
+    
+- Rule (Index loop-internal results): Any reference to TR/TU/TS of a turn executing inside a REPEAT loop must be indexed by the iteration number — @TR@TN(-1)@[@R_i@]@ — whenever the value is consumed by another command (MAP, INDEX, EVAL, SET) or stored. Un-indexed access is correct only when the full accumulated list is intentionally wanted.
+    
+- Example (Incorrect): @SET("V_@R_i@", "@TR@TN(-1)@@")@ — stores the growing pipe-delimited list.
+    
+- Example (Correct): @SET("V_@R_i@", "@TR@TN(-1)@[@R_i@]@")@ — stores only the current iteration's result.
     
 
 ## 5. Execution Mechanics & Life Cycle (The "How")
@@ -2355,10 +1928,10 @@ This agent demonstrates a fully compliant CAFA JSON structure utilizing the "Qui
 
 ## 9. Reference
 
-- Choi, J. (2025). REPEAT Command: Iterate and Loop Through Turns. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `REPEAT`: Iterate and Loop Through Turns. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
-# JUMP Command: Control Execution Flow and Branching
+# `JUMP`: Control Execution Flow and Branching
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2468,7 +2041,7 @@ If a JUMP resolves to a target that is out-of-bounds (e.g., Turn 500 in a 10-tur
     
 
 ---
-# END Command: Terminate and Close Agent Session
+# `END`: Terminate and Close Agent Session
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2567,7 +2140,7 @@ Once a session has been terminated by @END@, the turn pointer cannot be "revived
 - Choi, J. (2025). Logic & Flow Control: END Command. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
-# INDEX Command: Retrieving Knowledge from Tabular Ontology Models
+# `INDEX`: Retrieving Knowledge from Tabular Ontology Models
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2731,11 +2304,11 @@ Intersecting two different ontologies (format and content) using two separate in
 
 ## 7. Reference
 
-- Choi, J. (2025). INDEX Command: Retrieving Knowledge from Tabular Ontology Models. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `INDEX`: Retrieving Knowledge from Tabular Ontology Models. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# COMPARE Command: Element-wise List Comparison
+# `COMPARE`: Element-wise List Comparison
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2835,10 +2408,10 @@ This is the most common pattern for multi-select or multi-step validation:
 
 ## 5. Reference
 
-- Choi, J. (2025). COMPARE Command: Element-wise List Comparison. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `COMPARE`: Element-wise List Comparison. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
    
 ---
-# EQUAL Command: Holistic List Equality and Pattern Matching
+# `EQUAL`: Holistic List Equality and Pattern Matching
 
 ## 1. Metadata & Retrieval Keys
 
@@ -2926,11 +2499,11 @@ Architects use the "Boolean" option to verify interaction patterns rather than j
 
 ## 6. Reference
 
-- Choi, J. (2025). EQUAL Command: Holistic List Equality and Pattern Matching. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `EQUAL`: Holistic List Equality and Pattern Matching. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# FILTER Command: Conditional List Creation
+# `FILTER`: Conditional List Creation
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3022,7 +2595,7 @@ Architects use FILTER to create "Moving Targets" for users:
 
 ## 5. Reference
 
-- Choi, J. (2025). FILTER Command: Conditional List Creation. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `FILTER`: Conditional List Creation. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 
@@ -3031,7 +2604,7 @@ Architects use FILTER to create "Moving Targets" for users:
 
 
 
-# DISTRACTOR Command: Engineering Effective Alternatives
+# `DISTRACTOR`: Engineering Effective Alternatives
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3213,11 +2786,11 @@ The result of an D command is generated at the turn-hydration boundary. If the r
 
 ## 7. Reference
 
-- Choi, J. (2025). DISTRACTOR Command: Engineering Effective Alternatives. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `DISTRACTOR`: Engineering Effective Alternatives. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# SAVE Command: Persist Data to System Log
+# `SAVE`: Persist Data to System Log
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3359,11 +2932,11 @@ Mastering SAVE transforms an agent from a "reactive tool" into a "proactive assi
 
 ## 7. Reference
 
-- Choi, J. (2025). SAVE Command: Persist Data to System Log. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `SAVE`: Persist Data to System Log. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# LOAD Command: Retrieve Data from Artifacts or Log
+# `LOAD`: Retrieve Data from Artifacts or Log
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3429,7 +3002,7 @@ Symbolic Turn. Unlike LLM-driven responses, which are probabilistic and subject 
 4. Logic Availability: Once the turn completes, the loaded data becomes available for processing by parameters or subsequent logic commands.
     
 
-### 4.2 The LOAD Dependency Rule (Rule 6.2)
+### 4.2 The LOAD Dependency Rule (Linter & Rules, Rule 6.2)
 
 A critical rule of the CAFA state machine is the Separation of Concerns. Because commands within a single turn are processed atomically/simultaneously, data loaded in Turn N is not immediately available to other commands within that same turn's prompt string.
 
@@ -3477,10 +3050,10 @@ Because LOAD retrieves data from a persistent log, every interaction can be audi
 
 ## 6. Reference
 
-- Choi, J. (2025). LOAD Command: Retrieve Data from Artifacts or Log. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `LOAD`: Retrieve Data from Artifacts or Log. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
-# EXPORT Command: Serialize and Persist Structured Ontology Models
+# `EXPORT`: Serialize and Persist Structured Ontology Models
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3565,11 +3138,11 @@ EXPORT is the primary engine for Ontology Portability. It preserves the Epistemo
 
 ## 5. Reference
 
-- Choi, J. (2025). EXPORT Command: Serialize and Persist Structured Ontology Models. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `EXPORT`: Serialize and Persist Structured Ontology Models. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# IMPORT Command: Load Content from External Modules
+# `IMPORT`: Load Content from External Modules
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3653,7 +3226,7 @@ Symbolic Turn. It is a deterministic operation that bypasses the LLM to modify t
 |Complexity|1:1 (One DID to one string)|1:N (One DID to many parameters)|
 |Analogy|Reading a sticky note|Restoring a database backup|
 
-### 4.3 Rule 6.2 Compliance: The Dependency Rule
+### 4.3 Dependency Rule Compliance (Linter & Rules, Rule 6.2)
 
 Data hydrated via IMPORT is not available within the same turn it is called. This is a common pitfall in agent modeling.
 
@@ -3678,11 +3251,11 @@ Because IMPORT restores the exact state of an agent, it is the primary tool for 
 
 ## 6. Reference
 
-- Choi, J. (2025). IMPORT Command: Load Content from External Modules. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `IMPORT`: Load Content from External Modules. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# GS Command: Fetch Raw Data from Google Sheets
+# `GS`: Fetch Raw Data from Google Sheets
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3746,7 +3319,7 @@ Symbolic Turn. A deterministic, 1:1 bit-accurate fetch operation. It provides th
 4. Hydration: Injects the result into @TR@.
     
 
-### 4.2 Security and Sovereignty (Rule 9.1)
+### 4.2 Security and Sovereignty (Data Privacy)
 
 - Sensitive Data: Never store PII in a linked sheet; sheetID is considered public-facing.
     
@@ -3755,11 +3328,11 @@ Symbolic Turn. A deterministic, 1:1 bit-accurate fetch operation. It provides th
 
 ## 5. Reference
 
-- Choi, J. (2025). GS Command: Fetch Raw Data from Google Sheets. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `GS`: Fetch Raw Data from Google Sheets. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# GSTABLE Command: Advanced Structured Integration
+# `GSTABLE`: Advanced Structured Integration
 
 ## 1. Metadata & Retrieval Keys
 
@@ -3830,7 +3403,7 @@ Operating as a Symbolic Turn (⚙️), this deterministic operation performs mas
 5. Commitment: All newly created or updated APs are committed to volatile memory at the conclusion of the turn.
     
 
-### 4.2 Rule 6.2 Compliance: The Dependency Rule
+### 4.2 Dependency Rule Compliance (Linter & Rules, Rule 6.2)
 
 Parameters instantiated via GSTABLE in Turn $N$ are not available for use until Turn $N+1$. Attempting to reference them in the same turn will result in an "undefined" error.
 
@@ -3875,11 +3448,11 @@ By using GSTABLE, the maintenance cost of an agent drops significantly. Instead 
 
 ## 7. Reference
 
-- Choi, J. (2025). GSTABLE Command: Advanced Structured Integration. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `GSTABLE`: Advanced Structured Integration. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# RUN Command: Execute Asynchronous Background Agent Process
+# `RUN`: Execute Asynchronous Background Agent Process
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4023,11 +3596,11 @@ By using RUN, the "Truth" of a specialized diagnosis is preserved. When a genera
 
 ## 6. Reference
 
-- Choi, J. (2025). RUN Command: Execute Asynchronous Background Agent Process. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `RUN`: Execute Asynchronous Background Agent Process. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# RADIO Command: Select Single Option via Radio Buttons
+# `RADIO`: Select Single Option via Radio Buttons
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4110,7 +3683,7 @@ The RADIO command orchestrates a complex state-synchronization event between the
 
 ### 4.2 Constraints and Implementation Patterns
 
-- Rule of Uniqueness (The Single-Control Mandate): Only one interactive input control (RADIO, CHECKBOX, TEXT, etc.) is permitted per visible turn. Multiple controls in a single turn would create ambiguity regarding the "Submit" action and the data commitment sequence.
+- Single-Control Default: One interactive input control (RADIO, CHECKBOX, TEXT, etc.) per visible turn is the recommended default. The engine also supports multiple controls in one visible turn — a single "Submit" gathers all of them, and every non-CHECKBOX control must be filled before submission proceeds.
     
 - The "Logic Handoff" Pattern: A RADIO turn is almost universally followed by a hidden logic turn ("show": false) that uses the MAP command or JUMP to route the user.
     
@@ -4130,11 +3703,11 @@ In modular architectures, the RADIO command acts as a Decision Node. A Host Agen
 
 ## 6. Reference
 
-- Choi, J. (2025). RADIO Command: Select Single Option via Radio Buttons. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `RADIO`: Select Single Option via Radio Buttons. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# CHECKBOX Command: Select Multiple Options via Checkboxes
+# `CHECKBOX`: Select Multiple Options via Checkboxes
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4213,7 +3786,7 @@ The CHECKBOX command orchestrates a fundamental state-synchronization event betw
 
 ### 4.2 Constraints and Implementation Patterns
 
-- Rule of Uniqueness (The Single-Control Mandate): Only one interactive input control (CHECKBOX, RADIO, TEXT, etc.) is permitted per visible turn. Multiple controls would create ambiguity regarding which "Submit" action governs the commitment of multiple data points.
+- Single-Control Default: One interactive input control (CHECKBOX, RADIO, TEXT, etc.) per visible turn is the recommended default. The engine also supports multiple controls in one visible turn — a single "Submit" gathers all of them; a CHECKBOX may be left unchecked, while all other controls must be filled before submission proceeds.
     
 - The "Inclusion Check" Pattern: Because CHECKBOX returns a pipe-separated string, it is effectively a "mini-list" inside a single variable. Developers use the INDEX command to verify if a specific item was part of the user's intent.
     
@@ -4226,11 +3799,11 @@ The CHECKBOX command orchestrates a fundamental state-synchronization event betw
 
 ## 5. Reference
 
-- Choi, J. (2025). CHECKBOX Command: Select Multiple Options via Checkboxes. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `CHECKBOX`: Select Multiple Options via Checkboxes. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
 
-# TEXT Command: Input Short Single Line Text
+# `TEXT`: Input Short Single Line Text
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4306,27 +3879,27 @@ The TEXT command orchestrates a fundamental state-synchronization event between 
 
 ### 4.2 Constraints and Implementation Patterns
 
-- Rule of Uniqueness (The Single-Control Mandate): Only one interactive input control (TEXT, RADIO, CHECKBOX, etc.) is permitted per visible turn. Multiple controls would create ambiguity regarding which submission governs the commitment of multiple data points.
+- Single-Control Default: One interactive input control (TEXT, RADIO, CHECKBOX, etc.) per visible turn is the recommended default. The engine also supports multiple controls in one visible turn — a single "Submit" gathers all of them, and every non-CHECKBOX control must be filled before submission proceeds.
     
 - The "Sanitization Handoff" Pattern: A TEXT input turn is almost always followed by a hidden logic turn ("show": false). In this turn, the agent uses the EVAL or MAP command to validate, trim, or sanitize the input (e.g., checking if the string length is greater than 0) before proceeding to more complex operations.
     
 - Dynamic Grounding: The result of a TEXT command is frequently used as a lookup key for the INDEX or MAP command. For instance, after capturing a "Course Code" via TEXT, the agent can immediately pull the corresponding "Instructor Name" from a Google Sheet (using GS).
     
 
-## 5. Security & Sovereignty (Rule 9.1)
+## 5. Security & Sovereignty (Sanitization & PII)
 
-Because the TEXT command is used to capture user-specific data, makers must adhere to Rule 9.1 regarding PII (Personally Identifiable Information).
+Because the TEXT command is used to capture user-specific data, makers must sanitize stored input per the reserved-character rule (Linter & Rules, Rule 9.1: strip or validate `|` and `@` before saving) and handle PII (Personally Identifiable Information) with care.
 
 - Avoid using the TEXT command to collect highly sensitive data (passwords, financial records) if the agent is intended for public use, as parameters stored in the volatile state are theoretically accessible to the system engine during the session.
     
 
 ## 6. Reference
 
-- Choi, J. (2025). TEXT Command: Input Short Single Line Text. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `TEXT`: Input Short Single Line Text. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# TEXTAREA Command: Input Long Multi-Line Text Block
+# `TEXTAREA`: Input Long Multi-Line Text Block
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4396,7 +3969,7 @@ The TEXTAREA command orchestrates a state-synchronization event to ensure data p
 
 ### 4.2 Constraints and Implementation Patterns
 
-- Rule of Uniqueness: Only one interactive input control is permitted per visible turn.
+- Single-Control Default: One interactive input control per visible turn is the recommended default; the engine supports multiple (a single "Submit" gathers all; non-CHECKBOX controls must be filled).
     
 - The "Analytical Handoff" Pattern: A TEXTAREA turn is almost universally followed by an LLM-driven "Investigator" turn.
     
@@ -4404,16 +3977,16 @@ The TEXTAREA command orchestrates a state-synchronization event to ensure data p
 - Pattern: Turn 1 (TEXTAREA) -> Turn 2 (LLM analyzing @TEXTAREA("name")@).
     
 
-## 5. Security & Sovereignty (Rule 9.1)
+## 5. Security & Sovereignty (Sanitization & PII)
 
-Makers must adhere to Rule 9.1 regarding PII when using TEXTAREA. Systems processing TEXTAREA input should include "sanitization" prompts in the subsequent LLM turn to prevent the leakage of sensitive data.
+Makers must sanitize TEXTAREA input per the reserved-character rule (Linter & Rules, Rule 9.1: strip or validate `|` and `@` before saving) and take care with PII. Systems processing TEXTAREA input should include "sanitization" prompts in the subsequent LLM turn to prevent the leakage of sensitive data.
 
 ## 6. Reference
 
-- Choi, J. (2025). TEXTAREA Command: Input Long Multi-Line Text Block. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `TEXTAREA`: Input Long Multi-Line Text Block. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
-# SELECT Command: Choose Option from Dropdown Menu
+# `SELECT`: Choose Option from Dropdown Menu
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4490,7 +4063,7 @@ The SELECT command orchestrates the standard CAFA interaction lifecycle to ensur
 
 ### 4.2 Constraints and Implementation Patterns
 
-- Rule of Uniqueness (The Single-Control Mandate): Only one interactive input control (SELECT, RADIO, TEXT, etc.) is permitted per visible turn.
+- Single-Control Default: One interactive input control (SELECT, RADIO, TEXT, etc.) per visible turn is the recommended default; the engine supports multiple (a single "Submit" gathers all; non-CHECKBOX controls must be filled).
     
 - The "Placeholder" Best Practice: To avoid accidental submission of the first item, makers often include a generic first option (e.g., "Select one...|Option A|Option B"). A hidden logic turn then checks if the value equals "Select one..." and prompts the user to make a valid choice if necessary.
     
@@ -4499,11 +4072,11 @@ The SELECT command orchestrates the standard CAFA interaction lifecycle to ensur
 
 ## 5. Reference
 
-- Choi, J. (2025). SELECT Command: Choose Option from Dropdown Menu. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `SELECT`: Choose Option from Dropdown Menu. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# TTS Command: Output Audio via Text to Speech
+# `TTS`: Output Audio via Text to Speech
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4575,7 +4148,7 @@ The TTS command orchestrates two distinct interaction patterns based on the stat
 
 ### 4.2 Constraints and Best Practices
 
-- Rule of Uniqueness (The Single-Control Mandate): When TTS is used in Manual Mode (with a button), it is treated as an interactive UI element. Per CAFA standards, only one interactive command (e.g., RADIO, CHECKBOX, or a TTS button) should be present per visible turn to ensure deterministic submission logic.
+- Single-Control Default: When TTS is used in Manual Mode (with a button), it is treated as an interactive UI element. The recommended default is one interactive command (e.g., RADIO, CHECKBOX, or a TTS button) per visible turn; the engine supports multiple input controls per visible turn with a single "Submit" gathering all inputs.
     
 - Language Support: Although the voice models are optimized for English, the system supports over 50 languages (including Arabic, Chinese, Japanese, and Spanish) following the OpenAI Whisper model's compatibility.
     
@@ -4584,11 +4157,11 @@ The TTS command orchestrates two distinct interaction patterns based on the stat
 
 ## 5. Reference
 
-- Choi, J. (2025). TTS Command: Output Audio via Text to Speech. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `TTS`: Output Audio via Text to Speech. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# MATH Command: Specialized Symbolic Mathematical Operations
+# `MATH`: Specialized Symbolic Mathematical Operations
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4724,7 +4297,7 @@ Rounding a raw score of 12345 to the nearest hundred (12300) for reporting:
     
 
 ---
-# FR Command: Format Fraction for Display Output and Arithmetic
+# `FR`: Format Fraction for Display Output and Arithmetic
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4813,11 +4386,11 @@ To generate a math problem, calculate the answer, and display it, commands are n
 
 ## 5. Reference
 
-- Choi, J. (2025). FR Command: Format Fraction for Display Output and Arithmetic. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `FR`: Format Fraction for Display Output and Arithmetic. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# FRADD Command: Symbolic Fraction Addition
+# `FRADD`: Symbolic Fraction Addition
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4901,11 +4474,11 @@ Logic: If @A@="1|3" and @B@="1|6", the user sees: "Calculate: $\dfrac{1}{3} + \d
 
 ## 5. Reference
 
-- Choi, J. (2025). FRADD Command: Symbolic Fraction Addition. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `FRADD`: Symbolic Fraction Addition. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# FRMULT Command: Symbolic Fraction Multiplication
+# `FRMULT`: Symbolic Fraction Multiplication
 
 ## 1. Metadata & Retrieval Keys
 
@@ -4987,11 +4560,11 @@ Logic: If @L@="1|2" and @W@="1|3", the output is: "Calculate Area: Length = $\df
 
 ## 5. Reference
 
-- Choi, J. (2025). FRMULT Command: Symbolic Fraction Multiplication. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `FRMULT`: Symbolic Fraction Multiplication. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# FRDIV Command: Symbolic Fraction Division
+# `FRDIV`: Symbolic Fraction Division
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5075,11 +4648,11 @@ Logic: If @DIST@="3|2" (1.5 miles) and @TIME@="1|4" (15 mins), the output is: "R
 
 ## 5. Reference
 
-- Choi, J. (2025). FRDIV Command: Symbolic Fraction Division. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `FRDIV`: Symbolic Fraction Division. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# FRREC Command: Symbolic Fraction Reciprocal
+# `FRREC`: Symbolic Fraction Reciprocal
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5136,12 +4709,12 @@ Essential for generating items that test the Multiplicative Inverse Property ($x
 
 ## 5. Reference
 
-- Choi, J. (2025). FRREC Command: Symbolic Fraction Reciprocal. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `FRREC`: Symbolic Fraction Reciprocal. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
 
-# FRVAL Command: Convert Symbolic Fraction to Decimal Value
+# `FRVAL`: Convert Symbolic Fraction to Decimal Value
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5220,11 +4793,11 @@ Logic: 1. Result is "5|8".
 
 ## 5. Reference
 
-- Choi, J. (2025). FRVAL Command: Convert Symbolic Fraction to Decimal Value. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `FRVAL`: Convert Symbolic Fraction to Decimal Value. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# POLY Command: Format and Display Polynomials
+# `POLY`: Format and Display Polynomials
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5316,11 +4889,11 @@ Output: $(a+b)^2 + 2(a+b) + 1$
 
 ## 5. Reference
 
-- Choi, J. (2025). POLY Command: Format and Display Polynomials. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `POLY`: Format and Display Polynomials. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---
-# POLYDISP Command: Display Polynomial in Math Mode
+# `POLYDISP`: Display Polynomial in Math Mode
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5391,10 +4964,10 @@ Output: $f(x) = x^2 - 5x + 6$
 
 ## 5. Reference
 
-- Choi, J. (2025). POLYDISP Command: Display Polynomial in Math Mode. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `POLYDISP`: Display Polynomial in Math Mode. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
-# POLYDIFF Command: Symbolic Polynomial Differentiation
+# `POLYDIFF`: Symbolic Polynomial Differentiation
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5471,11 +5044,11 @@ Logic: $f(x)=x^2$. $f'(x)=2x$. $f'(3)=6$.
 
 ## 5. Reference
 
-- Choi, J. (2025). POLYDIFF Command: Symbolic Polynomial Differentiation. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `POLYDIFF`: Symbolic Polynomial Differentiation. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
 
-# POLYINT Command: Compute Symbolic Integral of Polynomial
+# `POLYINT`: Compute Symbolic Integral of Polynomial
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5579,10 +5152,10 @@ Logic:
 
 ## 5. Reference
 
-- Choi, J. (2025). POLYINT Command: Compute Symbolic Integral of Polynomial. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `POLYINT`: Compute Symbolic Integral of Polynomial. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 ---
-# MERMAID Command: Render Flowcharts and Diagrams Code
+# `MERMAID`: Render Flowcharts and Diagrams Code
 
 ## 1. Metadata & Retrieval Keys
 
@@ -5677,7 +5250,7 @@ For complex diagrams, the LLM might make syntax errors. The GAMER pattern adds a
 
 ## 5. Reference
 
-- Choi, J. (2025). MERMAID Command: Render Flowcharts and Diagrams Code. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
+- Choi, J. (2025). `MERMAID`: Render Flowcharts and Diagrams Code. In Collective AI on the Foundation AI (CAFA): The pathway of digital transformation of intelligence. CAFA Lab, Inc.
     
 
 ---

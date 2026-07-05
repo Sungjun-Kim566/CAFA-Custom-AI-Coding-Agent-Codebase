@@ -1,6 +1,6 @@
 # Validator — Pre-Code Verification
 
-Drives the **verify** stage: validate the Blueprint against parser-critical rules
+Validate the Blueprint against parser-critical rules
 *before* writing any JSON. Authoritative rule source: `../wiki/linter.md`.
 
 ---
@@ -9,16 +9,19 @@ Drives the **verify** stage: validate the Blueprint against parser-critical rule
 
 - The framework choice is explicit and matches the requested workflow.
 - Every planned command is listed and sourced from `../wiki/protocol.md`.
-- A closest example/pattern is identified from `../wiki/examples/code-bank.md`
+- A closest known-good example/pattern is identified from `../wiki/examples/code-bank.md`
   (or you state why none applies).
-- AP/JP is fully specified for every planned parameter reference.
+- `AP`/`JP` is fully specified for every planned parameter reference.
 - The turn plan respects:
   - Symbolic vs LLM separation
   - control-flow isolation
-  - one input control per visible UI turn
+  - UI Constraints
   - the dependency next-turn rule
 
-If verification fails: **revise the Blueprint first, then re-verify, then code.**
+### If verification fails
+1. **revise the Blueprint**
+2. **re-verify**
+3. **code**
 
 ---
 
@@ -45,7 +48,10 @@ If verification fails: **revise the Blueprint first, then re-verify, then code.*
 - No same-turn use of newly `SET` / `LOAD` / `IMPORT` / `MAP` values.
 
 **UI constraints**
-- One input control per visible turn.
+- **Default**: One input control per visible turn.
+- Multiple input controls per visible turn allowed for token efficiency
+  (one Submit gathers all; every non-`CHECKBOX` control must be filled before
+  submission proceeds).
 
 **Quoting & escaping**
 - All command args double-quoted (numbers too); no single quotes.
@@ -53,5 +59,5 @@ If verification fails: **revise the Blueprint first, then re-verify, then code.*
 
 ---
 
-For the complete linter checklist (AP `cond` values, SP reference, data-integrity
+For the complete linter checklist (`AP` `cond` values, `SP` reference, data-integrity
 and concurrency patterns, etc.), retrieve `../wiki/linter.md`.

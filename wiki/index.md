@@ -9,17 +9,18 @@ file that answers the question. Do not guess CAFA syntax — ground it in these 
 
 | Entry | File | Use when |
 |-------|------|----------|
-| **CAFA Protocol** | `protocol.md` | Verifying exact command syntax, quoting rules, turn triggers, parameter systems (AP/SP/JP), loop-result indexing (`@TRt[@R_i@]@`, §8.1), and edge cases for all commands. |
+| **CAFA Protocol** | `protocol.md` | Verifying exact command syntax, quoting rules, turn triggers, parameter systems (`AP`/`SP`/`JP`), loop-result indexing (`@TRt[@R_i@]@`, `REPEAT` §4.3), and edge cases for all commands. |
 | **Linter & Rules** | `linter.md` | Validating schema / allowed keys, symbolic vs LLM requirements, quoting/escaping, dependency rules, loop-result indexing, and any parser-critical compliance check. **Overrides examples.** |
-| **Agent Code Bank** | `examples/code-bank.md` | Finding a working archetype (router, loop, evaluator, scorer, sandwich-architecture quiz, multi-phase workflow, adaptive test) to adapt. |
+| **Agent Code Bank** | `examples/code-bank.md` | Finding a working archetype and code examples (router, loop, evaluator, scorer, sandwich-architecture quiz, multi-phase workflow, adaptive test) to adapt and to apply appropriate frameworks that the user's request requires. |
 
 ---
 
 ## Retrieval order by stage
 
 - **retrieve / design** — framework & pattern discovery → this index + `examples/code-bank.md`
+    - Always Use `tools/code_eg_router.py` for routing code examples from `code-bank.md` faster
 - **command lookup** — exact syntax & semantics → `protocol.md`
-- **verify / review** — schema & parser compliance → `linter.md`
+- **verify / review** — schema & parser compliance → `linter.md`, `validator.md`
 
 ## Precedence
 
