@@ -20,8 +20,17 @@ first, verify it internally, then use it to generate the code.
   purpose in this agent (UI, routing, scoring, control flow, storage). (Retrieve from
   `../wiki/protocol.md`.)
 - **Example codes** — identify the closest known-good archetype you are adapting; note
-  what you reuse vs. modify. (Retrieve from `../wiki/examples/code-bank.md`.)
-  - Refer `CAFA Agent Code Bank Master Index` to route to the right index of the appropriate examples efficiently.
+  what you reuse vs. modify.
+  - Retrieve via the router: extract keywords from the user's request and run
+    `python3 tools/code_eg_router.py <keywords>` — it prints the best-matching
+    entries from `../wiki/code-bank.md`.
+  - On NO MATCH (exit code 2), run `--list` to scan the
+    `CAFA Agent Code Bank Master Index` titles directly, or state why no
+    archetype applies.
+  - Do not read `../wiki/code-bank.md` wholesale; load only routed entries.<br>
+  - Keyword Extraction Guidance
+    1. The target user is not tech-ish. Always assume the user only has a little technical knowledge to fully explain the intent of the codes or programms that he/she wants to create.
+    2. Look for words that has implications of technical intents such as iterations (e.g.`REPEAT`), Frameworks (e.g. `STAR`), or domain-specific coding conventions (e.g. `Basic REPAIR for Listening` at `wiki/code-bank.md`).
 - **Ontology model specifications**
   - **Agent Parameters (`AP`) spec** — stable parameters in `options.params` (rubrics, lists, personas,
     routing tables, templates).
@@ -124,3 +133,22 @@ When referencing CAFA commands in explanations or manuals, use only:
 - The command name in uppercase (e.g., `SET`, `REPEAT`).
 
 Never use partial syntax like `@SET()` or `@SET`.
+
+---
+
+## 7. Project workspace persistence
+
+Every build lives in `projects/<agent-slug>/` — create the directory on first
+generation and keep it current on every revision:
+
+1. **At design** — save the router output as the project's local code bank:
+   `python3 tools/code_eg_router.py <keywords> > projects/<agent-slug>/local-code-bank.md`
+   Save the verified Blueprint to `blueprint.md`.
+2. **At code** — save the generated JSON to `agent.json` (overwrite on revision);
+   append an entry to `code-log.md` (date, change summary, checklist status) on
+   every generation or revision.
+3. **When debugging an existing agent** — load `agent.json`, `blueprint.md`, and
+   `local-code-bank.md` from the workspace first; they already contain the archetype
+   this agent was built from. Re-run the router only if the fix requires an archetype
+   not in the local code bank, and append any newly routed entries to
+   `local-code-bank.md` so the workspace stays self-sufficient.

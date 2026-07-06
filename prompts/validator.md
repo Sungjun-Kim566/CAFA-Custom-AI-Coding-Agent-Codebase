@@ -9,7 +9,7 @@ Validate the Blueprint against parser-critical rules
 
 - The framework choice is explicit and matches the requested workflow.
 - Every planned command is listed and sourced from `../wiki/protocol.md`.
-- A closest known-good example/pattern is identified from `../wiki/examples/code-bank.md`
+- A closest known-good example/pattern is identified from `../wiki/code-bank.md`
   (or you state why none applies).
 - `AP`/`JP` is fully specified for every planned parameter reference.
 - The turn plan respects:

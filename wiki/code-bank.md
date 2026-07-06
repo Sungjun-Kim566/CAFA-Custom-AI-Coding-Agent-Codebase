@@ -17,7 +17,7 @@
 - SCREAM Framework Assessment: Diagnostic Math Evaluation with Selected & Constructed Responses
 - Essential Chatbot: IMPACT-Based Multi-Turn Conversational Loop
 - Syllabus Q&A Chatbot – Ontology-Grounded Conversational Agent
-- Adaptive Rubric Grader – GARAM Evaluation with Nested RISE Loops
+- Adaptive Rubric Grader: GARAM Evaluation with Nested RISE Loops
 - Simple Computer Adaptive Test (CAT): Two-Stage Branching Quiz
 - Generative AI-based Multi-Stage Assessment (GAMSA) - Item Version: Adaptive Item Routing + Dual-Stage Feedback
 - AI-Augmented Thematic Analysis Agent: Transcript-to-Themes Pipeline with Evidence and Final Report

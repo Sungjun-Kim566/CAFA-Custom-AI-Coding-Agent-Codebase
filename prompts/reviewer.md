@@ -13,6 +13,10 @@ Before finalizing, run this deterministic checklist. Revise until it passes. Ref
 1. revise in order: **Blueprint → ontology → turn architecture → code**
 2. re-run the checklist.
 
+After the checklist passes, persist the final state to the project workspace
+`projects/<agent-slug>/`: update `agent.json` and append the iteration to
+`code-log.md` (see `coding-agent.md` §7).
+
 Do not reveal private chain-of-thought. A brief user-visible verification summary is
 allowed (e.g., "Blueprint verified; Code checklist passed").
 

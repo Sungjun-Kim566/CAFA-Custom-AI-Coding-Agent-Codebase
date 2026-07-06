@@ -13,7 +13,7 @@ If nothing matches, the script exits with code 2 and tells Claude Code to
 fall back to wiki/protocol.md.
 """
 
-import argparse
+import argparse # for CLI Command Customization
 import re
 import sys
 from pathlib import Path
@@ -21,7 +21,7 @@ from pathlib import Path
 # Path(__file__): current script path
 # .resolve() to convert into absolute path
 REPO_ROOT = Path(__file__).resolve().parent.parent
-CODE_BANK = REPO_ROOT / "wiki" / "examples" / "code-bank.md"
+CODE_BANK = REPO_ROOT / "wiki" / "code-bank.md"
 PROTOCOL = REPO_ROOT / "wiki" / "protocol.md"
 
 # Metadata fields worth matching against, in the order they appear.
@@ -57,7 +57,7 @@ def parse_code_bank(path):
     if not body:
         sys.exit(f"error: no '=====' divider found in {path}")
 
-    # Everything below the Archives marker is superseded duplicates.
+    # Everything below the Archives marker is superseded duplicates. (skipped due to too large context size)
     body = re.split(r"^# \*+.*Archives", body, maxsplit=1, flags=re.MULTILINE)[0]
 
     index_titles = [
@@ -126,6 +126,8 @@ def main():
     parser.add_argument("--file", type=Path, default=CODE_BANK, help="path to code-bank.md")
     parser.add_argument("--top", type=int, default=2, help="max number of entries to print")
     parser.add_argument("--list", action="store_true", help="print the master index and exit")
+    parser.add_argument("--validate", action="store_true",
+                        help="check master-index titles against parsed entry sections and exit")
     args = parser.parse_args()
 
     if not args.file.exists():
@@ -135,6 +137,20 @@ def main():
 
     if args.list:
         print("\n".join(index_titles))
+        return
+
+    if args.validate:
+        entry_titles = {title for title, _ in entries}
+        missing = [t for t in index_titles if t not in entry_titles]
+        orphans = [t for t in sorted(entry_titles) if t not in index_titles]
+        for t in missing:
+            print(f"MISSING ENTRY (indexed but no matching '# ' section): {t}")
+        for t in orphans:
+            print(f"warning - orphan section (not in master index): {t}")
+        if missing:
+            sys.exit(1)
+        print(f"OK: all {len(index_titles)} master-index titles have matching entry sections"
+              f" ({len(orphans)} orphan section(s) not indexed).")
         return
 
     if not args.keywords:
@@ -153,7 +169,8 @@ def main():
     if not strong:
         print("NO MATCH in the code-bank master index for keywords: "
               + ", ".join(args.keywords))
-        print(f"Fall back to the CAFA protocol: {PROTOCOL}")
+        print(f"Fall back to the KB index for framework discovery: {REPO_ROOT / 'wiki' / 'index.md'}")
+        print(f"or the CAFA protocol for command syntax: {PROTOCOL}")
         sys.exit(2)
 
     for score, matched, title, section in strong[: args.top]:
