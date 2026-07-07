@@ -13,15 +13,6 @@ file that answers the question. Do not guess CAFA syntax — ground it in these 
 | **Linter & Rules** | `linter.md` | Validating schema / allowed keys, symbolic vs LLM requirements, quoting/escaping, dependency rules, loop-result indexing, and any parser-critical compliance check. **Overrides examples.** |
 | **Agent Code Bank** | `code-bank.md` | Finding a working archetype and code examples (router, loop, evaluator, scorer, sandwich-architecture quiz, multi-phase workflow, adaptive test) to adapt and to apply appropriate frameworks that the user's request requires. |
 
----
-
-## Retrieval order by stage
-
-- **retrieve / design** — framework & pattern discovery → this index + `code-bank.md`
-    - Always Use `tools/code_eg_router.py` for routing code examples from `code-bank.md` faster
-- **command lookup** — exact syntax & semantics → `protocol.md`
-- **verify / review** — schema & parser compliance → `linter.md`, `validator.md`
-
 ## Precedence
 
 `linter.md` and `protocol.md` are authoritative and **override any example**. If two

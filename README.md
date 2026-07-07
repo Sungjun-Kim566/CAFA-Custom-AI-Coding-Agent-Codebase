@@ -106,7 +106,8 @@ If you are not a subscriber, you will have to go with option 2: log in via Anthr
 All files created by the Native installer is in `.claude` folder. <br>
 We have to delete the `.claude` folder to uninstall claude code.
 <br>
-Copy and paste the code below to the powershell:
+Copy and paste the code below to the powershell:<br>
+
 ```Powershell
 Remove-Item -Recurse -Force "$env:USERPROFILE\.claude"
 ```
@@ -157,25 +158,51 @@ CAFA Coding Agent Configuration and Setup does not difer depending on the Operat
      - If you use `git`, then you may proceed cloning the repository.
      - otherwise, you can click `Code` on the right arrow and click `Download zip`.
 ![github_setup](./README_Screenshots/github_download.png)
-2. You may unzip the file and move the following folders to your developing folder:
-```markdown
-agent-config/
-├─ AGENTS.md  # Agent Core: Identity · Workflow · Retrieval instructions
+2. You may unzip the file and move the following folders to your developing folder: `code_agent`<br>
+```text
+code_agent
+├── AGENTS.md  # Coding Agent Persona Configuration
+|
+├── prompts/
+│   ├── coding-agent.md        # Drives the design & code generation workflow (Blueprint creation)
+│   ├── reviewer.md            # Reviews, re-validates JSON, and packages the final response
+│   └── validator.md           # Validates Blueprint against parser-critical rules before JSON generation
 │
-├─ prompts/               # Workflow instruction strings, one per stage/role
-│  ├─ coding-agent.md     #   design + code  (Blueprint, ontology, turns, command rules)
-│  ├─ validator.md        #   verify         (pre-code, parser-critical checklist)
-│  └─ reviewer.md         #   review/revise  (final JSON gate + output packaging)
+├── tools/
+│   └── code_eg_router.py      # Routes user requests to the most relevant code examples
 │
-├─ wiki/                  # Knowledge Base (retrieval targets) — grounding source
-│  ├─ index.md            #   KB routing table — retrieval ALWAYS starts here
-│  ├─ protocol.md         #   full command/syntax reference (authoritative)
-│  ├─ linter.md           #   schema, allowed keys, parser rules (authoritative)
-│  └─ examples/
-│     └─ code-bank.md     #   known-good agent archetypes to adapt
+├── wiki/
+│   ├── index.md               # Central routing table for knowledge retrieval
+│   ├── protocol.md            # CAFA protocol reference (JSON structure, AP/SP/JP, syntax)
+│   ├── linter.md              # Syntax rules, best practices, linting checklist
+│   └── code-bank.md           # Code metadata, architectures, frameworks, and conventions
 │
-└─ User_import/ # User projects the agent inspects / edits; put your data in this folder 
+└── projects/      # user playground; it grows/shrinks as user works on each project
+    └── <agent-slug>/
+        ├── blueprint.json     # Generated Blueprint specification
+        ├── code/              # Current implementation
+        ├── code-bank/         # Agent-specific local code examples
+        └── iteration-log.md   # Revision and debugging history
 ```
+
+3. Rename `code_agent` folder as you wish and open this folder with your desired IDE. (Recommended: VSCode)
+
+4. Either open `Powershell` or use `Terminal` on VSCode to initiate claude code. This choice won't affect the claude code performance.
+     ### Powershell
+     1. Press `Win` key, type `Powershell` and press `Enter`.
+     2. If you just opened up `Powershell` you are probably at `PS C:\Users\Username`. If you downloaded the agent configuration file at `Desktop`, use this command:
+     ```Powershell
+     cd .\Desktop\your_folder_name\
+     ```
+     3. Refer Custom Directory command line section below if you wish to create your project in different location.
+     ### Terminal (VSCode)
+     1. Same routing as Powershell. 
+5. Initiate claude code with thie code:<br>
+     ```text
+     claude
+     ```
+
+
 
 ### Optional: If you created your directory or folder at choice of yours
 If you created your folder in different location, here are some commands that can be useful to find your folder or directory:
@@ -249,7 +276,7 @@ per-agent context in its workspace so revisions don't re-route the master KB.
 ## Directory map
 
 ```text
-home directory
+code_agent
 ├── AGENTS.md  # Coding Agent Persona Configuration
 |
 ├── prompts/
