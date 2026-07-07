@@ -1,0 +1,68 @@
+{
+    "options": {
+        "title": "Syllabus Q&A Chatbot",
+        "brief": "An unlimited-turn chatbot that answers student questions strictly from a custom syllabus, with a student-controlled exit.",
+        "name": "Syllabus Q&A Chatbot",
+        "description": "This agent acts as a teaching assistant, answering student questions about course policies, schedules, and grading strictly from the syllabus stored in OM_SYLLABUS. Chatting is effectively unlimited, and the student can end the session at any time via the End-chat option shown after every answer.",
+        "greeting": "Hello! I am the TA chatbot for this course. Ask me anything about the syllabus — schedule, grading, policies, and more. You can end the chat whenever you like.",
+        "params": {
+            "CHATBOT_PERSONA": {
+                "org": "You are a helpful and polite teaching assistant. Answer student questions using only the information in the provided syllabus and the conversation history. If the question cannot be answered using the syllabus, politely say so and direct the student to contact the instructor listed in the syllabus. Do not invent or infer information that is not in the syllabus.",
+                "cond": "SELF",
+                "desc": "TA persona; enforces syllabus-only answers and polite refusal of out-of-scope questions."
+            },
+            "OM_SYLLABUS": {
+                "org": "## Course Information\n- Course Name: Introduction to Statistics\n- Instructor: Professor Smith\n- Instructor Email: smith(at)sample.edu\n- Meeting Time: MWF, 10:00 AM - 10:50 AM\n- Classroom: Building A, Room 101\n- Office Hours: Tuesday, 2:00 PM - 4:00 PM\n- Office Location: Building C, Room 303\n\n## Grading Breakdown\n- Midterm Exam: 40%\n- Final Exam: 40%\n- Assignments: 20%\n\n## Assignments\n- All assignments must be submitted online.\n- Due Date: Every Friday at 6:00 PM.",
+                "cond": "SELF",
+                "desc": "PASTE YOUR OWN SYLLABUS HERE (replace this sample). This text is the only knowledge the chatbot may use to answer questions."
+            },
+            "MAX_CHAT": {
+                "org": "9999",
+                "cond": "SELF",
+                "desc": "Safety cap on loop iterations. Set very high so chatting is effectively unlimited; the student exits via the End-chat option."
+            }
+        }
+    },
+    "prompts": [
+        {
+            "system": "",
+            "user": "/ Hidden control: start the open-ended conversational loop (chat -> log -> exit gate -> router).\n@REPEAT(\"@TN(1)@\", \"@TN(4)@\", \"@MAX_CHAT@\")@",
+            "show": false,
+            "model": null
+        },
+        {
+            "system": "@CHATBOT_PERSONA@\n\nSyllabus:\n@OM_SYLLABUS@\n\nConversation History:\n@TR@TN(1)@@",
+            "user": "",
+            "temperature": "0.5",
+            "max-tokens": "2000",
+            "markdown": true,
+            "show": true,
+            "model": "gpt-4.1-nano"
+        },
+        {
+            "system": "",
+            "user": "/ Hidden: append this iteration's exchange to the conversation history.\nTurn @R_i@ {\nStudent: @TU@TN(-1)@[@R_i@]@\nTA: @TR@TN(-1)@[@R_i@]@\n}",
+            "show": false,
+            "model": null
+        },
+        {
+            "system": "",
+            "user": "/ Exit gate: the student can leave the chat whenever they want.\n@RADIO(\"continue_@R_i@\", \"Would you like to ask another question?\", \"Ask another question|End chat\")@",
+            "show": true,
+            "model": null
+        },
+        {
+            "system": "",
+            "user": "/ Router: jump out of the loop if the student chose to end the chat; otherwise fall through and continue.\n@JUMP(\"@MAP(\"@RADIO(continue_@R_i@)@\", \"End chat\", \"@TN(1)@\", \"\")@\")@",
+            "show": false,
+            "model": null
+        },
+        {
+            "system": "",
+            "user": "/ Post-loop end message.\nThe chat session has ended. Thanks for stopping by! Click **Start** to begin a new chat.",
+            "show": true,
+            "model": null,
+            "markdown": true
+        }
+    ]
+}

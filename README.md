@@ -32,9 +32,9 @@ Copy & Paste this command below once you opened up `Powershell`:
 
 3. Add Claude to your Environment PATH<br>
 We need to add the installation script to start claude code in any folder and with any Command Line Interface (CLI; e.g. Powershell, CMD, Git Bash, terminal (for MacOS))
-     1. Press `Win + R`, type `sysdm.cpl` and hit enter.
+     1. Press `Win + R`, type `sysdm.cpl` and hit enter.<br>
 ![win R](./README_Screenshots/win_r.png)
-     2. Go to `Advanced` tab and click Environment Variables
+     2. Go to `Advanced` tab and click Environment Variables<br>
 ![env_var_setup1](./README_Screenshots/env_var_setup1.png)
      3. Click `Path` and click `Edit...`
 ![env_var_setup2](./README_Screenshots/env_var_setup2.png)
@@ -42,7 +42,7 @@ We need to add the installation script to start claude code in any folder and wi
      ```Powershell
      C:\Users\Username\.local\bin
      ```
-     *Note: if you don't know your `Username`, refer 3-2. Install claude code using native installer secion. the `Location` on the powershell image shows you your exact username. In this example, the Username is `Sungjun Kim`*<br>
+     *Note: if you don't know your `Username`, refer 3-2. Install claude code using native installer section. the `Location` on the powershell image shows you your exact username. In this example, the Username is `Sungjun Kim`*<br>
 ![env_var_setup3](./README_Screenshots/env_var_setup3.png)<br>
      5. Click ok for all tab. The Environment Variable setup is complete.
 
@@ -56,14 +56,17 @@ For example, I'll create `dev` folder on `Desktop`. Make sure you are strict abo
 By Default, you will be at `PS C:\Users\Username`
 ![default_dir](./README_Screenshots/default_dir.png)<br>
 <br>
-If you created the folder on `Desktop`, here is the following command to go to your folder on Powershell:
-     ```Powershell
-     cd .\Desktop\your_folder_name\
-     ```
+If you created the folder on `Desktop`, here is the following command to go to your folder on Powershell:<br>
+
+```Powershell
+cd .\Desktop\your_folder_name\
+```
+
 Now you are on the right folder, write the following command to start claude code:<br>
-     ```
-     claude
-     ```<br>
+```
+claude
+```
+<br>
 This will automatically prompt several choice of your UI and other settings. Just to use the claude code, you can just hit enter.
 
 #### Login (via Claude Account)
@@ -144,12 +147,11 @@ At line:1 char:1
 CAFA Coding Agent Configuration and Setup does not difer depending on the Operating System of your local machine. (e.g. MacOS, Windows, Linux, etc.)
 
 - Any text editor or Integrated Development Enviroment (IDE) would be recommended.
-     - VSCode (Recommended)
-     - Obsidian (Recommended)
+     - VSCode(IDE) + Obsidian(TextEditor) (Recommended)
      - Vim
      - Notepad++
 
-- Installing `Obsidian` is strongly recommended for Markdown files.
+- Installing `Obsidian` is strongly recommended for managing Markdown files (Relational Database)
 
 1. Go to [CAFA Coding Agent Github Repository](https://github.com/Sungjun-Kim566/CAFA-Custom-AI-Coding-Agent-Codebase).
      - If you use `git`, then you may proceed cloning the repository.
@@ -198,71 +200,79 @@ ls
 
 ---
 
-## Two-layer separation
+## Layer separation
 
 ```
-┌──────────────────────────────────────────────────────────┐
-│                  AGENTS.md  (Agent Core)                   │
-│            Identity · Workflow · Retrieval rules           │
-└───────────────┬──────────────────────────┬────────────────┘
-                │                          │
-                ▼                          ▼
-┌──────────────────────────────┐  ┌──────────────────────────────┐
-│   Workflow Prompts            │  │   Knowledge Base (wiki/)      │
-│   (how to work)               │  │   (what is true)              │
-├──────────────────────────────┤  ├──────────────────────────────┤
-│ • coding-agent.md  (design)   │  │ • index.md     (routing)      │
-│ • validator.md     (verify)   │  │ • protocol.md  (syntax truth) │
-│ • reviewer.md      (review)   │  │ • linter.md    (rules/schema) │
-│                               │  │ • examples/code-bank.md       │
-└──────────────────────────────┘  └──────────────────────────────┘
-                │                          │
-                └────────────┬─────────────┘
-                             ▼
-        fix-log/ (growing memory)   ·   User_import/ (user projects)
+┌─────────────────────────────────────────────────────────────────┐
+│                      AGENTS.md  (Agent Core)                    │
+│               Identity · Workflow · Retrieval rules             │
+└──────────┬──────────────────────┬──────────────────────┬────────┘
+           │                      │                      │
+           ▼                      ▼                      ▼
+┌───────────────────────┐ ┌───────────────────┐ ┌───────────────────────┐
+│  Workflow Prompts     │ │  Tools            │ │  Knowledge Base       │
+│  (how to work)        │ │  (fast routing)   │ │  (what is true)       │
+├───────────────────────┤ ├───────────────────┤ ├───────────────────────┤
+│ • coding-agent.md     │ │ • code_eg_router  │ │ • index.md  (routing) │
+│     (design + code)   │ │     .py — keyword │ │ • protocol.md (syntax │
+│ • validator.md        │ │     match into    │ │     truth)            │
+│     (verify)          │ │     code-bank.md  │ │ • linter.md (rules/   │
+│ • reviewer.md         │ │                   │ │     schema)           │
+│     (review/revise)   │ │                   │ │ • code-bank.md        │
+│                       │ │                   │ │     (archetypes)      │
+└──────────┬────────────┘ └─────────┬─────────┘ └──────────┬────────────┘
+           │                        │                      │
+           └────────────────────────┼──────────────────────┘
+                                    ▼
+┌─────────────────────────────────────────────────────────────────┐
+│           projects/<agent-slug>/  (per-agent working state)     │
+│   blueprint.md · agent.json · local-code-bank.md · code-log.md  │
+└─────────────────────────────────────────────────────────────────┘
+         fix-log/ (growing memory)   ·   User_import/ (user data)
 ```
 
-- **Instructions** (CLAUDE.md + `prompts/`) stay small and stable — they describe *how*
+- **Instructions** (`AGENTS.md` + `prompts/`) stay small and stable — they describe *how*
   the agent works.
 - **Knowledge** (`wiki/`) is the retrieval target — the authoritative *what is correct*.
-- **Memory** (`fix-log/`) grows over time — resolved bugs and reusable techniques.
+  `tools/code_eg_router.py` keyword-routes into `code-bank.md` so the agent loads only
+  the relevant example metadata instead of the whole file.
+- **Working state** (`projects/<agent-slug>/`) persists every build — the verified
+  Blueprint, the latest `agent.json`, the local code bank it was built from, and a dated
+  iteration log. Debugging and revision requests start here, **not** at the KB.
+- **Memory** (`fix-log/`) grows over time — resolved bugs and reusable techniques,
+  folded back into `wiki/` when generalizable.
 
 This mirrors the root architecture's core idea: do **not** pour everything into the
-prompt; keep a small instruction file plus selective, grounded retrieval.
-
----
+prompt; keep a small instruction file plus selective, grounded retrieval — and cache
+per-agent context in its workspace so revisions don't re-route the master KB.
 
 ## Directory map
 
+```text
+home directory
+├── AGENTS.md  # Coding Agent Persona Configuration
+|
+├── prompts/
+│   ├── coding-agent.md        # Drives the design & code generation workflow (Blueprint creation)
+│   ├── reviewer.md            # Reviews, re-validates JSON, and packages the final response
+│   └── validator.md           # Validates Blueprint against parser-critical rules before JSON generation
+│
+├── tools/
+│   └── code_eg_router.py      # Routes user requests to the most relevant code examples
+│
+├── wiki/
+│   ├── index.md               # Central routing table for knowledge retrieval
+│   ├── protocol.md            # CAFA protocol reference (JSON structure, AP/SP/JP, syntax)
+│   ├── linter.md              # Syntax rules, best practices, linting checklist
+│   └── code-bank.md           # Code metadata, architectures, frameworks, and conventions
+│
+└── projects/      # user playground; it grows/shrinks as user works on each project
+    └── <agent-slug>/
+        ├── blueprint.json     # Generated Blueprint specification
+        ├── code/              # Current implementation
+        ├── code-bank/         # Agent-specific local code examples
+        └── iteration-log.md   # Revision and debugging history
 ```
-agent-config/
-├─ AGENTS.md              # Agent Core: Identity · Workflow · Retrieval instructions
-│
-├─ prompts/               # Workflow instruction strings, one per stage/role
-│  ├─ coding-agent.md     #   design + code  (Blueprint, ontology, turns, command rules)
-│  ├─ validator.md        #   verify         (pre-code, parser-critical checklist)
-│  └─ reviewer.md         #   review/revise  (final JSON gate + output packaging)
-│
-├─ wiki/                  # Knowledge Base (retrieval targets) — grounding source
-│  ├─ index.md            #   KB routing table — retrieval ALWAYS starts here
-│  ├─ protocol.md         #   full command/syntax reference (authoritative)
-│  ├─ linter.md           #   schema, allowed keys, parser rules (authoritative)
-│  └─ examples/
-│     └─ code-bank.md     #   known-good agent archetypes to adapt
-│
-├─ fix-log/               # Growing memory: dated resolved-bug / change logs
-│  ├─ 2026-06-10.md
-│  ├─ 2026-06-13-loop-result-indexing.md
-│  └─ 2026-06-13-vocab-eval-auth-migration-and-docs.md
-│
-├─ quiz-agent-aoa/        # Worked example: AoA rubric quiz agent (sandwich architecture)
-├─ quiz-agent-python-aoa/ # Worked example: Python-concepts quiz agent (+ its README)
-│
-└─ User_import/           # User projects the agent inspects / edits
-   └─ 어휘평가/ · 어휘평가_NewAuth/   # 36-agent vocabulary-assessment battery (case study)
-```
-
----
 
 ## 1. The Agent Core (`AGENTS.md`)
 
@@ -292,7 +302,17 @@ sources:
 | `validator.md` | verify | Validate the Blueprint against parser-critical rules **before** coding (AP/JP specified, symbolic-vs-LLM separation, control-flow isolation, one input per visible turn, dependency next-turn rule). |
 | `reviewer.md` | review · revise | Re-validate the final JSON (root/allowed keys, `model:null` on symbolic turns, `REPEAT`/`JUMP`/`END` isolation, no same-turn dependency), revise until it passes, package output. |
 
-## 3. The Knowledge Base (`wiki/`)
+## 3. Tools that can help LLM (`tools/`)
+Each script is a helper for LLM for <br>
+     1. reduction in token usage<br>
+     2. faster inference without trivial workloads consumed by LLM<br>
+     3. etc.<br>
+| Script | Stage | Function |
+|--------|-------|----------|
+| `code_eg_router.py`| retrieval | Static, index-matching script based on the extracted keyword input from the client; returns the metadata of each section corresponding to the keywords weighted for best matching|
+
+
+## 4. The Knowledge Base (`wiki/`)
 
 The retrieval layer — authoritative CAFA truth. **Always start at `index.md`**, then open
 the file that answers the question:
@@ -301,13 +321,13 @@ the file that answers the question:
 |-------|------|----------|
 | CAFA Protocol | `protocol.md` | Exact command syntax, quoting, turn triggers, parameter systems (AP/SP/JP), loop-result indexing. |
 | Linter & Rules | `linter.md` | Schema / allowed keys, symbolic-vs-LLM requirements, escaping, dependency rules, parser compliance. **Overrides examples.** |
-| Agent Code Bank | `examples/code-bank.md` | Finding a working archetype (router, loop, evaluator, scorer, sandwich quiz, adaptive test) to adapt. |
+| Agent Code Bank | `code-bank.md` | Finding a working archetype (router, loop, evaluator, scorer, sandwich quiz, adaptive test) to adapt. |
 
 Precedence: `linter.md` and `protocol.md` are authoritative and **override any example**.
 Grounding rule: if a CAFA behavior claim cannot be supported by these files, label it an
 assumption or omit it.
 
-## 4. Growing Memory (`fix-log/`)
+## 5. Growing Memory (`fix-log/`)
 
 Dated logs of resolved bugs, migrations, and reusable techniques. When a session uncovers
 a non-obvious rule or pattern, it is captured here (and, when generalizable, folded back
@@ -315,26 +335,16 @@ into `wiki/`). Example: `2026-06-13-loop-result-indexing.md` documents the
 `@TR@TN(-1)@[@R_i@]@` loop-result-indexing trick, which was promoted into `protocol.md`
 (§8.1), `linter.md`, and `code-bank.md`.
 
-## 5. Worked Examples & User Projects
+# Workflow
 
-- `quiz-agent-aoa/`, `quiz-agent-python-aoa/` — reference agents demonstrating the
-  **sandwich architecture** (symbolic input → LLM evaluation → hidden control) and
-  protocol-safe scoring loops.
-- `User_import/` — user projects the agent inspects and edits. The `어휘평가` vocabulary
-  battery (below) is the current case study.
-
----
-
-## Workflow
-
-Driven by `CLAUDE.md`, every request follows the same order. No stage is skipped; if
+Driven by `AGENTS.md`, every request follows the same order. No stage is skipped; if
 verify or review fails, revise **Blueprint → ontology → turn architecture → code** and
 re-run the stage.
 
 ```txt
 User Request
      ↓
-retrieve   →  wiki/index.md → protocol.md / linter.md / examples/code-bank.md
+retrieve   →  wiki/index.md → protocol.md / linter.md / examples/code-bank.md / code_eg_router.py
      ↓
 design     →  prompts/coding-agent.md   (produce the Blueprint)
      ↓
@@ -350,58 +360,3 @@ Return Blueprint + CAFA Agent Code
 This is the same `Search → Generate → Validate → Repair → Revalidate` loop the root
 README argues for — retrieval grounded in `wiki/`, correctness enforced by the
 validator/reviewer prompts.
-
----
-
-## Case study — `User_import/어휘평가` (LLM Wiki idea test)
-
-A real 36-agent battery used to exercise the agent across an existing multi-agent set:
-**3 bands** (초등·중등·고등) × **4 vocabulary elements** (Collocation, Form_Meaning,
-Derivatives, Context) × **3 tiers** (T1 Form Recognition · T2 Meaning Recall · T3 Form
-Recall).
-
-- `어휘평가/` — original corpus (untouched backup).
-- `어휘평가_NewAuth/` — standardized output: uniform numeric-range student authentication,
-  a documentation README (auth + tier architecture), and inline descriptions on every
-  parameter and turn.
-
-The work is logged chronologically in
-`fix-log/2026-06-13-vocab-eval-auth-migration-and-docs.md` (auth migration → README
-updates → tier documentation → full annotation → conformance verification), and the
-corpus-specific structure is documented in `User_import/어휘평가_NewAuth/README.md`.
-
----
-
-## Why layered, not Wiki-only
-
-CAFA is a custom, turn-based DSL with strict syntax, datatypes, execution order, and
-dependency rules — closer to a compiler problem than a search problem. A flat Wiki cannot
-guarantee correctness on its own, so this directory separates concerns:
-
-| Layer | Responsibility | Prevents |
-|-------|----------------|----------|
-| `CLAUDE.md` + `prompts/` | How to work (workflow) | Skipped steps, ungrounded generation |
-| `wiki/` | Framework truth | Syntax hallucinations, knowledge contamination |
-| `prompts/validator.md` + `reviewer.md` | Correctness enforcement | Invalid generated JSON |
-| `fix-log/` | Growing memory | Repeating the same mistake twice |
-
-Together they shift the agent from a "search → generate" RAG chatbot toward a
-compiler-assisted coding agent for the CAFA Framework.
-
----
-
-## Source mapping
-
-Where each file in this layer came from when the codebase was restructured (see
-`fix-log/2026-06-10.md`):
-
-| File | Derived from |
-|------|--------------|
-| `AGENTS.md` | `1/00_System_Instruction.md` (persona, workflow, KB index, scope rules) |
-| `prompts/coding-agent.md` | `1/00_System_Instruction.md` §3,5–8 (blueprint, ontology, turn, command rules) |
-| `prompts/validator.md` | `1/00_System_Instruction.md` §4 + `1/01_…Linter and Rules.md` |
-| `prompts/reviewer.md` | `1/00_System_Instruction.md` §9,10,12,13 + references |
-| `wiki/index.md` | `1/00_System_Instruction.md` §2.1 (KB index) |
-| `wiki/protocol.md` | copy of `1/2_CAFA_Protocol.md` |
-| `wiki/linter.md` | copy of `1/01_CAFA Agent Code Linter and Rules.md` |
-| `wiki/examples/code-bank.md` | copy of `1/4_CAFA_Agent_Code_Bank.md` |
